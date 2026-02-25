@@ -23,6 +23,7 @@ export interface PathStage {
   time: string;
   difficulty: string;
   mapImage: string;
+  gpxUrl: string;
   narrative: Narrative;
   pois: POI[];
 }

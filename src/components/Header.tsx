@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Globe, Menu, ChevronDown } from "lucide-react";
+import { Globe, Menu, ChevronDown, Coffee } from "lucide-react";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -41,7 +41,6 @@ const Header = () => {
           {[
             { key: 'trails', label: t('header.nav.trails'), to: '/paths?type=hiking' },
             { key: 'bike', label: t('header.nav.bike'), to: '/paths?type=cycling' },
-            { key: 'plan', label: t('header.nav.plan'), to: '#' }
           ].map((item) => (
             <Link key={item.key} to={item.to} className="text-sm font-medium text-slate-600 hover:text-brand transition-colors relative group">
               {item.label}
@@ -51,6 +50,16 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-4">
+          <a
+            href="https://www.buymeacoffee.com/caminhosrainha"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-brand/5 text-brand border border-brand/20 hover:bg-brand/10 transition-all active:scale-95"
+          >
+            <Coffee className="w-4 h-4" />
+            <span>{t('header.nav.support')}</span>
+          </a>
+
           <div className="relative">
             <button
               onClick={() => setIsLangOpen(!isLangOpen)}

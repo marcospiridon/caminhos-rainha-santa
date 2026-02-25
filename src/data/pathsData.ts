@@ -20,6 +20,7 @@ export const paths: Path[] = [
       time: '5h 30m',
       difficulty: 'Médio',
       mapImage: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1000',
+      gpxUrl: '/gpx/historical-path.gpx',
       narrative: {
         title: 'Onde o Silêncio Fala',
         content: [
