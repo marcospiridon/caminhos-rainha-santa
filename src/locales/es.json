@@ -1,0 +1,65 @@
+{
+  "header": {
+    "title": "Caminos Princesa de Aragón",
+    "subtitle": "Rutas históricas",
+    "nav": {
+      "trails": "Senderos Peatonales",
+      "bike": "Rutas en Bicicleta",
+      "plan": "Planear Viaje"
+    }
+  },
+  "hero": {
+    "imageAlt": "Paisaje del sendero de la Reina Santa al atardecer",
+    "category": "Ruta Histórica",
+    "description": "La ruta de Isabel de Aragón: una senda de paz entre España y Portugal. Cruza la frontera y vive una peregrinación única entre paisajes ancestrales y espiritualidad.",
+    "discover": "Descubrir",
+    "discoverAlt": "Bajar para saber más"
+  },
+  "pathSelection": {
+    "title": "Elija Su Camino",
+    "description": "Ya sea que prefiera el ritmo lento de la caminata o la velocidad de una bicicleta gravel, el Camino de la Reina ofrece una perspectiva única.",
+    "hiking": {
+      "title": "Camino Histórico",
+      "badge": "Recomendado",
+      "description": "Recorra los antiguos caminos reales a través de densos bosques y aldeas históricas. Sienta la conexión con los peregrinos del pasado en esta ruta meticulosamente preservada.",
+      "button": "Ver Ruta Peatonal",
+      "duration": "5 Días",
+      "distance": "112 km",
+      "difficulty": "Moderada"
+    },
+    "cycling": {
+      "title": "Aventura Gravel",
+      "badge": "Para Aventureros",
+      "description": "Desafíese en terrenos accidentados e estradas de gravel cénicas. Diseñada para bicicletas de gravel y montaña, esta ruta ofrece velocidad, fluidez y vistas de cortar a respiração.",
+      "button": "Ver Ruta de Ciclismo",
+      "duration": "2 Días",
+      "distance": "85 km",
+      "difficulty": "Difícil"
+    }
+  },
+  "pathsPage": {
+    "title": "Explorar Rutas",
+    "subtitle": "Descubra la belleza natural e histórica de nuestra región",
+    "filters": {
+      "all": "Todos",
+      "hiking": "Peatonal",
+      "cycling": "Bicicleta"
+    },
+    "mondego": {
+      "title": "Valle del Mondego",
+      "badge": "Sereno",
+      "description": "Una ruta suave a lo largo del río Mondego, ideal para familias y amantes de la fotografía de naturaleza.",
+      "duration": "3 Horas",
+      "distance": "12 km",
+      "difficulty": "Fácil"
+    },
+    "mountain": {
+      "title": "Cima de la Estrela",
+      "badge": "Épico",
+      "description": "Desafío vertical para ciclistas experimentados con vistas panorámicas sobre toda la región centro.",
+      "duration": "6 Horas",
+      "distance": "45 km",
+      "difficulty": "Muy Difícil"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "header": {
+    "title": "Caminhos Rainha Santa",
+    "subtitle": "Percursos históricos",
+    "nav": {
+      "trails": "Trilhos Pedestres",
+      "bike": "Percursos de Bicicleta",
+      "plan": "Planear Viagem"
+    }
+  },
+  "hero": {
+    "imageAlt": "Paisagem do trilho da Rainha Santa ao entardecer",
+    "category": "Percurso Histórico",
+    "description": "Siga o rasto da Rainha que uniu reinos. Da Raia ao Mondego, descubra uma travessia onde a paz da história, a beleza da natureza e a mística da fé se encontram.",
+    "discover": "Descobrir",
+    "discoverAlt": "Descer para saber mais"
+  },
+  "pathSelection": {
+    "title": "Escolha o Seu Caminho",
+    "description": "Quer prefira o ritmo lento da caminhada ou a velocidade de uma bicicleta de gravel, o Caminho da Rainha oferece uma perspetiva única.",
+    "hiking": {
+      "title": "Caminho Histórico",
+      "badge": "Recomendado",
+      "description": "Percorra os antigos caminhos reais através de florestas densas e aldeias históricas. Sinta a ligação aos peregrinos do passado nesta rota meticulosamente preservada.",
+      "button": "Ver Rota Pedestre",
+      "duration": "5 Dias",
+      "distance": "112 km",
+      "difficulty": "Moderada"
+    },
+    "cycling": {
+      "title": "Aventura Gravel",
+      "badge": "Para Aventureiros",
+      "description": "Desafie-se em terrenos acidentados e estradas de gravel cénicas. Desenhada para bicicletas de gravel e montanha, esta rota oferece velocidade, fluidez e vistas de cortar a respiração.",
+      "button": "Ver Rota de Ciclismo",
+      "duration": "2 Dias",
+      "distance": "85 km",
+      "difficulty": "Difícil"
+    }
+  },
+  "pathsPage": {
+    "title": "Explorar Percursos",
+    "subtitle": "Descubra a beleza natural e histórica da nossa região",
+    "filters": {
+      "all": "Todos",
+      "hiking": "Pedestre",
+      "cycling": "Bicicleta"
+    },
+    "mondego": {
+      "title": "Vale do Mondego",
+      "badge": "Sereno",
+      "description": "Uma rota suave ao longo do rio Mondego, ideal para famílias e amantes da fotografia de natureza.",
+      "duration": "3 Horas",
+      "distance": "12 km",
+      "difficulty": "Fácil"
+    },
+    "mountain": {
+      "title": "Cume da Estrela",
+      "badge": "Épico",
+      "description": "Desafio vertical para ciclistas experientes com vistas panorâmicas sobre toda a região centro.",
+      "duration": "6 Horas",
+      "distance": "45 km",
+      "difficulty": "Muito Difícil"
+    }
+  }
+}

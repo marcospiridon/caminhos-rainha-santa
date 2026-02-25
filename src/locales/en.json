@@ -1,0 +1,65 @@
+{
+  "header": {
+    "title": "Holy Queen's Way",
+    "subtitle": "Historical trails",
+    "nav": {
+      "trails": "Walking Trails",
+      "bike": "Cycling Routes",
+      "plan": "Plan Your Trip"
+    }
+  },
+  "hero": {
+    "imageAlt": "Holy Queen's Way landscape at sunset",
+    "category": "Historical Trail",
+    "description": "The Holy Queen's Way: Where history meets serenity. Explore Portugal's untamed landscapes and savor the rich heritage of a path built on peace and tradition.",
+    "discover": "Discover",
+    "discoverAlt": "Scroll down to learn more"
+  },
+  "pathSelection": {
+    "title": "Choose Your Path",
+    "description": "Whether you prefer the slow rhythm of walking or the speed of gravel biking, the Queen's Way offers a unique perspective.",
+    "hiking": {
+      "title": "Historical Path",
+      "badge": "Recommended",
+      "description": "Walk the ancient royal paths through dense forests and historic villages. Feel the connection to the pilgrims of the past on this meticulously preserved route.",
+      "button": "View Hiking Route",
+      "duration": "5 Days",
+      "distance": "70 miles",
+      "difficulty": "Moderate"
+    },
+    "cycling": {
+      "title": "Gravel Adventure",
+      "badge": "For Adventurers",
+      "description": "Challenge yourself on rugged terrains and scenic gravel roads. Designed for gravel and mountain bikes, this route offers speed, flow, and breathtaking views.",
+      "button": "View Cycling Route",
+      "duration": "2 Days",
+      "distance": "53 miles",
+      "difficulty": "Hard"
+    }
+  },
+  "pathsPage": {
+    "title": "Explore Paths",
+    "subtitle": "Discover the natural and historical beauty of our region",
+    "filters": {
+      "all": "All",
+      "hiking": "Hiking",
+      "cycling": "Cycling"
+    },
+    "mondego": {
+      "title": "Mondego Valley",
+      "badge": "Serene",
+      "description": "A gentle route along the Mondego river, ideal for families and nature photography enthusiasts.",
+      "duration": "3 Hours",
+      "distance": "7.5 miles",
+      "difficulty": "Easy"
+    },
+    "mountain": {
+      "title": "Estrela Summit",
+      "badge": "Epic",
+      "description": "A vertical challenge for experienced cyclists with panoramic views over the entire central region.",
+      "duration": "6 Hours",
+      "distance": "28 miles",
+      "difficulty": "Very Hard"
+    }
+  }
+}
