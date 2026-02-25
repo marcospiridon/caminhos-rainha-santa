@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
 import { StatsGrid, ElevationProfile, POISection } from "../components";
@@ -8,12 +9,17 @@ import { paths } from "../data/pathsData";
 export default function Path() {
   const { slug } = useParams();
   const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   const path = paths.find(p => p.slug === slug);
   const stage = path?.details;
 
   if (!path || !stage) {
     return (
-      <div className="flex-grow flex flex-col items-center justify-center p-12 text-center">
+      <div className="flex-grow flex flex-col items-center justify-center pt-32 pb-12 px-6 text-center">
         <h2 className="text-3xl font-serif mb-4">Percurso não encontrado</h2>
         <p className="text-slate-600 mb-8">O percurso que procura não existe ou ainda não tem detalhes disponíveis.</p>
         <Link to="/paths" className="flex items-center gap-2 text-brand font-bold hover:underline">
@@ -25,7 +31,7 @@ export default function Path() {
   }
 
   return (
-    <main className="flex-grow max-w-7xl mx-auto w-full px-6 py-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
       {/* Left Column */}
       <div className="lg:col-span-8 flex flex-col gap-10">
         <div className="flex items-center gap-4 mb-2">
