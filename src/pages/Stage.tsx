@@ -37,12 +37,14 @@ export default function Path() {
     <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
       {/* Left Column */}
       <div className="lg:col-span-8 flex flex-col gap-10">
-        <div className="flex items-center gap-4 mb-2">
-          <Link to="/paths" className="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-500">
+        <div className="flex items-start gap-4 mb-2">
+          <Link to="/paths" className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-500 mt-1">
             <ArrowLeft size={24} />
           </Link>
-          <h4 className="text-brand font-bold tracking-widest text-xs mb-3">{t('pathPage.sections.history')}</h4>
-          <h1 className="text-4xl md:text-5xl font-serif">{stageText.title}</h1>
+          <div className="flex flex-col">
+            <h4 className="text-brand font-bold tracking-widest text-xs mb-2">Parent</h4>
+            <h1 className="text-4xl md:text-5xl font-serif">{stageText.title}</h1>
+          </div>
         </div>
 
         <StatsGrid
