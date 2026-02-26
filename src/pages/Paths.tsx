@@ -82,7 +82,7 @@ const Paths = () => {
         >
           <AnimatePresence mode="popLayout">
             {filteredPaths.map((path) => {
-              const text = path.i18n[lang] || path.i18n.pt;
+              const text = path.details.i18n[lang] || path.details.i18n.pt;
               return (
                 <motion.div
                   key={path.id}
@@ -97,9 +97,9 @@ const Paths = () => {
                     badge={text.badge}
                     description={text.description}
                     image={path.image}
-                    duration={text.duration}
-                    distance={text.distance}
-                    difficulty={text.difficulty}
+                    duration={t(`common.duration.${path.details.durationUnit}`, { count: path.details.duration })}
+                    distance={path.details?.distance}
+                    difficulty={path.details ? t(path.details.difficultyKey) : undefined}
                     icon={path.type === 'hiking' ? Footprints : Bike}
                     buttonText={text.button}
                     slug={path.slug}

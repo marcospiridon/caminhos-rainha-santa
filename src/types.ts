@@ -18,34 +18,25 @@ export interface POI {
   i18n: Localized<POITranslations>;
 }
 
-export interface NarrativeTranslations {
+export interface PathI18n {
   title: string;
+  badge: string;
+  description: string;
+  button: string;
+  narrativeTitle: string;
   content: string[];
-}
-
-export interface Narrative {
-  i18n: Localized<NarrativeTranslations>;
 }
 
 export interface PathStage {
   id: string;
+  duration: number;
+  durationUnit: 'hours' | 'days';
   distance: string;
   elevation: string;
-  time: string;
-  difficultyKey: string; // Keeps pointing to common translations
+  difficultyKey: string; // Points to common translations key
   gpxUrl: string;
-  narrative: Narrative;
+  i18n: Localized<PathI18n>;
   pois: POI[];
-}
-
-export interface PathTranslations {
-  title: string;
-  badge: string;
-  description: string;
-  duration: string;
-  distance: string;
-  difficulty: string;
-  button: string;
 }
 
 export interface Path {
@@ -53,7 +44,6 @@ export interface Path {
   slug: string;
   type: 'hiking' | 'cycling';
   image: string;
-  i18n: Localized<PathTranslations>;
-  details?: PathStage;
+  details: PathStage;
   parent?: string;
 }

@@ -4,13 +4,13 @@ import { Footprints, Bike } from "lucide-react";
 import type { Path } from "../types";
 
 const PathSelection = ({ paths }: { paths: Path[] }) => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const lang = (i18n.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
       {paths && paths.map((path) => {
-        const text = path.i18n[lang] || path.i18n.pt;
+        const text = path.details.i18n[lang] || path.details.i18n.pt;
         return (
           <PathCard
             key={path.id}
@@ -18,9 +18,9 @@ const PathSelection = ({ paths }: { paths: Path[] }) => {
             badge={text.badge}
             description={text.description}
             image={path.image}
-            duration={text.duration}
-            distance={text.distance}
-            difficulty={text.difficulty}
+            duration={t(`common.duration.${path.details.durationUnit}`, { count: path.details.duration })}
+            distance={path.details.distance}
+            difficulty={t(path.details.difficultyKey)}
             icon={path.type === 'hiking' ? Footprints : Bike}
             buttonText={text.button}
             slug={path.slug}

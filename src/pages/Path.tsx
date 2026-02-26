@@ -31,10 +31,7 @@ export default function Path() {
   }
 
   const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
-  const pathText = path.i18n[lang] || path.i18n.pt;
-  const stageNarrative = stage.narrative.i18n[lang] || stage.narrative.i18n.pt;
-
-  debugger;
+  const stageText = stage.i18n[lang] || stage.i18n.pt;
 
   return (
     <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -44,13 +41,14 @@ export default function Path() {
           <Link to="/paths" className="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-500">
             <ArrowLeft size={24} />
           </Link>
-          <h1 className="text-4xl md:text-5xl font-serif">{pathText.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-serif">{stageText.title}</h1>
         </div>
 
         <StatsGrid
           distance={stage.distance}
           elevation={stage.elevation}
-          time={stage.time}
+          duration={stage.duration}
+          durationUnit={stage.durationUnit}
           difficulty={t(stage.difficultyKey)}
         />
 
@@ -73,10 +71,10 @@ export default function Path() {
           <div className="absolute top-0 left-0 w-2 h-full bg-brand/20" />
           <span className="inline-block text-brand font-bold tracking-widest text-xs uppercase mb-3">{t('pathPage.sections.history')}</span>
           <h3 className="font-serif text-3xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
-            {stageNarrative.title}
+            {stageText.narrativeTitle}
           </h3>
           <div className="font-serif text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed text-lg">
-            {stageNarrative.content.map((para, i) => (
+            {stageText.content.map((para, i) => (
               <p key={i}>
                 {i === 0 && (
                   <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">

@@ -4,6 +4,12 @@
       "easy": "Fácil",
       "moderate": "Moderada",
       "hard": "Difícil"
+    },
+    "duration": {
+      "hours_one": "{{count}} hora",
+      "hours_other": "{{count}} horas",
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días"
     }
   },
   "header": {
@@ -59,7 +65,7 @@
     "stats": {
       "distance": "Distancia",
       "elevation": "Ascenso (+D)",
-      "time": "Tiempo Medio",
+      "duration": "Duración",
       "difficulty": "Dificultad"
     },
     "elevation": {

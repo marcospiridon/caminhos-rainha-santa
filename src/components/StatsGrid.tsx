@@ -5,17 +5,24 @@ import { useTranslation } from 'react-i18next';
 interface StatsGridProps {
   distance: string;
   elevation: string;
-  time: string;
+  duration: number;
+  durationUnit: 'hours' | 'days';
   difficulty: string;
 }
 
-export default function StatsGrid({ distance, elevation, time, difficulty }: StatsGridProps) {
+export default function StatsGrid({ distance, elevation, duration, durationUnit, difficulty }: StatsGridProps) {
   const { t } = useTranslation();
 
   const stats = [
     { label: t('pathPage.stats.distance'), value: distance, unit: 'km', icon: Ruler, color: 'text-accent' },
     { label: t('pathPage.stats.elevation'), value: elevation, unit: 'm', icon: TrendingUp, color: 'text-accent' },
-    { label: t('pathPage.stats.time'), value: time, unit: '', icon: Clock, color: 'text-accent' },
+    {
+      label: t('pathPage.stats.duration'),
+      value: t(`common.duration.${durationUnit}`, { count: duration }),
+      unit: '',
+      icon: Clock,
+      color: 'text-accent'
+    },
     { label: t('pathPage.stats.difficulty'), value: difficulty, unit: '', icon: BarChart2, color: 'text-accent' },
   ];
 
