@@ -60,6 +60,50 @@ export default function Stage() {
         </div>
       </div>
 
+      <header className="relative w-full h-[450px] flex items-end overflow-hidden">
+        <motion.div
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5 }}
+          className="absolute inset-0 z-0"
+        >
+          <img
+            alt="Stage image"
+            className="w-full h-full object-cover"
+            src={path.image}
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/40 to-transparent" />
+        </motion.div>
+
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-6 pb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="inline-flex items-center gap-2 bg-primary/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 backdrop-blur-sm"
+          >
+            {path.type}
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight mb-2"
+          >
+            {parentText?.title}
+            <span className="block text-primary-hover">{stageText.title}</span>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-gray-200 text-lg md:text-xl font-medium max-w-2xl"
+          >
+            {stageText.description}
+          </motion.p>
+        </div>
+      </header>
+
       {/* Sticky Action Bar */}
       <div className={`sticky top-[80px] z-40 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-all duration-300 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-4">

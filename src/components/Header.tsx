@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Globe, Menu, ChevronDown, Coffee } from "lucide-react";
+import { Globe, Menu, X, ChevronDown, Coffee } from "lucide-react";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isLangOpen, setIsLangOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const languages = [
     { code: 'pt', label: 'PT' },
@@ -18,6 +19,7 @@ const Header = () => {
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code);
     setIsLangOpen(false);
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -87,11 +89,67 @@ const Header = () => {
             )}
           </div>
 
-          <button className="md:hidden p-2 text-slate-600">
-            <Menu className="w-6 h-6" />
+          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 text-slate-600">
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-[80px] left-0 right-0 bg-white/95 backdrop-blur-md border-b border-brand/10 shadow-xl overflow-hidden animate-in slide-in-from-top-2 duration-300">
+          <div className="px-6 py-6 flex flex-col gap-6">
+            <nav className="flex flex-col gap-4">
+              {[
+                { key: 'trails', label: t('header.nav.trails'), to: '/paths?type=hiking' },
+                { key: 'bike', label: t('header.nav.bike'), to: '/paths?type=cycling' },
+              ].map((item) => (
+                <Link
+                  key={item.key}
+                  to={item.to}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="font-serif text-2xl font-bold text-slate-800 hover:text-brand transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="h-px bg-slate-100 my-2"></div>
+
+            <div className="flex flex-col gap-3">
+              <span className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-2">Idioma</span>
+              <div className="flex flex-wrap gap-3">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => changeLanguage(lang.code)}
+                    className={`px-4 py-2 rounded-full text-sm font-bold border transition-colors ${
+                      i18n.language === lang.code
+                        ? 'bg-brand text-white border-brand'
+                        : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-brand/5 hover:border-brand/30'
+                    }`}
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="h-px bg-slate-100 my-2"></div>
+
+            <a
+              href="https://www.buymeacoffee.com/caminhosrainha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-brand text-white hover:bg-brand-dark transition-colors"
+            >
+              <Coffee className="w-5 h-5" />
+              <span>{t('header.nav.support')}</span>
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
