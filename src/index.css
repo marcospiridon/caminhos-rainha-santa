@@ -8,11 +8,13 @@
   --color-brand: #C08081;
   --color-brand-dark: #a06162;
   --color-accent: #F2C2C2;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #1e293b;
 }
 
 @layer base {
   body {
-    @apply font-sans text-slate-900 bg-[#fbfcfc];
+    @apply font-sans text-slate-900 bg-[#fbfcfc] dark:bg-slate-900 dark:text-gray-100;
   }
 
   h1, h2, h3, h4 {

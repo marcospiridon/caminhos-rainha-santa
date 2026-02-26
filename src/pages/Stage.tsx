@@ -41,6 +41,7 @@ export default function Path() {
           <Link to="/paths" className="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-500">
             <ArrowLeft size={24} />
           </Link>
+          <h4 className="text-brand font-bold tracking-widest text-xs mb-3">{t('pathPage.sections.history')}</h4>
           <h1 className="text-4xl md:text-5xl font-serif">{stageText.title}</h1>
         </div>
 

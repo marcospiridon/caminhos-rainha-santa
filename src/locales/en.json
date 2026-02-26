@@ -10,6 +10,10 @@
       "hours_other": "{{count}} hours",
       "days_one": "{{count}} day",
       "days_other": "{{count}} days"
+    },
+    "button": {
+      "hiking": "View Hiking Route",
+      "cycling": "View Cycling Route"
     }
   },
   "header": {
@@ -31,25 +35,7 @@
   },
   "pathSelection": {
     "title": "Choose Your Path",
-    "description": "Whether you prefer the slow rhythm of walking or the speed of gravel biking, the Queen's Way offers a unique perspective.",
-    "hiking": {
-      "title": "Historical Path",
-      "badge": "Recommended",
-      "description": "Walk the ancient royal paths through dense forests and historic villages. Feel the connection to the pilgrims of the past on this meticulously preserved route.",
-      "button": "View Hiking Route",
-      "duration": "5 Days",
-      "distance": "70 miles",
-      "difficulty": "Moderate"
-    },
-    "cycling": {
-      "title": "Gravel Adventure",
-      "badge": "For Adventurers",
-      "description": "Challenge yourself on rugged terrains and scenic gravel roads. Designed for gravel and mountain bikes, this route offers speed, flow, and breathtaking views.",
-      "button": "View Cycling Route",
-      "duration": "2 Days",
-      "distance": "53 miles",
-      "difficulty": "Hard"
-    }
+    "description": "Whether you prefer the slow rhythm of walking or the speed of gravel biking, the Queen's Way offers a unique perspective."
   },
   "pathPage": {
     "notFound": {
@@ -60,7 +46,8 @@
     "sections": {
       "history": "Historical Context",
       "pois": "Points of Interest",
-      "elevationProfile": "Elevation Profile"
+      "elevationProfile": "Elevation Profile",
+      "stages": "Stages"
     },
     "stats": {
       "distance": "Distance",

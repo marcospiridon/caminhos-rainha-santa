@@ -101,7 +101,7 @@ const Paths = () => {
                     distance={path.details?.distance}
                     difficulty={path.details ? t(path.details.difficultyKey) : undefined}
                     icon={path.type === 'hiking' ? Footprints : Bike}
-                    buttonText={text.button}
+                    buttonText={t(`common.button.${path.type}`)}
                     slug={path.slug}
                   />
                 </motion.div>

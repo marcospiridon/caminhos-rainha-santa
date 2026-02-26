@@ -10,6 +10,10 @@
       "hours_other": "{{count}} horas",
       "days_one": "{{count}} día",
       "days_other": "{{count}} días"
+    },
+    "button": {
+      "hiking": "Ver Ruta Peatonal",
+      "cycling": "Ver Ruta de Ciclismo"
     }
   },
   "header": {
@@ -31,25 +35,7 @@
   },
   "pathSelection": {
     "title": "Elija Su Camino",
-    "description": "Ya sea que prefiera el ritmo lento de la caminata o la velocidad de una bicicleta gravel, el Camino de la Reina ofrece una perspectiva única.",
-    "hiking": {
-      "title": "Camino Histórico",
-      "badge": "Recomendado",
-      "description": "Recorra los antiguos caminos reales a través de densos bosques y aldeas históricas. Sienta la conexión con los peregrinos del pasado en esta ruta meticulosamente preservada.",
-      "button": "Ver Ruta Peatonal",
-      "duration": "5 Días",
-      "distance": "112 km",
-      "difficulty": "Moderada"
-    },
-    "cycling": {
-      "title": "Aventura Gravel",
-      "badge": "Para Aventureros",
-      "description": "Desafíese en terrenos accidentados e estradas de gravel cénicas. Diseñada para bicicletas de gravel y montaña, esta ruta ofrece velocidad, fluidez y vistas de cortar a respiração.",
-      "button": "Ver Ruta de Ciclismo",
-      "duration": "2 Días",
-      "distance": "85 km",
-      "difficulty": "Difícil"
-    }
+    "description": "Ya sea que prefiera el ritmo lento de la caminata o la velocidad de una bicicleta gravel, el Camino de la Reina ofrece una perspectiva única."
   },
   "pathPage": {
     "notFound": {
@@ -60,7 +46,8 @@
     "sections": {
       "history": "Contexto Histórico",
       "pois": "Puntos de Interés",
-      "elevationProfile": "Perfil de Elevación"
+      "elevationProfile": "Perfil de Elevación",
+      "stages": "Etapas"
     },
     "stats": {
       "distance": "Distancia",

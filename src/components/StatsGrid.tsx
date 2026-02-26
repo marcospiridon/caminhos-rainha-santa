@@ -13,13 +13,17 @@ interface StatsGridProps {
 export default function StatsGrid({ distance, elevation, duration, durationUnit, difficulty }: StatsGridProps) {
   const { t } = useTranslation();
 
+  const durationStr = t(`common.duration.${durationUnit}`, { count: duration });
+  const [durVal, ...durUnitParts] = durationStr.split(' ');
+  const durUnit = durUnitParts.join(' ');
+
   const stats = [
     { label: t('pathPage.stats.distance'), value: distance, unit: 'km', icon: Ruler, color: 'text-accent' },
     { label: t('pathPage.stats.elevation'), value: elevation, unit: 'm', icon: TrendingUp, color: 'text-accent' },
     {
       label: t('pathPage.stats.duration'),
-      value: t(`common.duration.${durationUnit}`, { count: duration }),
-      unit: '',
+      value: durVal,
+      unit: durUnit,
       icon: Clock,
       color: 'text-accent'
     },

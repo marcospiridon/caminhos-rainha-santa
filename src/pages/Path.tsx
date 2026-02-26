@@ -91,7 +91,7 @@ export default function Path() {
       <section className="flex flex-col items-center justify-center w-full lg:col-span-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 max-w-2xl mx-auto">
-            <h4 className="text-4xl md:text-5xl mb-6">Etapas</h4>
+            <h4 className="text-4xl md:text-5xl mb-6">{t('pathPage.sections.stages')}</h4>
             <div className="w-20 h-1 bg-brand/30 mx-auto mb-8"></div>
           </div>
           <PathSelection paths={paths.filter(p => p.parent === slug)} />

@@ -22,7 +22,6 @@ export interface PathI18n {
   title: string;
   badge: string;
   description: string;
-  button: string;
   narrativeTitle: string;
   content: string[];
 }

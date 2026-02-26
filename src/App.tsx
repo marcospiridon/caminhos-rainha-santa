@@ -8,7 +8,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen">
         <Header />
         <main>
           <Routes>

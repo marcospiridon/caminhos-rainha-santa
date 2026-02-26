@@ -10,7 +10,7 @@ export const paths: Path[] = [
       id: 'historical-path-d',
       duration: 5,
       durationUnit: 'days',
-      distance: '112 km',
+      distance: '112',
       elevation: '320',
       difficultyKey: 'common.difficulty.moderate',
       gpxUrl: '/gpx/historical-path.gpx',
@@ -19,7 +19,6 @@ export const paths: Path[] = [
           title: 'O Caminho da Noiva Real',
           badge: 'Recomendado',
           description: 'Onde a lenda floresceu. Siga os passos da jovem Isabel na sua entrada em Portugal: uma jornada de Quintanilha a Trancoso que transformou paisagens em jardins e uma Infanta em Rainha.',
-          button: 'Ver Rota Pedestre',
           narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
           content: [
             'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
@@ -31,7 +30,6 @@ export const paths: Path[] = [
           title: "The Royal Bride's Way",
           badge: 'Recommended',
           description: 'Where the legend blossomed. Follow the steps of young Elizabeth on her entry into Portugal: a journey from Quintanilha to Trancoso that transformed landscapes into gardens and an Infanta into a Queen.',
-          button: 'View Hiking Route',
           narrativeTitle: "The Way that Blossomed with the Queen's Passing",
           content: [
             "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
@@ -43,7 +41,6 @@ export const paths: Path[] = [
           title: 'El Camino de la Novia Real',
           badge: 'Recomendado',
           description: 'Donde la leyenda floreció. Siga los pasos de la joven Isabel en su entrada a Portugal: una jornada de Quintanilha a Trancoso que transformó paisajes en jardines y una Infanta en Reina.',
-          button: 'Ver Ruta Peatonal',
           narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
           content: [
             'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
@@ -65,7 +62,7 @@ export const paths: Path[] = [
       id: 'caminho-da-prata-d',
       duration: 6,
       durationUnit: 'hours',
-      distance: '25 km',
+      distance: '25',
       elevation: '320',
       difficultyKey: 'common.difficulty.easy',
       gpxUrl: '/gpx/historical-path.gpx',
@@ -74,7 +71,6 @@ export const paths: Path[] = [
           title: 'O Caminho da Prata',
           badge: 'Peregrinação',
           description: 'Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
-          button: 'Ver Rota Pedestre',
           narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
           content: [
             'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
@@ -86,7 +82,6 @@ export const paths: Path[] = [
           title: "The Silver Path",
           badge: 'Peregrination',
           description: 'Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
-          button: 'View Hiking Route',
           narrativeTitle: "The Way that Blossomed with the Queen's Passing",
           content: [
             "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
@@ -98,7 +93,6 @@ export const paths: Path[] = [
           title: 'El Camino de la Prata',
           badge: 'Peregrinação',
           description: 'Ruta común con la variante portuguesa de la ruta de la prata del camino de Santiago',
-          button: 'Ver Ruta Peatonal',
           narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
           content: [
             'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
@@ -144,7 +138,7 @@ export const paths: Path[] = [
       id: 'gravel-adventure-d',
       duration: 2,
       durationUnit: 'days',
-      distance: '85 km',
+      distance: '85',
       elevation: '1200',
       difficultyKey: 'common.difficulty.hard',
       gpxUrl: '/gpx/gravel-adventure.gpx',
@@ -153,7 +147,6 @@ export const paths: Path[] = [
           title: 'Aventura Gravel',
           badge: 'Para Aventureiros',
           description: 'Desafie-se em terrenos acidentados e estradas de gravel cénicas. Desenhada para bicicletas de gravel e montanha, esta rota oferece velocidade, fluidez e vistas de cortar a respiração.',
-          button: 'Ver Rota de Ciclismo',
           narrativeTitle: 'A Aventura Começa nas Estradas de Terra',
           content: [
             'Uma rota desenhada para quem procura adrenalina e paisagens selvagens. Percorra estradas de gravel entre serras e vales ao longo de dois dias intensos.'
@@ -163,7 +156,6 @@ export const paths: Path[] = [
           title: 'Gravel Adventure',
           badge: 'For Adventurers',
           description: 'Challenge yourself on rugged terrains and scenic gravel roads. Designed for gravel and mountain bikes, this route offers speed, flow, and breathtaking views.',
-          button: 'View Cycling Route',
           narrativeTitle: 'The Adventure Begins on Gravel Roads',
           content: [
             'A route designed for those seeking adrenaline and wild landscapes. Ride gravel roads through mountains and valleys over two intense days.'
@@ -173,7 +165,6 @@ export const paths: Path[] = [
           title: 'Aventura Gravel',
           badge: 'Para Aventureros',
           description: 'Desafíese en terrenos accidentados e estradas de gravel cénicas. Diseñada para bicicletas de gravel y montaña, esta ruta ofrece velocidad, fluidez y vistas de cortar a respiração.',
-          button: 'Ver Ruta de Ciclismo',
           narrativeTitle: 'La Aventura Comienza en los Caminos de Grava',
           content: [
             'Una ruta diseñada para quienes buscan adrenalina y paisajes salvajes. Recorra caminos de grava entre sierras y valles a lo largo de dos días intensos.'

@@ -10,6 +10,10 @@
       "hours_other": "{{count}} horas",
       "days_one": "{{count}} dia",
       "days_other": "{{count}} dias"
+    },
+    "button": {
+      "hiking": "Ver Rota Pedestre",
+      "cycling": "Ver Rota de Ciclismo"
     }
   },
   "header": {
@@ -31,25 +35,7 @@
   },
   "pathSelection": {
     "title": "Escolha o Seu Caminho",
-    "description": "Quer prefira o ritmo lento da caminhada ou a velocidade de uma bicicleta de gravel, o Caminho da Rainha oferece uma perspetiva única.",
-    "hiking": {
-      "title": "O Caminho da Noiva Real",
-      "badge": "Recomendado",
-      "description": "Onde a lenda floresceu. Siga os passos da jovem Isabel na sua entrada em Portugal: uma jornada de Quintanilha a Trancoso que transformou paisagens em jardins e uma Infanta em Rainha.",
-      "button": "Ver Rota Pedestre",
-      "duration": "5 Dias",
-      "distance": "112 km",
-      "difficulty": "Moderada"
-    },
-    "cycling": {
-      "title": "Aventura Gravel",
-      "badge": "Para Aventureiros",
-      "description": "Desafie-se em terrenos acidentados e estradas de gravel cénicas. Desenhada para bicicletas de gravel e montanha, esta rota oferece velocidade, fluidez e vistas de cortar a respiração.",
-      "button": "Ver Rota de Ciclismo",
-      "duration": "2 Dias",
-      "distance": "85 km",
-      "difficulty": "Difícil"
-    }
+    "description": "Quer prefira o ritmo lento da caminhada ou a velocidade de uma bicicleta de gravel, o Caminho da Rainha oferece uma perspetiva única."
   },
   "pathPage": {
     "notFound": {
@@ -60,7 +46,8 @@
     "sections": {
       "history": "Contexto Histórico",
       "pois": "Pontos de Interesse",
-      "elevationProfile": "Perfil de Elevação"
+      "elevationProfile": "Perfil de Elevação",
+      "stages": "Etapas"
     },
     "stats": {
       "distance": "Distância",
