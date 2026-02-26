@@ -47,7 +47,8 @@
       "history": "Historical Context",
       "pois": "Points of Interest",
       "elevationProfile": "Elevation Profile",
-      "stages": "Stages"
+      "stages": "Stages",
+      "currentStage": "Current Stage"
     },
     "stats": {
       "distance": "Distance",
@@ -73,6 +74,7 @@
     },
     "title": "Our Paths",
     "subtitle": "Explore the historical trails and stunning landscapes of the Holy Queen.",
-    "empty": "No paths found for this filter."
+    "empty": "No paths found for this filter.",
+    "downloadGPX": "Download GPX"
   }
 }

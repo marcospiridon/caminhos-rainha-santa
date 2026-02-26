@@ -47,7 +47,8 @@
       "history": "Contexto Histórico",
       "pois": "Pontos de Interesse",
       "elevationProfile": "Perfil de Elevação",
-      "stages": "Etapas"
+      "stages": "Etapas",
+      "currentStage": "Etapa Actual"
     },
     "stats": {
       "distance": "Distância",
@@ -73,6 +74,7 @@
     },
     "title": "Nossos Percursos",
     "subtitle": "Explore os caminhos históricos e paisagens deslumbrantes da Rainha Santa.",
-    "empty": "Nenhum percurso encontrado para este filtro."
+    "empty": "Nenhum percurso encontrado para este filtro.",
+    "downloadGPX": "Descarregar GPX"
   }
 }

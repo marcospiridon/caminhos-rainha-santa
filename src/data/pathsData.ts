@@ -2,12 +2,10 @@ import type { Path } from '../types';
 
 export const paths: Path[] = [
   {
-    id: 'caminho-noiva-real',
     slug: 'caminho-noiva-real',
     type: 'hiking',
     image: 'gimonde.jpg',
     details: {
-      id: 'historical-path-d',
       duration: 5,
       durationUnit: 'days',
       distance: '112',
@@ -16,7 +14,7 @@ export const paths: Path[] = [
       gpxUrl: '/gpx/historical-path.gpx',
       i18n: {
         pt: {
-          title: 'O Caminho da Noiva Real',
+          title: 'Caminho da Noiva Real',
           badge: 'Recomendado',
           description: 'Onde a lenda floresceu. Siga os passos da jovem Isabel na sua entrada em Portugal: uma jornada de Quintanilha a Trancoso que transformou paisagens em jardins e uma Infanta em Rainha.',
           narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
@@ -27,7 +25,7 @@ export const paths: Path[] = [
           ]
         },
         en: {
-          title: "The Royal Bride's Way",
+          title: "Royal Bride's Way",
           badge: 'Recommended',
           description: 'Where the legend blossomed. Follow the steps of young Elizabeth on her entry into Portugal: a journey from Quintanilha to Trancoso that transformed landscapes into gardens and an Infanta into a Queen.',
           narrativeTitle: "The Way that Blossomed with the Queen's Passing",
@@ -38,7 +36,7 @@ export const paths: Path[] = [
           ]
         },
         es: {
-          title: 'El Camino de la Novia Real',
+          title: 'Camino de la Novia Real',
           badge: 'Recomendado',
           description: 'Donde la leyenda floreció. Siga los pasos de la joven Isabel en su entrada a Portugal: una jornada de Quintanilha a Trancoso que transformó paisajes en jardines y una Infanta en Reina.',
           narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
@@ -53,13 +51,11 @@ export const paths: Path[] = [
     }
   },
   {
-    id: 'caminho-da-prata',
-    slug: 'caminho-da-prata',
+    slug: 'via-da-prata',
     type: 'hiking',
-    image: '/gimonde.jpg',
+    image: '/via-da-prata.jpg',
     parentSlug: 'caminho-noiva-real',
     details: {
-      id: 'caminho-da-prata-d',
       duration: 6,
       durationUnit: 'hours',
       distance: '25',
@@ -68,7 +64,7 @@ export const paths: Path[] = [
       gpxUrl: '/gpx/historical-path.gpx',
       i18n: {
         pt: {
-          title: 'O Caminho da Prata',
+          title: 'Via da Prata',
           badge: 'Peregrinação',
           description: 'Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
           narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
@@ -79,7 +75,7 @@ export const paths: Path[] = [
           ]
         },
         en: {
-          title: "The Silver Path",
+          title: "Silver Path",
           badge: 'Peregrination',
           description: 'Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
           narrativeTitle: "The Way that Blossomed with the Queen's Passing",
@@ -90,9 +86,9 @@ export const paths: Path[] = [
           ]
         },
         es: {
-          title: 'El Camino de la Prata',
+          title: 'Vía de la Plata',
           badge: 'Peregrinação',
-          description: 'Ruta común con la variante portuguesa de la ruta de la prata del camino de Santiago',
+          description: 'Ruta común con la variante portuguesa de la ruta de la plata del camino de Santiago',
           narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
           content: [
             'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
@@ -130,12 +126,10 @@ export const paths: Path[] = [
     }
   },
   {
-    id: 'gravel-adventure',
     slug: 'aventura-gravel',
     type: 'cycling',
     image: 'https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000',
     details: {
-      id: 'gravel-adventure-d',
       duration: 2,
       durationUnit: 'days',
       distance: '85',

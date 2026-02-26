@@ -47,7 +47,8 @@
       "history": "Contexto Histórico",
       "pois": "Puntos de Interés",
       "elevationProfile": "Perfil de Elevación",
-      "stages": "Etapas"
+      "stages": "Etapas",
+      "currentStage": "Etapa Actual"
     },
     "stats": {
       "distance": "Distancia",
@@ -73,6 +74,7 @@
     },
     "title": "Nuestros Recorridos",
     "subtitle": "Explore las rutas históricas y los paisajes deslumbrantes de la Reina Santa.",
-    "empty": "No se encontraron rutas con este filtro."
+    "empty": "No se encontraron rutas con este filtro.",
+    "downloadGPX": "Descargar GPX"
   }
 }

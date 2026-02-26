@@ -27,7 +27,6 @@ export interface PathI18n {
 }
 
 export interface PathStage {
-  id: string;
   duration: number;
   durationUnit: 'hours' | 'days';
   distance: string;
@@ -39,7 +38,6 @@ export interface PathStage {
 }
 
 export interface Path {
-  id: string;
   slug: string;
   type: 'hiking' | 'cycling';
   image: string;

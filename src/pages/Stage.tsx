@@ -1,14 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
 import { StatsGrid, ElevationProfile, POISection, RouteMap } from "../components";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Download } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
 
 export default function Stage() {
   const { slug, stage: stageSlug } = useParams<{ slug: string; stage: string }>();
   const { t, i18n: i18nInstance } = useTranslation();
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 130);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,10 +46,10 @@ export default function Stage() {
   const parentText = path.parent?.details.i18n[lang] || path.parent?.details.i18n.pt;
 
   return (
-    <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
-      {/* Left Column */}
-      <div className="lg:col-span-8 flex flex-col gap-10">
-        <div className="flex items-start gap-4 mb-2">
+    <div className="flex flex-col flex-grow w-full">
+      {/* Header Section */}
+      <div className="max-w-7xl mx-auto w-full px-6 pt-32 pb-4">
+        <div className="flex items-start gap-4">
           <Link to={`/path/${path?.parent?.slug}`} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-500 mt-1">
             <ArrowLeft size={24} />
           </Link>
@@ -47,7 +58,28 @@ export default function Stage() {
             <h1 className="text-4xl md:text-5xl font-serif">{stageText.title}</h1>
           </div>
         </div>
+      </div>
 
+      {/* Sticky Action Bar */}
+      <div className={`sticky top-[80px] z-40 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-all duration-300 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
+          <div className="hidden md:flex flex-col">
+            <span className="text-xs text-gray-500 uppercase font-bold tracking-wider">{t('pathPage.sections.currentStage')}</span>
+            <span className="text-sm font-semibold text-slate-900 dark:text-white">{stageText.title}</span>
+          </div>
+          <div className="flex items-center gap-3 ml-auto">
+            <button className="flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white text-sm font-bold h-10 px-6 rounded-lg shadow-sm transition-all transform active:scale-95">
+              <Download size={18} />
+              <span>{t('pathsPage.downloadGPX')}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-8 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
+        {/* Left Column */}
+        <div className="lg:col-span-8 flex flex-col gap-10">
         <StatsGrid
           distance={stage.distance}
           elevation={stage.elevation}
@@ -94,6 +126,7 @@ export default function Stage() {
         {stage.pois && <POISection pois={stage.pois} />}
 
       </div>
-    </main>
+      </main>
+    </div>
   );
 }
