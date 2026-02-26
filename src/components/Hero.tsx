@@ -13,7 +13,12 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 pt-24 text-center">
+        <img
+          src="logo_branco.png"
+          alt="Caminhos Rainha Santa Logo"
+          className="w-24 h-24 mb-8 opacity-90 drop-shadow-lg"
+        />
         <p className="text-sm tracking-[0.35em] uppercase text-white/80 mb-6 font-sans">
           {t('hero.category')}
         </p>

@@ -1,4 +1,11 @@
 {
+  "common": {
+    "difficulty": {
+      "easy": "Fácil",
+      "moderate": "Moderada",
+      "hard": "Difícil"
+    }
+  },
   "header": {
     "title": "Caminhos Rainha Santa",
     "subtitle": "Percursos históricos",
@@ -20,9 +27,9 @@
     "title": "Escolha o Seu Caminho",
     "description": "Quer prefira o ritmo lento da caminhada ou a velocidade de uma bicicleta de gravel, o Caminho da Rainha oferece uma perspetiva única.",
     "hiking": {
-      "title": "Caminho Histórico",
+      "title": "O Caminho da Noiva Real",
       "badge": "Recomendado",
-      "description": "Percorra os antigos caminhos reais através de florestas densas e aldeias históricas. Sinta a ligação aos peregrinos do passado nesta rota meticulosamente preservada.",
+      "description": "Onde a lenda floresceu. Siga os passos da jovem Isabel na sua entrada em Portugal: uma jornada de Quintanilha a Trancoso que transformou paisagens em jardins e uma Infanta em Rainha.",
       "button": "Ver Rota Pedestre",
       "duration": "5 Dias",
       "distance": "112 km",
@@ -38,29 +45,41 @@
       "difficulty": "Difícil"
     }
   },
+  "pathPage": {
+    "notFound": {
+      "title": "Percurso não encontrado",
+      "description": "O percurso que procura não existe ou ainda não tem detalhes disponíveis.",
+      "back": "Voltar aos percursos"
+    },
+    "sections": {
+      "history": "Contexto Histórico",
+      "pois": "Pontos de Interesse",
+      "elevationProfile": "Perfil de Elevação"
+    },
+    "stats": {
+      "distance": "Distância",
+      "elevation": "Subida (+D)",
+      "time": "Tempo Médio",
+      "difficulty": "Dificuldade"
+    },
+    "elevation": {
+      "max": "Máx",
+      "min": "Mín"
+    },
+    "help": {
+      "pharmacy": "Farmácia Central",
+      "open24h": "Aberto 24h",
+      "callNow": "Ligar agora"
+    }
+  },
   "pathsPage": {
-    "title": "Explorar Percursos",
-    "subtitle": "Descubra a beleza natural e histórica da nossa região",
     "filters": {
       "all": "Todos",
       "hiking": "Pedestre",
       "cycling": "Bicicleta"
     },
-    "mondego": {
-      "title": "Vale do Mondego",
-      "badge": "Sereno",
-      "description": "Uma rota suave ao longo do rio Mondego, ideal para famílias e amantes da fotografia de natureza.",
-      "duration": "3 Horas",
-      "distance": "12 km",
-      "difficulty": "Fácil"
-    },
-    "mountain": {
-      "title": "Cume da Estrela",
-      "badge": "Épico",
-      "description": "Desafio vertical para ciclistas experientes com vistas panorâmicas sobre toda a região centro.",
-      "duration": "6 Horas",
-      "distance": "45 km",
-      "difficulty": "Muito Difícil"
-    }
+    "title": "Nossos Percursos",
+    "subtitle": "Explore os caminhos históricos e paisagens deslumbrantes da Rainha Santa.",
+    "empty": "Nenhum percurso encontrado para este filtro."
   }
 }

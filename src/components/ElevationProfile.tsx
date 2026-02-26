@@ -1,11 +1,16 @@
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 export default function ElevationProfile() {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-lg font-bold text-slate-900 dark:text-white">Perfil de Elevação</h3>
-        <span className="text-xs text-gray-500 font-medium uppercase tracking-wider">Máx: 380m | Mín: 60m</span>
+        <h3 className="text-lg font-bold text-slate-900 dark:text-white">{t('pathPage.sections.elevationProfile')}</h3>
+        <span className="text-xs text-gray-500 font-medium uppercase tracking-wider">
+          {t('pathPage.elevation.max')}: 380m | {t('pathPage.elevation.min')}: 60m
+        </span>
       </div>
       <div className="relative w-full h-48">
         <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1000 200">

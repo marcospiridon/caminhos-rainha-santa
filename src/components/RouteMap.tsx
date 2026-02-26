@@ -6,6 +6,7 @@ import 'leaflet/dist/leaflet.css';
 import type { POI } from '../types';
 import { Bed, Utensils, Camera, HeartPulse } from 'lucide-react';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { useTranslation } from 'react-i18next';
 
 // Fix for default Leaflet icon paths in Vite/React
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -62,6 +63,7 @@ interface MapProps {
 }
 
 export default function RouteMap({ gpxUrl, pois }: MapProps) {
+  const { i18n: i18nInstance } = useTranslation();
   const [positions, setPositions] = useState<[number, number][]>([]);
   const [bounds, setBounds] = useState<L.LatLngBoundsExpression | null>(null);
 
@@ -117,6 +119,8 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
         {pois.map((poi) => {
           const CategoryIcon = iconMap[poi.category] || Camera;
           const customIcon = createCustomIcon(CategoryIcon, '#c18182');
+          const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
+          const text = poi.i18n[lang] || poi.i18n.pt;
 
           // For PoIs, we'll use approximate positions around Coimbra for the placeholder
           // In a real app, POI would have lat/lng
@@ -133,8 +137,8 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
             >
               <Popup>
                 <div className="p-1">
-                  <h4 className="font-bold text-slate-900">{poi.name}</h4>
-                  <p className="text-xs text-slate-500">{poi.categoryLabel}</p>
+                  <h4 className="font-bold text-slate-900">{text.name}</h4>
+                  <p className="text-xs text-slate-500">{text.categoryLabel}</p>
                 </div>
               </Popup>
             </Marker>

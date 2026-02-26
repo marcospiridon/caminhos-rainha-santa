@@ -7,9 +7,10 @@ import PathCard from "../components/PathCard";
 import { paths } from "../data/pathsData";
 
 const Paths = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   const [activeFilter, setActiveFilter] = useState<string>(searchParams.get('type') || 'all');
+  const lang = (i18n.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
 
   useEffect(() => {
     const type = searchParams.get('type');
@@ -79,35 +80,38 @@ const Paths = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12"
         >
           <AnimatePresence mode="popLayout">
-            {filteredPaths.map((path) => (
-              <motion.div
-                key={path.id}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-              >
-                <PathCard
-                  title={t(path.titleKey)}
-                  badge={t(path.badgeKey)}
-                  description={t(path.descriptionKey)}
-                  image={path.image}
-                  duration={t(path.durationKey)}
-                  distance={t(path.distanceKey)}
-                  difficulty={t(path.difficultyKey)}
-                  icon={path.type === 'hiking' ? Footprints : Bike}
-                  buttonText={t(path.buttonKey)}
-                  slug={path.slug}
-                />
-              </motion.div>
-            ))}
+            {filteredPaths.map((path) => {
+              const text = path.i18n[lang] || path.i18n.pt;
+              return (
+                <motion.div
+                  key={path.id}
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <PathCard
+                    title={text.title}
+                    badge={text.badge}
+                    description={text.description}
+                    image={path.image}
+                    duration={text.duration}
+                    distance={text.distance}
+                    difficulty={text.difficulty}
+                    icon={path.type === 'hiking' ? Footprints : Bike}
+                    buttonText={text.button}
+                    slug={path.slug}
+                  />
+                </motion.div>
+              );
+            })}
           </AnimatePresence>
         </motion.div>
 
         {filteredPaths.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-slate-400">Nenhum percurso encontrado para este filtro.</p>
+            <p className="text-slate-400">{t('pathsPage.empty')}</p>
           </div>
         )}
       </div>

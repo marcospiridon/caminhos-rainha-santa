@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Ruler, TrendingUp, Clock, BarChart2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface StatsGridProps {
   distance: string;
@@ -9,11 +10,13 @@ interface StatsGridProps {
 }
 
 export default function StatsGrid({ distance, elevation, time, difficulty }: StatsGridProps) {
+  const { t } = useTranslation();
+
   const stats = [
-    { label: 'Distância', value: distance, unit: 'km', icon: Ruler, color: 'text-accent' },
-    { label: 'Subida (+D)', value: elevation, unit: 'm', icon: TrendingUp, color: 'text-accent' },
-    { label: 'Tempo Médio', value: time, unit: '', icon: Clock, color: 'text-accent' },
-    { label: 'Dificuldade', value: difficulty, unit: '', icon: BarChart2, color: 'text-accent' },
+    { label: t('pathPage.stats.distance'), value: distance, unit: 'km', icon: Ruler, color: 'text-accent' },
+    { label: t('pathPage.stats.elevation'), value: elevation, unit: 'm', icon: TrendingUp, color: 'text-accent' },
+    { label: t('pathPage.stats.time'), value: time, unit: '', icon: Clock, color: 'text-accent' },
+    { label: t('pathPage.stats.difficulty'), value: difficulty, unit: '', icon: BarChart2, color: 'text-accent' },
   ];
 
   return (

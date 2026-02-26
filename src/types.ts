@@ -1,19 +1,30 @@
+export type Localized<T> = {
+  pt: T;
+  en: T;
+  es: T;
+};
+
+export interface POITranslations {
+  name: string;
+  categoryLabel: string;
+}
+
 export interface POI {
   id: string;
-  name: string;
   category: 'sleep' | 'eat' | 'see' | 'help';
-  categoryLabel: string;
   imageUrl: string;
   rating: number;
   reviews: number;
+  i18n: Localized<POITranslations>;
+}
+
+export interface NarrativeTranslations {
+  title: string;
+  content: string[];
 }
 
 export interface Narrative {
-  title: string;
-  content: string[];
-  author: string;
-  authorRole: string;
-  authorImage: string;
+  i18n: Localized<NarrativeTranslations>;
 }
 
 export interface PathStage {
@@ -21,24 +32,27 @@ export interface PathStage {
   distance: string;
   elevation: string;
   time: string;
-  difficulty: string;
-  mapImage: string;
+  difficultyKey: string; // Keeps pointing to common translations
   gpxUrl: string;
   narrative: Narrative;
   pois: POI[];
+}
+
+export interface PathTranslations {
+  title: string;
+  badge: string;
+  description: string;
+  duration: string;
+  distance: string;
+  difficulty: string;
+  button: string;
 }
 
 export interface Path {
   id: string;
   slug: string;
   type: 'hiking' | 'cycling';
-  titleKey: string;
-  badgeKey: string;
-  descriptionKey: string;
   image: string;
-  durationKey: string;
-  distanceKey: string;
-  difficultyKey: string;
-  buttonKey: string;
-  details?: PathStage; // Detailed data for the path page
+  i18n: Localized<PathTranslations>;
+  details?: PathStage;
 }

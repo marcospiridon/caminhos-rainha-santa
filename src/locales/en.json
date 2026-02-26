@@ -1,4 +1,11 @@
 {
+  "common": {
+    "difficulty": {
+      "easy": "Easy",
+      "moderate": "Moderate",
+      "hard": "Hard"
+    }
+  },
   "header": {
     "title": "Holy Queen's Way",
     "subtitle": "Historical trails",
@@ -38,29 +45,41 @@
       "difficulty": "Hard"
     }
   },
+  "pathPage": {
+    "notFound": {
+      "title": "Path not found",
+      "description": "The path you are looking for does not exist or does not have details available yet.",
+      "back": "Back to paths"
+    },
+    "sections": {
+      "history": "Historical Context",
+      "pois": "Points of Interest",
+      "elevationProfile": "Elevation Profile"
+    },
+    "stats": {
+      "distance": "Distance",
+      "elevation": "Elevation (+D)",
+      "time": "Average Time",
+      "difficulty": "Difficulty"
+    },
+    "elevation": {
+      "max": "Max",
+      "min": "Min"
+    },
+    "help": {
+      "pharmacy": "Central Pharmacy",
+      "open24h": "Open 24h",
+      "callNow": "Call now"
+    }
+  },
   "pathsPage": {
-    "title": "Explore Paths",
-    "subtitle": "Discover the natural and historical beauty of our region",
     "filters": {
       "all": "All",
       "hiking": "Hiking",
       "cycling": "Cycling"
     },
-    "mondego": {
-      "title": "Mondego Valley",
-      "badge": "Serene",
-      "description": "A gentle route along the Mondego river, ideal for families and nature photography enthusiasts.",
-      "duration": "3 Hours",
-      "distance": "7.5 miles",
-      "difficulty": "Easy"
-    },
-    "mountain": {
-      "title": "Estrela Summit",
-      "badge": "Epic",
-      "description": "A vertical challenge for experienced cyclists with panoramic views over the entire central region.",
-      "duration": "6 Hours",
-      "distance": "28 miles",
-      "difficulty": "Very Hard"
-    }
+    "title": "Our Paths",
+    "subtitle": "Explore the historical trails and stunning landscapes of the Holy Queen.",
+    "empty": "No paths found for this filter."
   }
 }

@@ -8,7 +8,7 @@ import { paths } from "../data/pathsData";
 
 export default function Path() {
   const { slug } = useParams();
-  const { t } = useTranslation();
+  const { t, i18n: i18nInstance } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,15 +20,19 @@ export default function Path() {
   if (!path || !stage) {
     return (
       <div className="flex-grow flex flex-col items-center justify-center pt-32 pb-12 px-6 text-center">
-        <h2 className="text-3xl font-serif mb-4">Percurso não encontrado</h2>
-        <p className="text-slate-600 mb-8">O percurso que procura não existe ou ainda não tem detalhes disponíveis.</p>
+        <h2 className="text-3xl font-serif mb-4">{t('pathPage.notFound.title')}</h2>
+        <p className="text-slate-600 mb-8">{t('pathPage.notFound.description')}</p>
         <Link to="/paths" className="flex items-center gap-2 text-brand font-bold hover:underline">
           <ArrowLeft size={20} />
-          Voltar aos percursos
+          {t('pathPage.notFound.back')}
         </Link>
       </div>
     );
   }
+
+  const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
+  const pathText = path.i18n[lang] || path.i18n.pt;
+  const stageNarrative = stage.narrative.i18n[lang] || stage.narrative.i18n.pt;
 
   return (
     <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -38,14 +42,14 @@ export default function Path() {
           <Link to="/paths" className="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-500">
             <ArrowLeft size={24} />
           </Link>
-          <h1 className="text-4xl md:text-5xl font-serif">{t(path.titleKey)}</h1>
+          <h1 className="text-4xl md:text-5xl font-serif">{pathText.title}</h1>
         </div>
 
         <StatsGrid
           distance={stage.distance}
           elevation={stage.elevation}
           time={stage.time}
-          difficulty={stage.difficulty}
+          difficulty={t(stage.difficultyKey)}
         />
 
         {/* Map Container */}
@@ -65,12 +69,12 @@ export default function Path() {
           className="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 relative overflow-hidden"
         >
           <div className="absolute top-0 left-0 w-2 h-full bg-brand/20" />
-          <span className="inline-block text-brand font-bold tracking-widest text-xs uppercase mb-3">Crónicas da Comitiva</span>
+          <span className="inline-block text-brand font-bold tracking-widest text-xs uppercase mb-3">{t('pathPage.sections.history')}</span>
           <h3 className="font-serif text-3xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
-            {stage.narrative.title}
+            {stageNarrative.title}
           </h3>
           <div className="font-serif text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed text-lg">
-            {stage.narrative.content.map((para, i) => (
+            {stageNarrative.content.map((para, i) => (
               <p key={i}>
                 {i === 0 && (
                   <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
@@ -80,18 +84,6 @@ export default function Path() {
                 {i === 0 ? para.slice(1) : para}
               </p>
             ))}
-          </div>
-          <div className="mt-8 flex items-center gap-4 border-t border-gray-100 dark:border-gray-700 pt-6">
-            <img
-              alt={stage.narrative.author}
-              className="size-12 rounded-full object-cover"
-              src={stage.narrative.authorImage}
-              referrerPolicy="no-referrer"
-            />
-            <div>
-              <p className="text-sm font-bold text-slate-900 dark:text-white">{stage.narrative.author}</p>
-              <p className="text-xs text-gray-500">{stage.narrative.authorRole}</p>
-            </div>
           </div>
         </motion.article>
 

@@ -1,4 +1,11 @@
 {
+  "common": {
+    "difficulty": {
+      "easy": "Fácil",
+      "moderate": "Moderada",
+      "hard": "Difícil"
+    }
+  },
   "header": {
     "title": "Caminos Princesa de Aragón",
     "subtitle": "Rutas históricas",
@@ -38,29 +45,41 @@
       "difficulty": "Difícil"
     }
   },
+  "pathPage": {
+    "notFound": {
+      "title": "Ruto no encontrada",
+      "description": "El percurso que buscas no existe o aún no tiene detalles disponibles.",
+      "back": "Volver a las rutas"
+    },
+    "sections": {
+      "history": "Contexto Histórico",
+      "pois": "Puntos de Interés",
+      "elevationProfile": "Perfil de Elevación"
+    },
+    "stats": {
+      "distance": "Distancia",
+      "elevation": "Ascenso (+D)",
+      "time": "Tiempo Medio",
+      "difficulty": "Dificultad"
+    },
+    "elevation": {
+      "max": "Máx",
+      "min": "Mín"
+    },
+    "help": {
+      "pharmacy": "Farmacia Central",
+      "open24h": "Abierto 24h",
+      "callNow": "Llamar ahora"
+    }
+  },
   "pathsPage": {
-    "title": "Explorar Rutas",
-    "subtitle": "Descubra la belleza natural e histórica de nuestra región",
     "filters": {
       "all": "Todos",
       "hiking": "Peatonal",
       "cycling": "Bicicleta"
     },
-    "mondego": {
-      "title": "Valle del Mondego",
-      "badge": "Sereno",
-      "description": "Una ruta suave a lo largo del río Mondego, ideal para familias y amantes de la fotografía de naturaleza.",
-      "duration": "3 Horas",
-      "distance": "12 km",
-      "difficulty": "Fácil"
-    },
-    "mountain": {
-      "title": "Cima de la Estrela",
-      "badge": "Épico",
-      "description": "Desafío vertical para ciclistas experimentados con vistas panorámicas sobre toda la región centro.",
-      "duration": "6 Horas",
-      "distance": "45 km",
-      "difficulty": "Muy Difícil"
-    }
+    "title": "Nuestros Recorridos",
+    "subtitle": "Explore las rutas históricas y los paisajes deslumbrantes de la Reina Santa.",
+    "empty": "No se encontraron rutas con este filtro."
   }
 }
