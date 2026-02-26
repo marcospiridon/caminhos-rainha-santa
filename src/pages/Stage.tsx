@@ -39,7 +39,7 @@ export default function Stage() {
       {/* Left Column */}
       <div className="lg:col-span-8 flex flex-col gap-10">
         <div className="flex items-start gap-4 mb-2">
-          <Link to="/paths" className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-500 mt-1">
+          <Link to={`/path/${path?.parent?.slug}`} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-500 mt-1">
             <ArrowLeft size={24} />
           </Link>
           <div className="flex flex-col">
