@@ -59,7 +59,7 @@ function ChangeView({ bounds }: { bounds: L.LatLngBoundsExpression | null }) {
 
 interface MapProps {
   gpxUrl: string;
-  pois: POI[];
+  pois?: POI[];
 }
 
 export default function RouteMap({ gpxUrl, pois }: MapProps) {
@@ -116,7 +116,7 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
           />
         )}
 
-        {pois.map((poi) => {
+        {pois && pois.map((poi) => {
           const CategoryIcon = iconMap[poi.category] || Camera;
           const customIcon = createCustomIcon(CategoryIcon, '#c18182');
           const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';

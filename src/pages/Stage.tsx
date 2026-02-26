@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, RouteMap, PathSelection } from "../components";
+import { StatsGrid, ElevationProfile, POISection, RouteMap } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -33,8 +33,6 @@ export default function Path() {
   const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
   const pathText = path.i18n[lang] || path.i18n.pt;
   const stageNarrative = stage.narrative.i18n[lang] || stage.narrative.i18n.pt;
-
-  debugger;
 
   return (
     <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -88,17 +86,10 @@ export default function Path() {
             ))}
           </div>
         </motion.article>
+
+        {stage.pois && <POISection pois={stage.pois} />}
+
       </div>
-      {/* center full width */}
-      <section className="flex flex-col items-center justify-center w-full lg:col-span-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 max-w-2xl mx-auto">
-            <h4 className="text-4xl md:text-5xl mb-6">Etapas</h4>
-            <div className="w-20 h-1 bg-brand/30 mx-auto mb-8"></div>
-          </div>
-          <PathSelection paths={paths.filter(p => p.parent === slug)} />
-        </div>
-      </section>
     </main>
   );
 }

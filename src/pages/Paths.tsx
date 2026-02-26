@@ -19,9 +19,10 @@ const Paths = () => {
     }
   }, [searchParams]);
 
+  const parentPaths = paths.filter(path => path.parent === undefined);
   const filteredPaths = activeFilter === 'all'
-    ? paths
-    : paths.filter(path => path.type === activeFilter);
+    ? parentPaths
+    : parentPaths.filter(path => path.type === activeFilter);
 
   const filterOptions = [
     { id: 'all', label: t('pathsPage.filters.all'), icon: Search },

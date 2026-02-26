@@ -2,8 +2,8 @@ import type { Path } from '../types';
 
 export const paths: Path[] = [
   {
-    id: 'historical-path',
-    slug: 'caminho-historico',
+    id: 'caminho-noiva-real',
+    slug: 'caminho-noiva-real',
     type: 'hiking',
     image: 'gimonde.jpg',
     i18n: {
@@ -32,6 +32,79 @@ export const paths: Path[] = [
         duration: '5 Días',
         distance: '112 km',
         difficulty: 'Moderada',
+        button: 'Ver Ruta Peatonal',
+      }
+    },
+    details: {
+      id: 'historical-path-d',
+      distance: '16.5',
+      elevation: '320',
+      time: '5h 30m',
+      difficultyKey: 'common.difficulty.moderate',
+      gpxUrl: '/gpx/historical-path.gpx',
+      narrative: {
+        i18n: {
+          pt: {
+            title: 'O Caminho que Floresceu com a Passagem da Rainha',
+            content: [
+              'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
+              'Este percurso não é apenas uma travessia geográfica; é uma imersão na lenda. Ao passar por Vila Flor (então chamada Póvoa do Além-Sabor), conta a tradição que a beleza da futura rainha e o seu encanto pelas paisagens foram de tal ordem que o próprio Rei, mais tarde, rebatizou a vila em sua honra. É um trilho marcado pelo aroma do mato e pela dureza do granito, que suaviza ao chegar às imponentes muralhas de Trancoso, onde o casamento foi ratificado com o esplendor das núpcias reais.',
+              'Ao percorrer este caminho, não está apenas a caminhar por Trás-os-Montes e pelas Beiras; está a refazer a logística de uma comitiva medieval, a sentir a brisa que sopra no planalto e a descobrir por que razão, 700 anos depois, ainda chamamos "Santa" àquela que entrou por estas terras como noiva.'
+            ]
+          },
+          en: {
+            title: "The Way that Blossomed with the Queen's Passing",
+            content: [
+              "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
+              "This route is not just a geographical crossing; it is an immersion in legend. When passing through Vila Flor (then called Póvoa do Além-Sabor), tradition says that the beauty of the future queen and her enchantment with the landscapes were such that the King himself later renamed the village in her honor. It is a trail marked by the scent of the scrubland and the hardness of the granite, which softens as it reaches the imposing walls of Trancoso, where the marriage was ratified with the splendor of the royal nuptials.",
+              "By walking this path, you are not just walking through Trás-os-Montes and the Beiras; you are redoing the logistics of a medieval retinue, feeling the breeze blowing on the plateau and discovering why, 700 years later, we still call 'Saint' that who entered these lands as a bride."
+            ]
+          },
+          es: {
+            title: 'El Camino que Floreció con el Paso de la Reina',
+            content: [
+              'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
+              'Este percurso no es solo una travesía geográfica; es una inmersión en la leyenda. Al pasar por Vila Flor (entonces llamada Póvoa do Além-Sabor), cuenta la tradición que la belleza de la futura reina y su encanto por los paisajes fueron de tal orden que el propio Rey, más tarde, rebautizó la villa en su honor. Es un sendero marcado por el aroma del monte y por la dureza del granito, que se suaviza al llegar a las imponentes murallas de Trancoso, donde el matrimonio fue ratificado con el esplendor de las nupcias reales.',
+              'Al recorrer este camino, no está simplemente caminando por Trás-os-Montes y las Beiras; está rehaciendo la logística de una comitiva medieval, sintiendo la brisa que sopla en la meseta y descubriendo por qué razón, 700 después, todavía llamamos "Santa" a la que entró por estas tierras como novia.'
+            ]
+          },
+        }
+      },
+      pois: [],
+    }
+  },
+  {
+    id: 'caminho-da-prata',
+    slug: 'caminho-da-prata',
+    type: 'hiking',
+    image: '/gimonde.jpg',
+    parent: 'caminho-noiva-real',
+    i18n: {
+      pt: {
+        title: 'O Caminho da Prata',
+        badge: 'Peregrinação',
+        description: 'Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
+        duration: '6 horas',
+        distance: '25 km',
+        difficulty: 'Facil',
+        button: 'Ver Rota Pedestre',
+      },
+      en: {
+        title: "The Silver Path",
+        badge: 'Peregrination',
+        description: 'Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
+        duration: '6 hours',
+        distance: '25 km',
+        difficulty: 'Easy',
+        button: 'View Hiking Route',
+      },
+      es: {
+        title: 'El Camino de la Prata',
+        badge: 'Peregrinação',
+        description: 'Ruta común con la variante portuguesa de la ruta de la prata del camino de Santiago',
+        duration: '6 horas',
+        distance: '25 km',
+        difficulty: 'Facil',
         button: 'Ver Ruta Peatonal',
       }
     },

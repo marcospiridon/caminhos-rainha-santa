@@ -55,4 +55,5 @@ export interface Path {
   image: string;
   i18n: Localized<PathTranslations>;
   details?: PathStage;
+  parent?: string;
 }
