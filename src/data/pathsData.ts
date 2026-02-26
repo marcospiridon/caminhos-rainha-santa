@@ -57,7 +57,7 @@ export const paths: Path[] = [
     slug: 'caminho-da-prata',
     type: 'hiking',
     image: '/gimonde.jpg',
-    parent: 'caminho-noiva-real',
+    parentSlug: 'caminho-noiva-real',
     details: {
       id: 'caminho-da-prata-d',
       duration: 6,
@@ -175,3 +175,14 @@ export const paths: Path[] = [
     }
   }
 ];
+
+paths.forEach(p => {
+  if (p.parentSlug) {
+    const parentPath = paths.find(parent => parent.slug === p.parentSlug);
+    if (parentPath) {
+      p.parent = parentPath;
+      if (!parentPath.stages) parentPath.stages = [];
+      parentPath.stages.push(p);
+    }
+  }
+});

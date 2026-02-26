@@ -24,6 +24,7 @@ const PathSelection = ({ paths }: { paths: Path[] }) => {
             icon={path.type === 'hiking' ? Footprints : Bike}
             buttonText={t(`common.button.${path.type}`)}
             slug={path.slug}
+            parentSlug={path.parentSlug}
           />
         );
       })}

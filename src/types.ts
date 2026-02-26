@@ -44,5 +44,7 @@ export interface Path {
   type: 'hiking' | 'cycling';
   image: string;
   details: PathStage;
-  parent?: string;
+  parentSlug?: string;
+  parent?: Path;
+  stages?: Path[];
 }

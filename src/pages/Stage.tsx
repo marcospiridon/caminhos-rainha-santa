@@ -6,15 +6,15 @@ import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
 
-export default function Path() {
-  const { slug } = useParams();
+export default function Stage() {
+  const { slug, stage: stageSlug } = useParams<{ slug: string; stage: string }>();
   const { t, i18n: i18nInstance } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [slug, stageSlug]);
 
-  const path = paths.find(p => p.slug === slug);
+  const path = paths.find(p => p.slug === stageSlug);
   const stage = path?.details;
 
   if (!path || !stage) {
@@ -32,6 +32,7 @@ export default function Path() {
 
   const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
   const stageText = stage.i18n[lang] || stage.i18n.pt;
+  const parentText = path.parent?.details.i18n[lang] || path.parent?.details.i18n.pt;
 
   return (
     <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -42,7 +43,7 @@ export default function Path() {
             <ArrowLeft size={24} />
           </Link>
           <div className="flex flex-col">
-            <h4 className="text-brand font-bold tracking-widest text-xs mb-2">Parent</h4>
+            <h4 className="text-brand font-bold tracking-widest text-xs mb-2 uppercase">{parentText?.title}</h4>
             <h1 className="text-4xl md:text-5xl font-serif">{stageText.title}</h1>
           </div>
         </div>

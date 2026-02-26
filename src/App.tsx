@@ -24,7 +24,7 @@ function App() {
                         {t('pathSelection.description')}
                       </p>
                     </div>
-                    <PathSelection paths={paths.filter(path => path.parent === undefined)} />
+                    <PathSelection paths={paths.filter(path => !path.parentSlug)} />
                   </div>
                 </section>
               </>

@@ -94,7 +94,7 @@ export default function Path() {
             <h4 className="text-4xl md:text-5xl mb-6">{t('pathPage.sections.stages')}</h4>
             <div className="w-20 h-1 bg-brand/30 mx-auto mb-8"></div>
           </div>
-          <PathSelection paths={paths.filter(p => p.parent === slug)} />
+          <PathSelection paths={path.stages || []} />
         </div>
       </section>
     </main>
