@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, RouteMap, PathSelection } from "../components";
+import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -34,15 +34,25 @@ export default function Path() {
   const stageText = stage.i18n[lang] || stage.i18n.pt;
 
   return (
-    <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-32 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
-      {/* Left Column */}
-      <div className="lg:col-span-8 flex flex-col gap-10">
-        <div className="flex items-center gap-4 mb-2">
-          <Link to="/paths" className="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-500">
-            <ArrowLeft size={24} />
-          </Link>
-          <h1 className="text-4xl md:text-5xl font-serif">{stageText.title}</h1>
-        </div>
+    <div className="flex flex-col flex-grow w-full">
+      <HeroHeader
+        image={path.image}
+        type={path.type}
+        parentTitle={''}
+        title={stageText.title}
+        badge={stageText.badge}
+        description={stageText.description || ''}
+        backLink="/paths"
+      />
+
+      <StickyActionBar
+        label="Percurso"
+        title={stageText.title}
+        gpxUrl={stage.gpxUrl}
+      />
+
+      <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-10 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div className="lg:col-span-8 flex flex-col gap-10">
 
         <StatsGrid
           distance={stage.distance}
@@ -97,6 +107,7 @@ export default function Path() {
           <PathSelection paths={path.stages || []} />
         </div>
       </section>
-    </main>
+      </main>
+    </div>
   );
 }
