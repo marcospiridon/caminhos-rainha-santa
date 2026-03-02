@@ -13,7 +13,7 @@ const PathSelection = ({ paths }: { paths: Path[] }) => {
         const text = path.details.i18n[lang] || path.details.i18n.pt;
         return (
           <PathCard
-            key={path.id}
+            key={path.slug}
             title={text.title}
             badge={text.badge}
             description={text.description}

@@ -85,7 +85,7 @@ const Paths = () => {
               const text = path.details.i18n[lang] || path.details.i18n.pt;
               return (
                 <motion.div
-                  key={path.id}
+                  key={path.slug}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
