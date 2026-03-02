@@ -8,8 +8,8 @@ export const paths: Path[] = [
     details: {
       duration: 5,
       durationUnit: 'days',
-      distance: '112',
-      elevation: '320',
+      distance: 112,
+      elevation: 320,
       difficultyKey: 'common.difficulty.moderate',
       gpxUrl: '/gpx/historical-path.gpx',
       i18n: {
@@ -56,12 +56,13 @@ export const paths: Path[] = [
     image: '/via-da-prata.jpg',
     parentSlug: 'caminho-noiva-real',
     details: {
-      duration: 6,
+      duration: 8,
       durationUnit: 'hours',
-      distance: '25',
-      elevation: '320',
-      difficultyKey: 'common.difficulty.easy',
-      gpxUrl: '/gpx/historical-path.gpx',
+      distance: 27.2,
+      elevation: 628,
+      minAltitude: 516,
+      maxAltitude: 880,
+      difficultyKey: 'common.difficulty.moderate',
       i18n: {
         pt: {
           title: 'Via da Prata',
@@ -99,27 +100,135 @@ export const paths: Path[] = [
       },
       pois: [
         {
-          id: 'poi-1',
-          category: 'see',
-          imageUrl: 'https://images.unsplash.com/photo-1584281723528-766b96fca0f4?auto=format&fit=crop&q=80&w=200',
-          rating: 4.8,
-          reviews: 124,
+          category: 'sleep',
+          contact: '+351 966 048 612 (Sr. Álvaro Lopes)',
+          latlng: [41.7507436, -6.5715525],
           i18n: {
-            pt: { name: 'Fonte da Rainha', categoryLabel: 'Marco Histórico' },
-            en: { name: "Queen's Fountain", categoryLabel: 'Historical Landmark' },
-            es: { name: 'Fuente de la Reina', categoryLabel: 'Hito Histórico' }
+            pt: { name: 'Albergue de Peregrinos de Quintanilha', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Quintanilha", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Quintanilha', categoryLabel: 'Albergue' }
           }
         },
         {
-          id: 'poi-2',
           category: 'sleep',
-          imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=200',
-          rating: 4.9,
-          reviews: 86,
+          contact: '+351 273 240 020',
+          latlng: [41.8038025, -6.7505367],
           i18n: {
-            pt: { name: 'Alcanena Guesthouse', categoryLabel: 'Alojamento Local' },
-            en: { name: 'Alcanena Guesthouse', categoryLabel: 'Local Accommodation' },
-            es: { name: 'Alcanena Guesthouse', categoryLabel: 'Alojamiento Local' }
+            pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '+351 273 382 555',
+          latlng: [41.8013253, -6.6975608],
+          i18n: {
+            pt: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' },
+            en: { name: "O Abel Restaurant", categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '+351 273 926 425',
+          latlng: [41.8175611, -6.6294250],
+          i18n: {
+            pt: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' },
+            en: { name: "Lombada Restaurant", categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' }
+          }
+        }
+      ]
+    }
+  },
+  {
+    slug: 'ecopista',
+    type: 'hiking',
+    image: '/ecopista.jpg',
+    parentSlug: 'caminho-noiva-real',
+    details: {
+      duration: 8,
+      durationUnit: 'hours',
+      distance: 27.2,
+      elevation: 628,
+      minAltitude: 516,
+      maxAltitude: 880,
+      difficultyKey: 'common.difficulty.moderate',
+      i18n: {
+        pt: {
+          title: 'Linha do Tua',
+          badge: 'Ecopista',
+          description: 'Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
+          narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
+          content: [
+            'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
+            'Este percurso não é apenas uma travessia geográfica; é uma imersão na lenda. Ao passar por Vila Flor (então chamada Póvoa do Além-Sabor), conta a tradição que a beleza da futura rainha e o seu encanto pelas paisagens foram de tal ordem que o próprio Rei, mais tarde, rebatizou a vila em sua honra. É um trilho marcado pelo aroma do mato e pela dureza do granito, que suaviza ao chegar às imponentes muralhas de Trancoso, onde o casamento foi ratificado com o esplendor das núpcias reais.',
+            'Ao percorrer este caminho, não está apenas a caminhar por Trás-os-Montes e pelas Beiras; está a refazer a logística de uma comitiva medieval, a sentir a brisa que sopra no planalto e a descobrir por que razão, 700 anos depois, ainda chamamos "Santa" àquela que entrou por estas terras como noiva.'
+          ]
+        },
+        en: {
+          title: "Silver Path",
+          badge: 'Peregrination',
+          description: 'Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
+          narrativeTitle: "The Way that Blossomed with the Queen's Passing",
+          content: [
+            "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
+            "This route is not just a geographical crossing; it is an immersion in legend. When passing through Vila Flor (then called Póvoa do Além-Sabor), tradition says that the beauty of the future queen and her enchantment with the landscapes were such that the King himself later renamed the village in her honor. It is a trail marked by the scent of the scrubland and the hardness of the granite, which softens as it reaches the imposing walls of Trancoso, where the marriage was ratified with the splendor of the royal nuptials.",
+            "By walking this path, you are not just walking through Trás-os-Montes and the Beiras; you are redoing the logistics of a medieval retinue, feeling the breeze blowing on the plateau and discovering why, 700 years later, we still call 'Saint' that who entered these lands as a bride."
+          ]
+        },
+        es: {
+          title: 'Vía de la Plata',
+          badge: 'Peregrinação',
+          description: 'Ruta común con la variante portuguesa de la ruta de la plata del camino de Santiago',
+          narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
+          content: [
+            'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
+            'Este percurso no es solo una travesía geográfica; es una inmersión en la leyenda. Al pasar por Vila Flor (entonces llamada Póvoa do Além-Sabor), cuenta la tradición que la belleza de la futura reina y su encanto por los paisajes fueron de tal orden que el propio Rey, más tarde, rebautizó la villa en su honor. Es un sendero marcado por el aroma del monte y por la dureza del granito, que se suaviza al llegar a las imponentes murallas de Trancoso, donde el matrimonio fue ratificado con el esplendor de las nupcias reales.',
+            'Al recorrer este camino, no está simplemente caminando por Trás-os-Montes y las Beiras; está rehaciendo la logística de una comitiva medieval, sintiendo la brisa que sopla en la meseta y descubriendo por qué razón, 700 después, todavía llamamos "Santa" a la que entró por estas tierras como novia.'
+          ]
+        }
+      },
+      pois: [
+        {
+          category: 'sleep',
+          contact: '+351 966 048 612 (Sr. Álvaro Lopes)',
+          latlng: [41.7507436, -6.5715525],
+          i18n: {
+            pt: { name: 'Albergue de Peregrinos de Quintanilha', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Quintanilha", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Quintanilha', categoryLabel: 'Albergue' }
+          }
+        },
+        {
+          category: 'sleep',
+          contact: '+351 273 240 020',
+          latlng: [41.8038025, -6.7505367],
+          i18n: {
+            pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '+351 273 382 555',
+          latlng: [41.8013253, -6.6975608],
+          i18n: {
+            pt: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' },
+            en: { name: "O Abel Restaurant", categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '+351 273 926 425',
+          latlng: [41.8175611, -6.6294250],
+          i18n: {
+            pt: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' },
+            en: { name: "Lombada Restaurant", categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' }
           }
         }
       ]
@@ -133,8 +242,8 @@ export const paths: Path[] = [
     details: {
       duration: 6,
       durationUnit: 'hours',
-      distance: '25',
-      elevation: '320',
+      distance: 25,
+      elevation: 320,
       difficultyKey: 'common.difficulty.easy',
       gpxUrl: '/gpx/historical-path.gpx',
       i18n: {
@@ -249,11 +358,9 @@ export const paths: Path[] = [
       },
       pois: [
         {
-          id: 'poi-1',
+
           category: 'see',
           imageUrl: 'https://images.unsplash.com/photo-1584281723528-766b96fca0f4?auto=format&fit=crop&q=80&w=200',
-          rating: 4.8,
-          reviews: 124,
           i18n: {
             pt: { name: 'Fonte da Rainha', categoryLabel: 'Marco Histórico' },
             en: { name: "Queen's Fountain", categoryLabel: 'Historical Landmark' },
@@ -261,11 +368,9 @@ export const paths: Path[] = [
           }
         },
         {
-          id: 'poi-2',
+
           category: 'sleep',
           imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=200',
-          rating: 4.9,
-          reviews: 86,
           i18n: {
             pt: { name: 'Alcanena Guesthouse', categoryLabel: 'Alojamento Local' },
             en: { name: 'Alcanena Guesthouse', categoryLabel: 'Local Accommodation' },

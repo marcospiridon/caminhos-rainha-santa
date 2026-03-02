@@ -4,7 +4,7 @@ import L from 'leaflet';
 import * as toGeoJSON from '@tmcw/togeojson';
 import 'leaflet/dist/leaflet.css';
 import type { POI } from '../types';
-import { Bed, Utensils, Camera, HeartPulse } from 'lucide-react';
+import { Bed, Utensils, Camera, HeartPulse, Droplet } from 'lucide-react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { useTranslation } from 'react-i18next';
 
@@ -27,6 +27,7 @@ const iconMap = {
   eat: Utensils,
   see: Camera,
   help: HeartPulse,
+  water: Droplet,
 };
 
 const createCustomIcon = (CategoryIcon: any, color: string) => {
@@ -111,8 +112,8 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
           <Polyline
             positions={positions}
             color="#c18182"
-            weight={5}
-            opacity={0.8}
+            weight={8}
+            opacity={1}
           />
         )}
 
@@ -122,23 +123,17 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
           const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
           const text = poi.i18n[lang] || poi.i18n.pt;
 
-          // For PoIs, we'll use approximate positions around Coimbra for the placeholder
-          // In a real app, POI would have lat/lng
-          const mockLatLng: [number, number] = [
-            40.2033 + (Math.random() - 0.5) * 0.01,
-            -8.4103 + (Math.random() - 0.5) * 0.01
-          ];
-
           return (
             <Marker
-              key={poi.id}
-              position={mockLatLng}
+              key={poi.i18n.pt.name}
+              position={poi.latlng}
               icon={customIcon}
             >
               <Popup>
                 <div className="p-1">
                   <h4 className="font-bold text-slate-900">{text.name}</h4>
                   <p className="text-xs text-slate-500">{text.categoryLabel}</p>
+                  <p className="text-xs text-slate-500">{poi.contact}</p>
                 </div>
               </Popup>
             </Marker>

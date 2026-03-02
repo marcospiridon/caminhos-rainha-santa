@@ -3,8 +3,8 @@ import { Ruler, TrendingUp, Clock, BarChart2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 interface StatsGridProps {
-  distance: string;
-  elevation: string;
+  distance: number;
+  elevation: number;
   duration: number;
   durationUnit: 'hours' | 'days';
   difficulty: string;

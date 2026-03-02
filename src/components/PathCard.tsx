@@ -29,7 +29,7 @@ const PathCard = ({ title, description, image, badge, duration, distance, diffic
         </div>
         <div className="flex items-center gap-1.5">
           <Map className="w-4 h-4 text-brand" />
-          {distance}
+          {distance} km
         </div>
         <div className="flex items-center gap-1.5">
           <BarChart3 className="w-4 h-4 text-brand" />

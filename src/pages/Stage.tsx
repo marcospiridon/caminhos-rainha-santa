@@ -9,6 +9,7 @@ import { paths } from "../data/pathsData";
 export default function Stage() {
   const { slug, stage: stageSlug } = useParams<{ slug: string; stage: string }>();
   const { t, i18n: i18nInstance } = useTranslation();
+  const gpxUrl = `/gpx/${stageSlug}.gpx`;
 
 
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function Stage() {
       <StickyActionBar
         label={t('pathPage.sections.currentStage')}
         title={stageText.title}
-        gpxUrl={stage.gpxUrl}
+        gpxUrl={gpxUrl}
       />
 
       {/* Main Content */}
@@ -68,10 +69,10 @@ export default function Stage() {
 
         {/* Map Container */}
         <section className="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 relative h-[500px] w-full bg-gray-100 group">
-          <RouteMap gpxUrl={stage.gpxUrl} pois={stage.pois} />
+          <RouteMap gpxUrl={gpxUrl} pois={stage.pois} />
         </section>
 
-        <ElevationProfile />
+        {stageSlug && <ElevationProfile slug={stageSlug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
       </div>
 
       {/* Right Column */}
