@@ -10,8 +10,9 @@ export const paths: Path[] = [
       durationUnit: 'days',
       distance: 112,
       elevation: 320,
+      minAltitude: 0,
+      maxAltitude: 320,
       difficultyKey: 'common.difficulty.moderate',
-      gpxUrl: '/gpx/historical-path.gpx',
       i18n: {
         pt: {
           title: 'Caminho da Noiva Real',
@@ -244,8 +245,9 @@ export const paths: Path[] = [
       durationUnit: 'hours',
       distance: 25,
       elevation: 320,
+      minAltitude: 516,
+      maxAltitude: 880,
       difficultyKey: 'common.difficulty.easy',
-      gpxUrl: '/gpx/historical-path.gpx',
       i18n: {
         pt: {
           title: 'Rossas > Macedo de Cavaleiros',
@@ -283,11 +285,9 @@ export const paths: Path[] = [
       },
       pois: [
         {
-          id: 'poi-1',
           category: 'see',
-          imageUrl: 'https://images.unsplash.com/photo-1584281723528-766b96fca0f4?auto=format&fit=crop&q=80&w=200',
-          rating: 4.8,
-          reviews: 124,
+          contact: 'www.fontedarainha.pt',
+          latlng: [40.6062, -8.6332],
           i18n: {
             pt: { name: 'Fonte da Rainha', categoryLabel: 'Marco Histórico' },
             en: { name: "Queen's Fountain", categoryLabel: 'Historical Landmark' },
@@ -295,11 +295,9 @@ export const paths: Path[] = [
           }
         },
         {
-          id: 'poi-2',
           category: 'sleep',
-          imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=200',
-          rating: 4.9,
-          reviews: 86,
+          contact: 'www.alcanenaguesthouse.pt',
+          latlng: [40.6062, -8.6332],
           i18n: {
             pt: { name: 'Alcanena Guesthouse', categoryLabel: 'Alojamento Local' },
             en: { name: 'Alcanena Guesthouse', categoryLabel: 'Local Accommodation' },
@@ -317,10 +315,11 @@ export const paths: Path[] = [
     details: {
       duration: 6,
       durationUnit: 'hours',
-      distance: '25',
-      elevation: '320',
+      distance: 25,
+      elevation: 320,
+      minAltitude: 0,
+      maxAltitude: 320,
       difficultyKey: 'common.difficulty.easy',
-      gpxUrl: '/gpx/historical-path.gpx',
       i18n: {
         pt: {
           title: 'Macedo > Mirandela',
@@ -358,9 +357,9 @@ export const paths: Path[] = [
       },
       pois: [
         {
-
           category: 'see',
-          imageUrl: 'https://images.unsplash.com/photo-1584281723528-766b96fca0f4?auto=format&fit=crop&q=80&w=200',
+          contact: 'www.fontedarainha.pt',
+          latlng: [40.6062, -8.6332],
           i18n: {
             pt: { name: 'Fonte da Rainha', categoryLabel: 'Marco Histórico' },
             en: { name: "Queen's Fountain", categoryLabel: 'Historical Landmark' },
@@ -368,9 +367,9 @@ export const paths: Path[] = [
           }
         },
         {
-
           category: 'sleep',
-          imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=200',
+          contact: 'www.alcanenaguesthouse.pt',
+          latlng: [40.6062, -8.6332],
           i18n: {
             pt: { name: 'Alcanena Guesthouse', categoryLabel: 'Alojamento Local' },
             en: { name: 'Alcanena Guesthouse', categoryLabel: 'Local Accommodation' },
@@ -387,10 +386,11 @@ export const paths: Path[] = [
     details: {
       duration: 2,
       durationUnit: 'days',
-      distance: '85',
-      elevation: '1200',
+      distance: 85,
+      elevation: 1200,
       difficultyKey: 'common.difficulty.hard',
-      gpxUrl: '/gpx/gravel-adventure.gpx',
+      minAltitude: 0,
+      maxAltitude: 1200,
       i18n: {
         pt: {
           title: 'Aventura Gravel',

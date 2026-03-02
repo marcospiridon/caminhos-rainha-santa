@@ -10,6 +10,8 @@ export default function Path() {
   const { slug } = useParams();
   const { t, i18n: i18nInstance } = useTranslation();
 
+  const gpxUrl = `/gpx/${slug}.gpx`;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [slug]);
@@ -48,7 +50,7 @@ export default function Path() {
       <StickyActionBar
         label="Percurso"
         title={stageText.title}
-        gpxUrl={stage.gpxUrl}
+        gpxUrl={gpxUrl}
       />
 
       <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-10 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -64,10 +66,10 @@ export default function Path() {
 
         {/* Map Container */}
         <section className="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 relative h-[500px] w-full bg-gray-100 group">
-          <RouteMap gpxUrl={stage.gpxUrl} pois={stage.pois} />
+          <RouteMap gpxUrl={gpxUrl} pois={stage.pois} />
         </section>
 
-        <ElevationProfile />
+        {slug && <ElevationProfile slug={slug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
       </div>
 
       {/* Right Column */}
