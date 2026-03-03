@@ -29,6 +29,7 @@ const HeroHeader = ({ image, type, title, parentTitle, badge, description, backL
           className="w-full h-full object-cover brightness-75"
           src={image}
           referrerPolicy="no-referrer"
+          style={{ marginTop: '0px', height: '950px' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-slate-900/20" />
       </motion.div>
