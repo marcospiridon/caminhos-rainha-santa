@@ -64,6 +64,10 @@
       "pharmacy": "Farmácia Central",
       "open24h": "Aberto 24h",
       "callNow": "Ligar agora"
+    },
+    "navigation": {
+      "previous": "Anterior",
+      "next": "Próxima"
     }
   },
   "pathsPage": {

@@ -68,7 +68,7 @@ export const paths: Path[] = [
         pt: {
           title: 'Via da Prata',
           badge: 'Peregrinação',
-          description: 'Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
+          description: 'Onde Isabel conheceu o seu povo. Cruze a fronteira de Quintanilha e sinta a emoção do primeiro encontro da Rainha com as terras e as gentes de Portugal. Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
           narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
           content: [
             'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
@@ -79,7 +79,7 @@ export const paths: Path[] = [
         en: {
           title: "Silver Path",
           badge: 'Peregrination',
-          description: 'Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
+          description: 'Where a Queen met her people. Cross the border at Quintanilha and relive the emotion of Isabel’s first encounter with the land and people of Portugal. Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
           narrativeTitle: "The Way that Blossomed with the Queen's Passing",
           content: [
             "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
@@ -90,7 +90,7 @@ export const paths: Path[] = [
         es: {
           title: 'Vía de la Plata',
           badge: 'Peregrinação',
-          description: 'Ruta común con la variante portuguesa de la ruta de la plata del camino de Santiago',
+          description: 'Donde Isabel conoció a su pueblo. Cruce la frontera de Quintanilha y sienta la emoción del primer encuentro de la Reina con las tierras y las gentes de Portugal. Ruta común con la variante portuguesa de la ruta de la plata del camino de Santiago',
           narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
           content: [
             'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
@@ -149,13 +149,13 @@ export const paths: Path[] = [
     image: '/linha-do-tua.jpg',
     parentSlug: 'caminho-noiva-real',
     details: {
-      duration: 7,
+      duration: 8,
       durationUnit: 'hours',
-      distance: 27.3,
-      elevation: 374,
+      distance: 27.6,
+      elevation: 518,
       minAltitude: 657,
-      maxAltitude: 863,
-      difficultyKey: 'common.difficulty.easy',
+      maxAltitude: 860,
+      difficultyKey: 'common.difficulty.moderate',
       i18n: {
         pt: {
           title: 'Linha do Tua',
@@ -168,7 +168,7 @@ export const paths: Path[] = [
             'Rainha Santa Isabel tenha encontrado repouso e abrigo na sua primeira noite após Bragança. O silêncio dos seus absides circulares convida a uma pausa contemplativa.',
             'O caminho segue por onde outrora o vapor e o ferro da Linha do Tua rasgavam a paisagem, agora convertido em ecopista, um caminho suave, plano e rodeado de natureza. Caminhar ou pedalar por este antigo traçado ferroviário é deslizar pela história, ',
             'O percurso segue depois pela Capela de Pereiro, um pequeno tesouro de devoção local, onde dizem as gentes que a Rainha Santa Isabel tenha feito uma paragem para rezar.',
-            'terminando na tranquilidade rural de Santa Comba de Rossas, onde o tempo parece ter outra velocidade.'
+            'Terminando na tranquilidade rural de Santa Comba de Rossas, onde o tempo parece ter outra velocidade.'
           ]
         },
         en: {
@@ -195,16 +195,6 @@ export const paths: Path[] = [
       pois: [
         {
           category: 'sleep',
-          contact: '+351 966 048 612 (Sr. Álvaro Lopes)',
-          latlng: [41.7507436, -6.5715525],
-          i18n: {
-            pt: { name: 'Albergue de Peregrinos de Quintanilha', categoryLabel: 'Albergue' },
-            en: { name: "Peregrino's Guesthouse Quintanilha", categoryLabel: 'Guesthouse' },
-            es: { name: 'Albergue de Peregrinos Quintanilha', categoryLabel: 'Albergue' }
-          }
-        },
-        {
-          category: 'sleep',
           contact: '+351 273 240 020',
           latlng: [41.8038025, -6.7505367],
           i18n: {
@@ -214,95 +204,122 @@ export const paths: Path[] = [
           }
         },
         {
-          category: 'eat',
-          contact: '+351 273 382 555',
-          latlng: [41.8013253, -6.6975608],
+          category: 'sleep',
+          contact: '+351 938 712 419',
+          latlng: [41.6687511, -6.8243661],
           i18n: {
-            pt: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' },
-            en: { name: "O Abel Restaurant", categoryLabel: 'Restaurant' },
-            es: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' }
+            pt: { name: 'Glamping Hills', categoryLabel: 'Glamping' },
+            en: { name: "Glamping Hills", categoryLabel: 'Glamping' },
+            es: { name: 'Glamping Hills', categoryLabel: 'Glamping' }
           }
         },
         {
           category: 'eat',
-          contact: '+351 273 926 425',
-          latlng: [41.8175611, -6.6294250],
+          contact: '+351 273 313 074',
+          latlng: [41.7645117, -6.8031222],
           i18n: {
-            pt: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' },
-            en: { name: "Lombada Restaurant", categoryLabel: 'Restaurant' },
-            es: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' }
+            pt: { name: 'Serra de Nogueira', categoryLabel: 'Restaurante' },
+            en: { name: "Serra de Nogueira", categoryLabel: 'Restaurant' },
+            es: { name: 'Serra de Nogueira', categoryLabel: 'Restaurante' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.6629528, -6.8278150],
+          i18n: {
+            pt: { name: 'Café Reboledo', categoryLabel: 'Café' },
+            en: { name: "Café Reboledo", categoryLabel: 'Coffee Shop' },
+            es: { name: 'Café Reboledo', categoryLabel: 'Chiringuito' }
           }
         }
       ]
     }
   },
   {
-    slug: 'macedo-de-cavaleiros',
+    slug: 'albufeira-do-azibo',
     type: 'hiking',
-    image: '/macedo-de-cavaleiros.jpg',
+    image: '/albufeira-do-azibo.png',
     parentSlug: 'caminho-noiva-real',
     details: {
-      duration: 6,
+      duration: 7,
       durationUnit: 'hours',
-      distance: 25,
-      elevation: 320,
-      minAltitude: 516,
-      maxAltitude: 880,
+      distance: 28.5,
+      elevation: 172,
+      minAltitude: 550,
+      maxAltitude: 900,
       difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
-          title: 'Rossas > Macedo de Cavaleiros',
-          badge: 'Peregrinação',
-          description: 'Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
-          narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
+          title: 'Entre Máscaras e Águas Azuis',
+          badge: 'Paisagem Protegida',
+          description: 'Uma travessia que liga o mundo rural e místico à pureza da natureza. Passando pelas aldeias típicas de Salsas e Salselas, o percurso culmina na Albufeira do Azibo, um oásis de biodiversidade no coração do Geopark Terras de Cavaleiros.',
+          narrativeTitle: 'Siga o brilho no horizonte. Deixe as tradições ancestrais de Salsas e Salselas guiarem os seus passos até ao encontro mágico com as águas serenas do Azibo.',
           content: [
-            'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
-            'Este percurso não é apenas uma travessia geográfica; é uma imersão na lenda. Ao passar por Vila Flor (então chamada Póvoa do Além-Sabor), conta a tradição que a beleza da futura rainha e o seu encanto pelas paisagens foram de tal ordem que o próprio Rei, mais tarde, rebatizou a vila em sua honra. É um trilho marcado pelo aroma do mato e pela dureza do granito, que suaviza ao chegar às imponentes muralhas de Trancoso, onde o casamento foi ratificado com o esplendor das núpcias reais.',
-            'Ao percorrer este caminho, não está apenas a caminhar por Trás-os-Montes e pelas Beiras; está a refazer a logística de uma comitiva medieval, a sentir a brisa que sopra no planalto e a descobrir por que razão, 700 anos depois, ainda chamamos "Santa" àquela que entrou por estas terras como noiva.'
+            'Partindo de Santa Comba de Rossas, o caminho entra numa zona onde a terra respira tradição. A primeira paragem é Salsas, terra de rituais pagãos e dos icónicos Caretos, cujos chocalhos e máscaras coloridas mantêm viva uma energia que a Rainha Santa certamente teria achado fascinante. Logo adiante, Salselas recebe-nos com o seu Museu Rural, um guardião da memória transmontana que preserva os ciclos da agricultura e da vida comunitária.',
+            'Mas o grande "clímax" desta etapa é a chegada à Albufeira do Azibo. Classificada como Paisagem Protegida e parte do Geopark Terras de Cavaleiros (UNESCO), este espelho de água é um santuário de paz. Onde outrora os pastores guiavam os rebanhos, hoje o caminhante encontra praias fluviais de águas límpidas e uma fauna vibrante. O percurso termina em Macedo de Cavaleiros, a cidade que serve de porta de entrada para este paraíso natural, unindo o conforto moderno à força da terra.'
           ]
         },
         en: {
-          title: "Rossas > Macedo",
-          badge: 'Peregrination',
-          description: 'Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
-          narrativeTitle: "The Way that Blossomed with the Queen's Passing",
+          title: "Between Masks and Blue Waters",
+          badge: 'Protected Landscape',
+          description: 'A journey connecting the rural and mystical world to the purity of nature. Passing through the traditional villages of Salsas and Salselas, the trail culminates at the Azibo Reservoir, an oasis of biodiversity in the heart of the Terras de Cavaleiros Geopark.',
+          narrativeTitle: "Follow the glow on the horizon. Let the ancestral traditions of Salsas and Salselas guide your steps toward a magical encounter with the serene waters of Azibo.",
           content: [
-            "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
-            "This route is not just a geographical crossing; it is an immersion in legend. When passing through Vila Flor (then called Póvoa do Além-Sabor), tradition says that the beauty of the future queen and her enchantment with the landscapes were such that the King himself later renamed the village in her honor. It is a trail marked by the scent of the scrubland and the hardness of the granite, which softens as it reaches the imposing walls of Trancoso, where the marriage was ratified with the splendor of the royal nuptials.",
-            "By walking this path, you are not just walking through Trás-os-Montes and the Beiras; you are redoing the logistics of a medieval retinue, feeling the breeze blowing on the plateau and discovering why, 700 years later, we still call 'Saint' that who entered these lands as a bride."
+            'Starting from Santa Comba de Rossas, the path enters an area where the land breathes tradition. The first stop is Salsas, a land of pagan rituals and the iconic Caretos, whose cowbells and colorful masks keep alive an energy that the Saint Queen would surely have found fascinating. Shortly after, Salselas welcomes us with its Rural Museum, a guardian of Transmontano memory that preserves the cycles of agriculture and community life.',
+            'However, the great climax of this stage is the arrival at the Azibo Reservoir. Classified as a Protected Landscape and part of the UNESCO Terras de Cavaleiros Geopark, this mirror of water is a sanctuary of peace. Where shepherds once guided their flocks, travelers now find river beaches with crystal-clear waters and vibrant wildlife. The journey ends in Macedo de Cavaleiros, the gateway town to this natural paradise, blending modern comfort with the raw power of the land.'
           ]
         },
         es: {
-          title: 'Rossas > Macedo',
-          badge: 'Peregrinação',
-          description: 'Ruta común con la variante portuguesa de la ruta de la plata del camino de Santiago',
-          narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
+          title: 'Entre Máscaras y Águas Azules',
+          badge: 'Paisaje Protegido',
+          description: 'A journey connecting the rural and mystical world to the purity of nature. Passing through the traditional villages of Salsas and Salselas, the trail culminates at the Azibo Reservoir, an oasis of biodiversity in the heart of the Terras de Cavaleiros Geopark.',
+          narrativeTitle: 'Siga el brillo en el horizonte. Deje que las tradiciones ancestrales de Salsas y Salselas guíen sus pasos hasta el encuentro mágico con las serenas aguas del Azibo.',
           content: [
-            'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
-            'Este percurso no es solo una travesía geográfica; es una inmersión en la leyenda. Al pasar por Vila Flor (entonces llamada Póvoa do Além-Sabor), cuenta la tradición que la belleza de la futura reina y su encanto por los paisajes fueron de tal orden que el propio Rey, más tarde, rebautizó la villa en su honor. Es un sendero marcado por el aroma del monte y por la dureza del granito, que se suaviza al llegar a las imponentes murallas de Trancoso, donde el matrimonio fue ratificado con el esplendor de las nupcias reales.',
-            'Al recorrer este camino, no está simplemente caminando por Trás-os-Montes y las Beiras; está rehaciendo la logística de una comitiva medieval, sintiendo la brisa que sopla en la meseta y descubriendo por qué razón, 700 después, todavía llamamos "Santa" a la que entró por estas tierras como novia.'
+            'Partiendo de Santa Comba de Rossas, el camino se adentra en una zona donde la tierra respira tradición. La primera parada es Salsas, tierra de rituales paganos y de los icónicos Caretos, cuyos cencerros y máscaras coloridas mantienen viva una energía que la Reina Santa seguramente habría encontrado fascinante. Poco después, Salselas nos recibe con su Museo Rural, un guardián de la memoria transmontana que preserva los ciclos de la agricultura y la vida comunitaria.',
+            'Pero el gran "clímax" de esta etapa es la llegada al Embalse del Azibo. Clasificado como Paisaje Protegido y parte del Geopark Terras de Cavaleiros (UNESCO), este espejo de agua es un santuario de paz. Donde antaño los pastores guiaban sus rebaños, hoy el caminante encuentra playas fluviales de aguas cristalinas y una fauna vibrante. El recorrido termina en Macedo de Cavaleiros, la ciudad que sirve de puerta de entrada a este paraíso natural, uniendo el confort moderno con la fuerza de la tierra.'
           ]
         }
       },
       pois: [
         {
-          category: 'see',
-          contact: 'www.fontedarainha.pt',
-          latlng: [40.6062, -8.6332],
+          category: 'sleep',
+          contact: '+351 938 712 419',
+          latlng: [41.6687511, -6.8243661],
           i18n: {
-            pt: { name: 'Fonte da Rainha', categoryLabel: 'Marco Histórico' },
-            en: { name: "Queen's Fountain", categoryLabel: 'Historical Landmark' },
-            es: { name: 'Fuente de la Reina', categoryLabel: 'Hito Histórico' }
+            pt: { name: 'Glamping Hills', categoryLabel: 'Glamping' },
+            en: { name: "Glamping Hills", categoryLabel: 'Glamping' },
+            es: { name: 'Glamping Hills', categoryLabel: 'Glamping' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '967983398',
+          latlng: [41.5433628, -6.8982536],
+          i18n: {
+            pt: { name: 'Cervejaria Dom', categoryLabel: 'Cervejaria' },
+            en: { name: 'Cervejaria Dom', categoryLabel: 'Pub' },
+            es: { name: 'Cervejaria Dom', categoryLabel: 'Cervejaria' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.5518339, -6.8741514],
+          i18n: {
+            pt: { name: 'Café da Santa Joana', categoryLabel: 'Café' },
+            en: { name: 'Café da Santa Joana', categoryLabel: 'Coffee Shop' },
+            es: { name: 'Café da Santa Joana', categoryLabel: 'Chiringuito' }
           }
         },
         {
           category: 'sleep',
-          contact: 'www.alcanenaguesthouse.pt',
-          latlng: [40.6062, -8.6332],
+          contact: '+351 278 421 236',
+          latlng: [41.5356639, -6.9582678],
           i18n: {
-            pt: { name: 'Alcanena Guesthouse', categoryLabel: 'Alojamento Local' },
-            en: { name: 'Alcanena Guesthouse', categoryLabel: 'Local Accommodation' },
-            es: { name: 'Alcanena Guesthouse', categoryLabel: 'Alojamiento Local' }
+            pt: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' },
+            en: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' },
+            es: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' }
           }
         }
       ]

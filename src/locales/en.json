@@ -64,6 +64,10 @@
       "pharmacy": "Central Pharmacy",
       "open24h": "Open 24h",
       "callNow": "Call now"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next"
     }
   },
   "pathsPage": {

@@ -36,6 +36,15 @@ export default function Stage() {
   const stageText = stage.i18n[lang] || stage.i18n.pt;
   const parentText = path.parent?.details.i18n[lang] || path.parent?.details.i18n.pt;
 
+  // Navigation Logic
+  const siblings = path.parent?.stages || [];
+  const currentIndex = siblings.findIndex(s => s.slug === stageSlug);
+  const prevStage = currentIndex > 0 ? siblings[currentIndex - 1] : null;
+  const nextStage = currentIndex !== -1 && currentIndex < siblings.length - 1 ? siblings[currentIndex + 1] : null;
+
+  const prevStageUrl = prevStage ? `/path/${slug}/${prevStage.slug}` : undefined;
+  const nextStageUrl = nextStage ? `/path/${slug}/${nextStage.slug}` : undefined;
+
   return (
     <div className="flex flex-col flex-grow w-full">
 
@@ -53,6 +62,8 @@ export default function Stage() {
         label={t('pathPage.sections.currentStage')}
         title={stageText.title}
         gpxUrl={gpxUrl}
+        prevStageUrl={prevStageUrl}
+        nextStageUrl={nextStageUrl}
       />
 
       {/* Main Content */}

@@ -15,7 +15,7 @@ export default function ElevationProfile({ slug, distance, minAltitude, maxAltit
         <img src={"/svg/" + slug + ".svg"} alt="Perfil de Elevação" />
         <div className="absolute bottom-0 left-0 w-full flex justify-between text-xs text-gray-400 font-medium pt-2">
           {Array.from({ length: 5 }).map((_, i) => (
-            <span key={i}>{i * (distance / 4)}km</span>
+            <span key={i}>{(i * (distance / 4)).toFixed(1)}km</span>
           ))}
         </div>
       </div>
