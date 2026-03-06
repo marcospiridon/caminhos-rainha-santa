@@ -35,6 +35,15 @@ export default function Path() {
   const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
   const stageText = stage.i18n[lang] || stage.i18n.pt;
 
+  // Path Navigation Logic
+  const mainPaths = paths.filter(p => !p.parentSlug);
+  const currentIndex = mainPaths.findIndex(p => p.slug === slug);
+  const prevPath = currentIndex > 0 ? mainPaths[currentIndex - 1] : null;
+  const nextPath = currentIndex !== -1 && currentIndex < mainPaths.length - 1 ? mainPaths[currentIndex + 1] : null;
+
+  const prevPathUrl = prevPath ? `/path/${prevPath.slug}` : undefined;
+  const nextPathUrl = nextPath ? `/path/${nextPath.slug}` : undefined;
+
   return (
     <div className="flex flex-col flex-grow w-full">
       <HeroHeader
@@ -51,6 +60,8 @@ export default function Path() {
         label="Percurso"
         title={stageText.title}
         gpxUrl={gpxUrl}
+        prevStageUrl={prevPathUrl}
+        nextStageUrl={nextPathUrl}
       />
 
       <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-10 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
