@@ -723,15 +723,15 @@ export const paths: Path[] = [
   {
     slug: 'aventura-gravel',
     type: 'cycling',
-    image: 'https://images.unsplash.com/photo-1541625602330-2277a4c4b282?auto=format&fit=crop&q=80&w=1000',
+    image: '/mirandela.jpg',
     details: {
-      duration: 2,
+      duration: 8,
       durationUnit: 'days',
-      distance: 85,
+      distance: 500,
       elevation: 1200,
       difficultyKey: 'common.difficulty.hard',
-      minAltitude: 0,
-      maxAltitude: 1200,
+      minAltitude: 110,
+      maxAltitude: 900,
       i18n: {
         pt: {
           title: 'Aventura Gravel',
@@ -739,7 +739,8 @@ export const paths: Path[] = [
           description: 'Desafie-se em terrenos acidentados e estradas de gravel cénicas. Desenhada para bicicletas de gravel e montanha, esta rota oferece velocidade, fluidez e vistas de cortar a respiração.',
           narrativeTitle: 'A Aventura Começa nas Estradas de Terra',
           content: [
-            'Uma rota desenhada para quem procura adrenalina e paisagens selvagens. Percorra estradas de gravel entre serras e vales ao longo de dois dias intensos.'
+            'Uma rota desenhada para quem procura adrenalina e paisagens selvagens. Percorra estradas de gravel entre serras e vales ao longo de dois dias intensos.',
+            'Brevemente mais informações'
           ]
         },
         en: {
@@ -748,7 +749,8 @@ export const paths: Path[] = [
           description: 'Challenge yourself on rugged terrains and scenic gravel roads. Designed for gravel and mountain bikes, this route offers speed, flow, and breathtaking views.',
           narrativeTitle: 'The Adventure Begins on Gravel Roads',
           content: [
-            'A route designed for those seeking adrenaline and wild landscapes. Ride gravel roads through mountains and valleys over two intense days.'
+            'A route designed for those seeking adrenaline and wild landscapes. Ride gravel roads through mountains and valleys over two intense days.',
+            'Briefly more information'
           ]
         },
         es: {
@@ -757,7 +759,8 @@ export const paths: Path[] = [
           description: 'Desafíese en terrenos accidentados e estradas de gravel cénicas. Diseñada para bicicletas de gravel y montaña, esta ruta ofrece velocidad, fluidez y vistas de cortar a respiração.',
           narrativeTitle: 'La Aventura Comienza en los Caminos de Grava',
           content: [
-            'Una ruta diseñada para quienes buscan adrenalina y paisajes salvajes. Recorra caminos de grava entre sierras y valles a lo largo de dos días intensos.'
+            'Una ruta diseñada para quienes buscan adrenalina y paisajes salvajes. Recorra caminos de grava entre sierras y valles a lo largo de dos días intensos.',
+            'Breve información adicional'
           ]
         }
       },
