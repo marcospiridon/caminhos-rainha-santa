@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caminhos-rainha-santa.onrender.com/sitemap.xml
