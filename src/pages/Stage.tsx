@@ -84,6 +84,7 @@ export default function Stage() {
         </section>
 
         {stageSlug && <ElevationProfile slug={stageSlug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
+        {stage.pois && <POISection pois={stage.pois} />}
       </div>
 
       {/* Right Column */}
@@ -112,8 +113,6 @@ export default function Stage() {
             ))}
           </div>
         </motion.article>
-
-        {stage.pois && <POISection pois={stage.pois} />}
 
       </div>
       </main>

@@ -23,15 +23,15 @@ export default function POISection({ pois }: { pois: POI[] }) {
         </span>
         {t('pathPage.sections.pois')}
       </h3>
-      <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {pois.map((poi, index) => {
           const Icon = iconMap[poi.category] || Camera;
           const text = poi.i18n[lang] || poi.i18n.pt;
           return (
             <motion.div
               key={poi.i18n.pt.name}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               className="group bg-white dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all flex gap-4 items-center cursor-pointer"
             >
