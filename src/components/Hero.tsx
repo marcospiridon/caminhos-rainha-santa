@@ -10,6 +10,7 @@ const Hero = () => {
         src="hero.jpg"
         alt={t('hero.imageAlt')}
         className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: 'center top' }}
       />
       <div className="absolute inset-0 bg-black/40" />
 
