@@ -17,7 +17,7 @@ const HeroHeader = ({ image, type, title, parentTitle, badge, description, backL
   const { t } = useTranslation();
   const TypeIcon = type === 'hiking' ? Footprints : Bike;
   return (
-    <header className="relative w-full h-[450px] flex items-end overflow-hidden">
+    <header className="relative w-full min-h-[450px] md:h-[500px] flex items-end overflow-hidden">
       <motion.div
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
@@ -29,12 +29,11 @@ const HeroHeader = ({ image, type, title, parentTitle, badge, description, backL
           className="w-full h-full object-cover brightness-75"
           src={image}
           referrerPolicy="no-referrer"
-          style={{ marginTop: '0px', height: '950px' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-slate-900/20" />
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 pb-12 flex items-start gap-6">
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 pt-24 pb-12 flex items-start gap-6">
         <Link
           to={backLink}
           className="p-3 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full transition-all text-white border border-white/20 mt-1 flex-shrink-0 group"
