@@ -58,7 +58,9 @@
     },
     "elevation": {
       "max": "Max",
-      "min": "Min"
+      "min": "Min",
+      "expand": "Expand",
+      "collapse": "Collapse"
     },
     "help": {
       "pharmacy": "Central Pharmacy",

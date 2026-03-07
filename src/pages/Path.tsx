@@ -81,7 +81,6 @@ export default function Path() {
         </section>
 
         {slug && <ElevationProfile slug={slug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
-        {stage.pois && <POISection pois={stage.pois} />}
       </div>
 
       {/* Right Column */}
