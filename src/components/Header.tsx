@@ -53,7 +53,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://www.buymeacoffee.com/caminhosrainha"
+            href="https://buymeacoffee.com/caminhos.rainha.santa"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-brand/5 text-brand border border-brand/20 hover:bg-brand/10 transition-all active:scale-95"
