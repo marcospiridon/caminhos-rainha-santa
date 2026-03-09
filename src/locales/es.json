@@ -58,7 +58,9 @@
     },
     "elevation": {
       "max": "Máx",
-      "min": "Mín"
+      "min": "Mín",
+      "expand": "Expandir",
+      "collapse": "Contraer"
     },
     "help": {
       "pharmacy": "Farmacia Central",
