@@ -82,5 +82,9 @@
     "subtitle": "Explore the historical trails and stunning landscapes of the Holy Queen.",
     "empty": "No paths found for this filter.",
     "downloadGPX": "Download GPX"
+  },
+  "map": {
+    "interact": "Tap to interact with the map",
+    "exit": "Exit map mode"
   }
 }

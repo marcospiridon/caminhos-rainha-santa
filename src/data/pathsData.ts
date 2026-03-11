@@ -48,7 +48,107 @@ export const paths: Path[] = [
           ]
         }
       },
-      pois: [],
+      pois: [
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.7341153, -6.5759631],
+          i18n: {
+            pt: { name: 'Etapa 1', categoryLabel: 'Quintanilha > Bragança' },
+            en: { name: 'Stage 1', categoryLabel: 'Quintanilha > Bragança' },
+            es: { name: 'Etapa 1', categoryLabel: 'Quintanilha > Bragança' }
+          },
+          url: '/path/caminho-noiva-real/via-da-prata'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.8042503, -6.7492964],
+          i18n: {
+            pt: { name: 'Etapa 2', categoryLabel: 'Bragança > Santa Comba de Rossas' },
+            en: { name: 'Stage 2', categoryLabel: 'Bragança > Santa Comba de Rossas' },
+            es: { name: 'Etapa 2', categoryLabel: 'Bragança > Santa Comba de Rossas' }
+          },
+          url: '/path/caminho-noiva-real/linha-do-tua'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.6687511, -6.8243661],
+          i18n: {
+            pt: { name: 'Etapa 3', categoryLabel: 'Santa Comba de Rossas > Macedo de Cavaleiros' },
+            en: { name: 'Stage 3', categoryLabel: 'Santa Comba de Rossas > Macedo de Cavaleiros' },
+            es: { name: 'Etapa 3', categoryLabel: 'Santa Comba de Rossas > Macedo de Cavaleiros' }
+          },
+          url: '/path/caminho-noiva-real/albufeira-do-azibo'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.5356639, -6.9582678],
+          i18n: {
+            pt: { name: 'Etapa 4', categoryLabel: 'Macedo de Cavaleiros > Mirandela' },
+            en: { name: 'Stage 4', categoryLabel: 'Macedo de Cavaleiros > Mirandela' },
+            es: { name: 'Etapa 4', categoryLabel: 'Macedo de Cavaleiros > Mirandela' }
+          },
+          url: '/path/caminho-noiva-real/carvalhais'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.4852383, -7.1865272],
+          i18n: {
+            pt: { name: 'Etapa 5', categoryLabel: 'Mirandela > Vila Flor' },
+            en: { name: 'Stage 5', categoryLabel: 'Mirandela > Vila Flor' },
+            es: { name: 'Etapa 5', categoryLabel: 'Mirandela > Vila Flor' }
+          },
+          url: '/path/caminho-noiva-real/vila-flor'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.3087581, -7.1605386],
+          i18n: {
+            pt: { name: 'Etapa 6', categoryLabel: 'Vila Flor > Vila Nova de Foz Côa' },
+            en: { name: 'Stage 6', categoryLabel: 'Vila Flor > Vila Nova de Foz Côa' },
+            es: { name: 'Etapa 6', categoryLabel: 'Vila Flor > Vila Nova de Foz Côa' }
+          },
+          url: '/path/caminho-noiva-real/vila-flor'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.0932089, -7.1403022],
+          i18n: {
+            pt: { name: 'Etapa 7', categoryLabel: 'Vila Nova de Foz Côa > Marialva' },
+            en: { name: 'Stage 7', categoryLabel: 'Vila Nova de Foz Côa > Marialva' },
+            es: { name: 'Etapa 7', categoryLabel: 'Vila Nova de Foz Côa > Marialva' }
+          },
+          url: '/path/caminho-noiva-real/vila-flor'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.5356639, -6.95],
+          i18n: {
+            pt: { name: 'Etapa 8', categoryLabel: 'Marialva > Trancoso' },
+            en: { name: 'Stage 8', categoryLabel: 'Marialva > Trancoso' },
+            es: { name: 'Etapa 8', categoryLabel: 'Marialva > Trancoso' }
+          },
+          url: '/path/caminho-noiva-real/vila-flor'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.5356639, -6.99],
+          i18n: {
+            pt: { name: 'Final', categoryLabel: 'Trancoso' },
+            en: { name: 'Final', categoryLabel: 'Trancoso' },
+            es: { name: 'Final', categoryLabel: 'Trancoso' }
+          },
+          url: '/path/caminho-noiva-real/vila-flor'
+        }
+      ],
     }
   },
   {

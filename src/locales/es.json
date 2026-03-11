@@ -82,5 +82,9 @@
     "subtitle": "Explore las rutas históricas y los paisajes deslumbrantes de la Reina Santa.",
     "empty": "No se encontraron rutas con este filtro.",
     "downloadGPX": "Descargar GPX"
+  },
+  "map": {
+    "interact": "Tocar para interactuar en el mapa",
+    "exit": "Salir del mapa"
   }
 }

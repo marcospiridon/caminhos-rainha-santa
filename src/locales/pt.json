@@ -82,5 +82,9 @@
     "subtitle": "Explore os caminhos históricos e paisagens deslumbrantes da Rainha Santa.",
     "empty": "Nenhum percurso encontrado para este filtro.",
     "downloadGPX": "Descarregar GPX"
+  },
+  "map": {
+    "interact": "Tocar para interagir no mapa",
+    "exit": "Sair do mapa"
   }
 }

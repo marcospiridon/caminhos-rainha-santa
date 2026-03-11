@@ -4,7 +4,7 @@ import L from 'leaflet';
 import * as toGeoJSON from '@tmcw/togeojson';
 import 'leaflet/dist/leaflet.css';
 import type { POI } from '../types';
-import { Bed, Utensils, Camera, HeartPulse, Droplet } from 'lucide-react';
+import { Bed, Utensils, Camera, HeartPulse, Droplet, MousePointer2, X } from 'lucide-react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { useTranslation } from 'react-i18next';
 import { getAffiliateUrl } from '../utils/urlUtils';
@@ -48,14 +48,40 @@ const createCustomIcon = (CategoryIcon: any, color: string) => {
   });
 };
 
-// Component to handle map fitting
-function ChangeView({ bounds }: { bounds: L.LatLngBoundsExpression | null }) {
+// Component to handle map fitting and interaction status
+function MapController({ bounds, isInteractive }: { bounds: L.LatLngBoundsExpression | null, isInteractive: boolean }) {
   const map = useMap();
+  
   useEffect(() => {
     if (bounds) {
       map.fitBounds(bounds, { padding: [50, 50] });
     }
   }, [bounds, map]);
+
+  useEffect(() => {
+    if (isInteractive) {
+      map.dragging.enable();
+      map.touchZoom.enable();
+      map.doubleClickZoom.enable();
+      map.scrollWheelZoom.enable();
+      if ((map as any).tap) (map as any).tap.enable();
+      // Handle resize for fullscreen transition
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 300);
+    } else {
+      map.dragging.disable();
+      map.touchZoom.disable();
+      map.doubleClickZoom.disable();
+      map.scrollWheelZoom.disable();
+      if ((map as any).tap) (map as any).tap.disable();
+      // Handle resize when returning to normal view
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 300);
+    }
+  }, [isInteractive, map]);
+
   return null;
 }
 
@@ -65,9 +91,12 @@ interface MapProps {
 }
 
 export default function RouteMap({ gpxUrl, pois }: MapProps) {
-  const { i18n: i18nInstance } = useTranslation();
+  const { i18n: i18nInstance, t } = useTranslation();
   const [positions, setPositions] = useState<[number, number][]>([]);
   const [bounds, setBounds] = useState<L.LatLngBoundsExpression | null>(null);
+  const [isInteractive, setIsInteractive] = useState(() => {
+    return typeof window !== 'undefined' ? window.innerWidth >= 1024 : false;
+  });
 
   useEffect(() => {
     if (!gpxUrl) return;
@@ -96,12 +125,19 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
       .catch(err => console.error("Error loading GPX:", err));
   }, [gpxUrl]);
 
+  const containerClasses = isInteractive 
+    ? "fixed inset-0 z-[1000] w-screen h-screen bg-white transition-all duration-300 lg:relative lg:w-full lg:h-full lg:z-0"
+    : "w-full h-full relative z-0 group transition-all duration-300";
+
   return (
-    <div className="w-full h-full relative z-0">
+    <div className={containerClasses}>
       <MapContainer
         center={[40.2033, -8.4103]}
         zoom={13}
         scrollWheelZoom={false}
+        dragging={false}
+        touchZoom={false}
+        doubleClickZoom={false}
         className="w-full h-full"
       >
         <TileLayer
@@ -153,8 +189,37 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
           );
         })}
 
-        <ChangeView bounds={bounds} />
+        <MapController bounds={bounds} isInteractive={isInteractive} />
       </MapContainer>
+
+      {/* Mobile Interaction Overlay */}
+      {!isInteractive && (
+        <div 
+          onClick={() => setIsInteractive(true)}
+          className="lg:hidden absolute inset-0 z-[1001] bg-black/5 backdrop-blur-[1px] flex flex-col items-center justify-center cursor-pointer group/overlay transition-all hover:bg-black/10"
+        >
+          <div className="bg-white/90 dark:bg-slate-900/90 px-6 py-3 rounded-full shadow-lg border border-brand/20 flex items-center gap-3 transform transition-transform group-hover/overlay:scale-105 active:scale-95">
+            <MousePointer2 className="w-5 h-5 text-brand animate-bounce" />
+            <span className="text-sm font-bold text-slate-800 dark:text-white uppercase tracking-wider">
+              {t('map.interact')}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* Exit Map Mode Button */}
+      {isInteractive && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsInteractive(false);
+          }}
+          className="lg:hidden absolute top-4 right-4 z-[1002] bg-white/90 dark:bg-slate-900/90 p-2 rounded-full shadow-lg border border-brand/20 text-brand hover:bg-brand hover:text-white transition-all active:scale-95 flex items-center gap-2 pr-4"
+        >
+          <X className="w-5 h-5" />
+          <span className="text-xs font-bold uppercase tracking-widest">{t('map.exit')}</span>
+        </button>
+      )}
     </div>
   );
 }
