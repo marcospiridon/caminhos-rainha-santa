@@ -15,6 +15,39 @@ export default function POISection({ pois }: { pois: POI[] }) {
   const { t, i18n } = useTranslation();
   const lang = (i18n.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
 
+  const handlePOIClick = (poi: POI) => {
+    if (!poi.url) return;
+
+    let finalUrl = poi.url;
+    const bookingAffiliate = import.meta.env.VITE_BOOKING_AFFILIATE;
+    const tripadvisorAffiliate = import.meta.env.VITE_TRIPADVISOR_AFFILIATE;
+
+    // Handle Booking.com
+    if (finalUrl.includes('booking.com')) {
+      // Pattern: booking.com/hotel/pt/ -> booking.com/hotel/es/
+      // We look for /hotel/xx/ and replace xx
+      finalUrl = finalUrl.replace(/\/hotel\/[a-z]{2}\//, `/hotel/${lang}/`);
+
+      if (bookingAffiliate) {
+        const separator = finalUrl.includes('?') ? '&' : '?';
+        finalUrl = `${finalUrl}${separator}${bookingAffiliate}`;
+      }
+    }
+    // Handle TripAdvisor
+    else if (finalUrl.includes('tripadvisor.com')) {
+      // For TripAdvisor, if the user wants "the same", but doesn't have a standard /xx/ path,
+      // we'll at least ensure it stays .com (which it already is in our data)
+      // and append the affiliate code.
+
+      if (tripadvisorAffiliate) {
+        const separator = finalUrl.includes('?') ? '&' : '?';
+        finalUrl = `${finalUrl}${separator}${tripadvisorAffiliate}`;
+      }
+    }
+
+    window.open(finalUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section>
       <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-5 flex items-center gap-2">
@@ -29,16 +62,24 @@ export default function POISection({ pois }: { pois: POI[] }) {
           const text = poi.i18n[lang] || poi.i18n.pt;
           return (
             <motion.div
-              key={poi.i18n.pt.name}
+              key={`${poi.i18n.pt.name}-${index}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-white dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all flex gap-4 items-center cursor-pointer"
+              onClick={() => handlePOIClick(poi)}
+              className={`group bg-white dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all flex gap-4 items-center ${poi.url ? 'cursor-pointer hover:shadow-lg hover:border-primary/30 transition-shadow' : ''}`}
             >
               <div className="flex-grow">
                 <div className="flex justify-between items-start">
-                  <h4 className="font-bold text-slate-900 dark:text-white text-base">{text.name}</h4>
-                  <Icon size={16} className="text-gray-400" />
+                  <h4 className="font-bold text-slate-900 dark:text-white text-base">
+                    {text.name}
+                    {poi.url && (
+                      <span className="ml-2 inline-block transition-transform group-hover:translate-x-1 text-primary">
+                        →
+                      </span>
+                    )}
+                  </h4>
+                  <Icon size={16} className="text-gray-400 group-hover:text-primary transition-colors" />
                 </div>
                 <p className="text-xs text-gray-500 mb-1">{text.categoryLabel}</p>
                 <span className="text-xs text-gray-500">{poi.contact}</span>

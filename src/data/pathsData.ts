@@ -108,7 +108,8 @@ export const paths: Path[] = [
             pt: { name: 'Albergue de Peregrinos de Quintanilha', categoryLabel: 'Albergue' },
             en: { name: "Peregrino's Guesthouse Quintanilha", categoryLabel: 'Guesthouse' },
             es: { name: 'Albergue de Peregrinos Quintanilha', categoryLabel: 'Albergue' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/albergue-quintanilha.html'
         },
         {
           category: 'sleep',
@@ -128,7 +129,8 @@ export const paths: Path[] = [
             pt: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' },
             en: { name: "O Abel Restaurant", categoryLabel: 'Restaurant' },
             es: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' }
-          }
+          },
+          url: 'https://www.tripadvisor.com/Restaurant_Review-g189172-O_Abel.html'
         },
         {
           category: 'eat',

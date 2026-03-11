@@ -14,6 +14,7 @@ export interface POI {
   contact: string;
   latlng: [number, number];
   i18n: Localized<POITranslations>;
+  url?: string;
 }
 
 export interface PathI18n {
