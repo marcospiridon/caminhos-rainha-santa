@@ -7,6 +7,7 @@ import type { POI } from '../types';
 import { Bed, Utensils, Camera, HeartPulse, Droplet } from 'lucide-react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { useTranslation } from 'react-i18next';
+import { getAffiliateUrl } from '../utils/urlUtils';
 
 // Fix for default Leaflet icon paths in Vite/React
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -117,7 +118,7 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
           />
         )}
 
-        {pois && pois.map((poi) => {
+        {pois && pois.map((poi, idx) => {
           const CategoryIcon = iconMap[poi.category] || Camera;
           const customIcon = createCustomIcon(CategoryIcon, '#c18182');
           const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
@@ -125,15 +126,27 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
 
           return (
             <Marker
-              key={poi.i18n.pt.name}
+              key={`${poi.i18n.pt.name}-${idx}`}
               position={poi.latlng}
               icon={customIcon}
             >
               <Popup>
-                <div className="p-1">
-                  <h4 className="font-bold text-slate-900">{text.name}</h4>
-                  <p className="text-xs text-slate-500">{text.categoryLabel}</p>
-                  <p className="text-xs text-slate-500">{poi.contact}</p>
+                <div className="p-1 min-w-[150px]">
+                  <h4 className="font-bold text-slate-900 leading-tight mb-1">{text.name}</h4>
+                  <p className="text-xs text-slate-500 mb-1">{text.categoryLabel}</p>
+                  {poi.contact && <p className="text-xs text-slate-500 mb-2">{poi.contact}</p>}
+
+                  {poi.url && (
+                    <a
+                      href={getAffiliateUrl(poi, lang) || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-dark transition-colors"
+                    >
+                      {lang === 'pt' ? 'Ver Mais' : lang === 'es' ? 'Ver más' : 'View More'}
+                      <span className="text-[10px]">→</span>
+                    </a>
+                  )}
                 </div>
               </Popup>
             </Marker>

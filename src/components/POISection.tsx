@@ -11,41 +11,17 @@ const iconMap = {
   water: Droplet,
 };
 
+import { getAffiliateUrl } from '../utils/urlUtils';
+
 export default function POISection({ pois }: { pois: POI[] }) {
   const { t, i18n } = useTranslation();
   const lang = (i18n.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
 
   const handlePOIClick = (poi: POI) => {
-    if (!poi.url) return;
-
-    let finalUrl = poi.url;
-    const bookingAffiliate = import.meta.env.VITE_BOOKING_AFFILIATE;
-    const tripadvisorAffiliate = import.meta.env.VITE_TRIPADVISOR_AFFILIATE;
-
-    // Handle Booking.com
-    if (finalUrl.includes('booking.com')) {
-      // Pattern: booking.com/hotel/pt/ -> booking.com/hotel/es/
-      // We look for /hotel/xx/ and replace xx
-      finalUrl = finalUrl.replace(/\/hotel\/[a-z]{2}\//, `/hotel/${lang}/`);
-
-      if (bookingAffiliate) {
-        const separator = finalUrl.includes('?') ? '&' : '?';
-        finalUrl = `${finalUrl}${separator}${bookingAffiliate}`;
-      }
+    const finalUrl = getAffiliateUrl(poi, lang);
+    if (finalUrl) {
+      window.open(finalUrl, '_blank', 'noopener,noreferrer');
     }
-    // Handle TripAdvisor
-    else if (finalUrl.includes('tripadvisor.com')) {
-      // For TripAdvisor, if the user wants "the same", but doesn't have a standard /xx/ path,
-      // we'll at least ensure it stays .com (which it already is in our data)
-      // and append the affiliate code.
-
-      if (tripadvisorAffiliate) {
-        const separator = finalUrl.includes('?') ? '&' : '?';
-        finalUrl = `${finalUrl}${separator}${tripadvisorAffiliate}`;
-      }
-    }
-
-    window.open(finalUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (

@@ -109,7 +109,7 @@ export const paths: Path[] = [
             en: { name: "Peregrino's Guesthouse Quintanilha", categoryLabel: 'Guesthouse' },
             es: { name: 'Albergue de Peregrinos Quintanilha', categoryLabel: 'Albergue' }
           },
-          url: 'https://www.booking.com/hotel/pt/albergue-quintanilha.html'
+          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
         },
         {
           category: 'sleep',
@@ -119,28 +119,30 @@ export const paths: Path[] = [
             pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
             en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
             es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
-          }
+          },
+          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
         },
         {
           category: 'eat',
-          contact: '+351 273 382 555',
+          contact: '',
           latlng: [41.8013253, -6.6975608],
           i18n: {
             pt: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' },
             en: { name: "O Abel Restaurant", categoryLabel: 'Restaurant' },
             es: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' }
           },
-          url: 'https://www.tripadvisor.com/Restaurant_Review-g189172-O_Abel.html'
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g7067429-d3853386-Reviews-Restaurante_O_Abel-Gimonde_Braganca_Braganca_District_Northern_Portugal.html'
         },
         {
           category: 'eat',
-          contact: '+351 273 926 425',
+          contact: '',
           latlng: [41.8175611, -6.6294250],
           i18n: {
             pt: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' },
             en: { name: "Lombada Restaurant", categoryLabel: 'Restaurant' },
             es: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g189172-d7099427-Reviews-Restaurante_Lombada-Braganca_Braganca_District_Northern_Portugal.html'
         }
       ]
     }
@@ -203,7 +205,8 @@ export const paths: Path[] = [
             pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
             en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
             es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/pousada-de-juventude-de-braganca.html'
         },
         {
           category: 'sleep',
@@ -213,7 +216,8 @@ export const paths: Path[] = [
             pt: { name: 'Glamping Hills', categoryLabel: 'Glamping' },
             en: { name: "Glamping Hills", categoryLabel: 'Glamping' },
             es: { name: 'Glamping Hills', categoryLabel: 'Glamping' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/glamping-hills.html'
         },
         {
           category: 'eat',
@@ -223,7 +227,8 @@ export const paths: Path[] = [
             pt: { name: 'Serra de Nogueira', categoryLabel: 'Restaurante' },
             en: { name: "Serra de Nogueira", categoryLabel: 'Restaurant' },
             es: { name: 'Serra de Nogueira', categoryLabel: 'Restaurante' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g189172-d12304859-Reviews-Restaurante_Serra_de_Nogueira-Braganca_Braganca_District_Northern_Portugal.html'
         },
         {
           category: 'eat',
@@ -233,7 +238,8 @@ export const paths: Path[] = [
             pt: { name: 'Café Reboledo', categoryLabel: 'Café' },
             en: { name: "Café Reboledo", categoryLabel: 'Coffee Shop' },
             es: { name: 'Café Reboledo', categoryLabel: 'Chiringuito' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1024346-d25435017-Reviews-Cafe_Reboledo-Santa_Comba_de_Rossas_Braganca_District_Northern_Portugal.html'
         }
       ]
     }
@@ -292,7 +298,8 @@ export const paths: Path[] = [
             pt: { name: 'Glamping Hills', categoryLabel: 'Glamping' },
             en: { name: "Glamping Hills", categoryLabel: 'Glamping' },
             es: { name: 'Glamping Hills', categoryLabel: 'Glamping' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/glamping-hills.html'
         },
         {
           category: 'eat',
@@ -302,7 +309,8 @@ export const paths: Path[] = [
             pt: { name: 'Cervejaria Dom', categoryLabel: 'Cervejaria' },
             en: { name: 'Cervejaria Dom', categoryLabel: 'Pub' },
             es: { name: 'Cervejaria Dom', categoryLabel: 'Cervejaria' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d12140409-Reviews-Cervejaria_Dom-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html'
         },
         {
           category: 'eat',
@@ -312,7 +320,8 @@ export const paths: Path[] = [
             pt: { name: 'Café da Santa Joana', categoryLabel: 'Café' },
             en: { name: 'Café da Santa Joana', categoryLabel: 'Coffee Shop' },
             es: { name: 'Café da Santa Joana', categoryLabel: 'Chiringuito' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d15025983-Reviews-Santa_Joana-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html'
         },
         {
           category: 'sleep',
@@ -322,7 +331,8 @@ export const paths: Path[] = [
             pt: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' },
             en: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' },
             es: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/alendouro.html'
         }
       ]
     }
@@ -381,7 +391,8 @@ export const paths: Path[] = [
             pt: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' },
             en: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' },
             es: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/alendouro.html'
         },
         {
           category: 'eat',
@@ -391,7 +402,8 @@ export const paths: Path[] = [
             pt: { name: 'Cervejaria Loreiro', categoryLabel: 'Café' },
             en: { name: 'Cervejaria Loreiro', categoryLabel: 'Coffee Shop' },
             es: { name: 'Cervejaria Loreiro', categoryLabel: 'Chiringuito' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d15025981-Reviews-Cervejaria_Loreiro-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html'
         },
         {
           category: 'sleep',
@@ -401,7 +413,8 @@ export const paths: Path[] = [
             pt: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
             en: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
             es: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/grande-dom-dinis.html'
         },
       ]
     }
@@ -460,7 +473,8 @@ export const paths: Path[] = [
             pt: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
             en: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
             es: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/grande-dom-dinis.pt-pt.html'
         },
         {
           category: 'eat',
@@ -490,7 +504,8 @@ export const paths: Path[] = [
             pt: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' },
             en: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' },
             es: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/povoa-dalem-sabor.pt-pt.html'
         },
       ]
     }
@@ -549,7 +564,8 @@ export const paths: Path[] = [
             pt: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' },
             en: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' },
             es: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/povoa-dalem-sabor.pt-pt.html'
         },
         {
           category: 'eat',
@@ -559,7 +575,8 @@ export const paths: Path[] = [
             pt: { name: 'Bar da Capela', categoryLabel: 'Café' },
             en: { name: 'Bar da Capela', categoryLabel: 'Coffee Shop' },
             es: { name: 'Bar da Capela', categoryLabel: 'Chiringuito' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurants-g1022881-Vila_Flor_Braganca_District_Northern_Portugal.html'
         },
         {
           category: 'eat',
@@ -569,7 +586,8 @@ export const paths: Path[] = [
             pt: { name: 'Café Vilariça', categoryLabel: 'Café' },
             en: { name: 'Café Vilariça', categoryLabel: 'Coffee Shop' },
             es: { name: 'Café Vilariça', categoryLabel: 'Chiringuito' }
-          }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurants-g1022881-Vila_Flor_Braganca_District_Northern_Portugal.html'
         },
         {
           category: 'sleep',
@@ -579,17 +597,19 @@ export const paths: Path[] = [
             pt: { name: 'Douro Elegance Suites', categoryLabel: 'Hotel' },
             en: { name: 'Douro Elegance Suites', categoryLabel: 'Hotel' },
             es: { name: 'Douro Elegance Suites', categoryLabel: 'Hotel' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/quintinha-do-casal-douro-elegance-suites.pt-pt.html'
         },
         {
           category: 'eat',
           contact: '',
           latlng: [41.1305511, -7.1220975],
           i18n: {
-            pt: { name: 'Restaurante Gaveto', categoryLabel: 'Restaurante' },
-            en: { name: 'Restaurante Gaveto', categoryLabel: 'Restaurant' },
-            es: { name: 'Restaurante Gaveto', categoryLabel: 'Restaurante' }
-          }
+            pt: { name: 'Restaurante O Gaveto', categoryLabel: 'Restaurante' },
+            en: { name: 'O Gaveto Restaurant', categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante O Gaveto', categoryLabel: 'Restaurante' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022883-d14144415-Reviews-Restaurante_O_Gaveto-Vila_Nova_de_Foz_Coa_Guarda_District_Central_Portugal.html'
         },
         {
           category: 'sleep',
@@ -599,7 +619,8 @@ export const paths: Path[] = [
             pt: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Pousada' },
             en: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Hostel' },
             es: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Albergue' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/pousada-de-juventude-de-vila-nova-de-foz-coa.pt-pt.html'
         },
       ]
     }
@@ -658,7 +679,8 @@ export const paths: Path[] = [
             pt: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Pousada' },
             en: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Hostel' },
             es: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Albergue' }
-          }
+          },
+          url: 'https://www.booking.com/hotel/pt/pousada-de-juventude-de-vila-nova-de-foz-coa.pt-pt.html'
         }
       ]
     }
