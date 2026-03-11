@@ -101,6 +101,17 @@ export const paths: Path[] = [
       },
       pois: [
         {
+          category: 'see',
+          contact: '',
+          latlng: [41.7341153, -6.5759631],
+          i18n: {
+            pt: { name: 'Capela Nossa Senhora da Ribeira', categoryLabel: 'Capela' },
+            en: { name: "Our Lady of Ribeira Chapel", categoryLabel: 'Chapel' },
+            es: { name: 'Capilla Nuestra Señora de la Ribera', categoryLabel: 'Capilla' }
+          },
+          url: 'https://www.rotaterrafria.com/geo_artigo-49/capela-de-nossa-senhora-da-ribeira-santuario-de-nossa-senhora-da-ribeira'
+        },
+        {
           category: 'sleep',
           contact: '+351 966 048 612 (Sr. Álvaro Lopes)',
           latlng: [41.7507436, -6.5715525],
@@ -110,6 +121,17 @@ export const paths: Path[] = [
             es: { name: 'Albergue de Peregrinos Quintanilha', categoryLabel: 'Albergue' }
           },
           url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.8217636, -6.6012194],
+          i18n: {
+            pt: { name: 'Café Restaurante O Lombardês', categoryLabel: 'Café Restaurante' },
+            en: { name: "O Lombardês Café Restaurant", categoryLabel: 'Café Restaurant' },
+            es: { name: 'Café Restaurante O Lombardês', categoryLabel: 'Café Restaurante' }
+          },
+          url: ''
         },
         {
           category: 'eat',
@@ -155,7 +177,17 @@ export const paths: Path[] = [
           },
           url: 'https://www.booking.com/Share-9cqSbu'
         },
-
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.8042503, -6.7492964],
+          i18n: {
+            pt: { name: 'Castelo de Bragança', categoryLabel: 'Castelo' },
+            en: { name: "Bragança Castle", categoryLabel: 'Castle' },
+            es: { name: 'Castillo de Bragança', categoryLabel: 'Castillo' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        }
       ]
     }
   },
@@ -218,11 +250,55 @@ export const paths: Path[] = [
             en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
             es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
           },
-          url: 'https://www.booking.com/hotel/pt/pousada-de-juventude-de-braganca.html'
+          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
         },
         {
           category: 'sleep',
-          contact: '+351 938 712 419',
+          contact: '',
+          latlng: [41.8047794, -6.7666436],
+          i18n: {
+            pt: { name: 'Pousada da Juventude de Bragança', categoryLabel: 'Pousada' },
+            en: { name: "Youth Hostel Bragança", categoryLabel: 'Youth Hostel' },
+            es: { name: 'Albergue de Juventud Bragança', categoryLabel: 'Albergue de Juventud' }
+          },
+          url: 'https://www.booking.com/Share-9cqSbu'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.8042503, -6.7492964],
+          i18n: {
+            pt: { name: 'Castelo de Bragança', categoryLabel: 'Castelo' },
+            en: { name: "Bragança Castle", categoryLabel: 'Castle' },
+            es: { name: 'Castillo de Bragança', categoryLabel: 'Castillo' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.7989544, -6.8045408],
+          i18n: {
+            pt: { name: 'Mosteiro de Castro de Avelãs', categoryLabel: 'Mosteiro' },
+            en: { name: "Monastery of Castro de Avelãs", categoryLabel: 'Monastery' },
+            es: { name: 'Monasterio de Castro de Avelãs', categoryLabel: 'Monasterio' }
+          },
+          url: 'https://www.rotaterrafria.com/geo_artigo-49/igreja-mosteiro-de-castro-de-avelas'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.7795681, -6.8221033],
+          i18n: {
+            pt: { name: 'Capela Nossa Senhora da Cabeça', categoryLabel: 'Capela' },
+            en: { name: "Our Lady of Cabeça Chapel", categoryLabel: 'Chapel' },
+            es: { name: 'Capilla Nuestra Señora de la Cabeza', categoryLabel: 'Capilla' }
+          },
+          url: 'https://www.rotaterrafria.com/pages/222/?geo_article_id=6857'
+        },
+        {
+          category: 'sleep',
+          contact: '',
           latlng: [41.6687511, -6.8243661],
           i18n: {
             pt: { name: 'Glamping Hills', categoryLabel: 'Glamping' },
@@ -240,7 +316,18 @@ export const paths: Path[] = [
             en: { name: "Serra de Nogueira", categoryLabel: 'Restaurant' },
             es: { name: 'Serra de Nogueira', categoryLabel: 'Restaurante' }
           },
-          url: 'https://www.tripadvisor.pt/Restaurant_Review-g189172-d12304859-Reviews-Restaurante_Serra_de_Nogueira-Braganca_Braganca_District_Northern_Portugal.html'
+          url: 'https://www.tripadvisor.es/Restaurant_Review-g15239495-d8842309-Reviews-Serra_Da_Nogueira-Nogueira_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.6725189, -6.8319211],
+          i18n: {
+            pt: { name: 'Capela Nossa Senhora do Pereiro', categoryLabel: 'Capela' },
+            en: { name: "Our Lady of Pereiro Chapel", categoryLabel: 'Chapel' },
+            es: { name: 'Capilla Nuestra Señora del Pereiro', categoryLabel: 'Capilla' }
+          },
+          url: 'https://www.rotaterrafria.com/geo_artigo-49/parque-de-merendas-de-santa-comba-de-rossas'
         },
         {
           category: 'eat',
