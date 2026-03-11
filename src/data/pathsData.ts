@@ -112,17 +112,6 @@ export const paths: Path[] = [
           url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
         },
         {
-          category: 'sleep',
-          contact: '+351 273 240 020',
-          latlng: [41.8038025, -6.7505367],
-          i18n: {
-            pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
-            en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
-            es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
-          },
-          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
-        },
-        {
           category: 'eat',
           contact: '',
           latlng: [41.8013253, -6.6975608],
@@ -143,7 +132,30 @@ export const paths: Path[] = [
             es: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' }
           },
           url: 'https://www.tripadvisor.pt/Restaurant_Review-g189172-d7099427-Reviews-Restaurante_Lombada-Braganca_Braganca_District_Northern_Portugal.html'
-        }
+        },
+        {
+          category: 'sleep',
+          contact: '+351 273 240 020',
+          latlng: [41.8038025, -6.7505367],
+          i18n: {
+            pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
+          },
+          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
+        },
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [41.8047794, -6.7666436],
+          i18n: {
+            pt: { name: 'Pousada da Juventude de Bragança', categoryLabel: 'Pousada' },
+            en: { name: "Youth Hostel Bragança", categoryLabel: 'Youth Hostel' },
+            es: { name: 'Albergue de Juventud Bragança', categoryLabel: 'Albergue de Juventud' }
+          },
+          url: 'https://www.booking.com/Share-9cqSbu'
+        },
+
       ]
     }
   },

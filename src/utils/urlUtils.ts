@@ -9,10 +9,6 @@ export const getAffiliateUrl = (poi: POI, lang: string): string | null => {
 
   // Handle Booking.com
   if (finalUrl.includes('booking.com')) {
-    // Pattern: booking.com/hotel/pt/ -> booking.com/hotel/es/
-    // We look for /hotel/xx/ and replace xx
-    finalUrl = finalUrl.replace(/\/hotel\/[a-z]{2}\//, `/hotel/${lang}/`);
-
     if (bookingAffiliate) {
       const separator = finalUrl.includes('?') ? '&' : '?';
       finalUrl = `${finalUrl}${separator}${bookingAffiliate}`;
