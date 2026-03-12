@@ -7,5 +7,6 @@ import StatsGrid from "./StatsGrid";
 import ElevationProfile from "./ElevationProfile";
 import POISection from "./POISection";
 import RouteMap from "./RouteMap";
+import Footer from "./Footer";
 
-export { Header, Hero, HeroHeader, StickyActionBar, PathSelection, StatsGrid, ElevationProfile, POISection, RouteMap };
+export { Header, Hero, HeroHeader, StickyActionBar, PathSelection, StatsGrid, ElevationProfile, POISection, RouteMap, Footer };

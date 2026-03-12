@@ -86,6 +86,13 @@
     "empty": "No se encontraron rutas con este filtro.",
     "downloadGPX": "Descargar GPX"
   },
+  "footer": {
+    "sections": {
+      "discovery": "Descubrimiento",
+      "support": "Soporte",
+      "social": "Social"
+    }
+  },
   "map": {
     "interact": "Tocar para interactuar en el mapa",
     "exit": "Salir del mapa"

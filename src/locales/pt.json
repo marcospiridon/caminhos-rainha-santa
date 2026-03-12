@@ -86,6 +86,13 @@
     "empty": "Nenhuma rota encontrada para este filtro.",
     "downloadGPX": "Descarregar GPX"
   },
+  "footer": {
+    "sections": {
+      "discovery": "Descoberta",
+      "support": "Apoio",
+      "social": "Social"
+    }
+  },
   "map": {
     "interact": "Tocar para interagir no mapa",
     "exit": "Sair do mapa"

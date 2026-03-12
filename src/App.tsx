@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Header, Hero, PathSelection } from "./components";
+import { Header, Hero, PathSelection, Footer } from "./components";
 import { Paths, Path, Stage } from "./pages";
 import { paths } from "./data/pathsData";
 import { useTranslation } from "react-i18next";
@@ -34,6 +34,7 @@ function App() {
             <Route path="/path/:slug/:stage" element={<Stage />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   )

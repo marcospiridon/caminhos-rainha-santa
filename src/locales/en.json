@@ -86,6 +86,13 @@
     "empty": "No paths found for this filter.",
     "downloadGPX": "Download GPX"
   },
+  "footer": {
+    "sections": {
+      "discovery": "Discovery",
+      "support": "Support",
+      "social": "Social"
+    }
+  },
   "map": {
     "interact": "Tap to interact with the map",
     "exit": "Exit map mode"
