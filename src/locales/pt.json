@@ -39,9 +39,9 @@
   },
   "pathPage": {
     "notFound": {
-      "title": "Percurso não encontrado",
-      "description": "O percurso que procura não existe ou ainda não tem detalhes disponíveis.",
-      "back": "Voltar aos percursos"
+      "title": "Rota não encontrada",
+      "description": "A rota que procura não existe ou ainda não tem detalhes disponíveis.",
+      "back": "Voltar às rotas"
     },
     "sections": {
       "history": "Contexto Histórico",
@@ -72,7 +72,7 @@
       "next": "Próxima",
       "more": "ver mais",
       "less": "ver menos",
-      "backToPath": "Percurso"
+      "backToPath": "Rota"
     }
   },
   "pathsPage": {
@@ -81,9 +81,9 @@
       "hiking": "Pedestre",
       "cycling": "Bicicleta"
     },
-    "title": "Nossos Percursos",
+    "title": "Nossas Rotas",
     "subtitle": "Explore os caminhos históricos e paisagens deslumbrantes da Rainha Santa.",
-    "empty": "Nenhum percurso encontrado para este filtro.",
+    "empty": "Nenhuma rota encontrada para este filtro.",
     "downloadGPX": "Descarregar GPX"
   },
   "map": {

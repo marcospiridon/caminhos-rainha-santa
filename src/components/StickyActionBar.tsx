@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Download, ArrowLeft, ArrowRight } from "lucide-react";
+import { Download, ArrowLeft, ArrowRight, Map } from "lucide-react";
 
 interface StickyActionBarProps {
   label: string;
@@ -44,7 +44,7 @@ const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl, pat
               className="flex items-center justify-center gap-2 text-slate-500 hover:text-brand px-3 h-10 rounded-full border border-slate-200 dark:border-gray-800 hover:border-brand/30 transition-all font-bold group"
               title={t('pathPage.navigation.backToPath')}
             >
-              <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+              <Map size={18} className="transition-transform group-hover:scale-110" />
               <span className="hidden lg:inline text-xs uppercase tracking-wider">{t('pathPage.navigation.backToPath')}</span>
             </Link>
           )}

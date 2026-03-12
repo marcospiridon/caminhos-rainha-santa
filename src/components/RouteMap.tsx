@@ -51,7 +51,7 @@ const createCustomIcon = (CategoryIcon: any, color: string) => {
 // Component to handle map fitting and interaction status
 function MapController({ bounds, isInteractive }: { bounds: L.LatLngBoundsExpression | null, isInteractive: boolean }) {
   const map = useMap();
-  
+
   useEffect(() => {
     if (bounds) {
       map.fitBounds(bounds, { padding: [50, 50] });
@@ -63,7 +63,7 @@ function MapController({ bounds, isInteractive }: { bounds: L.LatLngBoundsExpres
       map.dragging.enable();
       map.touchZoom.enable();
       map.doubleClickZoom.enable();
-      map.scrollWheelZoom.enable();
+      map.scrollWheelZoom.disable();
       if ((map as any).tap) (map as any).tap.enable();
       // Handle resize for fullscreen transition
       setTimeout(() => {
@@ -125,7 +125,7 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
       .catch(err => console.error("Error loading GPX:", err));
   }, [gpxUrl]);
 
-  const containerClasses = isInteractive 
+  const containerClasses = isInteractive
     ? "fixed inset-0 z-[1000] w-screen h-screen bg-white transition-all duration-300 lg:relative lg:w-full lg:h-full lg:z-0"
     : "w-full h-full relative z-0 group transition-all duration-300";
 
@@ -194,7 +194,7 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
 
       {/* Mobile Interaction Overlay */}
       {!isInteractive && (
-        <div 
+        <div
           onClick={() => setIsInteractive(true)}
           className="lg:hidden absolute inset-0 z-[1001] bg-black/5 backdrop-blur-[1px] flex flex-col items-center justify-center cursor-pointer group/overlay transition-all hover:bg-black/10"
         >
