@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar } from "../components";
+import { StatsGrid, ElevationProfile, POISection, RouteMap, PathSelection, HeroHeader, StickyActionBar } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -87,6 +87,7 @@ export default function Path() {
         </section>
 
         {slug && <ElevationProfile slug={slug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
+        {stage.pois && <POISection pois={stage.pois} />}
       </div>
 
       {/* Right Column */}
