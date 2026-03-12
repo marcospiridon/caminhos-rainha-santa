@@ -19,7 +19,7 @@ const PathCard = ({ title, description, image, badge, duration, distance, diffic
       </div>
     </div>
     <div className="p-8 flex flex-col flex-grow">
-      <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
+      <p className="text-slate-600 mb-8 leading-relaxed flex-grow hidden lg:block">
         {description}
       </p>
       <div className="flex flex-wrap items-center gap-y-4 gap-x-6 mb-8 text-sm font-medium text-slate-500">

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
 import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar } from "../components";
@@ -9,6 +9,12 @@ import { paths } from "../data/pathsData";
 export default function Path() {
   const { slug } = useParams();
   const { t, i18n: i18nInstance } = useTranslation();
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Reset expansion state when navigating between paths
+  useEffect(() => {
+    setIsExpanded(false);
+  }, [slug]);
 
   const gpxUrl = `/gpx/${slug}.gpx`;
 
@@ -97,16 +103,43 @@ export default function Path() {
             {stageText.narrativeTitle}
           </h3>
           <div className="font-serif text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed text-lg">
-            {stageText.content.map((para, i) => (
-              <p key={i}>
-                {i === 0 && (
-                  <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
-                    {para.charAt(0)}
-                  </span>
-                )}
-                {i === 0 ? para.slice(1) : para}
-              </p>
-            ))}
+            {stageText.content.map((para, i) => {
+              if (i === 0) {
+                const isTruncated = !isExpanded && para.length > 100;
+
+                return (
+                  <div key={i} className="relative">
+                    <p className="lg:hidden">
+                      <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
+                        {para.charAt(0)}
+                      </span>
+                      {isTruncated ? para.slice(1, 100) + '...' : para.slice(1)}
+                      {isTruncated && (
+                        <button
+                          onClick={() => setIsExpanded(true)}
+                          className="ml-2 text-brand font-bold hover:underline inline-flex items-center gap-1"
+                        >
+                          {t('pathPage.navigation.more')}
+                        </button>
+                      )}
+                    </p>
+                    <p className="hidden lg:block">
+                      <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
+                        {para.charAt(0)}
+                      </span>
+                      {para.slice(1)}
+                    </p>
+                  </div>
+                );
+              }
+
+              // Other paragraphs only shown on desktop or if expanded on mobile
+              return (
+                <p key={i} className={`${!isExpanded ? 'hidden lg:block' : ''}`}>
+                  {para}
+                </p>
+              );
+            })}
           </div>
         </motion.article>
       </div>

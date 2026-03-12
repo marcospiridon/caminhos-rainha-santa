@@ -9,9 +9,10 @@ interface StickyActionBarProps {
   gpxUrl?: string;
   prevStageUrl?: string;
   nextStageUrl?: string;
+  pathUrl?: string;
 }
 
-const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl }: StickyActionBarProps) => {
+const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl, pathUrl }: StickyActionBarProps) => {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -37,6 +38,16 @@ const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl }: S
           <span className="text-sm font-semibold text-slate-900 dark:text-white">{title}</span>
         </div>
         <div className="flex items-center gap-3 ml-auto">
+          {pathUrl && (
+            <Link
+              to={pathUrl}
+              className="flex items-center justify-center gap-2 text-slate-500 hover:text-brand px-3 h-10 rounded-full border border-slate-200 dark:border-gray-800 hover:border-brand/30 transition-all font-bold group"
+              title={t('pathPage.navigation.backToPath')}
+            >
+              <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+              <span className="hidden lg:inline text-xs uppercase tracking-wider">{t('pathPage.navigation.backToPath')}</span>
+            </Link>
+          )}
           <div className="flex items-center gap-2">
             {prevStageUrl && (
               <Link

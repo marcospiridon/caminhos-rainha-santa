@@ -69,7 +69,10 @@
     },
     "navigation": {
       "previous": "Previous",
-      "next": "Next"
+      "next": "Next",
+      "more": "read more",
+      "less": "read less",
+      "backToPath": "Path"
     }
   },
   "pathsPage": {

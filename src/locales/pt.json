@@ -69,7 +69,10 @@
     },
     "navigation": {
       "previous": "Anterior",
-      "next": "Próxima"
+      "next": "Próxima",
+      "more": "ver mais",
+      "less": "ver menos",
+      "backToPath": "Percurso"
     }
   },
   "pathsPage": {
