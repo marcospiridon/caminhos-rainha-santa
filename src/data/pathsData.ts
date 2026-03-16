@@ -948,13 +948,13 @@ export const paths: Path[] = [
     type: 'cycling',
     image: '/mirandela.jpg',
     details: {
-      duration: 8,
+      duration: 5,
       durationUnit: 'days',
-      distance: 500,
-      elevation: 1200,
-      difficultyKey: 'common.difficulty.hard',
+      distance: 236,
+      elevation: 4079,
       minAltitude: 110,
       maxAltitude: 900,
+      difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
           title: 'Aventura Gravel',
@@ -988,6 +988,146 @@ export const paths: Path[] = [
         }
       },
       pois: []
+    }
+  },
+  {
+    slug: 'via-da-prata',
+    type: 'cycling',
+    image: '/via-da-prata.jpg',
+    parentSlug: 'aventura-gravel',
+    details: {
+      duration: 2,
+      durationUnit: 'hours',
+      distance: 27.2,
+      elevation: 628,
+      minAltitude: 516,
+      maxAltitude: 880,
+      difficultyKey: 'common.difficulty.easy',
+      i18n: {
+        pt: {
+          title: '1. Via da Prata',
+          badge: 'Peregrinação',
+          description: 'Onde Isabel conheceu o seu povo. Cruze a fronteira de Quintanilha e sinta a emoção do primeiro encontro da Rainha com as terras e as gentes de Portugal. Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
+          narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
+          content: [
+            'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
+            'Este percurso não é apenas uma travessia geográfica; é uma imersão na lenda. Ao passar por Vila Flor (então chamada Póvoa do Além-Sabor), conta a tradição que a beleza da futura rainha e o seu encanto pelas paisagens foram de tal ordem que o próprio Rei, mais tarde, rebatizou a vila em sua honra. É um trilho marcado pelo aroma do mato e pela dureza do granito, que suaviza ao chegar às imponentes muralhas de Trancoso, onde o casamento foi ratificado com o esplendor das núpcias reais.',
+            'Ao percorrer este caminho, não está apenas a caminhar por Trás-os-Montes e pelas Beiras; está a refazer a logística de uma comitiva medieval, a sentir a brisa que sopra no planalto e a descobrir por que razão, 700 anos depois, ainda chamamos "Santa" àquela que entrou por estas terras como noiva.'
+          ]
+        },
+        en: {
+          title: "1. Silver Path",
+          badge: 'Peregrination',
+          description: 'Where a Queen met her people. Cross the border at Quintanilha and relive the emotion of Isabel’s first encounter with the land and people of Portugal. Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
+          narrativeTitle: "The Way that Blossomed with the Queen's Passing",
+          content: [
+            "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
+            "This route is not just a geographical crossing; it is an immersion in legend. When passing through Vila Flor (then called Póvoa do Além-Sabor), tradition says that the beauty of the future queen and her enchantment with the landscapes were such that the King himself later renamed the village in her honor. It is a trail marked by the scent of the scrubland and the hardness of the granite, which softens as it reaches the imposing walls of Trancoso, where the marriage was ratified with the splendor of the royal nuptials.",
+            "By walking this path, you are not just walking through Trás-os-Montes and the Beiras; you are redoing the logistics of a medieval retinue, feeling the breeze blowing on the plateau and discovering why, 700 years later, we still call 'Saint' that who entered these lands as a bride."
+          ]
+        },
+        es: {
+          title: '1. Vía de la Plata',
+          badge: 'Peregrinação',
+          description: 'Donde Isabel conoció a su pueblo. Cruce la frontera de Quintanilha y sienta la emoción del primer encuentro de la Reina con las tierras y las gentes de Portugal. Ruta común con la variante portuguesa de la ruta de la plata del camino de Santiago',
+          narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
+          content: [
+            'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
+            'Este percurso no es solo una travesía geográfica; es una inmersión en la leyenda. Al pasar por Vila Flor (entonces llamada Póvoa do Além-Sabor), cuenta la tradición que la belleza de la futura reina y su encanto por los paisajes fueron de tal orden que el propio Rey, más tarde, rebautizó la villa en su honor. Es un sendero marcado por el aroma del monte y por la dureza del granito, que se suaviza al llegar a las imponentes murallas de Trancoso, donde el matrimonio fue ratificado con el esplendor de las nupcias reales.',
+            'Al recorrer este camino, no está simplemente caminando por Trás-os-Montes y las Beiras; está rehaciendo la logística de una comitiva medieval, sintiendo la brisa que sopla en la meseta y descubriendo por qué razón, 700 después, todavía llamamos "Santa" a la que entró por estas tierras como novia.'
+          ]
+        }
+      },
+      pois: [
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.7341153, -6.5759631],
+          i18n: {
+            pt: { name: 'Capela Nossa Senhora da Ribeira', categoryLabel: 'Capela' },
+            en: { name: "Our Lady of Ribeira Chapel", categoryLabel: 'Chapel' },
+            es: { name: 'Capilla Nuestra Señora de la Ribera', categoryLabel: 'Capilla' }
+          },
+          url: 'https://www.rotaterrafria.com/geo_artigo-49/capela-de-nossa-senhora-da-ribeira-santuario-de-nossa-senhora-da-ribeira'
+        },
+        {
+          category: 'sleep',
+          contact: '+351 966 048 612 (Sr. Álvaro Lopes)',
+          latlng: [41.7507436, -6.5715525],
+          i18n: {
+            pt: { name: 'Albergue de Peregrinos de Quintanilha', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Quintanilha", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Quintanilha', categoryLabel: 'Albergue' }
+          },
+          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.8217636, -6.6012194],
+          i18n: {
+            pt: { name: 'Café Restaurante O Lombardês', categoryLabel: 'Café Restaurante' },
+            en: { name: "O Lombardês Café Restaurant", categoryLabel: 'Café Restaurant' },
+            es: { name: 'Café Restaurante O Lombardês', categoryLabel: 'Café Restaurante' }
+          },
+          url: ''
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.8013253, -6.6975608],
+          i18n: {
+            pt: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' },
+            en: { name: "O Abel Restaurant", categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g7067429-d3853386-Reviews-Restaurante_O_Abel-Gimonde_Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.8175611, -6.6294250],
+          i18n: {
+            pt: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' },
+            en: { name: "Lombada Restaurant", categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g189172-d7099427-Reviews-Restaurante_Lombada-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'sleep',
+          contact: '+351 273 240 020',
+          latlng: [41.8038025, -6.7505367],
+          i18n: {
+            pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
+          },
+          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
+        },
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [41.8047794, -6.7666436],
+          i18n: {
+            pt: { name: 'Pousada da Juventude de Bragança', categoryLabel: 'Pousada' },
+            en: { name: "Youth Hostel Bragança", categoryLabel: 'Youth Hostel' },
+            es: { name: 'Albergue de Juventud Bragança', categoryLabel: 'Albergue de Juventud' }
+          },
+          url: 'https://www.booking.com/Share-9cqSbu'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.8042503, -6.7492964],
+          i18n: {
+            pt: { name: 'Castelo de Bragança', categoryLabel: 'Castelo' },
+            en: { name: "Bragança Castle", categoryLabel: 'Castle' },
+            es: { name: 'Castillo de Bragança', categoryLabel: 'Castillo' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        }
+      ]
     }
   }
 ];

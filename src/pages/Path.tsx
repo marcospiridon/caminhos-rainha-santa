@@ -22,7 +22,7 @@ export default function Path() {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  const path = paths.find(p => p.slug === slug);
+  const path = paths.find(p => p.slug === slug && !p.parentSlug);
   const stage = path?.details;
 
   if (!path || !stage) {

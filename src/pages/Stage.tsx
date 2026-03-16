@@ -23,7 +23,7 @@ export default function Stage() {
     window.scrollTo(0, 0);
   }, [slug, stageSlug]);
 
-  const path = paths.find(p => p.slug === stageSlug);
+  const path = paths.find(p => p.slug === stageSlug && p.parentSlug === slug);
   const stage = path?.details;
 
   if (!path || !stage) {
