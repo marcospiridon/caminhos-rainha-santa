@@ -1169,7 +1169,7 @@ export const paths: Path[] = [
         pt: {
           title: 'O Grande Flow Transmontano: De Bragança a Mirandela',
           badge: 'ecopista',
-          description: 'Uma travessia épica de 80km em gravel que une o Castelo de Bragança à "Cidade Jardim", Mirandela. Um percurso rápido e cénico que desliza pela antiga Linha do Tua, abraça as águas do Azibo e mergulha nos olivais do vale.',
+          description: 'Uma travessia épica de 81km em gravel que une o Castelo de Bragança à "Cidade Jardim", Mirandela. Um percurso rápido e cénico que desliza pela antiga Linha do Tua, abraça as águas do Azibo e mergulha nos olivais do vale.',
           narrativeTitle: 'Conquiste o planalto e deixe-se levar pelo ritmo do ferro e do cristal. Das muralhas de Bragança ao espelho de água do Azibo, sinta a liberdade de um caminho onde a história rola sobre duas rodas.',
           content: [
             'A aventura começa sob a imponência do Castelo de Bragança, mas o gravel ganha alma no Mosteiro de Castro de Avelãs. Este monumento único de tijolo românico marca a transição para a Ecopista da Linha do Tua. Onde outrora rugiam as locomotivas a vapor, hoje os pneus de gravel encontram um tapete de rolamento perfeito, serpenteando por paisagens rurais onde a Rainha Santa Isabel encontrou abrigo e devoção.',
@@ -1180,7 +1180,7 @@ export const paths: Path[] = [
         en: {
           title: 'The Great Transmontane Flow: Bragança to Mirandela',
           badge: 'old railway',
-          description: 'An epic 80km gravel journey connecting Bragança Castle to the "Garden City" of Mirandela. A fast and scenic route that glides along the old Tua Line, embraces the Azibo waters, and dives into the valley\'s olive groves.',
+          description: 'An epic 81km gravel journey connecting Bragança Castle to the "Garden City" of Mirandela. A fast and scenic route that glides along the old Tua Line, embraces the Azibo waters, and dives into the valley\'s olive groves.',
           narrativeTitle: 'Conquer the plateau and let the rhythm of iron and crystal guide you. From Bragança\'s walls to the Azibo mirror, feel the freedom of a path where history rolls on two wheels.',
           content: [
             'The adventure begins under the imposing Bragança Castle, but the gravel finds its soul at the Castro de Avelãs Monastery. This unique brick Romanesque monument marks the transition to the Tua Line Ecopista. Where steam locomotives once roared, gravel tires now find a perfect rolling carpet, winding through rural landscapes where Saint Queen Isabel once found shelter and devotion.',
@@ -1191,7 +1191,7 @@ export const paths: Path[] = [
         es: {
           title: 'El Gran Flow Transmontano: De Braganza a Mirandela',
           badge: 'vía verde',
-          description: 'Una travesía épica de 80km en gravel que une el Castillo de Braganza con la "Ciudad Jardín", Mirandela. Un recorrido rápido y escénico que se desliza por la antigua Vía del Tua, abraza las aguas del Azibo y se sumerge en los olivares del valle.',
+          description: 'Una travesía épica de 81km en gravel que une el Castillo de Braganza con la "Ciudad Jardín", Mirandela. Un recorrido rápido y escénico que se desliza por la antigua Vía del Tua, abraza las aguas del Azibo y se sumerge en los olivares del valle.',
           narrativeTitle: 'Conquiste la meseta y déjese llevar por el ritmo del hierro y el cristal. De las murallas de Braganza al espejo del Azibo, sienta la libertad de un camino donde la historia rueda sobre dos ruedas.',
           content: [
             'La aventura comienza bajo la imponente Torre del Homenaje de Braganza, pero el gravel cobra vida en el Monasterio de Castro de Avelãs. Este monumento único de ladrillo románico marca la transición a la Vía Verde (Ecopista) del Tua. Donde antaño rugían las locomotoras de vapor, hoy los neumáticos de gravel encuentran un tapete de rodaje perfecto, serpenteando por paisajes rurales donde la Reina Santa Isabel encontró refugio y devoción.',

@@ -10,10 +10,12 @@ export default function Stage() {
   const { slug, stage: stageSlug } = useParams<{ slug: string; stage: string }>();
   const { t, i18n: i18nInstance } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
+  const [activeCategory, setActiveCategory] = useState('all');
 
   // Reset expansion state when navigating between stages
   useEffect(() => {
     setIsExpanded(false);
+    setActiveCategory('all');
   }, [slug, stageSlug]);
 
   const gpxUrl = `/gpx/${stageSlug}.gpx`;
@@ -88,11 +90,11 @@ export default function Stage() {
 
         {/* Map Container */}
         <section className="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 relative h-[500px] w-full bg-gray-100 group">
-          <RouteMap gpxUrl={gpxUrl} pois={stage.pois} />
+          <RouteMap gpxUrl={gpxUrl} pois={stage.pois} activeCategory={activeCategory} />
         </section>
 
         {stageSlug && <ElevationProfile slug={stageSlug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
-        {stage.pois && <POISection pois={stage.pois} />}
+        {stage.pois && <POISection pois={stage.pois} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />}
       </div>
 
       {/* Right Column */}

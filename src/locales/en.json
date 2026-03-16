@@ -73,6 +73,17 @@
       "more": "read more",
       "less": "read less",
       "backToPath": "Path"
+    },
+    "pois": {
+      "filter": {
+        "all": "All",
+        "eat": "Where to eat",
+        "sleep": "Where to sleep",
+        "see": "What to see",
+        "camp": "Where to rest",
+        "help": "Support",
+        "water": "Water"
+      }
     }
   },
   "pathsPage": {

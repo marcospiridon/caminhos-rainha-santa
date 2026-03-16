@@ -73,6 +73,17 @@
       "more": "ver mais",
       "less": "ver menos",
       "backToPath": "Rota"
+    },
+    "pois": {
+      "filter": {
+        "all": "Todos",
+        "eat": "Onde comer",
+        "sleep": "Onde dormir",
+        "see": "O que ver",
+        "camp": "Onde descansar",
+        "help": "Apoio",
+        "water": "Água"
+      }
     }
   },
   "pathsPage": {

@@ -89,15 +89,18 @@ function MapController({ bounds, isInteractive }: { bounds: L.LatLngBoundsExpres
 interface MapProps {
   gpxUrl: string;
   pois?: POI[];
+  activeCategory?: string;
 }
 
-export default function RouteMap({ gpxUrl, pois }: MapProps) {
+export default function RouteMap({ gpxUrl, pois, activeCategory = 'all' }: MapProps) {
   const { i18n: i18nInstance, t } = useTranslation();
   const [positions, setPositions] = useState<[number, number][]>([]);
   const [bounds, setBounds] = useState<L.LatLngBoundsExpression | null>(null);
   const [isInteractive, setIsInteractive] = useState(() => {
     return typeof window !== 'undefined' ? window.innerWidth >= 1024 : false;
   });
+
+  const filteredPois = pois?.filter(p => activeCategory === 'all' || p.category === activeCategory) || [];
 
   useEffect(() => {
     if (!gpxUrl) return;
@@ -155,7 +158,7 @@ export default function RouteMap({ gpxUrl, pois }: MapProps) {
           />
         )}
 
-        {pois && pois.map((poi, idx) => {
+        {filteredPois.map((poi, idx) => {
           const CategoryIcon = iconMap[poi.category] || Camera;
           const customIcon = createCustomIcon(CategoryIcon, '#c18182');
           const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
