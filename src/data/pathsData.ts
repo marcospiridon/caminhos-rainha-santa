@@ -1158,12 +1158,12 @@ export const paths: Path[] = [
     image: '/mirandela.jpg',
     parentSlug: 'aventura-gravel',
     details: {
-      duration: 4,
+      duration: 5,
       durationUnit: 'hours',
       distance: 81,
-      elevation: 120,
-      minAltitude: 500,
-      maxAltitude: 620,
+      elevation: 1051,
+      minAltitude: 220,
+      maxAltitude: 900,
       difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
@@ -1202,16 +1202,181 @@ export const paths: Path[] = [
       },
       pois: [
         {
+          category: 'sleep',
+          contact: '+351 273 240 020',
+          latlng: [41.8038025, -6.7505367],
+          i18n: {
+            pt: { name: 'Albergue de Peregrinos de Bragança', categoryLabel: 'Albergue' },
+            en: { name: "Peregrino's Guesthouse Bragança", categoryLabel: 'Guesthouse' },
+            es: { name: 'Albergue de Peregrinos Bragança', categoryLabel: 'Albergue' }
+          },
+          url: 'https://turismo.cm-braganca.pt/paisagens-e-biodiversidade/percursos-e-rotas/caminho-de-santiago'
+        },
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [41.8047794, -6.7666436],
+          i18n: {
+            pt: { name: 'Pousada da Juventude de Bragança', categoryLabel: 'Pousada' },
+            en: { name: "Youth Hostel Bragança", categoryLabel: 'Youth Hostel' },
+            es: { name: 'Albergue de Juventud Bragança', categoryLabel: 'Albergue de Juventud' }
+          },
+          url: 'https://www.booking.com/Share-9cqSbu'
+        },
+        {
           category: 'see',
           contact: '',
-          latlng: [41.7516603, -6.5638403],
+          latlng: [41.8042502, -6.7492964],
           i18n: {
-            pt: { name: 'Praia Fluvial do Colado', categoryLabel: 'Praia Fluvial' },
-            en: { name: "Colado River Beach", categoryLabel: 'River Beach' },
-            es: { name: 'Playa Fluvial del Colado', categoryLabel: 'Playa Fluvial' }
+            pt: { name: 'Castelo de Bragança', categoryLabel: 'Castelo' },
+            en: { name: "Bragança Castle", categoryLabel: 'Castle' },
+            es: { name: 'Castillo de Bragança', categoryLabel: 'Castillo' }
           },
           url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
         },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [41.8437164, -6.7472542],
+          i18n: {
+            pt: { name: 'Parque de Campismo Municipal de Bragança', categoryLabel: 'Parque de Campismo' },
+            en: { name: "Bragança Municipal Campsite", categoryLabel: 'Campsite' },
+            es: { name: 'Parque de Campismo Municipal de Bragança', categoryLabel: 'Parque de Campismo' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.7989544, -6.8045408],
+          i18n: {
+            pt: { name: 'Mosteiro de Castro de Avelãs', categoryLabel: 'Mosteiro' },
+            en: { name: "Monastery of Castro de Avelãs", categoryLabel: 'Monastery' },
+            es: { name: 'Monasterio de Castro de Avelãs', categoryLabel: 'Monasterio' }
+          },
+          url: 'https://www.rotaterrafria.com/geo_artigo-49/igreja-mosteiro-de-castro-de-avelas'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.7795681, -6.8221033],
+          i18n: {
+            pt: { name: 'Capela Nossa Senhora da Cabeça', categoryLabel: 'Capela' },
+            en: { name: "Our Lady of Cabeça Chapel", categoryLabel: 'Chapel' },
+            es: { name: 'Capilla Nuestra Señora de la Cabeza', categoryLabel: 'Capilla' }
+          },
+          url: 'https://www.rotaterrafria.com/pages/222/?geo_article_id=6857'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.6725189, -6.8319211],
+          i18n: {
+            pt: { name: 'Capela Nossa Senhora do Pereiro', categoryLabel: 'Capela' },
+            en: { name: "Our Lady of Pereiro Chapel", categoryLabel: 'Chapel' },
+            es: { name: 'Capilla Nuestra Señora del Pereiro', categoryLabel: 'Capilla' }
+          },
+          url: 'https://www.rotaterrafria.com/geo_artigo-49/parque-de-merendas-de-santa-comba-de-rossas'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.6629528, -6.8278150],
+          i18n: {
+            pt: { name: 'Café Reboledo', categoryLabel: 'Café' },
+            en: { name: "Café Reboledo", categoryLabel: 'Coffee Shop' },
+            es: { name: 'Café Reboledo', categoryLabel: 'Chiringuito' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1024346-d25435017-Reviews-Cafe_Reboledo-Santa_Comba_de_Rossas_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'eat',
+          contact: '967983398',
+          latlng: [41.5433628, -6.8982536],
+          i18n: {
+            pt: { name: 'Cervejaria Dom', categoryLabel: 'Cervejaria' },
+            en: { name: 'Cervejaria Dom', categoryLabel: 'Pub' },
+            es: { name: 'Cervejaria Dom', categoryLabel: 'Cervejaria' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d12140409-Reviews-Cervejaria_Dom-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.5518339, -6.8741514],
+          i18n: {
+            pt: { name: 'Café da Santa Joana', categoryLabel: 'Café' },
+            en: { name: 'Café da Santa Joana', categoryLabel: 'Coffee Shop' },
+            es: { name: 'Café da Santa Joana', categoryLabel: 'Chiringuito' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d15025983-Reviews-Santa_Joana-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.5086356, -7.0400039],
+          i18n: {
+            pt: { name: 'Cervejaria Loreiro', categoryLabel: 'Café' },
+            en: { name: 'Cervejaria Loreiro', categoryLabel: 'Coffee Shop' },
+            es: { name: 'Cervejaria Loreiro', categoryLabel: 'Chiringuito' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d15025981-Reviews-Cervejaria_Loreiro-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [41.4852383, -7.1865272],
+          i18n: {
+            pt: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
+            en: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
+            es: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' }
+          },
+          url: 'https://www.booking.com/hotel/pt/grande-dom-dinis.html'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [41.5613894, -6.8832964],
+          i18n: {
+            pt: { name: 'Albufeira do Azibo', categoryLabel: 'Abrigo' },
+            en: { name: "Albufeira do Azibo", categoryLabel: 'Shelter' },
+            es: { name: 'Albufeira do Azibo', categoryLabel: 'Refugio' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [41.5008561, -7.1219225],
+          i18n: {
+            pt: { name: 'Cascata de Vilar de Ledra', categoryLabel: 'Cascata' },
+            en: { name: "Cascata de Vilar de Ledra", categoryLabel: 'Waterfall' },
+            es: { name: 'Cascata de Vilar de Ledra', categoryLabel: 'Cascada' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [41.5065744, -7.1973061],
+          i18n: {
+            pt: { name: 'Parque de Campismo 3 Rios Maravilha', categoryLabel: 'Parque de Campismo' },
+            en: { name: '3 Rios Maravilha Campsite', categoryLabel: 'Campsite' },
+            es: { name: 'Parque de Campismo 3 Rios Maravilha', categoryLabel: 'Parque de Campismo' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [41.5395614, -6.8926325],
+          i18n: {
+            pt: { name: 'Parque de Merendas Entre as Pontes', categoryLabel: 'Parque de Merendas' },
+            en: { name: 'Parque de Merendas Entre as Pontes', categoryLabel: 'Picnic Area' },
+            es: { name: 'Parque de Merendas Entre as Pontes', categoryLabel: 'Parque de Merendas' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        }
       ]
     }
   }
