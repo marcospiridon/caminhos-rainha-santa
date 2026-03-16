@@ -4,7 +4,7 @@ import L from 'leaflet';
 import * as toGeoJSON from '@tmcw/togeojson';
 import 'leaflet/dist/leaflet.css';
 import type { POI } from '../types';
-import { Bed, Utensils, Camera, HeartPulse, Droplet, MousePointer2, X } from 'lucide-react';
+import { Bed, Utensils, Camera, HeartPulse, Droplet, MousePointer2, X, Trees } from 'lucide-react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { useTranslation } from 'react-i18next';
 import { getAffiliateUrl } from '../utils/urlUtils';
@@ -29,6 +29,7 @@ const iconMap = {
   see: Camera,
   help: HeartPulse,
   water: Droplet,
+  camp: Trees,
 };
 
 const createCustomIcon = (CategoryIcon: any, color: string) => {

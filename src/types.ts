@@ -10,7 +10,7 @@ export interface POITranslations {
 }
 
 export interface POI {
-  category: 'sleep' | 'eat' | 'see' | 'help' | 'water';
+  category: 'sleep' | 'eat' | 'see' | 'help' | 'water' | 'camp';
   contact: string;
   latlng: [number, number];
   i18n: Localized<POITranslations>;

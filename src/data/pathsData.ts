@@ -1126,7 +1126,92 @@ export const paths: Path[] = [
             es: { name: 'Castillo de Bragança', categoryLabel: 'Castillo' }
           },
           url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [41.8437164, -6.7472542],
+          i18n: {
+            pt: { name: 'Parque de Campismo Municipal de Bragança', categoryLabel: 'Parque de Campismo' },
+            en: { name: "Bragança Municipal Campsite", categoryLabel: 'Campsite' },
+            es: { name: 'Parque de Campismo Municipal de Bragança', categoryLabel: 'Parque de Campismo' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [41.7516603, -6.5638403],
+          i18n: {
+            pt: { name: 'Praia Fluvial do Colado', categoryLabel: 'Praia Fluvial' },
+            en: { name: "Colado River Beach", categoryLabel: 'River Beach' },
+            es: { name: 'Playa Fluvial del Colado', categoryLabel: 'Playa Fluvial' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
+      ]
+    }
+  },
+  {
+    slug: 'ecopista-do-tua',
+    type: 'cycling',
+    image: '/mirandela.jpg',
+    parentSlug: 'aventura-gravel',
+    details: {
+      duration: 4,
+      durationUnit: 'hours',
+      distance: 81,
+      elevation: 120,
+      minAltitude: 500,
+      maxAltitude: 620,
+      difficultyKey: 'common.difficulty.easy',
+      i18n: {
+        pt: {
+          title: 'O Grande Flow Transmontano: De Bragança a Mirandela',
+          badge: 'ecopista',
+          description: 'Uma travessia épica de 80km em gravel que une o Castelo de Bragança à "Cidade Jardim", Mirandela. Um percurso rápido e cénico que desliza pela antiga Linha do Tua, abraça as águas do Azibo e mergulha nos olivais do vale.',
+          narrativeTitle: 'Conquiste o planalto e deixe-se levar pelo ritmo do ferro e do cristal. Das muralhas de Bragança ao espelho de água do Azibo, sinta a liberdade de um caminho onde a história rola sobre duas rodas.',
+          content: [
+            'A aventura começa sob a imponência do Castelo de Bragança, mas o gravel ganha alma no Mosteiro de Castro de Avelãs. Este monumento único de tijolo românico marca a transição para a Ecopista da Linha do Tua. Onde outrora rugiam as locomotivas a vapor, hoje os pneus de gravel encontram um tapete de rolamento perfeito, serpenteando por paisagens rurais onde a Rainha Santa Isabel encontrou abrigo e devoção.',
+            'O ritmo acelera à medida que nos aproximamos da Albufeira do Azibo. Este oásis de águas azuis, parte do Geopark Terras de Cavaleiros (UNESCO), é o ponto médio ideal para uma pausa regeneradora. Entre as tradições dos Caretos de Salsas e o brilho da albufeira, o ciclista atravessa um território de biodiversidade pura, onde o silêncio da ecopista é apenas interrompido pelo vento e pelo som da corrente.',
+            'A etapa final é uma descida fluida em direção ao Rio Tua. Atravessando o vale de Carvalhais, o cenário é dominado pelo "ouro líquido" — os extensos olivais que anunciam a chegada a Mirandela. A entrada triunfal faz-se pela Ponte Velha, cruzando os mesmos arcos que viram passar rainhas e reis. Terminar aqui é celebrar com uma Alheira de Mirandela, honrando a gastronomia de uma cidade que recebe quem chega com jardins floridos e mesas fartas.'
+          ]
+        },
+        en: {
+          title: 'The Great Transmontane Flow: Bragança to Mirandela',
+          badge: 'old railway',
+          description: 'An epic 80km gravel journey connecting Bragança Castle to the "Garden City" of Mirandela. A fast and scenic route that glides along the old Tua Line, embraces the Azibo waters, and dives into the valley\'s olive groves.',
+          narrativeTitle: 'Conquer the plateau and let the rhythm of iron and crystal guide you. From Bragança\'s walls to the Azibo mirror, feel the freedom of a path where history rolls on two wheels.',
+          content: [
+            'The adventure begins under the imposing Bragança Castle, but the gravel finds its soul at the Castro de Avelãs Monastery. This unique brick Romanesque monument marks the transition to the Tua Line Ecopista. Where steam locomotives once roared, gravel tires now find a perfect rolling carpet, winding through rural landscapes where Saint Queen Isabel once found shelter and devotion.',
+            'The pace picks up as you approach the Azibo Reservoir. This blue water oasis, part of the UNESCO Terras de Cavaleiros Geopark, is the ideal midpoint for a regenerative break. Between the traditions of the Salsas Caretos and the reservoir\'s glow, the cyclist crosses a territory of pure biodiversity, where the ecopista\'s silence is only broken by the wind and the sound of the chain.',
+            'The final stretch is a fluid descent toward the Tua River. Crossing the Carvalhais valley, the scenery is dominated by "liquid gold"—the vast olive groves that herald the arrival in Mirandela. The triumphant entry is made via the Old Bridge, crossing the same arches that saw queens and kings pass by. Finishing here means celebrating with a Mirandela Alheira, honoring the gastronomy of a city that welcomes arrivals with blooming gardens and hearty tables.'
+          ]
+        },
+        es: {
+          title: 'El Gran Flow Transmontano: De Braganza a Mirandela',
+          badge: 'vía verde',
+          description: 'Una travesía épica de 80km en gravel que une el Castillo de Braganza con la "Ciudad Jardín", Mirandela. Un recorrido rápido y escénico que se desliza por la antigua Vía del Tua, abraza las aguas del Azibo y se sumerge en los olivares del valle.',
+          narrativeTitle: 'Conquiste la meseta y déjese llevar por el ritmo del hierro y el cristal. De las murallas de Braganza al espejo del Azibo, sienta la libertad de un camino donde la historia rueda sobre dos ruedas.',
+          content: [
+            'La aventura comienza bajo la imponente Torre del Homenaje de Braganza, pero el gravel cobra vida en el Monasterio de Castro de Avelãs. Este monumento único de ladrillo románico marca la transición a la Vía Verde (Ecopista) del Tua. Donde antaño rugían las locomotoras de vapor, hoy los neumáticos de gravel encuentran un tapete de rodaje perfecto, serpenteando por paisajes rurales donde la Reina Santa Isabel encontró refugio y devoción.',
+            'El ritmo se acelera al acercarse al Embalse del Azibo. Este oasis de aguas azules, parte del Geoparque Terras de Cavaleiros (UNESCO), es el punto medio ideal para una pausa regeneradora. Entre las tradiciones de los Caretos de Salsas y el brillo del embalse, el ciclista atraviesa un territorio de biodiversidad pura, donde el silencio de la vía verde solo es interrumpido por el viento.',
+            'El tramo final es un descenso fluido hacia el río Tua. Atravesando el valle de Carvalhais, el escenario está dominado por el "oro líquido": los extensos olivares que anuncian la llegada a Mirandela. La entrada triunfal se realiza por el Puente Viejo, cruzando los mismos arcos que vieron pasar a reinas y reyes. Terminar aquí es celebrar con una Alheira de Mirandela, honrando la gastronomía de una ciudad que recibe al viajero con jardines y mesas generosas.'
+          ]
         }
+      },
+      pois: [
+        {
+          category: 'see',
+          contact: '',
+          latlng: [41.7516603, -6.5638403],
+          i18n: {
+            pt: { name: 'Praia Fluvial do Colado', categoryLabel: 'Praia Fluvial' },
+            en: { name: "Colado River Beach", categoryLabel: 'River Beach' },
+            es: { name: 'Playa Fluvial del Colado', categoryLabel: 'Playa Fluvial' }
+          },
+          url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        },
       ]
     }
   }

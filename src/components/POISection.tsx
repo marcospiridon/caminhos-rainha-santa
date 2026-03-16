@@ -1,5 +1,5 @@
 import type { POI } from '../types';
-import { Bed, Utensils, Camera, HeartPulse, Droplet } from 'lucide-react';
+import { Bed, Utensils, Camera, HeartPulse, Droplet, Trees } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 
@@ -9,6 +9,7 @@ const iconMap = {
   see: Camera,
   help: HeartPulse,
   water: Droplet,
+  camp: Trees,
 };
 
 import { getAffiliateUrl } from '../utils/urlUtils';
