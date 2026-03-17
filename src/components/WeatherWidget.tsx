@@ -104,8 +104,8 @@ const WeatherWidget = ({ lat, lng }: WeatherWidgetProps) => {
           {getWeatherIcon(weather.condition)}
         </div>
         <div>
-          <h4 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-1">
-            {i18n.language.startsWith('pt') ? 'Meteorologia' : i18n.language.startsWith('es') ? 'Meteorología' : 'Current Weather'}
+          <h4 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-1 flex items-center gap-1 line-clamp-1">
+            {weather.city ? weather.city : (i18n.language.startsWith('pt') ? 'Meteorologia' : i18n.language.startsWith('es') ? 'Meteorología' : 'Current Weather')}
           </h4>
           <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
             {getConditionLabel(weather.condition)}

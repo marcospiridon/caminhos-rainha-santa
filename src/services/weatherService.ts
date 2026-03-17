@@ -2,6 +2,7 @@ export interface WeatherData {
   temp: number;
   condition: string;
   conditionCode: number;
+  city?: string;
 }
 
 // Mapping Open-Meteo codes to readable strings (simplified)
@@ -23,10 +24,21 @@ export const fetchWeather = async (lat: number, lon: number): Promise<WeatherDat
     );
     const data = await response.json();
     
+    // Reverse geocode to get the city name
+    let city = undefined;
+    try {
+      const geoRes = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}`);
+      const geoData = await geoRes.json();
+      city = geoData.locality || geoData.city || undefined;
+    } catch (e) {
+      console.error('Failed to resolve location name', e);
+    }
+    
     return {
       temp: Math.round(data.current.temperature_2m),
       conditionCode: data.current.weather_code,
-      condition: getWeatherCondition(data.current.weather_code)
+      condition: getWeatherCondition(data.current.weather_code),
+      city
     };
   } catch (error) {
     console.error('Error fetching weather:', error);
