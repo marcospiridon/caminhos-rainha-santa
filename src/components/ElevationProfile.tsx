@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
 import { ChevronDown, ChevronUp, Activity } from 'lucide-react';
 
-export default function ElevationProfile({ slug, distance, minAltitude, maxAltitude }: { slug: string, distance: number, minAltitude: number, maxAltitude: number }) {
+export default function ElevationProfile({ slug, distance, minAltitude, maxAltitude, defaultExpanded = false }: { slug: string, distance: number, minAltitude: number, maxAltitude: number, defaultExpanded?: boolean }) {
   const { t } = useTranslation();
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
 
   return (
     <section className="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm transition-all duration-300">

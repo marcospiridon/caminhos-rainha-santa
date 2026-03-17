@@ -95,7 +95,7 @@ export default function Stage() {
           <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory={activeCategory} />
         </section>
 
-        {stageSlug && <ElevationProfile slug={stageSlug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
+        {stageSlug && <ElevationProfile slug={stageSlug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} defaultExpanded={false} />}
         {stagePois.length > 0 && <POISection pois={stagePois} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />}
       </div>
 

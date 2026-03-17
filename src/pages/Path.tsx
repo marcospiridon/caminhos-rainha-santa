@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, POISection, RouteMap, PathSelection, HeroHeader, StickyActionBar } from "../components";
+import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -11,12 +11,10 @@ export default function Path() {
   const { slug } = useParams();
   const { t, i18n: i18nInstance } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
-  const [activeCategory, setActiveCategory] = useState('all');
 
   // Reset expansion state when navigating between paths
   useEffect(() => {
     setIsExpanded(false);
-    setActiveCategory('all');
   }, [slug]);
 
   const gpxUrl = `/gpx/${slug}.gpx`;
@@ -87,11 +85,10 @@ export default function Path() {
 
         {/* Map Container */}
         <section className="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 relative h-[500px] w-full bg-gray-100 group">
-          <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory={activeCategory} />
+          <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory="all" />
         </section>
 
-        {slug && <ElevationProfile slug={slug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
-        {stagePois.length > 0 && <POISection pois={stagePois} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />}
+        {slug && <ElevationProfile slug={slug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} defaultExpanded={true} />}
       </div>
 
       {/* Right Column */}
