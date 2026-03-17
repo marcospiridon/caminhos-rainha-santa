@@ -77,7 +77,7 @@ export default function POISection({ pois, activeCategory, onCategoryChange }: P
             return (
               <motion.div
                 layout
-                key={`${poi.i18n.pt.name}-${poi.category}`}
+                key={poi.id}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}

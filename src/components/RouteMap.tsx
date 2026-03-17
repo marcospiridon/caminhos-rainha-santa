@@ -158,7 +158,7 @@ export default function RouteMap({ gpxUrl, pois, activeCategory = 'all' }: MapPr
           />
         )}
 
-        {filteredPois.map((poi, idx) => {
+        {filteredPois.map((poi) => {
           const CategoryIcon = iconMap[poi.category] || Camera;
           const customIcon = createCustomIcon(CategoryIcon, '#c18182');
           const lang = (i18nInstance.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
@@ -166,7 +166,7 @@ export default function RouteMap({ gpxUrl, pois, activeCategory = 'all' }: MapPr
 
           return (
             <Marker
-              key={`${poi.i18n.pt.name}-${idx}`}
+              key={poi.id}
               position={poi.latlng}
               icon={customIcon}
             >

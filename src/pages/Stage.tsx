@@ -5,6 +5,7 @@ import { StatsGrid, ElevationProfile, POISection, RouteMap, HeroHeader, StickyAc
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
+import { getPoisForSlug } from "../data/poisData";
 
 export default function Stage() {
   const { slug, stage: stageSlug } = useParams<{ slug: string; stage: string }>();
@@ -27,6 +28,7 @@ export default function Stage() {
 
   const path = paths.find(p => p.slug === stageSlug && p.parentSlug === slug);
   const stage = path?.details;
+  const stagePois = stageSlug ? getPoisForSlug(stageSlug) : [];
 
   if (!path || !stage) {
     return (
@@ -90,11 +92,11 @@ export default function Stage() {
 
         {/* Map Container */}
         <section className="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 relative h-[500px] w-full bg-gray-100 group">
-          <RouteMap gpxUrl={gpxUrl} pois={stage.pois} activeCategory={activeCategory} />
+          <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory={activeCategory} />
         </section>
 
         {stageSlug && <ElevationProfile slug={stageSlug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} />}
-        {stage.pois && <POISection pois={stage.pois} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />}
+        {stagePois.length > 0 && <POISection pois={stagePois} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />}
       </div>
 
       {/* Right Column */}

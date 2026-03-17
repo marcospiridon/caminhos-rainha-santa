@@ -10,11 +10,13 @@ export interface POITranslations {
 }
 
 export interface POI {
+  id: string;
   category: 'sleep' | 'eat' | 'see' | 'help' | 'water' | 'camp';
   contact: string;
   latlng: [number, number];
   i18n: Localized<POITranslations>;
   url?: string;
+  pathSlugs?: string[];
 }
 
 export interface PathI18n {
@@ -34,7 +36,6 @@ export interface PathStage {
   maxAltitude: number;
   difficultyKey: string; // Points to common translations key
   i18n: Localized<PathI18n>;
-  pois: POI[];
 }
 
 export interface Path {
