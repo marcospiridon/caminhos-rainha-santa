@@ -18,9 +18,10 @@ interface POISectionProps {
   pois: POI[];
   activeCategory: string;
   onCategoryChange: (category: string) => void;
+  columns?: 1 | 2;
 }
 
-export default function POISection({ pois, activeCategory, onCategoryChange }: POISectionProps) {
+export default function POISection({ pois, activeCategory, onCategoryChange, columns = 2 }: POISectionProps) {
   const { t, i18n } = useTranslation();
   const lang = (i18n.language?.split('-')[0] || 'pt') as 'pt' | 'en' | 'es';
 
@@ -42,9 +43,10 @@ export default function POISection({ pois, activeCategory, onCategoryChange }: P
   };
 
   return (
-    <section>
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-        <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+    <section className="flex flex-col h-full bg-surface-light dark:bg-surface-dark overflow-hidden">
+      {/* Fixed Header */}
+      <div className="p-6 pb-4 border-b border-gray-100/50 dark:border-gray-800/50">
+        <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-4">
           <span className="text-brand">
             <Camera size={20} />
           </span>
@@ -57,10 +59,10 @@ export default function POISection({ pois, activeCategory, onCategoryChange }: P
             <button
               key={cat}
               onClick={() => onCategoryChange(cat)}
-              className={`px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
+              className={`px-3 py-1.5 rounded-full text-[10px] uppercase font-bold transition-all cursor-pointer ${
                 activeCategory === cat
-                  ? 'bg-brand text-white shadow-md transform scale-105'
-                  : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-100 dark:border-gray-700 hover:border-brand/30 hover:bg-gray-50 dark:hover:bg-gray-700'
+                  ? 'bg-brand text-white shadow-md'
+                  : 'bg-white dark:bg-gray-800 text-gray-400 dark:text-gray-500 border border-gray-100 dark:border-gray-700 hover:border-brand/30'
               }`}
             >
               {t(`pathPage.pois.filter.${cat}`)}
@@ -69,7 +71,8 @@ export default function POISection({ pois, activeCategory, onCategoryChange }: P
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Scrollable List */}
+      <div className={`flex-grow overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-brand/20 scrollbar-track-transparent hover:scrollbar-thumb-brand/40 transition-colors ${columns === 2 ? 'grid grid-cols-1 md:grid-cols-2' : 'grid grid-cols-1'} gap-4`}>
         <AnimatePresence mode="popLayout">
           {filteredPois.map((poi) => {
             const Icon = iconMap[poi.category] || Camera;
@@ -83,7 +86,7 @@ export default function POISection({ pois, activeCategory, onCategoryChange }: P
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.2 }}
                 onClick={() => handlePOIClick(poi)}
-                className={`group bg-white dark:bg-surface-dark p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all flex gap-4 items-center ${poi.url ? 'cursor-pointer hover:shadow-lg hover:border-brand/30' : ''}`}
+                className={`group bg-white dark:bg-slate-800/50 p-4 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all flex gap-4 items-center ${poi.url ? 'cursor-pointer hover:shadow-lg hover:border-brand/30' : ''}`}
               >
                 <div className="flex-grow">
                   <div className="flex justify-between items-start">

@@ -438,7 +438,7 @@ export const paths: Path[] = [
     type: 'cycling',
     image: '/mirandela.jpg',
     details: {
-      duration: 5,
+      duration: 4,
       durationUnit: 'days',
       distance: 236,
       elevation: 4079,

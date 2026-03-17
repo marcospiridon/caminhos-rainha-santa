@@ -80,96 +80,109 @@ export default function Stage() {
       />
 
       {/* Main Content */}
-      <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-8 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
-        {/* Left Column */}
-        <div className="lg:col-span-8 flex flex-col gap-10">
-        <StatsGrid
-          distance={stage.distance}
-          elevation={stage.elevation}
-          duration={stage.duration}
-          durationUnit={stage.durationUnit}
-          difficulty={t(stage.difficultyKey)}
-          onElevationClick={() => setIsElevationModalOpen(true)}
-        />
+      <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-8 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        {/* Row 1: Stats (Left) + Empty (Right) */}
+        <div className="lg:col-span-8">
+          <StatsGrid
+            distance={stage.distance}
+            elevation={stage.elevation}
+            duration={stage.duration}
+            durationUnit={stage.durationUnit}
+            difficulty={t(stage.difficultyKey)}
+            onElevationClick={() => setIsElevationModalOpen(true)}
+          />
+        </div>
+        <div className="hidden lg:block lg:col-span-4" aria-hidden="true" />
 
-        {/* Map Container */}
-        <section className="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 relative h-[500px] w-full bg-gray-100 group">
-          <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory={activeCategory} />
-        </section>
+        {/* Row 2: Map (Left) + POIs (Right) */}
+        <div className="lg:col-span-8 h-[500px]">
+          <section className="rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 relative h-full w-full bg-gray-100 group">
+            <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory={activeCategory} />
+          </section>
+        </div>
 
-        <Modal
-          isOpen={isElevationModalOpen}
-          onClose={() => setIsElevationModalOpen(false)}
-          title={t('pathPage.sections.elevationProfile')}
-        >
-          {stageSlug && (
-            <ElevationProfile
-              slug={stageSlug}
-              distance={stage.distance}
-              minAltitude={stage.minAltitude}
-              maxAltitude={stage.maxAltitude}
-            />
+        <div className="lg:col-span-4 lg:h-[500px]">
+          {stagePois.length > 0 && (
+            <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 h-full overflow-hidden">
+              <POISection 
+                pois={stagePois} 
+                activeCategory={activeCategory} 
+                onCategoryChange={setActiveCategory} 
+                columns={1}
+              />
+            </div>
           )}
-        </Modal>
+        </div>
 
-        {stagePois.length > 0 && <POISection pois={stagePois} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />}
-      </div>
+        {/* Row 3: Narrative (Full Width) */}
+        <div className="lg:col-span-12">
+          <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 relative overflow-hidden"
+          >
+            <div className="absolute top-0 left-0 w-2 h-full bg-brand/20" />
+            <span className="inline-block text-brand font-bold tracking-widest text-xs uppercase mb-3">{t('pathPage.sections.history')}</span>
+            <h3 className="font-serif text-3xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+              {stageText.narrativeTitle}
+            </h3>
+            <div className="font-serif text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed text-lg">
+              {stageText.content.map((para, i) => {
+                if (i === 0) {
+                  const isTruncated = !isExpanded && para.length > 100;
+                  
+                  return (
+                    <div key={i} className="relative">
+                      <p className="lg:hidden">
+                        <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
+                          {para.charAt(0)}
+                        </span>
+                        {isTruncated ? para.slice(1, 100) + '...' : para.slice(1)}
+                        {isTruncated && (
+                          <button
+                            onClick={() => setIsExpanded(true)}
+                            className="ml-2 text-brand font-bold hover:underline inline-flex items-center gap-1"
+                          >
+                            {t('pathPage.navigation.more')}
+                          </button>
+                        )}
+                      </p>
+                      <p className="hidden lg:block">
+                        <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
+                          {para.charAt(0)}
+                        </span>
+                        {para.slice(1)}
+                      </p>
+                    </div>
+                  );
+                }
 
-      {/* Right Column */}
-      <div className="lg:col-span-4 flex flex-col gap-10">
-        {/* Narrative Section */}
-        <motion.article
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 relative overflow-hidden"
-        >
-          <div className="absolute top-0 left-0 w-2 h-full bg-brand/20" />
-          <span className="inline-block text-brand font-bold tracking-widest text-xs uppercase mb-3">{t('pathPage.sections.history')}</span>
-          <h3 className="font-serif text-3xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
-            {stageText.narrativeTitle}
-          </h3>
-          <div className="font-serif text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed text-lg">
-            {stageText.content.map((para, i) => {
-              if (i === 0) {
-                const isTruncated = !isExpanded && para.length > 100;
-                
                 return (
-                  <div key={i} className="relative">
-                    <p className="lg:hidden">
-                      <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
-                        {para.charAt(0)}
-                      </span>
-                      {isTruncated ? para.slice(1, 100) + '...' : para.slice(1)}
-                      {isTruncated && (
-                        <button
-                          onClick={() => setIsExpanded(true)}
-                          className="ml-2 text-brand font-bold hover:underline inline-flex items-center gap-1"
-                        >
-                          {t('pathPage.navigation.more')}
-                        </button>
-                      )}
-                    </p>
-                    <p className="hidden lg:block">
-                      <span className="text-5xl float-left mr-2 font-sans font-black text-brand/40 leading-none mt-1">
-                        {para.charAt(0)}
-                      </span>
-                      {para.slice(1)}
-                    </p>
-                  </div>
+                  <p key={i} className={`${!isExpanded ? 'hidden lg:block' : ''}`}>
+                    {para}
+                  </p>
                 );
-              }
-
-              return (
-                <p key={i} className={`${!isExpanded ? 'hidden lg:block' : ''}`}>
-                  {para}
-                </p>
-              );
-            })}
-          </div>
-        </motion.article>
-
-      </div>
+              })}
+            </div>
+          </motion.article>
+        </div>
       </main>
+
+      <Modal
+        isOpen={isElevationModalOpen}
+        onClose={() => setIsElevationModalOpen(false)}
+        title={t('pathPage.sections.elevationProfile')}
+      >
+        {stageSlug && (
+          <ElevationProfile
+            slug={stageSlug}
+            distance={stage.distance}
+            minAltitude={stage.minAltitude}
+            maxAltitude={stage.maxAltitude}
+          />
+        )}
+      </Modal>
     </div>
   );
 }
