@@ -447,33 +447,36 @@ export const paths: Path[] = [
       difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
-          title: 'Aventura Gravel',
-          badge: 'Para Aventureiros',
-          description: 'Desafie-se em terrenos acidentados e estradas de gravel cénicas. Desenhada para bicicletas de gravel e montanha, esta rota oferece velocidade, fluidez e vistas de cortar a respiração.',
-          narrativeTitle: 'A Aventura Começa nas Estradas de Terra',
+          title: 'Rota da Noiva Real em Bikepacking',
+          badge: 'Aventura',
+          description: 'A história sobre duas rodas. Atravesse a Raia e conquiste o horizonte de Quintanilha a Trancoso, numa jornada de bikepacking que une a força do pedal à mística da Rainha que transformou rochas em flores.',
+          narrativeTitle: 'Pedalar pela História: Onde a Lenda Ganha Velocidade',
           content: [
-            'Uma rota desenhada para quem procura adrenalina e paisagens selvagens. Percorra estradas de gravel entre serras e vales ao longo de dois dias intensos.',
-            'Brevemente mais informações'
+            'Em Junho de 1282, o som das águas do Rio Maçãs foi acompanhado pelo trotar de centenas de cavalos. Hoje, o silêncio da fronteira em Quintanilha é quebrado pelo girar das correntes. Esta rota de bikepacking convida-o a reviver a entrada triunfal de Isabel de Aragão em Portugal, ligando a fronteira ao altar de Trancoso com o dinamismo que só a bicicleta permite.',
+            'Este não é apenas um desafio físico; é uma viagem no tempo através de terrenos que testam o corpo e alimentam a alma. Da fluidez das ecopistas que seguem as antigas linhas de ferro até às subidas graníticas da Beira, cada quilómetro recorda a logística épica da comitiva real. Ao passar por Vila Flor, sentirá a mesma brisa que encantou a futura Rainha, num território onde o Rei Poeta, D. Dinis, imortalizou a beleza da sua noiva em cada nome de lugar.',
+            'Pedalar nesta rota é abraçar a vastidão de Trás-os-Montes e das Beiras com a liberdade do viajante moderno. É cruzar vales férteis e planaltos selvagens, sentindo a transição das paisagens que moldaram a "Rainha Santa". Prepare as alforjas: o destino final são as muralhas de Trancoso, onde o passado medieval e o espírito de aventura se encontram no final de cada etapa.'
           ]
         },
         en: {
-          title: 'Gravel Adventure',
-          badge: 'For Adventurers',
-          description: 'Challenge yourself on rugged terrains and scenic gravel roads. Designed for gravel and mountain bikes, this route offers speed, flow, and breathtaking views.',
-          narrativeTitle: 'The Adventure Begins on Gravel Roads',
+          title: "Royal Bride's Bikepacking Route",
+          badge: 'Adventure',
+          description: 'History on two wheels. Cross the border and conquer the horizon from Quintanilha to Trancoso, on a bikepacking journey that blends pedal power with the mystique of the Queen who turned rocks into flowers.',
+          narrativeTitle: "Cycling Through History: Where Legend Gains Speed",
           content: [
-            'A route designed for those seeking adrenaline and wild landscapes. Ride gravel roads through mountains and valleys over two intense days.',
-            'Briefly more information'
+            "In June 1282, the sound of the Maçãs River waters was accompanied by the trotting of hundreds of horses. Today, the silence of the border in Quintanilha is broken by the spinning of chains. This bikepacking route invites you to relive the triumphal entry of Elizabeth of Aragon into Portugal, connecting the border to the altar of Trancoso with the dynamism that only a bicycle allows.",
+            "This is not just a physical challenge; it is a time-travel journey through terrains that test the body and feed the soul. From the flow of the ecopistas following old railway lines to the granite climbs of the Beira region, every kilometer recalls the epic logistics of the royal retinue. As you pass through Vila Flor, you will feel the same breeze that enchanted the future Queen, in a territory where the Poet King, D. Dinis, immortalized his bride's beauty in every place name.",
+            "Cycling this route means embracing the vastness of Trás-os-Montes and the Beiras with the freedom of the modern traveler. It means crossing fertile valleys and wild plateaus, feeling the transition of the landscapes that shaped the 'Saint Queen.' Pack your bags: the final destination is the walls of Trancoso, where the medieval past and the spirit of adventure meet at the end of every stage."
           ]
         },
         es: {
-          title: 'Aventura Gravel',
-          badge: 'Para Aventureros',
-          description: 'Desafíese en terrenos accidentados e estradas de gravel cénicas. Diseñada para bicicletas de gravel y montaña, esta ruta ofrece velocidad, fluidez y vistas de cortar a respiração.',
-          narrativeTitle: 'La Aventura Comienza en los Caminos de Grava',
+          title: 'Ruta de la Novia Real en Bikepacking',
+          badge: 'Aventura',
+          description: 'La historia sobre dos ruedas. Cruce la Raya y conquiste el horizonte de Quintanilha a Trancoso, en una jornada de bikepacking que une la fuerza del pedal con la mística de la Reina que transformó rocas en flores.',
+          narrativeTitle: 'Pedalear por la Historia: Donde la Leyenda Gana Velocidad',
           content: [
-            'Una ruta diseñada para quienes buscan adrenalina y paisajes salvajes. Recorra caminos de grava entre sierras y valles a lo largo de dos días intensos.',
-            'Breve información adicional'
+            'En junio de 1282, el sonido de las aguas del río Maçãs fue acompañado por el trote de cientos de caballos. Hoy, el silencio de la frontera en Quintanilha es roto por el girar de las cadenas. Esta ruta de bikepacking le invita a revivir la entrada triunfal de Isabel de Aragón en Portugal, uniendo la frontera con el altar de Trancoso con el dinamismo que solo la bicicleta permite.',
+            'Este no es solo un desafío físico; es un viaje en el tiempo a través de terrenos que ponen a prueba el cuerpo y alimentan el alma. Desde la fluidez de las vías verdes que siguen las antiguas líneas de hierro hasta las subidas graníticas de la Beira, cada kilómetro recuerda la logística épica de la comitiva real. Al pasar por Vila Flor, sentirá la misma brisa que encantó a la futura Reina.',
+            'Pedalear en esta ruta es abrazar la vastedad de Trás-os-Montes y de las Beiras con la libertad del viajero moderno. Es cruzar valles fértiles y mesetas salvajes, sintiendo la transición de los paisajes que moldearon a la "Reina Santa". Prepare sus alforjas: el destino final son las murallas de Trancoso, donde el pasado medieval y el espíritu de aventura se encuentran al final de cada etapa.'
           ]
         }
       },
@@ -494,36 +497,36 @@ export const paths: Path[] = [
       difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
-          title: '1. Via da Prata',
-          badge: 'Peregrinação',
-          description: 'Onde Isabel conheceu o seu povo. Cruze a fronteira de Quintanilha e sinta a emoção do primeiro encontro da Rainha com as terras e as gentes de Portugal. Percurso comum com a variante portuguesa da rota da prata do caminho de santiago',
-          narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
+          title: '1. Além-Raia: De Quintanilha à Cidadela',
+          badge: 'Via da Prata',
+          description: 'A primeira pedalada em solo luso. Cruze a fronteira no Rio Maçãs e siga o trilho histórico que liga a hospitalidade da Raia à imponência de Bragança. Um troço que partilha a mística da Via da Prata do Caminho de Santiago.',
+          narrativeTitle: 'O Primeiro Encontro: Onde o Rio Maçãs une dois Reinos',
           content: [
-            'Em Junho de 1282, as águas do Rio Maçãs, em Quintanilha, testemunharam a entrada de uma comitiva que mudaria o destino de Portugal. A jovem Isabel de Aragão atravessava a Raia para encontrar o seu destino e o seu futuro esposo, o Rei Poeta, D. Dinis.',
-            'Este percurso não é apenas uma travessia geográfica; é uma imersão na lenda. Ao passar por Vila Flor (então chamada Póvoa do Além-Sabor), conta a tradição que a beleza da futura rainha e o seu encanto pelas paisagens foram de tal ordem que o próprio Rei, mais tarde, rebatizou a vila em sua honra. É um trilho marcado pelo aroma do mato e pela dureza do granito, que suaviza ao chegar às imponentes muralhas de Trancoso, onde o casamento foi ratificado com o esplendor das núpcias reais.',
-            'Ao percorrer este caminho, não está apenas a caminhar por Trás-os-Montes e pelas Beiras; está a refazer a logística de uma comitiva medieval, a sentir a brisa que sopra no planalto e a descobrir por que razão, 700 anos depois, ainda chamamos "Santa" àquela que entrou por estas terras como noiva.'
+            'O arranque desta aventura de bikepacking faz-se onde o Rio Maçãs divide e une. Em Junho de 1282, Isabel de Aragão cruzou estas mesmas águas para entrar num Portugal que a esperava com curiosidade. De bicicleta, o terreno revela-se logo com a crueza e beleza típica de Trás-os-Montes, exigindo pernas para as primeiras subidas mas recompensando com vistas infinitas sobre o planalto.',
+            'O percurso partilha o traçado da variante portuguesa da Via da Prata, o que confere a esta etapa uma energia especial de peregrinação. Ao passar por aldeias como Outeiro, com a sua majestosa Basílica, o ciclista sente o peso da história e da fé que moldaram esta região de fronteira. É um caminho feito de terra batida e asfalto silencioso, serpenteando entre carvalhos e soutos ancestrais.',
+            'A chegada a Bragança é o primeiro grande triunfo da rota. Ver a silhueta da Cidadela e da Torre de Menagem no horizonte é reviver o sentimento de proteção que a futura Rainha sentiu ao chegar à sua primeira grande paragem. Terminar este dia dentro das muralhas medievais é o repouso perfeito para quem está a refazer, a pedal, a logística de um cortejo real que uniu destinos.'
           ]
         },
         en: {
-          title: "1. Silver Path",
-          badge: 'Peregrination',
-          description: 'Where a Queen met her people. Cross the border at Quintanilha and relive the emotion of Isabel’s first encounter with the land and people of Portugal. Common path with the Portuguese variant of the silver path of the Santiago pilgrimage',
-          narrativeTitle: "The Way that Blossomed with the Queen's Passing",
+          title: "1. Beyond the Border: From Quintanilha to the Citadel",
+          badge: 'Silver Path',
+          description: 'The first pedal strokes on Portuguese soil. Cross the border at the Maçãs River and follow the historical trail connecting the hospitality of the borderlands to the grandeur of Bragança. A stretch that shares the mystique of the Santiago Silver Path.',
+          narrativeTitle: "The First Encounter: Where the Maçãs River Unites Two Kingdoms",
           content: [
-            "In June 1282, the waters of the Maçãs River in Quintanilha witnessed the entrance of a retinue that would change the destiny of Portugal. Young Elizabeth of Aragon crossed the Raia to meet her destiny and her future husband, the Poet King, Denis.",
-            "This route is not just a geographical crossing; it is an immersion in legend. When passing through Vila Flor (then called Póvoa do Além-Sabor), tradition says that the beauty of the future queen and her enchantment with the landscapes were such that the King himself later renamed the village in her honor. It is a trail marked by the scent of the scrubland and the hardness of the granite, which softens as it reaches the imposing walls of Trancoso, where the marriage was ratified with the splendor of the royal nuptials.",
-            "By walking this path, you are not just walking through Trás-os-Montes and the Beiras; you are redoing the logistics of a medieval retinue, feeling the breeze blowing on the plateau and discovering why, 700 years later, we still call 'Saint' that who entered these lands as a bride."
+            "The start of this bikepacking adventure takes place where the Maçãs River both divides and unites. In June 1282, Elizabeth of Aragon crossed these same waters to enter a Portugal that awaited her with curiosity. On a bike, the terrain immediately reveals the raw beauty typical of Trás-os-Montes, demanding effort for the first climbs but rewarding you with infinite views over the plateau.",
+            "The route shares the path of the Portuguese variant of the Silver Way (Via da Prata), giving this stage a special pilgrimage energy. Passing through villages like Outeiro, with its majestic Basilica, the cyclist feels the weight of history and faith that shaped this border region. It is a path of dirt tracks and silent asphalt, winding through ancient oaks and chestnut groves.",
+            "Arriving in Bragança is the first great triumph of the route. Seeing the silhouette of the Citadel and the Keep on the horizon is to relive the sense of protection the future Queen felt reaching her first major stop. Ending this day within the medieval walls is the perfect rest for those retracing, by pedal, the logistics of a royal procession that united destinies."
           ]
         },
         es: {
-          title: '1. Vía de la Plata',
-          badge: 'Peregrinação',
-          description: 'Donde Isabel conoció a su pueblo. Cruce la frontera de Quintanilha y sienta la emoción del primer encuentro de la Reina con las tierras y las gentes de Portugal. Ruta común con la variante portuguesa de la ruta de la plata del camino de Santiago',
-          narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
+          title: '1. Más allá de la Raya: De Quintanilha a la Ciudadela',
+          badge: 'Vía de la Plata',
+          description: 'Las primeras pedaladas en suelo luso. Cruce la frontera en el río Maçãs y siga el sendero histórico que une la hospitalidad de la Raya con la imponencia de Bragança. Un tramo que comparte la mística de la Vía de la Plata del Camino de Santiago.',
+          narrativeTitle: 'El Primer Encuentro: Donde el Río Maçãs une dos Reinos',
           content: [
-            'En junio de 1282, las aguas del río Maçãs, en Quintanilha, testemunharam la entrada de una comitiva que cambiaría el destino de Portugal. La joven Isabel de Aragón cruzaba la Raya para encontrar su destino y su futuro esposo, el Rey Poeta, D. Dinis.',
-            'Este percurso no es solo una travesía geográfica; es una inmersión en la leyenda. Al pasar por Vila Flor (entonces llamada Póvoa do Além-Sabor), cuenta la tradición que la belleza de la futura reina y su encanto por los paisajes fueron de tal orden que el propio Rey, más tarde, rebautizó la villa en su honor. Es un sendero marcado por el aroma del monte y por la dureza del granito, que se suaviza al llegar a las imponentes murallas de Trancoso, donde el matrimonio fue ratificado con el esplendor de las nupcias reales.',
-            'Al recorrer este camino, no está simplemente caminando por Trás-os-Montes y las Beiras; está rehaciendo la logística de una comitiva medieval, sintiendo la brisa que sopla en la meseta y descubriendo por qué razón, 700 después, todavía llamamos "Santa" a la que entró por estas tierras como novia.'
+            'El inicio de esta aventura de bikepacking se sitúa donde el río Maçãs divide y une. En junio de 1282, Isabel de Aragón cruzó estas mismas aguas para entrar en un Portugal que la esperaba con curiosidad. En bicicleta, el terreno se revela pronto con la crudeza y belleza típica de Trás-os-Montes, exigiendo piernas para las primeras subidas pero recompensando con vistas infinitas.',
+            'El recorrido comparte el trazado de la variante portuguesa de la Vía de la Plata, lo que confiere a esta etapa una energía especial de peregrinación. Al pasar por aldeas como Outeiro, con su majestuosa Basílica, el ciclista siente el peso de la historia y la fe que moldearon esta región de frontera.',
+            'La llegada a Bragança es el primer gran triunfo de la ruta. Ver la silueta de la Ciudadela y de la Torre del Homenaje en el horizonte es revivir el sentimiento de protección que la futura Reina sintió al llegar a su primera gran parada. Terminar este día dentro de las murallas medievales es el reposo perfecto para quien está rehaciendo a pedal la logística de un cortejo real.'
           ]
         }
       },
@@ -538,7 +541,7 @@ export const paths: Path[] = [
       duration: 5,
       durationUnit: 'hours',
       distance: 81,
-      elevation: 1051,
+      elevation: 892,
       minAltitude: 220,
       maxAltitude: 900,
       difficultyKey: 'common.difficulty.easy',
@@ -582,13 +585,13 @@ export const paths: Path[] = [
   {
     slug: 'alem-douro',
     type: 'cycling',
-    image: '/castelos.png',
+    image: '/vilarica.png',
     parentSlug: 'aventura-gravel',
     details: {
       duration: 5,
       durationUnit: 'hours',
       distance: 65.9,
-      elevation: 1705,
+      elevation: 1486,
       minAltitude: 110,
       maxAltitude: 646,
       difficultyKey: 'common.difficulty.hard',
@@ -632,13 +635,13 @@ export const paths: Path[] = [
     image: '/castelos.png',
     parentSlug: 'aventura-gravel',
     details: {
-      duration: 6,
+      duration: 5,
       durationUnit: 'hours',
       distance: 60.1,
-      elevation: 1533,
+      elevation: 1389,
       minAltitude: 240,
       maxAltitude: 900,
-      difficultyKey: 'common.difficulty.hard',
+      difficultyKey: 'common.difficulty.moderate',
       i18n: {
         pt: {
           title: '4. Aldeias Históricas: Entre Muralhas e Lendas da Beira',
