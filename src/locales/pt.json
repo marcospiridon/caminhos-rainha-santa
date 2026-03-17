@@ -49,7 +49,7 @@
       "pois": "Pontos de Interesse",
       "elevationProfile": "Perfil de Elevação",
       "stages": "Etapas",
-      "currentStage": "Etapa Actual"
+      "currentStage": "Etapa"
     },
     "stats": {
       "distance": "Distância",
@@ -71,8 +71,14 @@
     "navigation": {
       "previous": "Anterior",
       "next": "Próxima",
+      "previousStage": "Etapa Anterior",
+      "nextStage": "Próxima Etapa",
+      "previousPath": "Rota Anterior",
+      "nextPath": "Próxima Rota",
       "more": "ver mais",
       "less": "ver menos",
+      "route": "Rota",
+      "backToRoute": "Voltar à Rota",
       "backToPath": "Rota"
     },
     "pois": {

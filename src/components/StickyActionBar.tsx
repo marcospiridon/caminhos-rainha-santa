@@ -10,9 +10,11 @@ interface StickyActionBarProps {
   prevStageUrl?: string;
   nextStageUrl?: string;
   pathUrl?: string;
+  prevLabel?: string;
+  nextLabel?: string;
 }
 
-const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl, pathUrl }: StickyActionBarProps) => {
+const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl, pathUrl, prevLabel, nextLabel }: StickyActionBarProps) => {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -30,6 +32,9 @@ const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl, pat
     }
   };
 
+  const finalPrevLabel = prevLabel || t('pathPage.navigation.previous');
+  const finalNextLabel = nextLabel || t('pathPage.navigation.next');
+
   return (
     <div className={`sticky top-[80px] z-40 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-all duration-300 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
@@ -42,10 +47,10 @@ const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl, pat
             <Link
               to={pathUrl}
               className="flex items-center justify-center gap-2 text-slate-500 hover:text-brand px-3 h-10 rounded-full border border-slate-200 dark:border-gray-800 hover:border-brand/30 transition-all font-bold group"
-              title={t('pathPage.navigation.backToPath')}
+              title={t('pathPage.navigation.backToRoute')}
             >
               <Map size={18} className="transition-transform group-hover:scale-110" />
-              <span className="hidden lg:inline text-xs uppercase tracking-wider">{t('pathPage.navigation.backToPath')}</span>
+              <span className="hidden lg:inline text-xs uppercase tracking-wider">{t('pathPage.navigation.backToRoute')}</span>
             </Link>
           )}
           <div className="flex items-center gap-2">
@@ -53,19 +58,19 @@ const StickyActionBar = ({ label, title, gpxUrl, prevStageUrl, nextStageUrl, pat
               <Link
                 to={prevStageUrl}
                 className="flex items-center justify-center gap-2 text-brand hover:text-white px-3 h-10 rounded-full border border-brand/30 hover:bg-brand transition-all text-sm font-bold group"
-                title={t('pathPage.navigation.previous')}
+                title={finalPrevLabel}
               >
                 <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                <span className="hidden lg:inline text-xs uppercase tracking-wider">{t('pathPage.navigation.previous')}</span>
+                <span className="hidden lg:inline text-xs uppercase tracking-wider">{finalPrevLabel}</span>
               </Link>
             )}
             {nextStageUrl && (
               <Link
                 to={nextStageUrl}
                 className="flex items-center justify-center gap-2 text-brand hover:text-white px-3 h-10 rounded-full border border-brand/30 hover:bg-brand transition-all text-sm font-bold group"
-                title={t('pathPage.navigation.next')}
+                title={finalNextLabel}
               >
-                <span className="hidden lg:inline text-xs uppercase tracking-wider">{t('pathPage.navigation.next')}</span>
+                <span className="hidden lg:inline text-xs uppercase tracking-wider">{finalNextLabel}</span>
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             )}

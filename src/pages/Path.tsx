@@ -70,11 +70,13 @@ export default function Path() {
       />
 
       <StickyActionBar
-        label="Percurso"
+        label={t('pathPage.navigation.route')}
         title={stageText.title}
         gpxUrl={gpxUrl}
         prevStageUrl={prevPathUrl}
         nextStageUrl={nextPathUrl}
+        prevLabel={t('pathPage.navigation.previousPath')}
+        nextLabel={t('pathPage.navigation.nextPath')}
       />
 
       <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-10 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-10">

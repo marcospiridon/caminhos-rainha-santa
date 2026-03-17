@@ -49,7 +49,7 @@
       "pois": "Points of Interest",
       "elevationProfile": "Elevation Profile",
       "stages": "Stages",
-      "currentStage": "Current Stage"
+      "currentStage": "Stage"
     },
     "stats": {
       "distance": "Distance",
@@ -71,9 +71,15 @@
     "navigation": {
       "previous": "Previous",
       "next": "Next",
+      "previousStage": "Previous Stage",
+      "nextStage": "Next Stage",
+      "previousPath": "Previous Route",
+      "nextPath": "Next Route",
       "more": "read more",
       "less": "read less",
-      "backToPath": "Path"
+      "route": "Route",
+      "backToRoute": "Back to Route",
+      "backToPath": "Route"
     },
     "pois": {
       "filter": {

@@ -77,6 +77,8 @@ export default function Stage() {
         prevStageUrl={prevStageUrl}
         nextStageUrl={nextStageUrl}
         pathUrl={`/path/${path?.parent?.slug}`}
+        prevLabel={t('pathPage.navigation.previousStage')}
+        nextLabel={t('pathPage.navigation.nextStage')}
       />
 
       {/* Main Content */}
