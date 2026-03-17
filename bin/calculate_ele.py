@@ -1,43 +1,34 @@
 import sys
-import xml.etree.ElementTree as ET
+import gpxpy
 
-def calculate_elevation_gain(gpx_file):
+def calculate_gpx_metrics(gpx_file):
     try:
-        tree = ET.parse(gpx_file)
-        root = tree.getroot()
-        
-        # Namespaces are usually present in GPX
-        ns = {'gpx': 'http://www.topografix.com/GPX/1/1'}
-        
-        elevations = []
-        for trkpt in root.findall('.//gpx:trkpt', ns):
-            ele = trkpt.find('gpx:ele', ns)
-            if ele is not None:
-                elevations.append(float(ele.text))
-        
-        if not elevations:
-            # Try without namespace if none found
-            for trkpt in root.findall('.//trkpt'):
-                ele = trkpt.find('ele')
-                if ele is not None:
-                    elevations.append(float(ele.text))
-        
-        if not elevations:
-            return "No elevation data found in the GPX file."
+        with open(gpx_file, 'r', encoding='utf-8') as f:
+            gpx = gpxpy.parse(f)
         
         total_gain = 0
-        for i in range(1, len(elevations)):
-            diff = elevations[i] - elevations[i-1]
-            if diff > 0:
-                total_gain += diff
+        min_alt = None
+        max_alt = None
+        total_distance = 0
         
-        min_alt = min(elevations)
-        max_alt = max(elevations)
+        for track in gpx.tracks:
+            for segment in track.segments:
+                total_distance += segment.length_3d()
+                gain, loss = segment.get_uphill_downhill()
+                total_gain += gain
+                
+                for point in segment.points:
+                    if point.elevation is not None:
+                        if min_alt is None or point.elevation < min_alt:
+                            min_alt = point.elevation
+                        if max_alt is None or point.elevation > max_alt:
+                            max_alt = point.elevation
         
         return {
             "gain": round(total_gain, 2),
-            "min": round(min_alt, 2),
-            "max": round(max_alt, 2)
+            "min": round(min_alt, 2) if min_alt is not None else 0,
+            "max": round(max_alt, 2) if max_alt is not None else 0,
+            "distance": round(total_distance / 1000, 2) # to km
         }
     except Exception as e:
         return f"Error: {str(e)}"
@@ -47,8 +38,9 @@ if __name__ == "__main__":
         print("Usage: python calculate_ele.py <path_to_gpx>")
         sys.exit(1)
     
-    result = calculate_elevation_gain(sys.argv[1])
+    result = calculate_gpx_metrics(sys.argv[1])
     if isinstance(result, dict):
+        print(f"Distance: {result['distance']} km")
         print(f"Positive Elevation Gain: {result['gain']} m")
         print(f"Min Altitude: {result['min']} m")
         print(f"Max Altitude: {result['max']} m")

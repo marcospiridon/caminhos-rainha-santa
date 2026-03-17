@@ -1167,7 +1167,7 @@ export const paths: Path[] = [
       difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
-          title: 'O Grande Flow Transmontano: De Bragança a Mirandela',
+          title: '2. O Grande Flow Transmontano: De Bragança a Mirandela',
           badge: 'ecopista',
           description: 'Uma travessia épica de 81km em gravel que une o Castelo de Bragança à "Cidade Jardim", Mirandela. Um percurso rápido e cénico que desliza pela antiga Linha do Tua, abraça as águas do Azibo e mergulha nos olivais do vale.',
           narrativeTitle: 'Conquiste o planalto e deixe-se levar pelo ritmo do ferro e do cristal. Das muralhas de Bragança ao espelho de água do Azibo, sinta a liberdade de um caminho onde a história rola sobre duas rodas.',
@@ -1178,7 +1178,7 @@ export const paths: Path[] = [
           ]
         },
         en: {
-          title: 'The Great Transmontane Flow: Bragança to Mirandela',
+          title: '2. The Great Transmontane Flow: Bragança to Mirandela',
           badge: 'old railway',
           description: 'An epic 81km gravel journey connecting Bragança Castle to the "Garden City" of Mirandela. A fast and scenic route that glides along the old Tua Line, embraces the Azibo waters, and dives into the valley\'s olive groves.',
           narrativeTitle: 'Conquer the plateau and let the rhythm of iron and crystal guide you. From Bragança\'s walls to the Azibo mirror, feel the freedom of a path where history rolls on two wheels.',
@@ -1189,7 +1189,7 @@ export const paths: Path[] = [
           ]
         },
         es: {
-          title: 'El Gran Flow Transmontano: De Braganza a Mirandela',
+          title: '2. El Gran Flow Transmontano: De Braganza a Mirandela',
           badge: 'vía verde',
           description: 'Una travesía épica de 81km en gravel que une el Castillo de Braganza con la "Ciudad Jardín", Mirandela. Un recorrido rápido y escénico que se desliza por la antigua Vía del Tua, abraza las aguas del Azibo y se sumerge en los olivares del valle.',
           narrativeTitle: 'Conquiste la meseta y déjese llevar por el ritmo del hierro y el cristal. De las murallas de Braganza al espejo del Azibo, sienta la libertad de un camino donde la historia rueda sobre dos ruedas.',
@@ -1355,7 +1355,7 @@ export const paths: Path[] = [
           },
           url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
         },
-        {
+         {
           category: 'camp',
           contact: '',
           latlng: [41.5065744, -7.1973061],
@@ -1376,6 +1376,266 @@ export const paths: Path[] = [
             es: { name: 'Parque de Merendas Entre as Pontes', categoryLabel: 'Parque de Merendas' }
           },
           url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html'
+        }
+      ]
+    }
+  },
+  {
+    slug: 'alem-douro',
+    type: 'cycling',
+    image: '/castelos.png',
+    parentSlug: 'aventura-gravel',
+    details: {
+      duration: 5,
+      durationUnit: 'hours',
+      distance: 65.9,
+      elevation: 1705,
+      minAltitude: 110,
+      maxAltitude: 646,
+      difficultyKey: 'common.difficulty.hard',
+      i18n: {
+        pt: {
+          title: '3. Além Douro: Das Encostas de Vila Flor às Margens do Douro',
+          badge: 'Gravel Épico',
+          description: 'Uma jornada intensa de 66km que une a "Cidade Jardim" de Vila Flor à fertilidade bíblica do Vale da Vilariça, culminando na mística travessia do Rio Douro em direção a Foz Côa.',
+          narrativeTitle: 'Onde as flores do vale encontram o brilho do Douro. Siga o trilho que une o planalto transmontano ao encontro das águas do Sabor.',
+          content: [
+            'Esta travessia épica une o coração de Vila Flor às margens férteis do Douro. Um percurso intenso que sobe pelos campos de amendoeiras e oliveiras, atravessa a riqueza agrícola do Vale da Vilariça e mergulha no cenário dramático do Rio Douro.',
+            'A jornada celebra o encontro de Santa Isabel com as gentes de Portugal, passando por aldeias que preservam a mística da Rainha Santa. É um desafio técnico e físico recompensado pela imensidão do Douro e pela hospitalidade das terras de Foz Côa.'
+          ]
+        },
+        en: {
+          title: '3. Beyond Douro: From Vila Flor Slopes to the Douro Banks',
+          badge: 'Epic Gravel',
+          description: 'An intense 66km journey connecting the "Garden City" of Vila Flor to the biblical fertility of the Vilariça Valley, culminating in the mystical crossing of the Douro River.',
+          narrativeTitle: "Where valley flowers meet the Douro's glow. Follow the trail connecting the Transmontane plateau to the Sabor waters meeting.",
+          content: [
+            'This epic crossing connects the heart of Vila Flor to the fertile banks of the Douro. An intense path rising through almond and olive groves, crossing the agricultural wealth of the Vilariça Valley, and diving into the dramatic scenery of the Douro River.',
+            'The journey celebrates Saint Isabel’s encounter with the people of Portugal, passing through villages that preserve the mystical legacy of the Saint Queen. It is a technical and physical challenge rewarded by the vastness of the Douro and the hospitality of Foz Côa.'
+          ]
+        },
+        es: {
+          title: '3. Más allá del Duero: De las laderas de Vila Flor a las orillas del Duero',
+          badge: 'Gravel Épico',
+          description: 'Un viaje intenso de 66 km que une la "Ciudad Jardín" de Vila Flor con la fertilidad bíblica del Valle de Vilariça, culminando en la mística travesía del río Duero.',
+          narrativeTitle: 'Donde las flores del valle encuentran el brillo del Duero. Siga el sendero que une la meseta transmontana con el encuentro de las aguas del Sabor.',
+          content: [
+            'Esta travesía épica une el corazón de Vila Flor con las fértiles orillas del Duero. Un recorrido intenso que asciende por campos de almendros y olivos, atraviesa la riqueza agrícola del Valle de Vilariça y se sumerge en el escenario dramático del río Duero.',
+            'La jornada celebra el encuentro de Santa Isabel con las gentes de Portugal, passando por aldeas que preservan la mística de la Reina Santa.'
+          ]
+        }
+      },
+      pois: [
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [41.4852383, -7.1865272],
+          i18n: {
+            pt: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
+            en: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
+            es: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' }
+          },
+          url: 'https://www.booking.com/hotel/pt/grande-dom-dinis.pt-pt.html'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.3191656, -7.1336156],
+          i18n: {
+            pt: { name: 'Café (Vila Flor)', categoryLabel: 'Café' },
+            en: { name: 'Café (Vila Flor)', categoryLabel: 'Coffee Shop' },
+            es: { name: 'Café (Vila Flor)', categoryLabel: 'Chiringuito' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.3591022, -7.1216444],
+          i18n: {
+            pt: { name: 'Café (Vale Frechoso)', categoryLabel: 'Café' },
+            en: { name: 'Café (Vale Frechoso)', categoryLabel: 'Coffee Shop' },
+            es: { name: 'Café (Vale Frechoso)', categoryLabel: 'Chiringuito' }
+          }
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.2671647, -7.1429250],
+          i18n: {
+            pt: { name: 'Bar da Capela', categoryLabel: 'Café' },
+            en: { name: 'Bar da Capela', categoryLabel: 'Coffee Shop' },
+            es: { name: 'Bar da Capela', categoryLabel: 'Chiringuito' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurants-g1022881-Vila_Flor_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.2321956, -7.1217131],
+          i18n: {
+            pt: { name: 'Café Vilariça', categoryLabel: 'Café' },
+            en: { name: 'Café Vilariça', categoryLabel: 'Coffee Shop' },
+            es: { name: 'Café Vilariça', categoryLabel: 'Chiringuito' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurants-g1022881-Vila_Flor_Braganca_District_Northern_Portugal.html'
+        },
+        {
+          category: 'eat',
+          contact: '',
+          latlng: [41.1305511, -7.1220975],
+          i18n: {
+            pt: { name: 'Restaurante O Gaveto', categoryLabel: 'Restaurante' },
+            en: { name: 'O Gaveto Restaurant', categoryLabel: 'Restaurant' },
+            es: { name: 'Restaurante O Gaveto', categoryLabel: 'Restaurante' }
+          },
+          url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022883-d14144415-Reviews-Restaurante_O_Gaveto-Vila_Nova_de_Foz_Coa_Guarda_District_Central_Portugal.html'
+        },
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [41.0932089, -7.1403022],
+          i18n: {
+            pt: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Pousada' },
+            en: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Hostel' },
+            es: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Albergue' }
+          },
+          url: 'https://www.booking.com/hotel/pt/pousada-de-juventude-de-vila-nova-de-foz-coa.pt-pt.html'
+        }
+      ]
+    }
+  },
+  {
+    slug: 'aldeias-historicas',
+    type: 'cycling',
+    image: '/castelos.png',
+    parentSlug: 'aventura-gravel',
+    details: {
+      duration: 6,
+      durationUnit: 'hours',
+      distance: 60.1,
+      elevation: 1533,
+      minAltitude: 240,
+      maxAltitude: 900,
+      difficultyKey: 'common.difficulty.hard',
+      i18n: {
+        pt: {
+          title: '4. Aldeias Históricas: Entre Muralhas e Lendas da Beira',
+          badge: 'Património',
+          description: 'A etapa final da Aventura Gravel é uma ode ao silêncio do granito. De Vila Nova de Foz Côa a Trancoso, atravesse as Aldeias Históricas de Marialva e Moreira de Rei.',
+          narrativeTitle: 'Onde as pedras sussurram segredos de reis e cavaleiros. Do vale profundo do Côa até ao planalto da Beira Alta, siga o rasto dos cavaleiros e rainhas.',
+          content: [
+            'Esta travessia épica une o Vale do Côa às cidadelas históricas da Beira Alta. Um desafio de gravel que sobe das margens do Rio Côa até à mística Marialva, onde o silêncio das pedras conta segredos de reis e cavaleiros templários.',
+            'A jornada culmina na monumental Moreira de Rei e nas muralhas de Trancoso, a "Vila das Bodas", onde o destino de Portugal foi selado no altar. É um percurso de contrastes, onde a dureza da subida é recompensada por horizontes sem fim e pela paz das aldeias fortificadas.'
+          ]
+        },
+        en: {
+          title: '4. Historic Villages: Between Walls and Beira Legends',
+          badge: 'Heritage',
+          description: 'The final stage of the Gravel Adventure is an ode to granite silence. From Vila Nova de Foz Côa to Trancoso, cross the Historic Villages of Marialva and Moreira de Rei.',
+          narrativeTitle: 'Where stones whisper secrets of kings and knights. From the deep Côa valley to the Beira Alta plateau, follow the trail of knights and queens.',
+          content: [
+            'This epic crossing connects the Côa Valley to the historic citadels of Beira Alta. A gravel challenge that rises from the banks of the Côa River to mystical Marialva, where the silence of the stones tells secrets of kings and Templar knights.',
+            'The journey culminates in monumental Moreira de Rei and the walls of Trancoso, the "Wedding Town," where Portugal\'s destiny was sealed at the altar. It is a path of contrasts, where the hardship of the climb is rewarded by endless horizons and the peace of fortified villages.'
+          ]
+        },
+        es: {
+          title: '4. Aldeas Históricas: Entre Murallas y Leyendas de la Beira',
+          badge: 'Patrimonio',
+          description: 'La etapa final de la Aventura Gravel es una oda al silencio del granito. De Vila Nova de Foz Côa a Trancoso, cruza las Aldeas Históricas de Marialva y Moreira de Rei.',
+          narrativeTitle: 'Donde las piedras susurran secretos de reyes y caballeros. Del valle profundo del Côa hasta la meseta de la Beira Alta, siga el rastro de caballeros y reinas.',
+          content: [
+            'Esta travesía épica une el Valle del Côa con las ciudadelas históricas de la Beira Alta. Un desafío de gravel que asciende desde las orillas del río Côa hasta la mística Marialva, donde el silencio de las piedras cuenta secretos de reyes y caballeros templarios.',
+            'La jornada culmina en la monumental Moreira de Rei y en las murallas de Trancoso, la "Villa de las Bodas", donde el destino de Portugal se selló en el altar.'
+          ]
+        }
+      },
+      pois: [
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [41.0932089, -7.1403022],
+          i18n: {
+            pt: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Pousada' },
+            en: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Hostel' },
+            es: { name: 'Pousada da Juventude de Vila Nova de Foz Côa', categoryLabel: 'Albergue' }
+          },
+          url: 'https://www.booking.com/hotel/pt/pousada-de-juventude-de-vila-nova-de-foz-coa.pt-pt.html'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [40.8299464, -7.3197639],
+          i18n: {
+            pt: { name: 'Necrópole de Antas de Moreira de Rei', categoryLabel: 'Monumento' },
+            en: { name: 'Necrópole de Antas de Moreira de Rei', categoryLabel: 'Monument' },
+            es: { name: 'Necrópole de Antas de Moreira de Rei', categoryLabel: 'Monumento' }
+          }
+        },
+        {
+          category: 'sleep',
+          contact: '',
+          latlng: [40.7772222, -7.3508333],
+          i18n: {
+            pt: { name: 'Solar de Almeidinha (Trancoso)', categoryLabel: 'Turismo de Habitação' },
+            en: { name: 'Solar de Almeidinha (Trancoso)', categoryLabel: 'Guesthouse' },
+            es: { name: 'Solar de Almeidinha (Trancoso)', categoryLabel: 'Turismo de Habitación' }
+          },
+          url: 'https://www.booking.com/hotel/pt/solar-de-almeidinha.pt-pt.html'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [40.9944672, -7.1764589],
+          i18n: {
+            pt: { name: 'Pedra do Solistício', categoryLabel: 'Monumento Natural' },
+            en: { name: 'Solstice Stone', categoryLabel: 'Natural Monument' },
+            es: { name: 'Piedra del Solsticio', categoryLabel: 'Monumento Natural' }
+          },
+          url: 'https://www.cm-fozcboa.pt/visitar/pedradosolistio/'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [40.9615086, -7.2146467],
+          i18n: {
+            pt: { name: 'Fonte da Concelha', categoryLabel: 'Área de descanso' },
+            en: { name: 'Fonte da Concelha', categoryLabel: 'Rest Area' },
+            es: { name: 'Fonte da Concelha', categoryLabel: 'Área de descanso' }
+          },
+          url: 'https://www.cm-fozcboa.pt/visitar/fontedaconcelha/'
+        },
+        {
+          category: 'camp',
+          contact: '',
+          latlng: [40.9695625, -7.2593847],
+          i18n: {
+            pt: { name: 'Parque de Campismo de Mêda', categoryLabel: 'Parque de Campismo' },
+            en: { name: 'Parque de Campismo de Mêda', categoryLabel: 'Campsite' },
+            es: { name: 'Parque de Campismo de Mêda', categoryLabel: 'Parque de Campismo' }
+          },
+          url: 'https://www.cm-fozcboa.pt/visitar/fontedaconcelha/'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [40.9138597, -7.2322206],
+          i18n: {
+            pt: { name: 'Castelo de Marialva', categoryLabel: 'Monumento' },
+            en: { name: 'Castelo de Marialva', categoryLabel: 'Monument' },
+            es: { name: 'Castelo de Marialva', categoryLabel: 'Monumento' }
+          },
+          url: 'https://www.cm-fozcboa.pt/visitar/castelodemarialva/'
+        },
+        {
+          category: 'see',
+          contact: '',
+          latlng: [40.9637622, -7.2085858],
+          i18n: {
+            pt: { name: 'Castelo de Longroiva', categoryLabel: 'Monumento' },
+            en: { name: 'Castelo de Longroiva', categoryLabel: 'Monument' },
+            es: { name: 'Castelo de Longroiva', categoryLabel: 'Monumento' }
+          },
+          url: 'https://www.cm-fozcboa.pt/visitar/castelodemarialva/'
         }
       ]
     }
