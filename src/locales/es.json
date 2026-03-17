@@ -14,7 +14,8 @@
     "button": {
       "hiking": "Ver Ruta Peatonal",
       "cycling": "Ver Ruta de Ciclismo"
-    }
+    },
+    "details": "Perfil"
   },
   "header": {
     "title": "Caminos Princesa de Aragón",

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, POISection, RouteMap, HeroHeader, StickyActionBar } from "../components";
+import { StatsGrid, ElevationProfile, POISection, RouteMap, HeroHeader, StickyActionBar, Modal } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -12,6 +12,7 @@ export default function Stage() {
   const { t, i18n: i18nInstance } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeCategory, setActiveCategory] = useState('all');
+  const [isElevationModalOpen, setIsElevationModalOpen] = useState(false);
 
   // Reset expansion state when navigating between stages
   useEffect(() => {
@@ -88,6 +89,7 @@ export default function Stage() {
           duration={stage.duration}
           durationUnit={stage.durationUnit}
           difficulty={t(stage.difficultyKey)}
+          onElevationClick={() => setIsElevationModalOpen(true)}
         />
 
         {/* Map Container */}
@@ -95,7 +97,21 @@ export default function Stage() {
           <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory={activeCategory} />
         </section>
 
-        {stageSlug && <ElevationProfile slug={stageSlug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} defaultExpanded={false} />}
+        <Modal
+          isOpen={isElevationModalOpen}
+          onClose={() => setIsElevationModalOpen(false)}
+          title={t('pathPage.sections.elevationProfile')}
+        >
+          {stageSlug && (
+            <ElevationProfile
+              slug={stageSlug}
+              distance={stage.distance}
+              minAltitude={stage.minAltitude}
+              maxAltitude={stage.maxAltitude}
+            />
+          )}
+        </Modal>
+
         {stagePois.length > 0 && <POISection pois={stagePois} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />}
       </div>
 

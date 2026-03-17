@@ -14,7 +14,8 @@
     "button": {
       "hiking": "Ver Rota Pedestre",
       "cycling": "Ver Rota de Ciclismo"
-    }
+    },
+    "details": "Perfil"
   },
   "header": {
     "title": "Caminhos Rainha Santa",

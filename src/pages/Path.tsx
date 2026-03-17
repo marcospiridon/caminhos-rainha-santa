@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar } from "../components";
+import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar, Modal } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -11,6 +11,7 @@ export default function Path() {
   const { slug } = useParams();
   const { t, i18n: i18nInstance } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isElevationModalOpen, setIsElevationModalOpen] = useState(false);
 
   // Reset expansion state when navigating between paths
   useEffect(() => {
@@ -52,6 +53,10 @@ export default function Path() {
   const prevPathUrl = prevPath ? `/path/${prevPath.slug}` : undefined;
   const nextPathUrl = nextPath ? `/path/${nextPath.slug}` : undefined;
 
+  const scrollToStages = () => {
+    document.getElementById('stages-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="flex flex-col flex-grow w-full">
       <HeroHeader
@@ -81,6 +86,8 @@ export default function Path() {
           duration={stage.duration}
           durationUnit={stage.durationUnit}
           difficulty={t(stage.difficultyKey)}
+          onElevationClick={() => setIsElevationModalOpen(true)}
+          onStagesClick={scrollToStages}
         />
 
         {/* Map Container */}
@@ -88,7 +95,20 @@ export default function Path() {
           <RouteMap gpxUrl={gpxUrl} pois={stagePois} activeCategory="all" />
         </section>
 
-        {slug && <ElevationProfile slug={slug} distance={stage.distance} minAltitude={stage.minAltitude} maxAltitude={stage.maxAltitude} defaultExpanded={true} />}
+        <Modal
+          isOpen={isElevationModalOpen}
+          onClose={() => setIsElevationModalOpen(false)}
+          title={t('pathPage.sections.elevationProfile')}
+        >
+          {slug && (
+            <ElevationProfile
+              slug={slug}
+              distance={stage.distance}
+              minAltitude={stage.minAltitude}
+              maxAltitude={stage.maxAltitude}
+            />
+          )}
+        </Modal>
       </div>
 
       {/* Right Column */}
@@ -104,7 +124,7 @@ export default function Path() {
           <h3 className="font-serif text-3xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
             {stageText.narrativeTitle}
           </h3>
-          <div className="font-serif text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed text-lg">
+          <div className="font-serif text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed text-lg max-h-[450px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-brand/20 scrollbar-track-transparent hover:scrollbar-thumb-brand/40 transition-colors">
             {stageText.content.map((para, i) => {
               if (i === 0) {
                 const isTruncated = !isExpanded && para.length > 100;
@@ -146,7 +166,7 @@ export default function Path() {
         </motion.article>
       </div>
       {/* center full width */}
-      <section className="flex flex-col items-center justify-center w-full lg:col-span-12">
+      <section id="stages-section" className="flex flex-col items-center justify-center w-full lg:col-span-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 max-w-2xl mx-auto">
             <h4 className="text-4xl md:text-5xl mb-6">{t('pathPage.sections.stages')}</h4>
