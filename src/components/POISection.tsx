@@ -72,7 +72,7 @@ export default function POISection({ pois, activeCategory, onCategoryChange, col
       </div>
 
       {/* Scrollable List */}
-      <div className={`flex-grow overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-brand/20 scrollbar-track-transparent hover:scrollbar-thumb-brand/40 transition-colors ${columns === 2 ? 'grid grid-cols-1 md:grid-cols-2' : 'grid grid-cols-1'} gap-4`}>
+      <div className={`flex-grow overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-brand/20 scrollbar-track-transparent hover:scrollbar-thumb-brand/40 transition-colors content-start ${columns === 2 ? 'grid grid-cols-1 md:grid-cols-2' : 'grid grid-cols-1'} gap-4`}>
         <AnimatePresence mode="popLayout">
           {filteredPois.map((poi) => {
             const Icon = iconMap[poi.category] || Camera;
