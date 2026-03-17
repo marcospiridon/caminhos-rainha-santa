@@ -98,6 +98,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.7507, -6.5715],
     }
   },
   {
@@ -149,6 +150,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.8058, -6.7570],
     }
   },
   {
@@ -196,6 +198,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.5613, -6.8832],
     }
   },
   {
@@ -243,6 +246,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.5361, -6.9634],
     }
   },
   {
@@ -290,6 +294,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.3061, -7.1534],
     }
   },
   {
@@ -337,6 +342,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.1895, -7.0734],
     }
   },
   {
@@ -384,6 +390,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.0827, -7.1355],
     }
   },
   {
@@ -431,6 +438,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [40.8781, -7.3486],
     }
   },
   {
@@ -530,6 +538,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.7507, -6.5715],
     }
   },
   {
@@ -580,6 +589,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.8058, -6.7570],
     }
   },
   {
@@ -627,6 +637,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.3061, -7.1534],
     }
   },
   {
@@ -674,6 +685,7 @@ export const paths: Path[] = [
           ]
         }
       },
+      latlng: [41.0827, -7.1355],
     }
   }
 ];

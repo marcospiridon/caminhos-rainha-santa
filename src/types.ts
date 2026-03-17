@@ -36,6 +36,7 @@ export interface PathStage {
   maxAltitude: number;
   difficultyKey: string; // Points to common translations key
   i18n: Localized<PathI18n>;
+  latlng?: [number, number];
 }
 
 export interface Path {

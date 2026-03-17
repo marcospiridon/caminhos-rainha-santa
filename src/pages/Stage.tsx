@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, POISection, RouteMap, HeroHeader, StickyActionBar, Modal } from "../components";
+import { StatsGrid, ElevationProfile, POISection, RouteMap, HeroHeader, StickyActionBar, Modal, WeatherWidget } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -84,7 +84,7 @@ export default function Stage() {
       {/* Main Content */}
       <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-8 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        {/* Row 1: Stats (Left) + Empty (Right) */}
+        {/* Row 1: Stats (Left) + Weather (Right) */}
         <div className="lg:col-span-8">
           <StatsGrid
             distance={stage.distance}
@@ -95,7 +95,9 @@ export default function Stage() {
             onElevationClick={() => setIsElevationModalOpen(true)}
           />
         </div>
-        <div className="hidden lg:block lg:col-span-4" aria-hidden="true" />
+        <div className="hidden lg:block lg:col-span-4">
+          <WeatherWidget lat={stage.latlng?.[0]} lng={stage.latlng?.[1]} />
+        </div>
 
         {/* Row 2: Map (Left) + POIs (Right) */}
         <div className="lg:col-span-8 h-[500px]">
