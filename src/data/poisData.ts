@@ -75,7 +75,7 @@ export const pois: POI[] = [
       en: { name: 'Café (Vale Frechoso)', categoryLabel: 'Coffee Shop' },
       es: { name: 'Café (Vale Frechoso)', categoryLabel: 'Chiringuito' }
     },
-    pathSlugs: ['alem-douro']
+    pathSlugs: ['alem-douro', 'vila-flor']
   },
   {
     id: 'cafe-vila-flor',
@@ -646,6 +646,162 @@ export const pois: POI[] = [
     url: 'https://www.booking.com/hotel/pt/solar-de-almeidinha.pt-pt.html',
     pathSlugs: ['aldeias-historicas']
   },
+  {
+    id: 'parque-merendas-frechas',
+    category: 'camp',
+    contact: '',
+    latlng: [41.4075975, -7.1626200],
+    i18n: {
+      pt: { name: 'Parque Merendas Frechas', categoryLabel: 'Parque Merendas' },
+      en: { name: 'Parque Merendas Frechas', categoryLabel: 'Picnic Area' },
+      es: { name: 'Parque Merendas Frechas', categoryLabel: 'Parque Merendas' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['vila-flor', 'alem-douro']
+  },
+  {
+    id: 'cafe-praia-fluvial-frechas',
+    category: 'eat',
+    contact: '',
+    latlng: [41.4090561, -7.1634719],
+    i18n: {
+      pt: { name: 'Café Praia Fluvial Frechas', categoryLabel: 'Café' },
+      en: { name: 'Café Praia Fluvial Frechas', categoryLabel: 'Café' },
+      es: { name: 'Café Praia Fluvial Frechas', categoryLabel: 'Café' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['vila-flor', 'alem-douro']
+  },
+  {
+    id: 'capeça-nossa-senhora-do-aviso',
+    category: 'see',
+    contact: '',
+    latlng: [41.4024694, -7.1381892],
+    i18n: {
+      pt: { name: 'Cabeça Nossa Senhora do Aviso', categoryLabel: 'Santuário' },
+      en: { name: 'Cabeça Nossa Senhora do Aviso', categoryLabel: 'Sanctuary' },
+      es: { name: 'Cabeça Nossa Senhora do Aviso', categoryLabel: 'Santuario' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['vila-flor', 'alem-douro']
+  },
+  {
+    id: 'cafe-madureira',
+    category: 'eat',
+    contact: '',
+    latlng: [41.3588267, -7.1196881],
+    i18n: {
+      pt: { name: 'Café Madureira', categoryLabel: 'Café' },
+      en: { name: 'Café Madureira', categoryLabel: 'Café' },
+      es: { name: 'Café Madureira', categoryLabel: 'Café' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['vila-flor', 'alem-douro']
+  },
+  {
+    id: 'parque-campismo-vila-flor',
+    category: 'camp',
+    contact: '',
+    latlng: [41.2924725, -7.1713483],
+    i18n: {
+      pt: { name: 'Parque Campismo Vila Flor', categoryLabel: 'Parque Campismo' },
+      en: { name: 'Parque Campismo Vila Flor', categoryLabel: 'Campsite' },
+      es: { name: 'Parque Campismo Vila Flor', categoryLabel: 'Parque Campismo' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['alem-douro']
+  },
+  {
+    id: 'albufeira-do-arco-e-ribeiro-grande',
+    category: 'see',
+    contact: '',
+    latlng: [41.2462406, -7.1295147],
+    i18n: {
+      pt: { name: 'Albufeira do Arco e Ribeiro Grande', categoryLabel: 'Barragem' },
+      en: { name: 'Albufeira do Arco e Ribeiro Grande', categoryLabel: 'Dam' },
+      es: { name: 'Albufeira do Arco e Ribeiro Grande', categoryLabel: 'Presa' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['alem-douro', 'vilarica']
+  },
+  {
+    id: 'cafe-primavera',
+    category: 'eat',
+    contact: '',
+    latlng: [41.1867469, -7.1221517],
+    i18n: {
+      pt: { name: 'Café Primavera', categoryLabel: 'Café' },
+      en: { name: 'Café Primavera', categoryLabel: 'Café' },
+      es: { name: 'Café Primavera', categoryLabel: 'Café' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['vilarica', 'alem-douro']
+  },
+  {
+    id: 'cafe-lameirinho',
+    category: 'eat',
+    contact: '',
+    latlng: [41.1850972, -7.1176189],
+    i18n: {
+      pt: { name: 'Café Lameirinho', categoryLabel: 'Café' },
+      en: { name: 'Café Lameirinho', categoryLabel: 'Café' },
+      es: { name: 'Café Lameirinho', categoryLabel: 'Café' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['vilarica', 'alem-douro']
+  },
+  {
+    id: 'cafe-foz-sabor',
+    category: 'eat',
+    contact: '',
+    latlng: [41.1776800, -7.1119644],
+    i18n: {
+      pt: { name: 'Café Foz Sabor', categoryLabel: 'Café' },
+      en: { name: 'Café Foz Sabor', categoryLabel: 'Café' },
+      es: { name: 'Café Foz Sabor', categoryLabel: 'Café' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['vilarica', 'alem-douro']
+  },
+  {
+    id: 'parque-merendas-foz-sabor',
+    category: 'camp',
+    contact: '',
+    latlng: [41.1781969, -7.1092894],
+    i18n: {
+      pt: { name: 'Parque Merendas Foz Sabor', categoryLabel: 'Parque Merendas' },
+      en: { name: 'Parque Merendas Foz Sabor', categoryLabel: 'Picnic Area' },
+      es: { name: 'Parque Merendas Foz Sabor', categoryLabel: 'Parque Merendas' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['alem-douro']
+  },
+  {
+    id: 'albufeira-azibo',
+    category: 'see',
+    contact: '',
+    latlng: [41.5630722, -6.8891061],
+    i18n: {
+      pt: { name: 'Albufeira do Azibo', categoryLabel: 'Barragem' },
+      en: { name: 'Albufeira do Azibo', categoryLabel: 'Dam' },
+      es: { name: 'Albufeira do Azibo', categoryLabel: 'Presa' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['albufeira-do-azibo', 'ecopista-do-tua']
+  },
+  {
+    id: 'parque-merendas-fermentaos',
+    category: 'camp',
+    contact: '',
+    latlng: [41.6200931, -6.8211461],
+    i18n: {
+      pt: { name: 'Parque Merendas Fermentaos', categoryLabel: 'Parque Merendas' },
+      en: { name: 'Parque Merendas Fermentaos', categoryLabel: 'Picnic Area' },
+      es: { name: 'Parque Merendas Fermentaos', categoryLabel: 'Parque Merendas' }
+    },
+    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    pathSlugs: ['ecopista-do-tua']
+  }
 ];
 
 /** Get all POIs for a given path or stage slug */
