@@ -114,5 +114,15 @@
   "map": {
     "interact": "Tocar para interagir no mapa",
     "exit": "Sair do mapa"
+  },
+  "seo": {
+    "default": {
+      "title": "Caminhos da Rainha Santa - Percursos de Fé, Natureza e História",
+      "description": "Explore os Caminhos da Rainha Santa: percursos de fé, história e natureza entre Estremoz e Coimbra. Informações detalhadas para caminhada, peregrinação e bikepacking em Portugal."
+    },
+    "paths": {
+      "title": "Nossas Rotas | Caminhos da Rainha Santa",
+      "description": "Descubra todos os percursos da Rainha Santa. Rotas planeadas para peregrinos e entusiastas de bikepacking."
+    }
   }
 }

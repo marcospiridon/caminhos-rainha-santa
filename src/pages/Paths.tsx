@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { Footprints, Bike, Search } from "lucide-react";
 import PathCard from "../components/PathCard";
+import { SEO } from "../components";
 import { paths } from "../data/pathsData";
 
 const Paths = () => {
@@ -37,6 +38,10 @@ const Paths = () => {
 
   return (
     <div className="pt-32 pb-24 px-6 min-h-screen bg-slate-50">
+      <SEO 
+        title={t('seo.paths.title')}
+        description={t('seo.paths.description')}
+      />
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
         <div className="text-center mb-16">

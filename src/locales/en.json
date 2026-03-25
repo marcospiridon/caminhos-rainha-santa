@@ -114,5 +114,15 @@
   "map": {
     "interact": "Tap to interact with the map",
     "exit": "Exit map mode"
+  },
+  "seo": {
+    "default": {
+      "title": "Paths of the Saint Queen - Faith, Nature, and History Trails",
+      "description": "Explore the Paths of the Saint Queen: trails of faith, history, and nature between Estremoz and Coimbra. Detailed info for hiking, pilgrimage, and bikepacking in Portugal."
+    },
+    "paths": {
+      "title": "Our Routes | Paths of the Saint Queen",
+      "description": "Discover all the Saint Queen trails. Planned routes for pilgrims and bikepacking enthusiasts."
+    }
   }
 }

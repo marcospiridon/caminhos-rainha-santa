@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, POISection, RouteMap, HeroHeader, StickyActionBar, Modal, WeatherWidget } from "../components";
+import { StatsGrid, ElevationProfile, POISection, RouteMap, HeroHeader, StickyActionBar, Modal, WeatherWidget, SEO } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -59,6 +59,11 @@ export default function Stage() {
 
   return (
     <div className="flex flex-col flex-grow w-full">
+      <SEO 
+        title={`${stageText.title} | ${parentText?.title}`}
+        description={stageText.description}
+        image={path.image}
+      />
 
       <HeroHeader
         image={path.image}

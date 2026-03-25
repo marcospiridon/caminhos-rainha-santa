@@ -60,4 +60,24 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://caminhos-rainha-santa.onrender.com/path/aventura-gravel/via-da-prata</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://caminhos-rainha-santa.onrender.com/path/aventura-gravel/ecopista-do-tua</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://caminhos-rainha-santa.onrender.com/path/aventura-gravel/alem-douro</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://caminhos-rainha-santa.onrender.com/path/aventura-gravel/aldeias-historicas</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

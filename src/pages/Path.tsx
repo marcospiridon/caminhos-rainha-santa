@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
-import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar, Modal } from "../components";
+import { StatsGrid, ElevationProfile, RouteMap, PathSelection, HeroHeader, StickyActionBar, Modal, SEO } from "../components";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "motion/react";
 import { paths } from "../data/pathsData";
@@ -59,6 +59,11 @@ export default function Path() {
 
   return (
     <div className="flex flex-col flex-grow w-full">
+      <SEO 
+        title={stageText.title}
+        description={stageText.description}
+        image={path.image}
+      />
       <HeroHeader
         image={path.image}
         type={path.type}

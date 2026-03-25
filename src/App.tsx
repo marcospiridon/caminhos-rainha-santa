@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Header, Hero, PathSelection, Footer } from "./components";
+import { Header, Hero, PathSelection, Footer, SEO } from "./components";
 import { Paths, Path, Stage } from "./pages";
 import { paths } from "./data/pathsData";
 import { useTranslation } from "react-i18next";
@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
+        <SEO />
         <Header />
         <main>
           <Routes>

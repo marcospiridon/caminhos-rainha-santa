@@ -10,5 +10,20 @@ import RouteMap from "./RouteMap";
 import Footer from "./Footer";
 import WeatherWidget from "./WeatherWidget";
 import Modal from "./Modal";
+import SEO from "./SEO";
 
-export { Header, Hero, HeroHeader, StickyActionBar, PathSelection, StatsGrid, ElevationProfile, POISection, RouteMap, Footer, Modal, WeatherWidget };
+export { 
+  Header, 
+  Hero, 
+  HeroHeader, 
+  StickyActionBar, 
+  PathSelection, 
+  StatsGrid, 
+  ElevationProfile, 
+  POISection, 
+  RouteMap, 
+  Footer, 
+  Modal, 
+  WeatherWidget, 
+  SEO 
+};

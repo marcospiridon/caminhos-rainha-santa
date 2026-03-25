@@ -114,5 +114,15 @@
   "map": {
     "interact": "Tocar para interactuar en el mapa",
     "exit": "Salir del mapa"
+  },
+  "seo": {
+    "default": {
+      "title": "Caminhos de la Reina Santa - Peregrinación, Naturaleza e Historia",
+      "description": "Explore los Caminhos de la Reina Santa: senderos de fe, historia y naturaleza entre Estremoz y Coimbra. Información detallada para caminatas, peregrinación y bikepacking."
+    },
+    "paths": {
+      "title": "Nuestras Rutas | Caminhos de la Reina Santa",
+      "description": "Descubre todos los caminos de la Reina Santa. Rutas planeadas para peregrinos y entusiastas de bikepacking."
+    }
   }
 }
