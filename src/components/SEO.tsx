@@ -14,7 +14,7 @@ export default function SEO({
   description, 
   canonical, 
   type = 'website',
-  image = '/logo_rosa.png'
+  image = '/hero.jpg'
 }: SEOProps) {
   const { t, i18n } = useTranslation();
 
@@ -24,7 +24,7 @@ export default function SEO({
   const seoTitle = title ? `${title} | Caminhos da Rainha Santa` : siteTitle;
   const seoDescription = description || defaultDescription;
   const currentUrl = window.location.href;
-  const siteUrl = "https://caminhosrainhasanta.pt"; // Adjust if necessary
+  const siteUrl = "https://caminhos-rainha-santa.onrender.com"; // Updated to match hosting
 
   return (
     <Helmet>
