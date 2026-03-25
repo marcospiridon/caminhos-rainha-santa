@@ -117,18 +117,18 @@ async function prerender() {
     html = html.replace(/<title>.*?<\/title>/, `<title>${route.title} | Caminhos da Rainha Santa</title>`);
     
     // Substituir Meta Descrição
-    html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.description}" />`);
+    html = html.replace(/<meta name="description" content=".*?"\s*\/?>/, `<meta name="description" content="${route.description}" />`);
 
     // Substituir OG Tags
-    html = html.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${route.title}" />`);
-    html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${route.description}" />`);
-    html = html.replace(/<meta property="og:image" content=".*?" \/>/, `<meta property="og:image" content="${absoluteImage}" />`);
-    html = html.replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${absoluteUrl}" />`);
+    html = html.replace(/<meta property="og:title" content=".*?"\s*\/?>/, `<meta property="og:title" content="${route.title}" />`);
+    html = html.replace(/<meta property="og:description" content=".*?"\s*\/?>/, `<meta property="og:description" content="${route.description}" />`);
+    html = html.replace(/<meta property="og:image" content=".*?"\s*\/?>/, `<meta property="og:image" content="${absoluteImage}" />`);
+    html = html.replace(/<meta property="og:url" content=".*?"\s*\/?>/, `<meta property="og:url" content="${absoluteUrl}" />`);
 
     // Substituir Twitter Tags
-    html = html.replace(/<meta property="twitter:title" content=".*?" \/>/, `<meta property="twitter:title" content="${route.title}" />`);
-    html = html.replace(/<meta property="twitter:description" content=".*?" \/>/, `<meta property="twitter:description" content="${route.description}" />`);
-    html = html.replace(/<meta property="twitter:image" content=".*?" \/>/, `<meta property="twitter:image" content="${absoluteImage}" />`);
+    html = html.replace(/<meta property="twitter:title" content=".*?"\s*\/?>/, `<meta property="twitter:title" content="${route.title}" />`);
+    html = html.replace(/<meta property="twitter:description" content=".*?"\s*\/?>/, `<meta property="twitter:description" content="${route.description}" />`);
+    html = html.replace(/<meta property="twitter:image" content=".*?"\s*\/?>/, `<meta property="twitter:image" content="${absoluteImage}" />`);
 
     // Criar diretório
     const routeDir = path.join(DIST_DIR, route.path);
