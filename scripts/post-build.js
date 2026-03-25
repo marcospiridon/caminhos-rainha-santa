@@ -28,6 +28,24 @@ const routes = [
     image: '/mirandela.jpg'
   },
   {
+    path: 'path/aventura-gravel/via-da-prata',
+    title: 'Além-Raia | Aventura Gravel',
+    description: 'A primeira pedalada em solo luso. Cruze a fronteira no Rio Maçãs e siga o trilho histórico que liga a hospitalidade da Raia à imponência de Bragança.',
+    image: '/via-da-prata.jpg'
+  },
+  {
+    path: 'path/aventura-gravel/alem-douro',
+    title: 'Além Douro | Aventura Gravel',
+    description: 'Uma jornada intensa de 66km que une Vila Flor à fertilidade bíblica do Vale da Vilariça, culminando na travessia do Rio Douro.',
+    image: '/vilarica.png'
+  },
+  {
+    path: 'path/aventura-gravel/aldeias-historicas',
+    title: 'Aldeias Históricas | Aventura Gravel',
+    description: 'A etapa final da Aventura Gravel. De Vila Nova de Foz Côa a Trancoso, atravesse as Aldeias Históricas de Marialva e Moreira de Rei.',
+    image: '/castelos.png'
+  },
+  {
     path: 'path/caminho-noiva-real/via-da-prata',
     title: 'Via da Prata | Caminho da Noiva Real',
     description: 'Onde Isabel conheceu o seu povo. Cruze a fronteira de Quintanilha e sinta a emoção do primeiro encontro.',
