@@ -801,7 +801,73 @@ export const pois: POI[] = [
     },
     url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
     pathSlugs: ['ecopista-do-tua']
-  }
+  },
+    {
+    id: 'etapa-1',
+    category: 'see',
+    contact: '',
+    latlng: [41.7341153, -6.5759631],
+    i18n: {
+      pt: { name: 'Etapa 1', categoryLabel: 'Quintanilha > Bragança' },
+      en: { name: 'Stage 1', categoryLabel: 'Quintanilha > Bragança' },
+      es: { name: 'Etapa 1', categoryLabel: 'Quintanilha > Bragança' }
+    },
+    url: '/path/aventura-gravel/via-da-prata',
+    pathSlugs: ['aventura-gravel']
+  },
+  {
+    id: 'etapa-2',
+    category: 'see',
+    contact: '',
+    latlng: [41.8042503, -6.7492964],
+    i18n: {
+      pt: { name: 'Etapa 2', categoryLabel: 'Bragança > Mirandela' },
+      en: { name: 'Stage 2', categoryLabel: 'Bragança > Mirandela' },
+      es: { name: 'Etapa 2', categoryLabel: 'Bragança > Mirandela' }
+    },
+    url: '/path/aventura-gravel/ecopista-do-tua',
+    pathSlugs: ['aventura-gravel']
+  },
+  {
+    id: 'etapa-3',
+    category: 'see',
+    contact: '',
+    latlng: [41.5065744, -7.1973061],
+    i18n: {
+      pt: { name: 'Etapa 3', categoryLabel: 'Mirandela > Vila Nova de Foz Côa' },
+      en: { name: 'Stage 3', categoryLabel: 'Mirandela > Vila Nova de Foz Côa' },
+      es: { name: 'Etapa 3', categoryLabel: 'Mirandela > Vila Nova de Foz Côa' }
+    },
+    url: '/path/aventura-gravel/alem-douro',
+    pathSlugs: ['aventura-gravel']
+  },
+  {
+    id: 'etapa-4',
+    category: 'see',
+    contact: '',
+    latlng: [41.0932089, -7.1403022],
+    i18n: {
+      pt: { name: 'Etapa 4', categoryLabel: 'Vila Nova de Foz Côa > Trancoso' },
+      en: { name: 'Stage 4', categoryLabel: 'Vila Nova de Foz Côa > Trancoso' },
+      es: { name: 'Etapa 4', categoryLabel: 'Vila Nova de Foz Côa > Trancoso' }
+    },
+    url: '/path/aventura-gravel/aldeias-historicas',
+    pathSlugs: ['aventura-gravel']
+  },
+  {
+    id: 'Final',
+    category: 'see',
+    contact: '',
+    latlng: [40.7772222, -7.3508333],
+    i18n: {
+      pt: { name: 'Final', categoryLabel: 'Trancoso' },
+      en: { name: 'Final', categoryLabel: 'Trancoso' },
+      es: { name: 'Final', categoryLabel: 'Trancoso' }
+    },
+    url: '/path/aventura-gravel/aldeias-historicas',
+    pathSlugs: ['aventura-gravel']
+  },
+
 ];
 
 /** Get all POIs for a given path or stage slug */
