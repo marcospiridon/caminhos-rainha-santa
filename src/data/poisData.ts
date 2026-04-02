@@ -365,7 +365,7 @@ export const pois: POI[] = [
     id: 'etapa-8',
     category: 'see',
     contact: '',
-    latlng: [41.5356639, -6.95],
+    latlng: [40.9138597, -7.2322206],
     i18n: {
       pt: { name: 'Etapa 8', categoryLabel: 'Marialva > Trancoso' },
       en: { name: 'Stage 8', categoryLabel: 'Marialva > Trancoso' },
@@ -378,7 +378,7 @@ export const pois: POI[] = [
     id: 'final',
     category: 'see',
     contact: '',
-    latlng: [41.5356639, -6.99],
+    latlng: [40.7772222, -7.3508333],
     i18n: {
       pt: { name: 'Final', categoryLabel: 'Trancoso' },
       en: { name: 'Final', categoryLabel: 'Trancoso' },
