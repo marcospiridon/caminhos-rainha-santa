@@ -607,17 +607,17 @@ export const paths: Path[] = [
       difficultyKey: 'common.difficulty.hard',
       i18n: {
         pt: {
-          title: '3. Além Douro: Das Encostas de Vila Flor às Margens do Douro',
+          title: '3. Pelo vale de Vilariça: De Mirandela às Margens do Douro',
           badge: 'Gravel Épico',
-          description: 'Uma jornada intensa de 66km que une a "Cidade Jardim" de Vila Flor à fertilidade bíblica do Vale da Vilariça, culminando na mística travessia do Rio Douro em direção a Foz Côa.',
+          description: 'Uma jornada intensa de 66km que une a princesa do Tua à fertilidade bíblica do Vale da Vilariça, culminando na mística travessia do Rio Douro em direção a Foz Côa.',
           narrativeTitle: 'Onde as flores do vale encontram o brilho do Douro. Siga o trilho que une o planalto transmontano ao encontro das águas do Sabor.',
           content: [
-            'Esta travessia épica une o coração de Vila Flor às margens férteis do Douro. Um percurso intenso que sobe pelos campos de amendoeiras e oliveiras, atravessa a riqueza agrícola do Vale da Vilariça e mergulha no cenário dramático do Rio Douro.',
+            'Esta travessia épica une o coração de Mirandela às margens férteis do Douro. Um percurso intenso que sobe pelos campos de amendoeiras e oliveiras, atravessa a riqueza agrícola do Vale da Vilariça e mergulha no cenário dramático do Rio Douro.',
             'A jornada celebra o encontro de Santa Isabel com as gentes de Portugal, passando por aldeias que preservam a mística da Rainha Santa. É um desafio técnico e físico recompensado pela imensidão do Douro e pela hospitalidade das terras de Foz Côa.'
           ]
         },
         en: {
-          title: '3. Beyond Douro: From Vila Flor Slopes to the Douro Banks',
+          title: '3. Beyond Douro: From Mirandela to the Douro Banks',
           badge: 'Epic Gravel',
           description: 'An intense 66km journey connecting the "Garden City" of Vila Flor to the biblical fertility of the Vilariça Valley, culminating in the mystical crossing of the Douro River.',
           narrativeTitle: "Where valley flowers meet the Douro's glow. Follow the trail connecting the Transmontane plateau to the Sabor waters meeting.",
@@ -627,12 +627,12 @@ export const paths: Path[] = [
           ]
         },
         es: {
-          title: '3. Más allá del Duero: De las laderas de Vila Flor a las orillas del Duero',
+          title: '3. Más allá del Duero: De las laderas de Mirandela a las orillas del Duero',
           badge: 'Gravel Épico',
-          description: 'Un viaje intenso de 66 km que une la "Ciudad Jardín" de Vila Flor con la fertilidad bíblica del Valle de Vilariça, culminando en la mística travesía del río Duero.',
+          description: 'Un viaje intenso de 66 km que une la princesa del Tua con la fertilidad bíblica del Valle de Vilariça, culminando en la mística travesía del río Duero.',
           narrativeTitle: 'Donde las flores del valle encuentran el brillo del Duero. Siga el sendero que une la meseta transmontana con el encuentro de las aguas del Sabor.',
           content: [
-            'Esta travesía épica une el corazón de Vila Flor con las fértiles orillas del Duero. Un recorrido intenso que asciende por campos de almendros y olivos, atraviesa la riqueza agrícola del Valle de Vilariça y se sumerge en el escenario dramático del río Duero.',
+            'Esta travesía épica une el corazón de Mirandela con las fértiles orillas del Duero. Un recorrido intenso que asciende por campos de almendros y olivos, atraviesa la riqueza agrícola del Valle de Vilariça y se sumerge en el escenario dramático del río Duero.',
             'La jornada celebra el encuentro de Santa Isabel con las gentes de Portugal, passando por aldeas que preservan la mística de la Reina Santa.'
           ]
         }
