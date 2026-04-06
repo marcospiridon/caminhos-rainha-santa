@@ -75,10 +75,20 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs mb-6">{t('footer.sections.social')}</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center border border-slate-100 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-brand/30 hover:text-brand transition-all shadow-sm">
+              <a 
+                href="https://www.instagram.com/caminhosrainhasanta" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center border border-slate-100 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-brand/30 hover:text-brand transition-all shadow-sm"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center border border-slate-100 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-brand/30 hover:text-brand transition-all shadow-sm">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61578509071713" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center border border-slate-100 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-brand/30 hover:text-brand transition-all shadow-sm"
+              >
                 <Facebook size={20} />
               </a>
             </div>
