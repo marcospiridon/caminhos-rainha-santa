@@ -281,7 +281,7 @@ export const pois: POI[] = [
       es: { name: 'Casas do Coro', categoryLabel: 'Hotel' }
     },
     url: 'https://www.tkqlhce.com/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FMeda-Hoteles-Casas-Do-Coro.h4791730.Informacion-Hotel%3Fchkin%3D2026-05-07%26chkout%3D2026-05-08%26flexibility%3D7_DAY%26srpStartDate%3D2026-05-08%26srpEndDate%3D2026-05-09%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1775670750470%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D3000021302%26destination%3DMarialva%252C%2BMeda%252C%2BDistrito%2Bde%2BGuarda%252C%2BPortugal%26destType%3DBOUNDING_BOX%26latLong%3D40.916698%252C-7.23333%26sort%3DRECOMMENDED%26top_dp%3D275%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D200569274%26selectedRatePlan%3D207819031%26categorySearch%3Dany_option%26searchId%3Dc5d8f8f0-f42a-4e17-a112-87ec053348d5',
-    pathSlugs: ['castelos', 'trancoso']
+    pathSlugs: ['castelos', 'casamento']
   },
   {
     id: 'etapa-1',
@@ -618,7 +618,7 @@ export const pois: POI[] = [
       es: { name: 'Solar Sampaio Melo', categoryLabel: 'Hotel' }
     },
     url: 'https://www.anrdoezrs.net/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FTrancoso-Hoteles-Solar-Sampaio-E-Melo.h24469614.Informacion-Hotel%3Fchkin%3D2026-05-09%26chkout%3D2026-05-10%26flexibility%3D7_DAY%26srpStartDate%3D2026-05-08%26srpEndDate%3D2026-05-09%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1775671251433%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D791250464418074624%26destination%3DS%25C3%25A3o%2BPedro%2Be%2BSanta%2BMaria%252C%2BTrancoso%252C%2BDistrito%2Bde%2BGuarda%252C%2BPortugal%26destType%3DBOUNDING_BOX%26latLong%3D40.77847%252C-7.34908%26sort%3DRECOMMENDED%26top_dp%3D102%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D216932932%26selectedRatePlan%3D266150606%26categorySearch%3Dany_option%26searchId%3D1feb2241-08da-48ad-9748-f197eb9ee9db',
-    pathSlugs: ['aldeias-historicas', 'trancoso']
+    pathSlugs: ['aldeias-historicas', 'casamento']
   },
   {
     id: 'praia-fluvial-do-colado',
