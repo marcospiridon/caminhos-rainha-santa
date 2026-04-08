@@ -414,6 +414,19 @@ export const pois: POI[] = [
     pathSlugs: ['albufeira-do-azibo', 'linha-do-tua']
   },
   {
+    id: 'aqua-hotel-pinela-spa',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.6745611, -6.7879833],
+    i18n: {
+      pt: { name: 'Aqua Hotel Pinela & Spa', categoryLabel: 'Hotel' },
+      en: { name: 'Aqua Hotel Pinela & Spa', categoryLabel: 'Hotel' },
+      es: { name: 'Aqua Hotel Pinela & Spa', categoryLabel: 'Hotel' }
+    },
+    url: 'https://www.anrdoezrs.net/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FBraganca-Hoteles-Agua-Hotels-Terra-Fria.h120748557.Informacion-Hotel%3Fchkin%3D2026-04-19%26chkout%3D2026-04-21%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1775665364633%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D791245606591868928%26destination%3DSanta%2BComba%2Bde%2BRossas%252C%2BBragan%25C3%25A7a%252C%2BDistrito%2Bde%2BBragan%25C3%25A7a%252C%2BPortugal%26destType%3DMARKET%26latLong%3D41.663869%252C-6.828116%26sort%3DRECOMMENDED%26top_dp%3D192%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D327397008%26selectedRatePlan%3D404540661%26categorySearch%3Dany_option%26searchId%3D9b32fc6d-1fdd-40c9-b882-0b9cfcae5288',
+    pathSlugs: ['albufeira-do-azibo', 'linha-do-tua']
+  },
+  {
     id: 'grande-hotel-dom-dinis',
     category: 'sleep',
     contact: '',
@@ -436,7 +449,7 @@ export const pois: POI[] = [
       en: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' },
       es: { name: 'Hotel Alendouro', categoryLabel: 'Hotel' }
     },
-    url: 'https://www.booking.com/hotel/pt/alendouro.html',
+    url: 'https://www.jdoqocy.com/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FMacedo-De-Cavaleiros-Hoteles-Hotel-Alendouro.h10992489.Informacion-Hotel%3Fchkin%3D2026-05-16%26chkout%3D2026-05-19%26flexibility%3D7_DAY%26srpStartDate%3D2026-05-16%26srpEndDate%3D2026-05-19%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1775665715425%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D182231%26destination%3DMacedo%2Bde%2BCavaleiros%252C%2BDistrito%2Bde%2BBragan%25C3%25A7a%252C%2BPortugal%26destType%3DMARKET%26latLong%3D41.55728%252C-6.899753%26sort%3DRECOMMENDED%26top_dp%3D180%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D314322892%26selectedRatePlan%3D383042634%26categorySearch%3Dany_option%26searchId%3D70ef132e-fb21-49cb-8c5e-6263c6305f59',
     pathSlugs: ['albufeira-do-azibo', 'carvalhais']
   },
   {
@@ -552,7 +565,20 @@ export const pois: POI[] = [
       en: { name: 'Youth Hostel Bragança', categoryLabel: 'Youth Hostel' },
       es: { name: 'Albergue de Juventud Bragança', categoryLabel: 'Albergue de Juventud' }
     },
-    url: 'https://www.booking.com/Share-9cqSbu',
+    url: 'https://www.tkqlhce.com/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FBraganca-Hoteles-HI-Braganca-Pousada-De-Juventude.h30563373.Informacion-Hotel%3Fchkin%3D2026-04-19%26chkout%3D2026-04-21%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1775665006500%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D6026491%26destination%3DBragan%25C3%25A7a%252C%2BPortugal%2B%2528BGC%2529%26destType%3DMARKET%26latLong%3D41.855989%252C-6.705565%26sort%3DRECOMMENDED%26top_dp%3D92%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D314189866%26selectedRatePlan%3D382694560%26categorySearch%3Dany_option%26searchId%3D91a9c7c0-3eaa-4ea5-9491-a5fc4763b5cc',
+    pathSlugs: ['ecopista-do-tua', 'linha-do-tua', 'via-da-prata']
+  },
+  {
+    id: 'hotel-ibis-braganca',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.8168431, -6.7558489],
+    i18n: {
+      pt: { name: 'Hotel Ibis Bragança', categoryLabel: 'Hotel' },
+      en: { name: 'Hotel Ibis Bragança', categoryLabel: 'Hotel' },
+      es: { name: 'Hotel Ibis Bragança', categoryLabel: 'Hotel' }
+    },
+    url: 'https://www.tkqlhce.com/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FBraganca-Hoteles-Ibis-Braganca.h899911.Informacion-Hotel%3Fchkin%3D2026-04-19%26chkout%3D2026-04-21%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1775665006502%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D6026491%26destination%3DBragan%25C3%25A7a%252C%2BPortugal%2B%2528BGC%2529%26destType%3DMARKET%26latLong%3D41.855989%252C-6.705565%26sort%3DRECOMMENDED%26top_dp%3D118%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D324215000%26selectedRatePlan%3D393950239%26categorySearch%3Dany_option%26searchId%3D91a9c7c0-3eaa-4ea5-9491-a5fc4763b5cc',
     pathSlugs: ['ecopista-do-tua', 'linha-do-tua', 'via-da-prata']
   },
   {

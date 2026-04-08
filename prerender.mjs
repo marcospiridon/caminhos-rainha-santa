@@ -8,8 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_PATH = path.join(__dirname, 'dist');
 const PORT = 3333;
 
-// Lista de rotas (baseada no teu pathsData.ts)
-const routes = [
+const baseRoutes = [
   '/',
   '/paths',
   '/path/caminho-noiva-real',
@@ -28,11 +27,12 @@ const routes = [
   '/path/aventura-gravel/aldeias-historicas',
 ];
 
+const languages = ['pt', 'en', 'es'];
+
 async function prerender() {
   const app = express();
   app.use(express.static(DIST_PATH));
   
-  // Middleware de fallback para rotas SPA (serve o index.html se nada for encontrado)
   app.use((req, res) => {
     res.sendFile(path.join(DIST_PATH, 'index.html'));
   });
@@ -43,20 +43,36 @@ async function prerender() {
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
 
-    for (const route of routes) {
-      console.log(`Renderizando: ${route}`);
-      await page.goto(`http://localhost:${PORT}${route}`, { waitUntil: 'networkidle0' });
+    for (const lang of languages) {
+      console.log(`\n--- Renderizando língua: ${lang.toUpperCase()} ---`);
       
-      const content = await page.content();
-      const outputPath = path.join(DIST_PATH, route === '/' ? 'index.html' : `${route}/index.html`);
-      
-      await fs.mkdir(path.dirname(outputPath), { recursive: true });
-      await fs.writeFile(outputPath, content);
+      for (const route of baseRoutes) {
+        // Constrói o URL com o prefixo da língua
+        const langRoute = route === '/' ? `/${lang}` : `/${lang}${route}`;
+        console.log(`Renderizando: ${langRoute}`);
+        
+        await page.goto(`http://localhost:${PORT}${langRoute}`, { waitUntil: 'networkidle0' });
+        
+        const content = await page.content();
+        
+        // Caminho no sistema de ficheiros (ex: dist/en/path/slug/index.html)
+        const outputPath = path.join(DIST_PATH, lang, route === '/' ? 'index.html' : `${route}/index.html`);
+        
+        await fs.mkdir(path.dirname(outputPath), { recursive: true });
+        await fs.writeFile(outputPath, content);
+
+        // Se for a língua padrão (PT), também guarda na raiz para compatibilidade
+        if (lang === 'pt') {
+          const rootPath = path.join(DIST_PATH, route === '/' ? 'index.html' : `${route}/index.html`);
+          await fs.mkdir(path.dirname(rootPath), { recursive: true });
+          await fs.writeFile(rootPath, content);
+        }
+      }
     }
 
     await browser.close();
     server.close();
-    console.log('✅ Pre-rendering concluído com sucesso!');
+    console.log('\n✅ Pre-rendering multilingue concluído com sucesso!');
     process.exit(0);
   });
 }

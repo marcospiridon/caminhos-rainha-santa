@@ -23,8 +23,14 @@ export default function SEO({
   
   const seoTitle = title ? `${title} | Caminhos da Rainha Santa` : siteTitle;
   const seoDescription = description || defaultDescription;
-  const currentUrl = window.location.href;
-  const siteUrl = "https://caminhos-rainha-santa.onrender.com"; // Updated to match hosting
+  const siteUrl = "https://caminhos-rainha-santa.onrender.com";
+  
+  // Constrói o URL canónico com a língua se não for fornecido
+  const currentPath = window.location.pathname;
+  const defaultCanonical = `${siteUrl}${currentPath}`;
+  const finalCanonical = canonical 
+    ? (canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`)
+    : defaultCanonical;
 
   return (
     <Helmet>
@@ -32,14 +38,14 @@ export default function SEO({
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
       <html lang={i18n.language} />
-      {canonical && <link rel="canonical" href={canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`} />}
+      <link rel="canonical" href={finalCanonical} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
       <meta property="og:title" content={seoTitle} />
       <meta property="og:description" content={seoDescription} />
       <meta property="og:image" content={image.startsWith('http') ? image : `${siteUrl}${image}`} />
-      <meta property="og:url" content={canonical || currentUrl} />
+      <meta property="og:url" content={finalCanonical} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
