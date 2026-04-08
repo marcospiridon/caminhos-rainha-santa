@@ -6,7 +6,9 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_PATH = path.join(__dirname, 'dist');
+const PUBLIC_PATH = path.join(__dirname, 'public');
 const PORT = 3333;
+const SITE_URL = "https://caminhos-rainha-santa.onrender.com";
 
 const baseRoutes = [
   '/',
@@ -29,39 +31,75 @@ const baseRoutes = [
 
 const languages = ['pt', 'en', 'es'];
 
+async function generateSitemap() {
+  console.log('Generating automated sitemap...');
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+
+  // Adiciona a rota raiz (/) com x-default
+  xml += `  <url>\n`;
+  xml += `    <loc>${SITE_URL}/</loc>\n`;
+  languages.forEach(l => {
+    xml += `    <xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}/${l}/" />\n`;
+  });
+  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/" />\n`;
+  xml += `    <changefreq>weekly</changefreq><priority>1.0</priority>\n`;
+  xml += `  </url>\n`;
+
+  // Adiciona todas as combinações de língua e rota
+  languages.forEach(lang => {
+    baseRoutes.forEach(route => {
+      const fullPath = route === '/' ? `/${lang}/` : `/${lang}${route}`;
+      const priority = route === '/' ? '1.0' : (route.split('/').length > 2 ? '0.7' : '0.9');
+      
+      xml += `  <url>\n`;
+      xml += `    <loc>${SITE_URL}${fullPath}</loc>\n`;
+      
+      // Hreflang links para as outras línguas da mesma página
+      languages.forEach(l => {
+        const altPath = route === '/' ? `/${l}/` : `/${l}${route}`;
+        xml += `    <xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}${altPath}" />\n`;
+      });
+      
+      xml += `    <changefreq>weekly</changefreq><priority>${priority}</priority>\n`;
+      xml += `  </url>\n`;
+    });
+  });
+
+  xml += '</urlset>';
+  
+  await fs.writeFile(path.join(DIST_PATH, 'sitemap.xml'), xml);
+  await fs.writeFile(path.join(PUBLIC_PATH, 'sitemap.xml'), xml);
+  console.log('✅ Sitemap.xml generated successfully!');
+}
+
 async function prerender() {
   const app = express();
   app.use(express.static(DIST_PATH));
-  
   app.use((req, res) => {
     res.sendFile(path.join(DIST_PATH, 'index.html'));
   });
 
   const server = app.listen(PORT, async () => {
-    console.log(`Servidor temporário iniciado em http://localhost:${PORT}`);
+    console.log(`Temporary server started at http://localhost:${PORT}`);
     
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
 
     for (const lang of languages) {
-      console.log(`\n--- Renderizando língua: ${lang.toUpperCase()} ---`);
+      console.log(`\n--- Prerendering: ${lang.toUpperCase()} ---`);
       
       for (const route of baseRoutes) {
-        // Constrói o URL com o prefixo da língua
         const langRoute = route === '/' ? `/${lang}` : `/${lang}${route}`;
-        console.log(`Renderizando: ${langRoute}`);
+        console.log(`Crawling: ${langRoute}`);
         
         await page.goto(`http://localhost:${PORT}${langRoute}`, { waitUntil: 'networkidle0' });
-        
         const content = await page.content();
         
-        // Caminho no sistema de ficheiros (ex: dist/en/path/slug/index.html)
         const outputPath = path.join(DIST_PATH, lang, route === '/' ? 'index.html' : `${route}/index.html`);
-        
         await fs.mkdir(path.dirname(outputPath), { recursive: true });
         await fs.writeFile(outputPath, content);
 
-        // Se for a língua padrão (PT), também guarda na raiz para compatibilidade
         if (lang === 'pt') {
           const rootPath = path.join(DIST_PATH, route === '/' ? 'index.html' : `${route}/index.html`);
           await fs.mkdir(path.dirname(rootPath), { recursive: true });
@@ -71,13 +109,14 @@ async function prerender() {
     }
 
     await browser.close();
+    await generateSitemap();
     server.close();
-    console.log('\n✅ Pre-rendering multilingue concluído com sucesso!');
+    console.log('\n✅ Multi-language build with automated sitemap completed!');
     process.exit(0);
   });
 }
 
 prerender().catch(err => {
-  console.error('❌ Erro no pre-rendering:', err);
+  console.error('❌ Prerender error:', err);
   process.exit(1);
 });
