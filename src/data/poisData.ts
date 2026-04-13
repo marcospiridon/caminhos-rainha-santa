@@ -898,7 +898,58 @@ export const pois: POI[] = [
     url: '/path/aventura-gravel/aldeias-historicas',
     pathSlugs: ['aventura-gravel']
   },
-
+  {
+    id: 'parque-municipal-trancoso',
+    category: 'water',
+    contact: '',
+    latlng: [40.7737042, -7.3518061],
+    i18n: {
+      pt: { name: 'Parque Municipal Trancoso', categoryLabel: 'Parque Municipal' },
+      en: { name: 'Parque Municipal Trancoso', categoryLabel: 'Municipal Park' },
+      es: { name: 'Parque Municipal Trancoso', categoryLabel: 'Parque Municipal' }
+    },
+    url: 'https://maps.app.goo.gl/G8hui7jgBmCuZoa88',
+    pathSlugs: ['aldeias-historicas']
+  },
+  {
+    id: 'fonte-pocinho',
+    category: 'water',
+    contact: '',
+    latlng: [41.1273481, -7.1310169],
+    i18n: {
+      pt: { name: 'Fonte do Pocinho', categoryLabel: 'Fonte' },
+      en: { name: 'Fonte do Pocinho', categoryLabel: 'Fountain' },
+      es: { name: 'Fonte do Pocinho', categoryLabel: 'Fuente' }
+    },
+    url: 'https://maps.app.goo.gl/jvrq91LmodxK31xf8',
+    pathSlugs: ['alem-douro']
+  },
+  {
+    id: 'agua-mirandela',
+    category: 'water',
+    contact: '',
+    latlng: [41.4861217, -7.1872447],
+    i18n: {
+      pt: { name: 'Água Mirandela', categoryLabel: 'Fonte' },
+      en: { name: 'Água Mirandela', categoryLabel: 'Fountain' },
+      es: { name: 'Água Mirandela', categoryLabel: 'Fuente' }
+    },
+    url: 'https://maps.app.goo.gl/H2GpQ2Pk5U6VA8vu9',
+    pathSlugs: ['ecopista-do-tua']
+  },
+  {
+    id: 'parque-autocaravanas-braganca',
+    category: 'water',
+    contact: '',
+    latlng: [41.8046175, -6.7477344],
+    i18n: {
+      pt: { name: 'Parque Autocaravanas Bragança', categoryLabel: 'Parque Autocaravanas' },
+      en: { name: 'Parque Autocaravanas Bragança', categoryLabel: 'Motorhome Park' },
+      es: { name: 'Parque Autocaravanas Bragança', categoryLabel: 'Parque Autocaravanas' }
+    },
+    url: 'https://maps.app.goo.gl/81H82gg9kKuR3aVt8',
+    pathSlugs: ['ecopista-do-tua']
+  }
 ];
 
 /** Get all POIs for a given path or stage slug */
