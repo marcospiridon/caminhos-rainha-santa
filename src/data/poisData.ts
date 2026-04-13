@@ -37,7 +37,7 @@ export const pois: POI[] = [
       en: { name: 'Albufeira do Azibo', categoryLabel: 'Shelter' },
       es: { name: 'Albufeira do Azibo', categoryLabel: 'Refugio' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://azibo.cm-macedodecavaleiros.pt/',
     pathSlugs: ['ecopista-do-tua']
   },
   {
@@ -50,7 +50,7 @@ export const pois: POI[] = [
       en: { name: 'Bar da Capela', categoryLabel: 'Coffee Shop' },
       es: { name: 'Bar da Capela', categoryLabel: 'Chiringuito' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurants-g1022881-Vila_Flor_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/VnUvfr596oH5RSQx7',
     pathSlugs: ['alem-douro', 'vilarica']
   },
   {
@@ -59,11 +59,12 @@ export const pois: POI[] = [
     contact: '',
     latlng: [41.3191656, -7.1336156],
     i18n: {
-      pt: { name: 'Café ', categoryLabel: 'Café' },
-      en: { name: 'Café ', categoryLabel: 'Coffee Shop' },
-      es: { name: 'Café ', categoryLabel: 'Chiringuito' }
+      pt: { name: 'Associação dos Ceboleiros de Arroios', categoryLabel: 'Café' },
+      en: { name: 'Associação dos Ceboleiros de Arroios', categoryLabel: 'Coffee Shop' },
+      es: { name: 'Associação dos Ceboleiros de Arroios', categoryLabel: 'Chiringuito' }
     },
-    pathSlugs: ['vila-flor']
+    url: 'https://maps.app.goo.gl/DdGnXzS9z5KgKN8A8',
+    pathSlugs: ['vila-flor', 'alem-douro']
   },
   {
     id: 'cafe-vale-frechoso',
@@ -71,23 +72,12 @@ export const pois: POI[] = [
     contact: '',
     latlng: [41.3591022, -7.1216444],
     i18n: {
-      pt: { name: 'Café (Vale Frechoso)', categoryLabel: 'Café' },
-      en: { name: 'Café (Vale Frechoso)', categoryLabel: 'Coffee Shop' },
-      es: { name: 'Café (Vale Frechoso)', categoryLabel: 'Chiringuito' }
+      pt: { name: 'Associação de Caçadores de Vale Frechoso', categoryLabel: 'Café' },
+      en: { name: 'Associação de Caçadores de Vale Frechoso', categoryLabel: 'Coffee Shop' },
+      es: { name: 'Associação de Caçadores de Vale Frechoso', categoryLabel: 'Chiringuito' }
     },
+    url: 'https://ass-cacadoresvalefrechoso.blogspot.com/',
     pathSlugs: ['alem-douro', 'vila-flor']
-  },
-  {
-    id: 'cafe-vila-flor',
-    category: 'eat',
-    contact: '',
-    latlng: [41.3191656, -7.1336156],
-    i18n: {
-      pt: { name: 'Café (Vila Flor)', categoryLabel: 'Café' },
-      en: { name: 'Café (Vila Flor)', categoryLabel: 'Coffee Shop' },
-      es: { name: 'Café (Vila Flor)', categoryLabel: 'Chiringuito' }
-    },
-    pathSlugs: ['alem-douro']
   },
   {
     id: 'cafe-reboledo',
@@ -99,7 +89,7 @@ export const pois: POI[] = [
       en: { name: 'Café Reboledo', categoryLabel: 'Coffee Shop' },
       es: { name: 'Café Reboledo', categoryLabel: 'Chiringuito' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurant_Review-g1024346-d25435017-Reviews-Cafe_Reboledo-Santa_Comba_de_Rossas_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/FjfCXTYohwLi2BWw5',
     pathSlugs: ['ecopista-do-tua', 'linha-do-tua']
   },
   {
@@ -112,19 +102,20 @@ export const pois: POI[] = [
       en: { name: 'O Lombardês Café Restaurant', categoryLabel: 'Café Restaurant' },
       es: { name: 'Café Restaurante O Lombardês', categoryLabel: 'Café Restaurante' }
     },
+    url: 'https://maps.app.goo.gl/ZZb7xWpqxUFZKFXx9',
     pathSlugs: ['via-da-prata']
   },
   {
     id: 'cafe-vilarica',
     category: 'eat',
     contact: '',
-    latlng: [41.2321956, -7.1217131],
+    latlng: [41.2336222, -7.1228656],
     i18n: {
       pt: { name: 'Café Vilariça', categoryLabel: 'Café' },
       en: { name: 'Café Vilariça', categoryLabel: 'Coffee Shop' },
       es: { name: 'Café Vilariça', categoryLabel: 'Chiringuito' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurants-g1022881-Vila_Flor_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/S4UEVWpfwdUmJZSi9',
     pathSlugs: ['alem-douro', 'vilarica']
   },
   {
@@ -137,7 +128,7 @@ export const pois: POI[] = [
       en: { name: 'Café da Santa Joana', categoryLabel: 'Coffee Shop' },
       es: { name: 'Café da Santa Joana', categoryLabel: 'Chiringuito' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d15025983-Reviews-Santa_Joana-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/FCrN5XHx16WRT8nMA',
     pathSlugs: ['albufeira-do-azibo', 'ecopista-do-tua']
   },
   {
@@ -189,7 +180,7 @@ export const pois: POI[] = [
       en: { name: 'Cascata de Vilar de Ledra', categoryLabel: 'Waterfall' },
       es: { name: 'Cascata de Vilar de Ledra', categoryLabel: 'Cascada' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://www.youtube.com/watch?v=eI711hgkOGY',
     pathSlugs: ['ecopista-do-tua']
   },
   {
@@ -215,7 +206,7 @@ export const pois: POI[] = [
       en: { name: 'Castelo de Longroiva', categoryLabel: 'Monument' },
       es: { name: 'Castelo de Longroiva', categoryLabel: 'Monumento' }
     },
-    url: 'https://www.cm-fozcboa.pt/visitar/castelodemarialva/',
+    url: 'https://www.cm-meda.pt/castelo-de-longroiva/',
     pathSlugs: ['aldeias-historicas']
   },
   {
@@ -241,7 +232,7 @@ export const pois: POI[] = [
       en: { name: 'Cervejaria Dom', categoryLabel: 'Pub' },
       es: { name: 'Cervejaria Dom', categoryLabel: 'Cervejaria' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d12140409-Reviews-Cervejaria_Dom-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/7srtK8eBWR2SZCxD9',
     pathSlugs: ['albufeira-do-azibo', 'ecopista-do-tua']
   },
   {
@@ -254,7 +245,7 @@ export const pois: POI[] = [
       en: { name: 'Cervejaria Loreiro', categoryLabel: 'Coffee Shop' },
       es: { name: 'Cervejaria Loreiro', categoryLabel: 'Chiringuito' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022879-d15025981-Reviews-Cervejaria_Loreiro-Macedo_de_Cavaleiros_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/Usk1xqSKiGmy1imm7',
     pathSlugs: ['carvalhais', 'ecopista-do-tua']
   },
   {
@@ -449,7 +440,7 @@ export const pois: POI[] = [
       en: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' },
       es: { name: 'Grande Hotel Dom Dinis', categoryLabel: 'Hotel' }
     },
-    url: 'https://www.booking.com/hotel/pt/grande-dom-dinis.html',
+    url: 'https://www.dpbolvw.net/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FMirandela-Hoteles-Grande-Hotel-Dom-Dinis.h5195965.Informacion-Hotel%3Fchkin%3D2026-05-09%26chkout%3D2026-05-10%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1776094639184%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D6144957%26destination%3DMirandela%252C%2BDistrito%2Bde%2BBragan%25C3%25A7a%252C%2BPortugal%26destType%3DMARKET%26latLong%3D41.485355%252C-7.180871%26sort%3DRECOMMENDED%26userIntent%3D%26categorySearch%3Dany_option%26searchId%3Db01e7b76-4ab9-4df3-aeb8-133535aab1ed',
     pathSlugs: ['alem-douro', 'carvalhais', 'ecopista-do-tua', 'vila-flor']
   },
   {
@@ -466,16 +457,16 @@ export const pois: POI[] = [
     pathSlugs: ['albufeira-do-azibo', 'carvalhais']
   },
   {
-    id: 'hotel-povoa-d-alem-sabor',
+    id: 'casa-capitaes-mores',
     category: 'sleep',
     contact: '',
-    latlng: [41.3087581, -7.1605386],
+    latlng: [41.3073947, -7.1513164],
     i18n: {
-      pt: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' },
-      en: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' },
-      es: { name: 'Hotel Póvoa D\'Além Sabor', categoryLabel: 'Hotel' }
+      pt: { name: 'Casa Capitães Mores', categoryLabel: 'Hotel' },
+      en: { name: 'Casa Capitães Mores', categoryLabel: 'Hotel' },
+      es: { name: 'Casa Capitães Mores', categoryLabel: 'Hotel' }
     },
-    url: 'https://www.booking.com/hotel/pt/povoa-dalem-sabor.pt-pt.html',
+    url: 'https://www.anrdoezrs.net/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FVila-Flor-Hoteles-Casa-Capitaes-Mores-Vila-Flor.h108323835.Informacion-Hotel%3Fchkin%3D2026-05-09%26chkout%3D2026-05-10%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1776094725612%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da2%26regionId%3D6262641%26destination%3DVila%2BFlor%252C%2BDistrito%2Bde%2BBragan%25C3%25A7a%252C%2BPortugal%26destType%3DMARKET%26latLong%3D41.308281%252C-7.153468%26sort%3DRECOMMENDED%26userIntent%3D%26categorySearch%3Dany_option%26searchId%3D441b1c52-c003-462a-a168-b70bfd7fc87c',
     pathSlugs: ['vila-flor', 'vilarica']
   },
   {
@@ -501,6 +492,7 @@ export const pois: POI[] = [
       en: { name: 'Necrópole de Antas de Moreira de Rei', categoryLabel: 'Monument' },
       es: { name: 'Necrópole de Antas de Moreira de Rei', categoryLabel: 'Monumento' }
     },
+    url: 'https://www.centerofportugal.com/pt/poi/necropole-de-moreira-de-rei',
     pathSlugs: ['aldeias-historicas']
   },
   {
@@ -513,7 +505,7 @@ export const pois: POI[] = [
       en: { name: '3 Rios Maravilha Campsite', categoryLabel: 'Campsite' },
       es: { name: 'Parque de Campismo 3 Rios Maravilha', categoryLabel: 'Parque de Campismo' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://valedotua.pt/lista/parque-de-campismo-tres-rios-maravilha/',
     pathSlugs: ['ecopista-do-tua']
   },
   {
@@ -526,7 +518,7 @@ export const pois: POI[] = [
       en: { name: 'Bragança Municipal Campsite', categoryLabel: 'Campsite' },
       es: { name: 'Parque de Campismo Municipal de Bragança', categoryLabel: 'Parque de Campismo' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/k3ghwPrzLH5gESxCA',
     pathSlugs: ['ecopista-do-tua', 'via-da-prata']
   },
   {
@@ -539,7 +531,7 @@ export const pois: POI[] = [
       en: { name: 'Parque de Campismo de Mêda', categoryLabel: 'Campsite' },
       es: { name: 'Parque de Campismo de Mêda', categoryLabel: 'Parque de Campismo' }
     },
-    url: 'https://www.cm-fozcboa.pt/visitar/fontedaconcelha/',
+    url: 'https://www.cm-meda.pt/diretorio/parque-de-campismo-municipal/',
     pathSlugs: ['aldeias-historicas']
   },
   {
@@ -552,7 +544,7 @@ export const pois: POI[] = [
       en: { name: 'Parque de Merendas Entre as Pontes', categoryLabel: 'Picnic Area' },
       es: { name: 'Parque de Merendas Entre as Pontes', categoryLabel: 'Parque de Merendas' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://www.mesetaiberica.com/PointsOfIinterest/Details/c82b1e44-906f-4d18-b268-086b44a034cc',
     pathSlugs: ['ecopista-do-tua']
   },
   {
@@ -630,7 +622,7 @@ export const pois: POI[] = [
       en: { name: 'Colado River Beach', categoryLabel: 'River Beach' },
       es: { name: 'Playa Fluvial del Colado', categoryLabel: 'Playa Fluvial' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/mu9rNHKWAnjBHSNV9',
     pathSlugs: ['via-da-prata']
   },
   {
@@ -643,7 +635,7 @@ export const pois: POI[] = [
       en: { name: 'Lombada Restaurant', categoryLabel: 'Restaurant' },
       es: { name: 'Restaurante Lombada', categoryLabel: 'Restaurante' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurant_Review-g189172-d7099427-Reviews-Restaurante_Lombada-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://restaurantelombada.com/',
     pathSlugs: ['via-da-prata']
   },
   {
@@ -656,7 +648,7 @@ export const pois: POI[] = [
       en: { name: 'O Abel Restaurant', categoryLabel: 'Restaurant' },
       es: { name: 'Restaurante O Abel', categoryLabel: 'Restaurante' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurant_Review-g7067429-d3853386-Reviews-Restaurante_O_Abel-Gimonde_Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://www.oabel.pt/',
     pathSlugs: ['via-da-prata']
   },
   {
@@ -669,7 +661,7 @@ export const pois: POI[] = [
       en: { name: 'O Gaveto Restaurant', categoryLabel: 'Restaurant' },
       es: { name: 'Restaurante O Gaveto', categoryLabel: 'Restaurante' }
     },
-    url: 'https://www.tripadvisor.pt/Restaurant_Review-g1022883-d14144415-Reviews-Restaurante_O_Gaveto-Vila_Nova_de_Foz_Coa_Guarda_District_Central_Portugal.html',
+    url: 'https://maps.app.goo.gl/qgM1J958YiYRzptB9',
     pathSlugs: ['alem-douro', 'vilarica']
   },
   {
@@ -682,21 +674,8 @@ export const pois: POI[] = [
       en: { name: 'Serra de Nogueira', categoryLabel: 'Restaurant' },
       es: { name: 'Serra de Nogueira', categoryLabel: 'Restaurante' }
     },
-    url: 'https://www.tripadvisor.es/Restaurant_Review-g15239495-d8842309-Reviews-Serra_Da_Nogueira-Nogueira_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/RPqWA6Np8w7hbSRaA',
     pathSlugs: ['linha-do-tua']
-  },
-  {
-    id: 'solar-de-almeidinha-trancoso',
-    category: 'sleep',
-    contact: '',
-    latlng: [40.7772222, -7.3508333],
-    i18n: {
-      pt: { name: 'Solar de Almeidinha (Trancoso)', categoryLabel: 'Turismo de Habitação' },
-      en: { name: 'Solar de Almeidinha (Trancoso)', categoryLabel: 'Guesthouse' },
-      es: { name: 'Solar de Almeidinha (Trancoso)', categoryLabel: 'Turismo de Habitación' }
-    },
-    url: 'https://www.booking.com/hotel/pt/solar-de-almeidinha.pt-pt.html',
-    pathSlugs: ['aldeias-historicas']
   },
   {
     id: 'parque-merendas-frechas',
@@ -708,7 +687,7 @@ export const pois: POI[] = [
       en: { name: 'Parque Merendas Frechas', categoryLabel: 'Picnic Area' },
       es: { name: 'Parque Merendas Frechas', categoryLabel: 'Parque Merendas' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://www.jf-frechas.pt/freguesia/locais-a-visitar/5-praia_fluvial_de_frechas',
     pathSlugs: ['vila-flor', 'alem-douro']
   },
   {
@@ -721,7 +700,7 @@ export const pois: POI[] = [
       en: { name: 'Café Praia Fluvial Frechas', categoryLabel: 'Café' },
       es: { name: 'Café Praia Fluvial Frechas', categoryLabel: 'Café' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://www.facebook.com/groups/476628502689637/',
     pathSlugs: ['vila-flor', 'alem-douro']
   },
   {
@@ -734,7 +713,7 @@ export const pois: POI[] = [
       en: { name: 'Cabeça Nossa Senhora do Aviso', categoryLabel: 'Sanctuary' },
       es: { name: 'Cabeça Nossa Senhora do Aviso', categoryLabel: 'Santuario' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://www.jf-frechas.pt/freguesia/locais-a-visitar/4-capela_da_nossa_senhora_do_aviso_ou_viso_vale_da_sancha',
     pathSlugs: ['vila-flor', 'alem-douro']
   },
   {
@@ -747,7 +726,7 @@ export const pois: POI[] = [
       en: { name: 'Café Madureira', categoryLabel: 'Café' },
       es: { name: 'Café Madureira', categoryLabel: 'Café' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/ozszZhFLKr1VKjkw8',
     pathSlugs: ['vila-flor', 'alem-douro']
   },
   {
@@ -760,7 +739,7 @@ export const pois: POI[] = [
       en: { name: 'Parque Campismo Vila Flor', categoryLabel: 'Campsite' },
       es: { name: 'Parque Campismo Vila Flor', categoryLabel: 'Parque Campismo' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://www.cm-vilaflor.pt/pages/294?poi_id=39',
     pathSlugs: ['alem-douro']
   },
   {
@@ -773,7 +752,7 @@ export const pois: POI[] = [
       en: { name: 'Albufeira do Arco e Ribeiro Grande', categoryLabel: 'Dam' },
       es: { name: 'Albufeira do Arco e Ribeiro Grande', categoryLabel: 'Presa' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/x2GVCZPb6uzQsUrt8',
     pathSlugs: ['alem-douro', 'vilarica']
   },
   {
@@ -786,7 +765,7 @@ export const pois: POI[] = [
       en: { name: 'Café Primavera', categoryLabel: 'Café' },
       es: { name: 'Café Primavera', categoryLabel: 'Café' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/2QyWFLumBSmURGT86',
     pathSlugs: ['vilarica', 'alem-douro']
   },
   {
@@ -799,7 +778,7 @@ export const pois: POI[] = [
       en: { name: 'Café Lameirinho', categoryLabel: 'Café' },
       es: { name: 'Café Lameirinho', categoryLabel: 'Café' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/fAggGxDRiWYVaJSj7',
     pathSlugs: ['vilarica', 'alem-douro']
   },
   {
@@ -812,7 +791,7 @@ export const pois: POI[] = [
       en: { name: 'Café Foz Sabor', categoryLabel: 'Café' },
       es: { name: 'Café Foz Sabor', categoryLabel: 'Café' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/XcNP8Le4eP7hBrrA8',
     pathSlugs: ['vilarica', 'alem-douro']
   },
   {
@@ -825,7 +804,7 @@ export const pois: POI[] = [
       en: { name: 'Parque Merendas Foz Sabor', categoryLabel: 'Picnic Area' },
       es: { name: 'Parque Merendas Foz Sabor', categoryLabel: 'Parque Merendas' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/pKW5WZ2RwUB8A3fU9',
     pathSlugs: ['alem-douro']
   },
   {
@@ -838,7 +817,7 @@ export const pois: POI[] = [
       en: { name: 'Albufeira do Azibo', categoryLabel: 'Dam' },
       es: { name: 'Albufeira do Azibo', categoryLabel: 'Presa' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://azibo.cm-macedodecavaleiros.pt/',
     pathSlugs: ['albufeira-do-azibo', 'ecopista-do-tua']
   },
   {
@@ -851,7 +830,7 @@ export const pois: POI[] = [
       en: { name: 'Parque Merendas Fermentaos', categoryLabel: 'Picnic Area' },
       es: { name: 'Parque Merendas Fermentaos', categoryLabel: 'Parque Merendas' }
     },
-    url: 'https://www.tripadvisor.pt/Attraction_Review-g189172-d2394650-Reviews-Castelo_de_Braganca-Braganca_Braganca_District_Northern_Portugal.html',
+    url: 'https://maps.app.goo.gl/UwJr2yWUcKojrXUy8',
     pathSlugs: ['ecopista-do-tua']
   },
     {
