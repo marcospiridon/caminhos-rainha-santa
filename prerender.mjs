@@ -49,17 +49,33 @@ async function generateSitemap() {
   // Adiciona todas as combinações de língua e rota
   languages.forEach(lang => {
     baseRoutes.forEach(route => {
-      const fullPath = route === '/' ? `/${lang}/` : `/${lang}${route}`;
+      // Para PT, usamos a rota sem prefixo (pois é a canónica)
+      // Se lang for PT, e o sitemap já processou a raiz (route === '/') na secção anterior,
+      // devemos evitar duplicar a entrada da raiz se necessário, mas aqui o loop baseRoutes
+      // já cobre tudo.
+      
+      const isDefaultLang = (lang === 'pt');
+      const langPath = isDefaultLang ? '' : `/${lang}`;
+      const fullPath = route === '/' ? `${langPath}/` : `${langPath}${route}`;
+      
+      // Evitar duplicar a entrada da raiz (/) que já foi adicionada acima se route for '/' e lang for PT
+      if (isDefaultLang && route === '/') return;
+
       const priority = route === '/' ? '1.0' : (route.split('/').length > 2 ? '0.7' : '0.9');
       
       xml += `  <url>\n`;
-      xml += `    <loc>${SITE_URL}${fullPath}</loc>\n`;
+      xml += `    <loc>${SITE_URL}${fullPath.replace(/\/$/, '') || '/'}</loc>\n`;
       
       // Hreflang links para as outras línguas da mesma página
       languages.forEach(l => {
-        const altPath = route === '/' ? `/${l}/` : `/${l}${route}`;
-        xml += `    <xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}${altPath}" />\n`;
+        const altLangPath = (l === 'pt') ? '' : `/${l}`;
+        const altPath = route === '/' ? `${altLangPath}/` : `${altLangPath}${route}`;
+        xml += `    <xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}${altPath.replace(/\/$/, '') || '/'}" />\n`;
       });
+      
+      // Adiciona x-default sempre a apontar para a versão sem prefixo (PT)
+      const xDefaultPath = route === '/' ? '/' : route;
+      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${xDefaultPath.replace(/\/$/, '') || '/'}" />\n`;
       
       xml += `    <changefreq>weekly</changefreq><priority>${priority}</priority>\n`;
       xml += `  </url>\n`;
