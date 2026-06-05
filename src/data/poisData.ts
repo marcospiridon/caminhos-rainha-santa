@@ -949,7 +949,99 @@ export const pois: POI[] = [
     },
     url: 'https://maps.app.goo.gl/81H82gg9kKuR3aVt8',
     pathSlugs: ['ecopista-do-tua']
+  },
+  {
+    id: 'albergue-peregrinos-braga',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.5500850, -8.4263656],
+    i18n: {
+      pt: { name: 'Albergue de Peregrinos Braga "Casa da Roda"', categoryLabel: 'Albergue' },
+      en: { name: 'Peregrino\'s Guesthouse Braga "Casa da Roda"', categoryLabel: 'Guesthouse' },
+      es: { name: 'Albergue de Peregrinos Braga "Casa da Roda"', categoryLabel: 'Albergue' }
+    },
+    url: 'https://www.joemca.com/?page_id=16',
+    pathSlugs: ['braga-caldelas']
+  },
+  {
+    id: 'braga-home-royal-direito',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.5440125, -8.4189672],
+    i18n: {
+      pt: { name: 'Braga Home Royal Direito', categoryLabel: 'Hotel' },
+      en: { name: 'Braga Home Royal Direito', categoryLabel: 'Hotel' },
+      es: { name: 'Braga Home Royal Direito', categoryLabel: 'Hotel' }
+    },
+    url: 'https://www.dpbolvw.net/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FBraga-Hoteles-Direito.h90162942.Informacion-Hotel%3Fchkin%3D2026-09-17%26chkout%3D2026-09-18%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1780655781901%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da1%26regionId%3D553248635939578802%26destination%3DCasco%2520antiguo%2520de%2520Braga%252C%2520Braga%252C%2520Distrito%2520de%2520Braga%252C%2520Portugal%26destType%3DMARKET%26latLong%3D41.549901%252C-8.426696%26nightly_price%3D-3%252C139%26lodging%3DHOSTEL%26sort%3DPRICE_LOW_TO_HIGH%26top_dp%3D38%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D321486426%26selectedRatePlan%3D389117419%26categorySearch%3Dany_option%26searchId%3D23561988-beb2-493c-bea1-e55c653195e6',
+    pathSlugs: ['braga-caldelas']
+  },
+  {
+    id: 'ponte-do-bico',
+    category: 'see',
+    contact: '',
+    latlng: [41.6065050, -8.4313319],
+    i18n: {
+      pt: { name: 'Ponte do Bico', categoryLabel: 'Ponte' },
+      en: { name: 'Bico Bridge', categoryLabel: 'Bridge' },
+      es: { name: 'Puente del Bico', categoryLabel: 'Puente' }
+    },
+    url: 'https://pt.wikipedia.org/wiki/Ponte_do_Bico',
+    pathSlugs: ['braga-caldelas']
+  },
+  {
+    id: 'mosteiro-rendufe',
+    category: 'see',
+    contact: '',
+    latlng: [41.6357792, -8.4059983],
+    i18n: {
+      pt: { name: 'Mosteiro de Rendufe', categoryLabel: 'Mosteiro' },
+      en: { name: 'Rendufe Monastery', categoryLabel: 'Monastery' },
+      es: { name: 'Mosteiro de Rendufe', categoryLabel: 'Monasterio' }
+    },
+    url: 'https://pt.wikipedia.org/wiki/Mosteiro_de_Santo_Andr%C3%A9_de_Rendufe',
+    pathSlugs: ['braga-caldelas']
+  },
+  {
+    id: 'cafe-campino',
+    category: 'eat',
+    contact: '',
+    latlng: [41.6086219, -8.4282067],
+    i18n: {
+      pt: { name: 'Café Campino', categoryLabel: 'Café' },
+      en: { name: 'Café Campino', categoryLabel: 'Café' },
+      es: { name: 'Café Campino', categoryLabel: 'Café' }
+    },
+    url: 'https://www.facebook.com/p/O-Campino-100063768810069/',
+    pathSlugs: ['braga-caldelas']
+  },
+  {
+    id: 'hotel-peninsular',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.6682819, -8.3725139],
+    i18n: {
+      pt: { name: 'Hotel Peninsular', categoryLabel: 'Hotel' },
+      en: { name: 'Hotel Peninsular', categoryLabel: 'Hotel' },
+      es: { name: 'Hotel Peninsular', categoryLabel: 'Hotel' }
+    },
+    url: 'https://www.jdoqocy.com/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FAmares-Hoteles-Hotel-Peninsular.h5366077.Informacion-Hotel%3Fchkin%3D2026-09-17%26chkout%3D2026-09-18%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1780672831572%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da1%26regionId%3D500711%26destination%3DCaldelas%252C%2BAmares%252C%2BDistrito%2Bde%2BBraga%252C%2BPortugal%26destType%3DMARKET%26latLong%3D41.668008%252C-8.367763%26sort%3DPRICE_LOW_TO_HIGH%26top_dp%3D67%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D200582581%26selectedRatePlan%3D202919266%26categorySearch%3Dany_option%26searchId%3D899e0e4d-b280-479e-ac92-064f54407723',
+    pathSlugs: ['braga-caldelas', 'caldelas-campo-do-geres']
+  },
+  {
+    id: 'albuergue-caldelas',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.6670833, -8.3776878],
+    i18n: {
+      pt: { name: 'Albergue de Caldelas', categoryLabel: 'Albergue' },
+      en: { name: 'Albergue de Caldelas', categoryLabel: 'Guesthouse' },
+      es: { name: 'Albergue de Caldelas', categoryLabel: 'Albergue' }
+    },
+    url: 'https://www.facebook.com/p/Albergue-de-Santiago-de-Caldelas-61582721891979/',
+    pathSlugs: ['braga-caldelas', 'caldelas-campo-do-geres']
   }
+
 ];
 
 /** Get all POIs for a given path or stage slug */

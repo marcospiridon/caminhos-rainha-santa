@@ -698,7 +698,7 @@ export const paths: Path[] = [
       durationUnit: 'days',
       distance: 266,
       elevation: 6315,
-      minAltitude: 60,
+      minAltitude: 30,
       maxAltitude: 1055,
       difficultyKey: 'common.difficulty.hard',
       i18n: {
@@ -742,45 +742,45 @@ export const paths: Path[] = [
   {
     slug: 'braga-caldelas',
     type: 'hiking',
-    image: '/caminho-da-geira.jpg',
+    image: '/braga-caldelas.png',
     parentSlug: 'caminho-da-geira',
     details: {
       duration: 5,
       durationUnit: 'hours',
-      distance: 19.35,
-      elevation: 297,
-      minAltitude: 150,
-      maxAltitude: 350,
-      difficultyKey: 'common.difficulty.moderate',
+      distance: 22,
+      elevation: 245,
+      minAltitude: 30,
+      maxAltitude: 190,
+      difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
-          title: '1. Braga - Caldelas',
-          badge: 'Geira',
-          description: 'A etapa inicial do Caminho começa no coração histórico de Braga, incluindo um passeio urbano matinal pela cidade, antes de seguir em direção a Caldelas.',
-          narrativeTitle: 'Do centro monumental de Braga às termas serenas de Caldelas',
+          title: '1. De Braga a Caldelas',
+          badge: 'Início',
+          description: 'A etapa inicial capta a sensação pura de começar uma grande aventura, deixando o bulício da histórica Braga para trás e abraçando os primeiros passos do peregrino.',
+          narrativeTitle: 'Do Coração Barroco à Serenidade do Mosteiro: A Partida de Braga',
           content: [
-            'Comece a sua jornada explorando as ruas antigas de Braga, com a sua Sé histórica e praças floridas.',
-            'O percurso segue depois em direção a norte, atravessando campos férteis e pequenos povoados até chegar à vila termal de Caldelas, famosa pelas suas águas terapêuticas.'
+            'A jornada começa com os primeiros raios de sol em Braga, uma cidade de ruas de pedra e monumentos imponentes. A sensação de aventura é palpável enquanto você ajusta a mochila e deixa para trás a agitação urbana, trocando o som do tráfego pelo silêncio dos caminhos de terra.',
+            'O percurso leva-o rapidamente para a tranquilidade rural. A sensação de liberdade é imensa ao atravessar a histórica Ponte do Bico sobre o rio Cávado e, logo após, passar diante da imponência do Mosteiro de Rendufe, o primeiro grande refúgio espiritual ao longo da estrada.'
           ]
         },
         en: {
-          title: '1. Braga - Caldelas',
-          badge: 'Geira',
-          description: 'The initial stage begins in the historical heart of Braga, including a morning urban walk through the city, before heading towards Caldelas.',
-          narrativeTitle: 'From the monumental center of Braga to the serene thermal baths of Caldelas',
+          title: '1. From Braga to Caldelas',
+          badge: 'Start',
+          description: 'The initial stage captures the pure feeling of starting a grand adventure, leaving the bustle of historic Braga behind and embracing the first steps of the pilgrim.',
+          narrativeTitle: 'From the Baroque Heart to Monastery Serenity: Departure from Braga',
           content: [
-            'Begin your journey exploring the ancient streets of Braga, with its historic Cathedral and flowery squares.',
-            'The route then heads north, crossing fertile fields and small villages until reaching the thermal town of Caldelas, famous for its therapeutic waters.'
+            'The journey begins with the first rays of sun in Braga, a city of stone streets and imposing monuments. The feeling of adventure is palpable as you adjust your backpack and leave behind the urban bustle, swapping the sound of traffic for the silence of dirt paths.',
+            'The route quickly leads you into rural tranquility. The feeling of freedom is immense as you cross the historic Bico Bridge over the Cávado River and, shortly after, pass before the imposing Rendufe Monastery, the first great spiritual refuge along the road.'
           ]
         },
         es: {
-          title: '1. Braga - Caldelas',
-          badge: 'Geira',
-          description: 'La etapa inicial del Camino comienza en el coração histórico de Braga, incluyendo un paseo urbano matutino por la ciudad, antes de dirigirse hacia Caldelas.',
-          narrativeTitle: 'Del centro monumental de Braga a las serenas termas de Caldelas',
+          title: '1. De Braga a Caldelas',
+          badge: 'Inicio',
+          description: 'La etapa inicial captura la sensación pura de comenzar una gran aventura, dejando atrás el bullicio de la histórica Braga y abrazando los primeros pasos del peregrino.',
+          narrativeTitle: 'Del Corazón Barroco a la Serenidad del Monasterio: La Partida de Braga',
           content: [
-            'Comience su viaje explorando las calles antiguas de Braga, con su Catedral histórica y plazas floridas.',
-            'El recorrido se dirige luego hacia el norte, cruzando campos fértiles y pequeños pueblos hasta llegar a la villa termal de Caldelas, famosa por sus aguas terapéuticas.'
+            'El viaje comienza con los primeros rayos de sol en Braga, una ciudad de calles de piedra y monumentos imponentes. La sensación de aventura es palpable mientras ajustas la mochila y dejas atrás el bullicio urbano, cambiando el sonido del tráfico por el silencio de los caminos de tierra.',
+            'La ruta te lleva rápidamente a la tranquilidad rural. La sensación de libertad es inmensa al cruzar el histórico Puente de Bico sobre el río Cávado y, poco después, pasar ante la imponencia del Monasterio de Rendufe, el primer gran refugio espiritual a lo largo del camino.'
           ]
         }
       },
