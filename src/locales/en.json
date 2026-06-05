@@ -13,7 +13,8 @@
     },
     "button": {
       "hiking": "View Hiking Route",
-      "cycling": "View Cycling Route"
+      "cycling": "View Cycling Route",
+      "construction": "Coming Soon"
     },
     "details": "Profile"
   },

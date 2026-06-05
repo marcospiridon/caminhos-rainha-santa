@@ -47,4 +47,5 @@ export interface Path {
   parentSlug?: string;
   parent?: Path;
   stages?: Path[];
+  construction?: boolean;
 }

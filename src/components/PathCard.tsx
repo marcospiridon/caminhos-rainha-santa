@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Clock, BarChart3, ArrowRight, Map } from "lucide-react";
 
-const PathCard = ({ title, description, image, badge, duration, distance, difficulty, icon: Icon, buttonText, slug, parentSlug }: any) => (
+const PathCard = ({ title, description, image, badge, duration, distance, difficulty, icon: Icon, buttonText, slug, parentSlug, construction = false }: any) => (
   <motion.div
     whileHover={{ y: -10 }}
     className="group bg-white rounded-3xl overflow-hidden card-shadow hover:card-shadow-hover transition-all duration-500 border border-slate-50 flex flex-col h-full"
@@ -36,13 +36,19 @@ const PathCard = ({ title, description, image, badge, duration, distance, diffic
           {difficulty}
         </div>
       </div>
-      <Link
-        to={parentSlug ? `/path/${parentSlug}/${slug}` : `/path/${slug}`}
-        className="w-full p-4 rounded-xl bg-slate-50 hover:bg-brand/10 group/btn transition-all flex items-center justify-between border border-slate-100"
-      >
+      { construction ? (
+        <div className="w-full p-4 rounded-xl bg-slate-50 group/btn transition-all flex items-center justify-between border border-slate-100">
+          <span className="font-bold text-slate-400">{buttonText}</span>
+        </div>
+      ) : (
+        <Link
+          to={parentSlug ? `/path/${parentSlug}/${slug}` : `/path/${slug}`}
+          className="w-full p-4 rounded-xl bg-slate-50 hover:bg-brand/10 group/btn transition-all flex items-center justify-between border border-slate-100"
+        >
         <span className="font-bold text-slate-900 group-hover/btn:text-brand transition-colors">{buttonText}</span>
         <ArrowRight className="w-5 h-5 text-slate-400 group-hover/btn:text-brand transition-colors" />
       </Link>
+      )}
     </div>
   </motion.div>
 );

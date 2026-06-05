@@ -15,7 +15,7 @@ export const paths: Path[] = [
       difficultyKey: 'common.difficulty.hard',
       i18n: {
         pt: {
-          title: 'Caminho da Noiva Real',
+          title: 'Caminho da Princesa',
           badge: 'Recomendado',
           description: 'Onde a lenda floresceu. Siga os passos da jovem Isabel na sua entrada em Portugal: uma jornada de Quintanilha a Trancoso que transformou paisagens em jardins e uma Infanta em Rainha.',
           narrativeTitle: 'O Caminho que Floresceu com a Passagem da Rainha',
@@ -37,7 +37,7 @@ export const paths: Path[] = [
           ]
         },
         es: {
-          title: 'Camino de la Novia Real',
+          title: 'Camino de la Princesa de Aragón',
           badge: 'Recomendado',
           description: 'Donde la leyenda floreció. Siga los pasos de la joven Isabel en su entrada a Portugal: una jornada de Quintanilha a Trancoso que transformó paisajes en jardines y una Infanta en Reina.',
           narrativeTitle: 'El Camino que Floreció con el Paso de la Reina',
@@ -455,7 +455,7 @@ export const paths: Path[] = [
       difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
-          title: 'Rota da Noiva Real em Bikepacking',
+          title: 'Rota da Princesa em Bikepacking',
           badge: 'Aventura',
           description: 'A história sobre duas rodas. Atravesse a Raia e conquiste o horizonte de Quintanilha a Trancoso, numa jornada de bikepacking que une a força do pedal à mística da Rainha que transformou rochas em flores.',
           narrativeTitle: 'Pedalar pela História: Onde a Lenda Ganha Velocidade',
@@ -477,7 +477,7 @@ export const paths: Path[] = [
           ]
         },
         es: {
-          title: 'Ruta de la Novia Real en Bikepacking',
+          title: 'Ruta de la Princesa de Aragón en Bikepacking',
           badge: 'Aventura',
           description: 'La historia sobre dos ruedas. Cruce la Raya y conquiste el horizonte de Quintanilha a Trancoso, en una jornada de bikepacking que une la fuerza del pedal con la mística de la Reina que transformó rocas en flores.',
           narrativeTitle: 'Pedalear por la Historia: Donde la Leyenda Gana Velocidad',
@@ -686,6 +686,585 @@ export const paths: Path[] = [
         }
       },
       latlng: [41.0827, -7.1355],
+    }
+  },
+  {
+    slug: 'caminho-da-geira',
+    construction: true,
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    details: {
+      duration: 11,
+      durationUnit: 'days',
+      distance: 266,
+      elevation: 6315,
+      minAltitude: 60,
+      maxAltitude: 1055,
+      difficultyKey: 'common.difficulty.hard',
+      i18n: {
+        pt: {
+          title: 'Caminho da Geira e dos Arrieiros',
+          badge: 'Peregrinação',
+          description: 'Rainha Santa Isabel terá feito duas peregrinações a Santiago de Compostela já viúva. Este percurso é uma recriação do caminho percorrido pela Rainha.',
+          narrativeTitle: 'O contacto da Rainha com a natureza e com as gentes de Portugal e Galiza',
+          content: [
+            'O Caminho da Geira (ou Via Romana XVII) é uma antiga estrada romana que ligava Braga (Bracara Augusta) a Astorga (Asturica Augusta). ',
+            'Atravessa paisagens de beleza natural impressionante, desde florestas densas a campos abertos, passando por rios e aldeias históricas. ',
+            'Cada passo nesta antiga via é uma oportunidade para conectar-se com a história e a natureza, desfrutando de uma experiência única de peregrinação.'
+          ]
+        },
+        en: {
+          title: 'The Geira and Arrieiros Path',
+          badge: 'Pilgrimage',
+          description: 'Queen Isabel the Catholic is believed to have made two pilgrimages to Santiago de Compostela as a widow. This route recreates the path taken by the Queen.',
+          narrativeTitle: 'The Queen’s contact with nature and with the people of Portugal and Galicia',
+          content: [
+            'The Camino da Geira (or Via Romana XVII) is an ancient Roman road that connected Braga (Bracara Augusta) to Astorga (Asturica Augusta).',
+            'It crosses landscapes of stunning natural beauty, from dense forests to open fields, passing through rivers and historic villages.',
+            'Each step on this ancient path is an opportunity to connect with history and nature, enjoying a unique pilgrimage experience.'
+          ]
+        },
+        es: {
+          title: 'Camino de la Geira y de los Arrieros',
+          badge: 'Peregrinación',
+          description: 'Se cree que la Reina Santa Isabel la Católica realizó dos peregrinaciones a Santiago de Compostela ya viuda. Esta ruta recrea el camino recorrido por la Reina.',
+          narrativeTitle: 'El contacto de la Reina con la naturaleza y con la gente de Portugal y Galicia',
+          content: [
+            'El Camino de la Geira (o Via Romana XVII) es una antigua carretera romana que conectaba Braga (Bracara Augusta) con Astorga (Asturica Augusta).',
+            'Atraviesa paisajes de impresionante belleza natural, desde bosques densos hasta campos abiertos, pasando por ríos y pueblos históricos.',
+            'Cada paso en esta antigua vía es una oportunidad para conectar con la historia y la naturaleza, disfrutando de una experiencia única de peregrinación.'
+          ]
+        }
+      },
+      latlng: [41.7750, -6.8654],
+    }
+  },
+  {
+    slug: 'braga-caldelas',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 5,
+      durationUnit: 'hours',
+      distance: 19.35,
+      elevation: 297,
+      minAltitude: 150,
+      maxAltitude: 350,
+      difficultyKey: 'common.difficulty.moderate',
+      i18n: {
+        pt: {
+          title: '1. Braga - Caldelas',
+          badge: 'Geira',
+          description: 'A etapa inicial do Caminho começa no coração histórico de Braga, incluindo um passeio urbano matinal pela cidade, antes de seguir em direção a Caldelas.',
+          narrativeTitle: 'Do centro monumental de Braga às termas serenas de Caldelas',
+          content: [
+            'Comece a sua jornada explorando as ruas antigas de Braga, com a sua Sé histórica e praças floridas.',
+            'O percurso segue depois em direção a norte, atravessando campos férteis e pequenos povoados até chegar à vila termal de Caldelas, famosa pelas suas águas terapêuticas.'
+          ]
+        },
+        en: {
+          title: '1. Braga - Caldelas',
+          badge: 'Geira',
+          description: 'The initial stage begins in the historical heart of Braga, including a morning urban walk through the city, before heading towards Caldelas.',
+          narrativeTitle: 'From the monumental center of Braga to the serene thermal baths of Caldelas',
+          content: [
+            'Begin your journey exploring the ancient streets of Braga, with its historic Cathedral and flowery squares.',
+            'The route then heads north, crossing fertile fields and small villages until reaching the thermal town of Caldelas, famous for its therapeutic waters.'
+          ]
+        },
+        es: {
+          title: '1. Braga - Caldelas',
+          badge: 'Geira',
+          description: 'La etapa inicial del Camino comienza en el coração histórico de Braga, incluyendo un paseo urbano matutino por la ciudad, antes de dirigirse hacia Caldelas.',
+          narrativeTitle: 'Del centro monumental de Braga a las serenas termas de Caldelas',
+          content: [
+            'Comience su viaje explorando las calles antiguas de Braga, con su Catedral histórica y plazas floridas.',
+            'El recorrido se dirige luego hacia el norte, cruzando campos fértiles y pequeños pueblos hasta llegar a la villa termal de Caldelas, famosa por sus aguas terapéuticas.'
+          ]
+        }
+      },
+      latlng: [41.5503, -8.4201]
+    }
+  },
+  {
+    slug: 'caldelas-campo-do-geres',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 8,
+      durationUnit: 'hours',
+      distance: 31.12,
+      elevation: 1063,
+      minAltitude: 150,
+      maxAltitude: 800,
+      difficultyKey: 'common.difficulty.hard',
+      i18n: {
+        pt: {
+          title: '2. Caldelas - Campo do Gerês',
+          badge: 'Geira',
+          description: 'Uma etapa exigente e espetacular que sobe a serra até ao Campo do Gerês, terminando na Pousada da Juventude.',
+          narrativeTitle: 'Subindo as encostas graníticas até ao coração do Parque Nacional',
+          content: [
+            'Deixe a tranquilidade de Caldelas para trás e inicie uma subida vigorosa pelas encostas da serra.',
+            'O esforço é amplamente recompensado pelas vistas panorâmicas sobre as montanhas e albufeiras do Parque Nacional da Peneda-Gerês, terminando na aldeia de Campo do Gerês.'
+          ]
+        },
+        en: {
+          title: '2. Caldelas - Campo do Gerês',
+          badge: 'Geira',
+          description: 'A demanding and spectacular stage that climbs the mountain to Campo do Gerês, ending at the Youth Hostel.',
+          narrativeTitle: 'Climbing the granitic slopes to the heart of the National Park',
+          content: [
+            'Leave the tranquility of Caldelas behind and start a vigorous climb up the mountain slopes.',
+            'The effort is amply rewarded by panoramic views of the mountains and reservoirs of the Peneda-Gerês National Park, ending in the village of Campo do Gerês.'
+          ]
+        },
+        es: {
+          title: '2. Caldelas - Campo do Gerês',
+          badge: 'Geira',
+          description: 'Una etapa exigente y espectacular que sube la sierra hasta Campo do Gerês, terminando en el Albergue Juvenil.',
+          narrativeTitle: 'Subiendo las laderas graníticas hacia el corazón del Parque Nacional',
+          content: [
+            'Deje atrás la tranquilidad de Caldelas e inicie una subida vigorosa por las laderas de la sierra.',
+            'El esfuerzo se ve recompensado con creces por las vistas panorámicas de las montañas y embalses del Parque Nacional Peneda-Gerês, terminando en la aldea de Campo do Gerês.'
+          ]
+        }
+      },
+      latlng: [41.6667, -8.3667]
+    }
+  },
+  {
+    slug: 'campo-do-geres-lobios',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 6,
+      durationUnit: 'hours',
+      distance: 25.29,
+      elevation: 475,
+      minAltitude: 300,
+      maxAltitude: 800,
+      difficultyKey: 'common.difficulty.moderate',
+      i18n: {
+        pt: {
+          title: '3. Campo do Gerês - Lobios',
+          badge: 'Geira',
+          description: 'Atravesse a deslumbrante Mata da Albergaria ao longo dos marcos miliários da Via Romana até cruzar a fronteira para Lobios na Galiza.',
+          narrativeTitle: 'Caminhando pela antiga Via Romana sob a sombra da Albergaria',
+          content: [
+            'Esta etapa emblemática segue o traçado da antiga Geira Romana, passando pela mágica Mata da Albergaria e as suas ruínas históricas.',
+            'Após cruzar a fronteira na Portela do Homem, a rota desce até às termas ao ar livre de Lobios, já em território galego.'
+          ]
+        },
+        en: {
+          title: '3. Campo do Gerês - Lobios',
+          badge: 'Geira',
+          description: 'Cross the stunning Albergaria Forest along the milestones of the Roman Way before crossing the border into Lobios, Galicia.',
+          narrativeTitle: 'Walking the ancient Roman Way under the shade of Albergaria',
+          content: [
+            'This emblematic stage follows the route of the ancient Roman Geira, passing through the magical Albergaria Forest and its historic ruins.',
+            'After crossing the border at Portela do Homate, the route descends to the open-air thermal baths of Lobios in Galician territory.'
+          ]
+        },
+        es: {
+          title: '3. Campo do Gerês - Lobios',
+          badge: 'Geira',
+          description: 'Cruce el impresionante bosque de Albergaria a lo largo de los miliarios de la Vía Romana antes de cruzar la frontera hacia Lobios, Galicia.',
+          narrativeTitle: 'Caminando por la antigua Vía Romana bajo la sombra de Albergaria',
+          content: [
+            'Esta etapa emblemática sigue el trazado de la antigua Geira Romana, pasando por el mágico bosque de Albergaria y sus ruinas históricas.',
+            'Tras cruzar la frontera en Portela del Hombre, la ruta desciende hasta las termas al aire libre de Lobios, ya en territorio gallego.'
+          ]
+        }
+      },
+      latlng: [41.7656, -8.1824]
+    }
+  },
+  {
+    slug: 'lobios-castro-laboreiro',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 5,
+      durationUnit: 'hours',
+      distance: 21.22,
+      elevation: 913,
+      minAltitude: 300,
+      maxAltitude: 1000,
+      difficultyKey: 'common.difficulty.hard',
+      i18n: {
+        pt: {
+          title: '4. Lobios - Castro Laboreiro',
+          badge: 'Geira',
+          description: 'Regresse temporariamente a Portugal subindo até à aldeia serrana de Castro Laboreiro, famosa pelas suas pontes românicas e castelo.',
+          narrativeTitle: 'Subida às terras altas da Peneda e ao planalto de Castro Laboreiro',
+          content: [
+            'Uma etapa de subida desafiante que deixa o vale de Lobios para trás e ruma às altitudes de Castro Laboreiro.',
+            'O percurso revela pontes antigas, fornos comunitários e a imponência do castelo rochoso no topo do planalto.'
+          ]
+        },
+        en: {
+          title: '4. Lobios - Castro Laboreiro',
+          badge: 'Geira',
+          description: 'Temporarily return to Portugal, climbing to the mountain village of Castro Laboreiro, famous for its Romanesque bridges and castle.',
+          narrativeTitle: 'Climbing to the highlands of Peneda and the plateau of Castro Laboreiro',
+          content: [
+            'A challenging climbing stage that leaves the Lobios valley behind and heads to the high elevations of Castro Laboreiro.',
+            'The route reveals ancient bridges, community ovens, and the majesty of the rocky castle at the top of the plateau.'
+          ]
+        },
+        es: {
+          title: '4. Lobios - Castro Laboreiro',
+          badge: 'Geira',
+          description: 'Regrese temporalmente a Portugal subiendo hasta la aldea serrana de Castro Laboreiro, famosa por sus puentes románicos y castillo.',
+          narrativeTitle: 'Subida a las tierras altas de Peneda y al altiplano de Castro Laboreiro',
+          content: [
+            'Una etapa de subida desafiante que deja atrás el valle de Lobios y se dirige a las alturas de Castro Laboreiro.',
+            'El recorrido revela puentes antiguos, hornos comunitarios y la imponencia del castillo rocoso en la cima del altiplano.'
+          ]
+        }
+      },
+      latlng: [41.8741, -8.0827]
+    }
+  },
+  {
+    slug: 'castro-laboreiro-cortegada',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 7,
+      durationUnit: 'hours',
+      distance: 28.39,
+      elevation: 481,
+      minAltitude: 200,
+      maxAltitude: 1000,
+      difficultyKey: 'common.difficulty.moderate',
+      i18n: {
+        pt: {
+          title: '5. Castro Laboreiro - Cortegada',
+          badge: 'Geira',
+          description: 'Uma longa etapa de descida e transição que regressa definitivamente à Galiza, terminando na estância termal de Cortegada.',
+          narrativeTitle: 'Deixando o planalto rochoso rumo aos vales verdes da Galiza',
+          content: [
+            'Inicie o dia no planalto de Castro Laboreiro antes de iniciar uma longa e suave descida em direção à fronteira.',
+            'O destino final é Cortegada, conhecida pelas suas águas termais nas margens do Rio Minho.'
+          ]
+        },
+        en: {
+          title: '5. Castro Laboreiro - Cortegada',
+          badge: 'Geira',
+          description: 'A long descending and transitional stage that permanently returns to Galicia, ending in the thermal town of Cortegada.',
+          narrativeTitle: 'Leaving the rocky plateau towards the green valleys of Galicia',
+          content: [
+            'Begin the day on the Castro Laboreiro plateau before starting a long and gentle descent towards the border.',
+            'The final destination is Cortegada, known for its thermal waters on the banks of the Minho River.'
+          ]
+        },
+        es: {
+          title: '5. Castro Laboreiro - Cortegada',
+          badge: 'Geira',
+          description: 'Una larga etapa de descenso y transición que regresa definitivamente a Galicia, terminando en la villa termal de Cortegada.',
+          narrativeTitle: 'Dejando el altiplano rocoso hacia los valles verdes de Galicia',
+          content: [
+            'Comience el día en el altiplano de Castro Laboreiro antes de iniciar un largo y suave descenso hacia la frontera.',
+            'El destino final es Cortegada, conocida por sus aguas termales a orillas del río Miño.'
+          ]
+        }
+      },
+      latlng: [42.0306, -8.1587]
+    }
+  },
+  {
+    slug: 'cortegada-ribadavia',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 4,
+      durationUnit: 'hours',
+      distance: 15.99,
+      elevation: 393,
+      minAltitude: 100,
+      maxAltitude: 400,
+      difficultyKey: 'common.difficulty.easy',
+      i18n: {
+        pt: {
+          title: '6. Cortegada - Ribadavia',
+          badge: 'Geira',
+          description: 'Uma etapa mais curta e cénica que segue o vale fluvial até à histórica vila medieval de Ribadavia.',
+          narrativeTitle: 'Ao longo dos rios e das vinhas até à capital do Ribeiro',
+          content: [
+            'Caminhe ao longo de caminhos florestais e vinhedos que produzem o famoso vinho Ribeiro.',
+            'A etapa termina em Ribadavia, com o seu impressionante castelo, judiaria histórica e praças medievais.'
+          ]
+        },
+        en: {
+          title: '6. Cortegada - Ribadavia',
+          badge: 'Geira',
+          description: 'A shorter and scenic stage following the river valley to the historic medieval town of Ribadavia.',
+          narrativeTitle: 'Along rivers and vineyards to the capital of Ribeiro wine',
+          content: [
+            'Walk along forest paths and vineyards that produce the famous Ribeiro wine.',
+            'The stage ends in Ribadavia, with its impressive castle, historic Jewish quarter, and medieval squares.'
+          ]
+        },
+        es: {
+          title: '6. Cortegada - Ribadavia',
+          badge: 'Geira',
+          description: 'Una etapa más corta y escénica que sigue el valle fluvial hasta la histórica villa medieval de Ribadavia.',
+          narrativeTitle: 'A lo largo de los ríos y viñedos hasta la capital del Ribeiro',
+          content: [
+            'Camine a lo largo de senderos forestales y viñedos que producen el famoso vino Ribeiro.',
+            'La etapa termina en Ribadavia, con su impresionante castillo, judería histórica y plazas medievales.'
+          ]
+        }
+      },
+      latlng: [42.2057, -8.1724]
+    }
+  },
+  {
+    slug: 'ribadavia-feas',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 7,
+      durationUnit: 'hours',
+      distance: 28.64,
+      elevation: 912,
+      minAltitude: 100,
+      maxAltitude: 600,
+      difficultyKey: 'common.difficulty.hard',
+      i18n: {
+        pt: {
+          title: '7. Ribadavia - Feás',
+          badge: 'Geira',
+          description: 'Uma subida desafiante que se afasta do vale do Minho em direção a Feás, atravessando aldeias rurais de rara beleza.',
+          narrativeTitle: 'Subindo da capital medieval do vinho para o planalto de Boborás',
+          content: [
+            'Deixe a bacia fluvial de Ribadavia para trás e enfrente uma subida constante por caminhos de floresta antiga.',
+            'O destino final é Feás, uma localidade rural tranquila no concelho de Boborás.'
+          ]
+        },
+        en: {
+          title: '7. Ribadavia - Feás',
+          badge: 'Geira',
+          description: 'A challenging climb heading away from the Minho valley towards Feás, crossing beautiful rural villages.',
+          narrativeTitle: 'Climbing from the medieval wine capital to the plateau of Boborás',
+          content: [
+            'Leave the river basin of Ribadavia behind and tackle a steady climb along ancient forest paths.',
+            'The final destination is Feás, a quiet rural village in the municipality of Boborás.'
+          ]
+        },
+        es: {
+          title: '7. Ribadavia - Feás',
+          badge: 'Geira',
+          description: 'Una subida desafiante que se aleja del valle del Miño hacia Feás, cruzando hermosas aldeas rurales.',
+          narrativeTitle: 'Subiendo desde la capital medieval del vino hacia el altiplano de Boborás',
+          content: [
+            'Deje atrás la cuenca fluvial de Ribadavia y afronte una subida constante por senderos de bosque antiguo.',
+            'El destino final es Feás, una localidad rural tranquila en el municipio de Boborás.'
+          ]
+        }
+      },
+      latlng: [42.2872, -8.1432]
+    }
+  },
+  {
+    slug: 'feas-soutelo-de-montes',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 5,
+      durationUnit: 'hours',
+      distance: 21.25,
+      elevation: 703,
+      minAltitude: 300,
+      maxAltitude: 800,
+      difficultyKey: 'common.difficulty.moderate',
+      i18n: {
+        pt: {
+          title: '8. Feás - Soutelo de Montes',
+          badge: 'Geira',
+          description: 'Suba pelas colinas verdejantes e carvalhais da Galiza interior até chegar à localidade montanhosa de Soutelo de Montes.',
+          narrativeTitle: 'Atravessando as colinas arborizadas da província de Ourense e Pontevedra',
+          content: [
+            'Esta etapa desenrola-se por trilhos montanhosos cercados de vegetação exuberante e cruzes de pedra tradicionais (cruceiros).',
+            'Soutelo de Montes oferece um acolhimento acolhedor e um merecido repouso a alta altitude.'
+          ]
+        },
+        en: {
+          title: '8. Feás - Soutelo de Montes',
+          badge: 'Geira',
+          description: 'Climb through the green hills and oak forests of inland Galicia to reach the mountain town of Soutelo de Montes.',
+          narrativeTitle: 'Crossing the forested hills of the Ourense and Pontevedra provinces',
+          content: [
+            'This stage unfolds along mountain trails surrounded by lush vegetation and traditional stone crosses (cruceiros).',
+            'Soutelo de Montes offers a warm welcome and a well-deserved rest at high altitude.'
+          ]
+        },
+        es: {
+          title: '8. Feás - Soutelo de Montes',
+          badge: 'Geira',
+          description: 'Suba por las colinas verdes y robledales de la Galicia interior hasta llegar a la localidad montañosa de Soutelo de Montes.',
+          narrativeTitle: 'Cruzando las colinas boscosas de las provincias de Ourense y Pontevedra',
+          content: [
+            'Esta etapa se desarrolla por senderos montañosos rodeados de vegetación exuberante y cruces de piedra tradicionales (cruceiros).',
+            'Soutelo de Montes ofrece una acogedora bienvenida y un merecido descanso a gran altura.'
+          ]
+        }
+      },
+      latlng: [42.4332, -8.1065]
+    }
+  },
+  {
+    slug: 'soutelo-de-montes-codeseda',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 5,
+      durationUnit: 'hours',
+      distance: 20.58,
+      elevation: 408,
+      minAltitude: 200,
+      maxAltitude: 700,
+      difficultyKey: 'common.difficulty.moderate',
+      i18n: {
+        pt: {
+          title: '9. Soutelo de Montes - Codeseda',
+          badge: 'Geira',
+          description: 'Descubra a tranquilidade rural do concelho de A Estrada, caminhando até Codeseda por pontes românicas e trilhos ancestrais.',
+          narrativeTitle: 'Por trilhos milenares e pontes de pedra até à paróquia de Codeseda',
+          content: [
+            'Caminhe por caminhos antigos que ligavam as comunidades da Galiza interior, cruzando rios através de pontes medievais.',
+            'O destino é Codeseda, famosa pela sua hospitalidade jacobeia e património histórico.'
+          ]
+        },
+        en: {
+          title: '9. Soutelo de Montes - Codeseda',
+          badge: 'Geira',
+          description: 'Discover the rural tranquility of A Estrada municipality, walking to Codeseda via Romanesque bridges and ancient trails.',
+          narrativeTitle: 'Along ancient trails and stone bridges to the parish of Codeseda',
+          content: [
+            'Walk along old paths that connected the communities of inland Galicia, crossing rivers via medieval bridges.',
+            'The destination is Codeseda, famous for its Jacobean hospitality and historic heritage.'
+          ]
+        },
+        es: {
+          title: '9. Soutelo de Montes - Codeseda',
+          badge: 'Geira',
+          description: 'Descubra la tranquilidad rural del municipio de A Estrada, caminando hasta Codeseda por puentes románicos y senderos ancestrales.',
+          narrativeTitle: 'Por senderos milenarios y puentes de piedra hasta la parroquia de Codeseda',
+          content: [
+            'Camine por senderos antiguos que conectaban las comunidades de la Galicia interior, cruzando ríos a través de puentes medievales.',
+            'El destino es Codeseda, famosa por su hospitalidad jacobea y patrimonio histórico.'
+          ]
+        }
+      },
+      latlng: [42.5487, -8.2711]
+    }
+  },
+  {
+    slug: 'codeseda-raris',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 7,
+      durationUnit: 'hours',
+      distance: 26.71,
+      elevation: 366,
+      minAltitude: 150,
+      maxAltitude: 500,
+      difficultyKey: 'common.difficulty.moderate',
+      i18n: {
+        pt: {
+          title: '10. Codeseda - Raris',
+          badge: 'Geira',
+          description: 'A penúltima etapa atravessa o belo vale fluvial do Rio Ulla antes de iniciar a aproximação final a Raris.',
+          narrativeTitle: 'Atravessando o deslumbrante Rio Ulla a caminho das portas de Santiago',
+          content: [
+            'Deixe Codeseda e atravesse a deslumbrante paisagem agrícola e florestal da região.',
+            'Cruze o imponente Rio Ulla, um marco natural importante da Galiza, e prossiga até Raris.'
+          ]
+        },
+        en: {
+          title: '10. Codeseda - Raris',
+          badge: 'Geira',
+          description: 'The penultimate stage crosses the beautiful Ulla River valley before starting the final approach to Raris.',
+          narrativeTitle: 'Crossing the stunning Ulla River on the way to Santiago’s gates',
+          content: [
+            'Leave Codeseda and walk through the beautiful agricultural and forest landscape of the region.',
+            'Cross the imposing Ulla River, an important natural landmark of Galicia, and proceed to Raris.'
+          ]
+        },
+        es: {
+          title: '10. Codeseda - Raris',
+          badge: 'Geira',
+          description: 'La penúltima etapa cruza el hermoso valle del río Ulla antes de iniciar el acercamiento final a Raris.',
+          narrativeTitle: 'Cruzando el impresionante río Ulla camino a las puertas de Santiago',
+          content: [
+            'Deje Codeseda y camine por el hermoso paisaje agrícola y forestal de la región.',
+            'Cruce el imponente río Ulla, un hito natural importante de Galicia, y continúe hacia Raris.'
+          ]
+        }
+      },
+      latlng: [42.6186, -8.4069]
+    }
+  },
+  {
+    slug: 'raris-santiago-compostela',
+    type: 'hiking',
+    image: '/caminho-da-geira.jpg',
+    parentSlug: 'caminho-da-geira',
+    details: {
+      duration: 4,
+      durationUnit: 'hours',
+      distance: 17.61,
+      elevation: 408,
+      minAltitude: 150,
+      maxAltitude: 350,
+      difficultyKey: 'common.difficulty.easy',
+      i18n: {
+        pt: {
+          title: '11. Raris - Santiago de Compostela',
+          badge: 'Geira',
+          description: 'A etapa final e triunfante da peregrinação, culminando em frente à majestosa Catedral de Santiago de Compostela.',
+          narrativeTitle: 'A caminhada triunfal até à Praça do Obradoiro',
+          content: [
+            'Uma etapa de grande emoção. A caminhada segue por caminhos tranquilos até entrar nos arredores urbanos de Santiago.',
+            'Termine a sua jornada na icónica Praça do Obradoiro, em frente à Sé Catedral, contemplando o fim de uma caminhada mágica de fé.'
+          ]
+        },
+        en: {
+          title: '11. Raris - Santiago de Compostela',
+          badge: 'Geira',
+          description: 'The final and triumphant stage of the pilgrimage, culminating in front of the majestic Cathedral of Santiago de Compostela.',
+          narrativeTitle: 'The triumphant walk to Obradoiro Square',
+          content: [
+            'A highly emotional stage. The walk follows quiet paths until entering the urban outskirts of Santiago.',
+            'End your journey in the iconic Praça do Obradoiro, in front of the Cathedral, contemplating the completion of a magical pilgrimage of faith.'
+          ]
+        },
+        es: {
+          title: '11. Raris - Santiago de Compostela',
+          badge: 'Geira',
+          description: 'La etapa final y triunfal de la peregrinación, que culmina frente a la majestuosa Catedral de Santiago de Compostela.',
+          narrativeTitle: 'La caminata triunfal hasta la Plaza del Obradoiro',
+          content: [
+            'Una etapa de gran emoción. La caminata transcurre por senderos tranquilos hasta ingresar a la periferia urbana de Santiago.',
+            'Finalice su viaje en la icónica Plaza del Obradoiro, frente a la Catedral, contemplando el final de un camino mágico de fe.'
+          ]
+        }
+      },
+      latlng: [42.7504, -8.4907]
     }
   }
 ];

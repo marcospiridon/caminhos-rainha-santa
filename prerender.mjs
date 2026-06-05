@@ -27,6 +27,18 @@ const baseRoutes = [
   '/path/aventura-gravel/ecopista-do-tua',
   '/path/aventura-gravel/alem-douro',
   '/path/aventura-gravel/aldeias-historicas',
+  '/path/caminho-da-geira',
+  '/path/caminho-da-geira/braga-caldelas',
+  '/path/caminho-da-geira/caldelas-campo-do-geres',
+  '/path/caminho-da-geira/campo-do-geres-lobios',
+  '/path/caminho-da-geira/lobios-castro-laboreiro',
+  '/path/caminho-da-geira/castro-laboreiro-cortegada',
+  '/path/caminho-da-geira/cortegada-ribadavia',
+  '/path/caminho-da-geira/ribadavia-feas',
+  '/path/caminho-da-geira/feas-soutelo-de-montes',
+  '/path/caminho-da-geira/soutelo-de-montes-codeseda',
+  '/path/caminho-da-geira/codeseda-raris',
+  '/path/caminho-da-geira/raris-santiago-compostela',
 ];
 
 const languages = ['pt', 'en', 'es'];
@@ -90,45 +102,62 @@ async function generateSitemap() {
 }
 
 async function prerender() {
+  const originalHtmlPath = path.join(DIST_PATH, 'index.html');
+  const cleanHtmlPath = path.join(DIST_PATH, 'index-clean.html');
+
+  // Backup clean template
+  await fs.copyFile(originalHtmlPath, cleanHtmlPath);
+
   const app = express();
   app.use(express.static(DIST_PATH));
   app.use((req, res) => {
-    res.sendFile(path.join(DIST_PATH, 'index.html'));
+    res.sendFile(cleanHtmlPath);
   });
 
   const server = app.listen(PORT, async () => {
     console.log(`Temporary server started at http://localhost:${PORT}`);
     
-    const browser = await puppeteer.launch({ headless: "new" });
-    const page = await browser.newPage();
+    try {
+      const browser = await puppeteer.launch({ headless: "new" });
+      const page = await browser.newPage();
 
-    for (const lang of languages) {
-      console.log(`\n--- Prerendering: ${lang.toUpperCase()} ---`);
-      
-      for (const route of baseRoutes) {
-        const langRoute = route === '/' ? `/${lang}` : `/${lang}${route}`;
-        console.log(`Crawling: ${langRoute}`);
+      for (const lang of languages) {
+        console.log(`\n--- Prerendering: ${lang.toUpperCase()} ---`);
         
-        await page.goto(`http://localhost:${PORT}${langRoute}`, { waitUntil: 'networkidle0' });
-        const content = await page.content();
-        
-        const outputPath = path.join(DIST_PATH, lang, route === '/' ? 'index.html' : `${route}/index.html`);
-        await fs.mkdir(path.dirname(outputPath), { recursive: true });
-        await fs.writeFile(outputPath, content);
+        for (const route of baseRoutes) {
+          const langRoute = route === '/' ? `/${lang}` : `/${lang}${route}`;
+          console.log(`Crawling: ${langRoute}`);
+          
+          await page.goto(`http://localhost:${PORT}${langRoute}`, { waitUntil: 'networkidle0' });
+          const content = await page.content();
+          
+          const outputPath = path.join(DIST_PATH, lang, route === '/' ? 'index.html' : `${route}/index.html`);
+          await fs.mkdir(path.dirname(outputPath), { recursive: true });
+          await fs.writeFile(outputPath, content);
 
-        if (lang === 'pt') {
-          const rootPath = path.join(DIST_PATH, route === '/' ? 'index.html' : `${route}/index.html`);
-          await fs.mkdir(path.dirname(rootPath), { recursive: true });
-          await fs.writeFile(rootPath, content);
+          if (lang === 'pt') {
+            const rootPath = path.join(DIST_PATH, route === '/' ? 'index.html' : `${route}/index.html`);
+            await fs.mkdir(path.dirname(rootPath), { recursive: true });
+            await fs.writeFile(rootPath, content);
+          }
         }
       }
-    }
 
-    await browser.close();
-    await generateSitemap();
-    server.close();
-    console.log('\n✅ Multi-language build with automated sitemap completed!');
-    process.exit(0);
+      await browser.close();
+      await generateSitemap();
+    } catch (err) {
+      console.error('❌ Prerendering failed:', err);
+    } finally {
+      // Clean up the backup file
+      try {
+        await fs.unlink(cleanHtmlPath);
+      } catch (e) {
+        // Ignore
+      }
+      server.close();
+      console.log('\n✅ Multi-language build with automated sitemap completed!');
+      process.exit(0);
+    }
   });
 }
 

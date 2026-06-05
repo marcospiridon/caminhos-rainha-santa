@@ -13,7 +13,8 @@
     },
     "button": {
       "hiking": "Ver Rota Pedestre",
-      "cycling": "Ver Rota de Ciclismo"
+      "cycling": "Ver Rota de Ciclismo",
+      "construction": "Brevemente..."
     },
     "details": "Perfil"
   },

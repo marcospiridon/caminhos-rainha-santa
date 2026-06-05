@@ -38,7 +38,7 @@ const Paths = () => {
 
   return (
     <div className="pt-32 pb-24 px-6 min-h-screen bg-slate-50">
-      <SEO 
+      <SEO
         title={t('seo.paths.title')}
         description={t('seo.paths.description')}
       />
@@ -106,8 +106,9 @@ const Paths = () => {
                     distance={path.details?.distance}
                     difficulty={path.details ? t(path.details.difficultyKey) : undefined}
                     icon={path.type === 'hiking' ? Footprints : Bike}
-                    buttonText={t(`common.button.${path.type}`)}
+                    buttonText={path.construction ? t(`common.button.construction`) : t(`common.button.${path.type}`)}
                     slug={path.slug}
+                    construction={path.construction}
                   />
                 </motion.div>
               );

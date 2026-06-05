@@ -22,9 +22,10 @@ const PathSelection = ({ paths }: { paths: Path[] }) => {
             distance={path.details.distance}
             difficulty={t(path.details.difficultyKey)}
             icon={path.type === 'hiking' ? Footprints : Bike}
-            buttonText={t(`common.button.${path.type}`)}
+            buttonText={path.construction ? t(`common.button.construction`) : t(`common.button.${path.type}`)}
             slug={path.slug}
             parentSlug={path.parentSlug}
+            construction={path.construction}
           />
         );
       })}
