@@ -9,10 +9,10 @@ interface SEOProps {
   image?: string;
 }
 
-export default function SEO({ 
-  title, 
-  description, 
-  canonical, 
+export default function SEO({
+  title,
+  description,
+  canonical,
   type = 'website',
   image = '/hero.jpg'
 }: SEOProps) {
@@ -20,12 +20,12 @@ export default function SEO({
 
   const siteTitle = title ? `${title} | Caminhos da Rainha Santa` : t('seo.default.title');
   const seoDescription = description || t('seo.default.description');
-  const siteUrl = "https://caminhos-rainha-santa.onrender.com";
-  
+  const siteUrl = "https://caminhos-rainha-santa.pt";
+
   // Constrói o URL canónico
   // Se for PT, removemos o prefixo /pt para que a versão canónica seja a da raiz
   let currentPath = window.location.pathname;
-  
+
   // Limpeza do path para o canónico (remover /pt se existir)
   let canonicalPath = currentPath;
   if (i18n.language === 'pt') {
@@ -37,13 +37,13 @@ export default function SEO({
   }
 
   // Garantir que não temos double slashes e que o canónico é absoluto
-  const finalCanonical = canonical 
+  const finalCanonical = canonical
     ? (canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`)
     : `${siteUrl}${canonicalPath}`.replace(/\/$/, '') || siteUrl; // Remove trailing slash para consistência
 
   // Lista de línguas para as tags alternate
   const languages = ['pt', 'en', 'es'];
-  
+
   // Função para gerar o URL de uma língua para o path atual
   const getLangUrl = (lang: string) => {
     // Remove qualquer prefixo de língua atual (/pt/, /en/, /es/)
@@ -55,10 +55,10 @@ export default function SEO({
         purePath = '/';
       }
     });
-    
+
     // Se for PT, o URL é o purePath (com x-default e pt a apontar para o mesmo)
     if (lang === 'pt') return `${siteUrl}${purePath}`;
-    
+
     // Para outras línguas, adicionamos o prefixo
     return `${siteUrl}/${lang}${purePath === '/' ? '/' : purePath}`;
   };
@@ -73,17 +73,17 @@ export default function SEO({
 
       {/* Hreflang Tags - Crucial para resolver erros de duplicado em sites multi-língua */}
       {languages.map(lang => (
-        <link 
-          key={lang} 
-          rel="alternate" 
-          hrefLang={lang} 
-          href={getLangUrl(lang).replace(/\/$/, '') || siteUrl} 
+        <link
+          key={lang}
+          rel="alternate"
+          hrefLang={lang}
+          href={getLangUrl(lang).replace(/\/$/, '') || siteUrl}
         />
       ))}
-      <link 
-        rel="alternate" 
-        hrefLang="x-default" 
-        href={getLangUrl('pt').replace(/\/$/, '') || siteUrl} 
+      <link
+        rel="alternate"
+        hrefLang="x-default"
+        href={getLangUrl('pt').replace(/\/$/, '') || siteUrl}
       />
 
       {/* Open Graph / Facebook */}

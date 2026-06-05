@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_PATH = path.join(__dirname, 'dist');
 const PUBLIC_PATH = path.join(__dirname, 'public');
 const PORT = 3333;
-const SITE_URL = "https://caminhos-rainha-santa.onrender.com";
+const SITE_URL = "https://caminhos-rainha-santa.pt";
 
 const baseRoutes = [
   '/',
@@ -65,37 +65,37 @@ async function generateSitemap() {
       // Se lang for PT, e o sitemap já processou a raiz (route === '/') na secção anterior,
       // devemos evitar duplicar a entrada da raiz se necessário, mas aqui o loop baseRoutes
       // já cobre tudo.
-      
+
       const isDefaultLang = (lang === 'pt');
       const langPath = isDefaultLang ? '' : `/${lang}`;
       const fullPath = route === '/' ? `${langPath}/` : `${langPath}${route}`;
-      
+
       // Evitar duplicar a entrada da raiz (/) que já foi adicionada acima se route for '/' e lang for PT
       if (isDefaultLang && route === '/') return;
 
       const priority = route === '/' ? '1.0' : (route.split('/').length > 2 ? '0.7' : '0.9');
-      
+
       xml += `  <url>\n`;
       xml += `    <loc>${SITE_URL}${fullPath.replace(/\/$/, '') || '/'}</loc>\n`;
-      
+
       // Hreflang links para as outras línguas da mesma página
       languages.forEach(l => {
         const altLangPath = (l === 'pt') ? '' : `/${l}`;
         const altPath = route === '/' ? `${altLangPath}/` : `${altLangPath}${route}`;
         xml += `    <xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}${altPath.replace(/\/$/, '') || '/'}" />\n`;
       });
-      
+
       // Adiciona x-default sempre a apontar para a versão sem prefixo (PT)
       const xDefaultPath = route === '/' ? '/' : route;
       xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${xDefaultPath.replace(/\/$/, '') || '/'}" />\n`;
-      
+
       xml += `    <changefreq>weekly</changefreq><priority>${priority}</priority>\n`;
       xml += `  </url>\n`;
     });
   });
 
   xml += '</urlset>';
-  
+
   await fs.writeFile(path.join(DIST_PATH, 'sitemap.xml'), xml);
   await fs.writeFile(path.join(PUBLIC_PATH, 'sitemap.xml'), xml);
   console.log('✅ Sitemap.xml generated successfully!');
@@ -116,21 +116,21 @@ async function prerender() {
 
   const server = app.listen(PORT, async () => {
     console.log(`Temporary server started at http://localhost:${PORT}`);
-    
+
     try {
       const browser = await puppeteer.launch({ headless: "new" });
       const page = await browser.newPage();
 
       for (const lang of languages) {
         console.log(`\n--- Prerendering: ${lang.toUpperCase()} ---`);
-        
+
         for (const route of baseRoutes) {
           const langRoute = route === '/' ? `/${lang}` : `/${lang}${route}`;
           console.log(`Crawling: ${langRoute}`);
-          
+
           await page.goto(`http://localhost:${PORT}${langRoute}`, { waitUntil: 'networkidle0' });
           const content = await page.content();
-          
+
           const outputPath = path.join(DIST_PATH, lang, route === '/' ? 'index.html' : `${route}/index.html`);
           await fs.mkdir(path.dirname(outputPath), { recursive: true });
           await fs.writeFile(outputPath, content);
