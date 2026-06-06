@@ -1040,6 +1040,175 @@ export const pois: POI[] = [
     },
     url: 'https://www.facebook.com/p/Albergue-de-Santiago-de-Caldelas-61582721891979/',
     pathSlugs: ['braga-caldelas', 'caldelas-campo-do-geres']
+  },
+  {
+    id: 'pousada-campo-do-geres',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.7530511, -8.2031581],
+    i18n: {
+      pt: { name: 'Pousada Campo do Gerês', categoryLabel: 'Pousada' },
+      en: { name: 'Pousada Campo do Gerês', categoryLabel: 'Pousada' },
+      es: { name: 'Pousada Campo do Gerês', categoryLabel: 'Pousada' }
+    },
+    url: 'https://www.tkqlhce.com/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FTerras-De-Bouro-Hoteles-Pousada-Da-Juventude-Do-Geres.h48849752.Informacion-Hotel%3Fchkin%3D2026-09-24%26chkout%3D2026-09-25%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1780742053518%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da1%26regionId%3D831285613234786304%26destination%3DMuseo%2BEtnogr%25C3%25A1fico%2BCampo%2Bdo%2BGer%25C3%25AAs%252C%2BTerras%2Bde%2BBouro%252C%2BDistrito%2Bde%2BBraga%252C%2BPortugal%26destType%3DMARKET%26latLong%3D41.750394%252C-8.196978%26sort%3DRECOMMENDED%26top_dp%3D19%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D228319909%26selectedRatePlan%3D262301124%26categorySearch%3Dany_option%26searchId%3Dbcf35b63-53a8-4a0a-9bd7-ac94f12a2960',
+    pathSlugs: ['caldelas-campo-do-geres', 'campo-do-geres-lobios']
+  },
+  {
+    id: 'geres-ter',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.7592700, -8.1982019],
+    i18n: {
+      pt: { name: 'Geres Ter', categoryLabel: 'Hotel' },
+      en: { name: 'Geres Ter', categoryLabel: 'Hotel' },
+      es: { name: 'Geres Ter', categoryLabel: 'Hotel' }
+    },
+    url: 'https://www.dpbolvw.net/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FTerras-De-Bouro-Hoteles-GeresTER.h105162202.Informacion-Hotel%3Fchkin%3D2026-09-24%26chkout%3D2026-09-25%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1780742288305%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da1%26regionId%3D831285613234786304%26destination%3DMuseo%2BEtnogr%25C3%25A1fico%2BCampo%2Bdo%2BGer%25C3%25AAs%252C%2BTerras%2Bde%2BBouro%252C%2BDistrito%2Bde%2BBraga%252C%2BPortugal%26destType%3DMARKET%26latLong%3D41.750394%252C-8.196978%26sort%3DPRICE_LOW_TO_HIGH%26top_dp%3D61%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D324733646%26selectedRatePlan%3D395677115%26categorySearch%3Dany_option%26searchId%3D7ff1b4ed-c464-406b-bb80-f73453cf20db',
+    pathSlugs: ['caldelas-campo-do-geres', 'campo-do-geres-lobios']
+  },
+  {
+    id: 'cafe-paranhos',
+    category: 'eat',
+    contact: '',
+    latlng: [41.6734352, -8.3466033],
+    i18n: {
+      pt: { name: 'Café Paranhos', categoryLabel: 'Café' },
+      en: { name: 'Café Paranhos', categoryLabel: 'Coffee Shop' },
+      es: { name: 'Café Paranhos', categoryLabel: 'Cafetería' }
+    },
+    url: '',
+    pathSlugs: ['caldelas-campo-do-geres']
+  },
+  {
+    id: 'mercearia-covide',
+    category: 'eat',
+    contact: '',
+    latlng: [41.7366178, -8.2185744],
+    i18n: {
+      pt: { name: 'Mercearia Covide', categoryLabel: 'Mercearia' },
+      en: { name: 'Mercearia Covide', categoryLabel: 'Grocery Store' },
+      es: { name: 'Mercearia Covide', categoryLabel: 'Tienda de comestibles' }
+    },
+    url: '',
+    pathSlugs: ['caldelas-campo-do-geres']
+  },
+  {
+    id: 'capela-sao-sebastiao',
+    category: 'water',
+    contact: '',
+    latlng: [41.6962181, -8.2983006],
+    i18n: {
+      pt: { name: 'Fonte de São Sebastião', categoryLabel: 'Fonte' },
+      en: { name: 'Fonte de São Sebastião', categoryLabel: 'Fountain' },
+      es: { name: 'Fuente de San Sebastián', categoryLabel: 'Fuente' }
+    },
+    url: '',
+    pathSlugs: ['caldelas-campo-do-geres']
+  },
+  {
+    id: 'marcos-miliares-geira',
+    category: 'see',
+    contact: '',
+    latlng: [41.7200608, -8.2733964],
+    i18n: {
+      pt: { name: 'Marcos Miliares Geira', categoryLabel: 'Marco Miliário' },
+      en: { name: 'Marcos Miliares Geira', categoryLabel: 'Miliarium' },
+      es: { name: 'Marcos Miliares Geira', categoryLabel: 'Marco Miliario' }
+    },
+    url: '',
+    pathSlugs: ['caldelas-campo-do-geres']
+  },
+  {
+    id: 'casa-eiro',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.8772558, -8.1154333],
+    i18n: {
+      pt: { name: 'Casa Eiró', categoryLabel: 'Casa' },
+      en: { name: 'Casa Eiró', categoryLabel: 'House' },
+      es: { name: 'Casa Eiró', categoryLabel: 'Casa' }
+    },
+    url: 'https://www.kqzyfj.com/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FLobios-Hoteles-Casa-Eiro-In-Thermal-Waters-Of-Riocaldo.h33916140.Informacion-Hotel%3Fchkin%3D2026-09-24%26chkout%3D2026-09-25%26flexibility%3D7_DAY%26srpStartDate%3D2026-09-24%26srpEndDate%3D2026-09-25%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1780745448711%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da1%26regionId%3D6125086%26destination%3DLobios%252C%2BGalicia%252C%2BEspa%25C3%25B1a%26destType%3DMARKET%26latLong%3D41.901135%252C-8.083351%26sort%3DDISTANCE%26top_dp%3D78%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D33916140%26selectedRatePlan%3D00012d41573bab30443b848bd3e836de3550%26categorySearch%3Dany_option%26searchId%3De2ad7a50-b8e9-4a33-9f19-4efbda10a0e0',
+    pathSlugs: ['campo-do-geres-lobios', 'lobios-castro-laboreiro']
+  },
+  {
+    id: 'hotel-lobios-calderia-balneario',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.8617150, -8.1063869],
+    i18n: {
+      pt: { name: 'Hotel Lobios Balneario', categoryLabel: 'Hotel' },
+      en: { name: 'Hotel Lobios Balneario', categoryLabel: 'Hotel' },
+      es: { name: 'Hotel Lobios Balneario', categoryLabel: 'Hotel' }
+    },
+    url: 'https://www.anrdoezrs.net/click-101704130-13883026?url=https%3A%2F%2Fwww.expedia.es%2FLobios-Hoteles-Lobios-Caldaria-Hotel-Balneario.h11492849.Informacion-Hotel%3Fchkin%3D2026-10-01%26chkout%3D2026-10-02%26flexibility%3D7_DAY%26srpStartDate%3D2026-09-24%26srpEndDate%3D2026-09-25%26x_pwa%3D1%26rfrr%3DHSR%26pwa_ts%3D1780745448713%26referrerUrl%3DaHR0cHM6Ly93d3cuZXhwZWRpYS5lcy9Ib3RlbC1TZWFyY2g%253D%26useRewards%3Dfalse%26rm1%3Da1%26regionId%3D6125086%26destination%3DLobios%252C%2BGalicia%252C%2BEspa%25C3%25B1a%26destType%3DMARKET%26latLong%3D41.901135%252C-8.083351%26sort%3DDISTANCE%26top_dp%3D101%26top_cur%3DEUR%26userIntent%3D%26selectedRoomType%3D201159409%26selectedRatePlan%3D205499032%26categorySearch%3Dany_option%26searchId%3De2ad7a50-b8e9-4a33-9f19-4efbda10a0e0',
+    pathSlugs: ['campo-do-geres-lobios', 'lobios-castro-laboreiro']
+  },
+  {
+    id: 'hotel-lusitano',
+    category: 'sleep',
+    contact: '',
+    latlng: [41.9015219, -8.0838900],
+    i18n: {
+      pt: { name: 'Hotel Lusitano', categoryLabel: 'Hotel' },
+      en: { name: 'Hotel Lusitano', categoryLabel: 'Hotel' },
+      es: { name: 'Hotel Lusitano', categoryLabel: 'Hotel' }
+    },
+    url: '',
+    pathSlugs: ['campo-do-geres-lobios', 'lobios-castro-laboreiro']
+  },
+  {
+    id: 'mata-de-albergaria',
+    category: 'see',
+    contact: '',
+    latlng: [41.7954222, -8.1357317],
+    i18n: {
+      pt: { name: 'Cascata das Lagoas - Mata de Albergaria', categoryLabel: 'Cascata' },
+      en: { name: 'Cascata das Lagoas - Mata de Albergaria', categoryLabel: 'Waterfall' },
+      es: { name: 'Cascata das Lagoas - Mata de Albergaria', categoryLabel: 'Cascada' }
+    },
+    url: '',
+    pathSlugs: ['campo-do-geres-lobios']
+  },
+  {
+    id: 'termas-rio-caldo',
+    category: 'see',
+    contact: '',
+    latlng: [41.8625119, -8.1065467],
+    i18n: {
+      pt: { name: 'Termas de Rio Caldo', categoryLabel: 'Termas' },
+      en: { name: 'Termas de Rio Caldo', categoryLabel: 'Thermal Springs' },
+      es: { name: 'Termas de Rio Caldo', categoryLabel: 'Termas' }
+    },
+    url: '',
+    pathSlugs: ['campo-do-geres-lobios']
+  },
+  {
+    id: 'cafe-rio-caldo',
+    category: 'eat',
+    contact: '',
+    latlng: [41.8630158, -8.1060708],
+    i18n: {
+      pt: { name: 'Café Rio Caldo', categoryLabel: 'Café' },
+      en: { name: 'Cafe Rio Caldo', categoryLabel: 'Coffee Shop' },
+      es: { name: 'Café Rio Caldo', categoryLabel: 'Cafetería' }
+    },
+    url: '',
+    pathSlugs: ['campo-do-geres-lobios']
+  },
+  {
+    id: 'cafe-fronteira-rio-homem',
+    category: 'eat',
+    contact: '',
+    latlng: [41.8085392, -8.1314514],
+    i18n: {
+      pt: { name: 'Café Fronteira', categoryLabel: 'Café' },
+      en: { name: 'Cafe Fronteira', categoryLabel: 'Coffee Shop' },
+      es: { name: 'Café Fronteira', categoryLabel: 'Cafetería' }
+    },
+    url: '',
+    pathSlugs: ['campo-do-geres-lobios']
   }
 
 ];

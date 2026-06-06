@@ -705,7 +705,7 @@ export const paths: Path[] = [
         pt: {
           title: 'Caminho da Geira e dos Arrieiros',
           badge: 'Peregrinação',
-          description: 'Rainha Santa Isabel terá feito duas peregrinações a Santiago de Compostela já viúva. Este percurso é uma recriação do caminho percorrido pela Rainha.',
+          description: 'Rainha Santa Isabel, já viúva, terá feito duas peregrinações a Santiago de Compostela. Este percurso é uma recriação do caminho percorrido pela Rainha.',
           narrativeTitle: 'O contacto da Rainha com a natureza e com as gentes de Portugal e Galiza',
           content: [
             'O Caminho da Geira (ou Via Romana XVII) é uma antiga estrada romana que ligava Braga (Bracara Augusta) a Astorga (Asturica Augusta). ',
@@ -716,7 +716,7 @@ export const paths: Path[] = [
         en: {
           title: 'The Geira and Arrieiros Path',
           badge: 'Pilgrimage',
-          description: 'Queen Isabel the Catholic is believed to have made two pilgrimages to Santiago de Compostela as a widow. This route recreates the path taken by the Queen.',
+          description: 'Queen Isabel the Catholic, already widowed, is believed to have made two pilgrimages to Santiago de Compostela. This route recreates the path taken by the Queen.',
           narrativeTitle: 'The Queen’s contact with nature and with the people of Portugal and Galicia',
           content: [
             'The Camino da Geira (or Via Romana XVII) is an ancient Roman road that connected Braga (Bracara Augusta) to Astorga (Asturica Augusta).',
@@ -727,7 +727,7 @@ export const paths: Path[] = [
         es: {
           title: 'Camino de la Geira y de los Arrieros',
           badge: 'Peregrinación',
-          description: 'Se cree que la Reina Santa Isabel la Católica realizó dos peregrinaciones a Santiago de Compostela ya viuda. Esta ruta recrea el camino recorrido por la Reina.',
+          description: 'Se cree que la Reina Santa Isabel, ya viuda, realizó dos peregrinaciones a Santiago de Compostela. Esta ruta recrea el camino recorrido por la Reina.',
           narrativeTitle: 'El contacto de la Reina con la naturaleza y con la gente de Portugal y Galicia',
           content: [
             'El Camino de la Geira (o Via Romana XVII) es una antigua carretera romana que conectaba Braga (Bracara Augusta) con Astorga (Asturica Augusta).',
@@ -736,7 +736,7 @@ export const paths: Path[] = [
           ]
         }
       },
-      latlng: [41.7750, -6.8654],
+      latlng: [41.5500850, -8.4263656],
     }
   },
   {
@@ -754,85 +754,91 @@ export const paths: Path[] = [
       difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
-          title: '1. De Braga a Caldelas',
-          badge: 'Início',
-          description: 'A etapa inicial capta a sensação pura de começar uma grande aventura, deixando o bulício da histórica Braga para trás e abraçando os primeiros passos do peregrino.',
-          narrativeTitle: 'Do Coração Barroco à Serenidade do Mosteiro: A Partida de Braga',
+          title: '1. Braga - Caldelas',
+          badge: 'Geira',
+          description: 'A etapa inicial do Caminho começa no coração de Braga, deixando para trás o bulício urbano para abraçar a serenidade rural e a riqueza histórica do Minho.',
+          narrativeTitle: 'Da imponência de Braga ao refúgio termal de Caldelas',
           content: [
-            'A jornada começa com os primeiros raios de sol em Braga, uma cidade de ruas de pedra e monumentos imponentes. A sensação de aventura é palpável enquanto você ajusta a mochila e deixa para trás a agitação urbana, trocando o som do tráfego pelo silêncio dos caminhos de terra.',
-            'O percurso leva-o rapidamente para a tranquilidade rural. A sensação de liberdade é imensa ao atravessar a histórica Ponte do Bico sobre o rio Cávado e, logo após, passar diante da imponência do Mosteiro de Rendufe, o primeiro grande refúgio espiritual ao longo da estrada.'
+            'Os primeiros passos começam na Sé Catedral de Braga, onde a envolvência monumental e a azáfama da cidade despertam uma forte sensação de aventura. À medida que nos afastamos do centro urbano, os tentáculos da cidade dão gradualmente lugar à tranquilidade dos campos.',
+            'O percurso enriquece-se com paragens obrigatórias, como a raríssima Capela visigótica de São Frutuoso de Montélios. Atravessando as históricas freguesias de Dume e Palmeira, cruzamos o rio Cávado pela imponente Ponte do Bico, entrando no concelho de Amares.',
+            'A partir daqui, o caminho torna-se mais rural e pacífico. Passando por Lago e Rendufe, destaca-se a imponência do Mosteiro beneditino de Santo André de Rendufe, antes de seguirmos por caminhos locais e estradas secundárias até à vila termal de Caldelas.'
           ]
         },
         en: {
-          title: '1. From Braga to Caldelas',
-          badge: 'Start',
-          description: 'The initial stage captures the pure feeling of starting a grand adventure, leaving the bustle of historic Braga behind and embracing the first steps of the pilgrim.',
-          narrativeTitle: 'From the Baroque Heart to Monastery Serenity: Departure from Braga',
+          title: '1. Braga - Caldelas',
+          badge: 'Geira',
+          description: 'The initial stage begins in the heart of Braga, leaving the urban bustle behind to embrace the rural serenity and historical richness of the Minho region.',
+          narrativeTitle: 'From the grandeur of Braga to the thermal refuge of Caldelas',
           content: [
-            'The journey begins with the first rays of sun in Braga, a city of stone streets and imposing monuments. The feeling of adventure is palpable as you adjust your backpack and leave behind the urban bustle, swapping the sound of traffic for the silence of dirt paths.',
-            'The route quickly leads you into rural tranquility. The feeling of freedom is immense as you cross the historic Bico Bridge over the Cávado River and, shortly after, pass before the imposing Rendufe Monastery, the first great spiritual refuge along the road.'
+            'The first steps begin at the Braga Cathedral, where the monumental surroundings and the city’s bustle spark a powerful sense of adventure. As we move away from the urban center, the city’s concrete tentacles gradually give way to the tranquility of the countryside.',
+            'The route is enriched by mandatory stops, such as the extremely rare Visigothic Chapel of São Frutuoso de Montélios. Walking through the historic parishes of Dume and Palmeira, we cross the Cávado River over the imposing Bico Bridge, entering the municipality of Amares.',
+            'From this point on, the path becomes more rural and peaceful. Passing through Lago and Rendufe, the grand Benedictine Monastery of Santo André de Rendufe stands out, before we continue along local paths and secondary roads to the thermal town of Caldelas.'
           ]
         },
         es: {
-          title: '1. De Braga a Caldelas',
-          badge: 'Inicio',
-          description: 'La etapa inicial captura la sensación pura de comenzar una gran aventura, dejando atrás el bullicio de la histórica Braga y abrazando los primeros pasos del peregrino.',
-          narrativeTitle: 'Del Corazón Barroco a la Serenidad del Monasterio: La Partida de Braga',
+          title: '1. Braga - Caldelas',
+          badge: 'Geira',
+          description: 'La etapa inicial del Camino comienza en el corazón de Braga, dejando atrás el bullicio urbano para abrazar la serenidad rural y la riqueza histórica del Minho.',
+          narrativeTitle: 'De la imponencia de Braga al refugio termal de Caldelas',
           content: [
-            'El viaje comienza con los primeros rayos de sol en Braga, una ciudad de calles de piedra y monumentos imponentes. La sensación de aventura es palpable mientras ajustas la mochila y dejas atrás el bullicio urbano, cambiando el sonido del tráfico por el silencio de los caminos de tierra.',
-            'La ruta te lleva rápidamente a la tranquilidad rural. La sensación de libertad es inmensa al cruzar el histórico Puente de Bico sobre el río Cávado y, poco después, pasar ante la imponencia del Monasterio de Rendufe, el primer gran refugio espiritual a lo largo del camino.'
+            'Los primeros pasos comienzan en la Catedral de Braga, donde el entorno monumental y el bullicio de la ciudad despiertan una fuerte sensación de aventura. A medida que nos alejamos del centro urbano, los tentáculos de la ciudad dan paso gradualmente a la tranquilidad del campo.',
+            'El recorrido se enriquece con paradas obligatorias, como la rarísima Capilla visigoda de San Fructuoso de Montelios. Atravesando las históricas parroquias de Dume y Palmeira, cruzamos el río Cávado por el imponente Puente de Bico, entrando en el municipio de Amares.',
+            'A partir de aquí, el camino se vuelve más rural y pacífico. Pasando por Lago y Rendufe, destaca la imponencia del Monasterio benedictino de Santo André de Rendufe, antes de continuar por senderos locales y carreteras secundarias hasta la villa termal de Caldelas.'
           ]
         }
       },
-      latlng: [41.5503, -8.4201]
+      latlng: [41.5500, -8.4263]
     }
   },
   {
     slug: 'caldelas-campo-do-geres',
     type: 'hiking',
-    image: '/caminho-da-geira.jpg',
+    image: '/caldelas-campo-do-geres.png',
     parentSlug: 'caminho-da-geira',
     details: {
-      duration: 8,
+      duration: 7,
       durationUnit: 'hours',
-      distance: 31.12,
-      elevation: 1063,
-      minAltitude: 150,
-      maxAltitude: 800,
-      difficultyKey: 'common.difficulty.hard',
+      distance: 30,
+      elevation: 985,
+      minAltitude: 130,
+      maxAltitude: 650,
+      difficultyKey: 'common.difficulty.moderate',
       i18n: {
         pt: {
           title: '2. Caldelas - Campo do Gerês',
           badge: 'Geira',
-          description: 'Uma etapa exigente e espetacular que sobe a serra até ao Campo do Gerês, terminando na Pousada da Juventude.',
-          narrativeTitle: 'Subindo as encostas graníticas até ao coração do Parque Nacional',
+          description: 'Uma etapa exigente e mística que ascende até ao Parque Nacional, fundindo a herança da Vía Nova romana com a natureza exuberante do Minho.',
+          narrativeTitle: 'O portal do Gerês e a mística dos marcos miliares',
           content: [
-            'Deixe a tranquilidade de Caldelas para trás e inicie uma subida vigorosa pelas encostas da serra.',
-            'O esforço é amplamente recompensado pelas vistas panorâmicas sobre as montanhas e albufeiras do Parque Nacional da Peneda-Gerês, terminando na aldeia de Campo do Gerês.'
+            'A jornada parte de Caldelas com uma subida desafiante que vence cerca de 300 metros de desnível até Santa Cruz. Pelo caminho, a passagem sob o arco da antiga fábrica têxtil real funciona como uma autêntica porta de entrada no Gerês, assinalando a transição para um ambiente de montanha.',
+            'A partir de Santa Cruz, o percurso funde-se quase inteiramente com a Geira (Vía Nova romana). Caminhar por esta antiga calçada é um privilégio: somos guiados por impressionantes marcos miliares — como os das milhas XIV e XV —, imponentes formações de granito e vistas intermitentes sobre o vale do rio Homem.',
+            'Após cruzar caminhos ladeados por bosques frondosos e a pacata aldeia de pedra de Covide, o trilho culmina em Campo do Gerês. À entrada da localidade, um emblemático marco miliário protegido por um telheiro acolhe os peregrinos que procuram o descanso, muitos deles na Pousada de Juventude.'
           ]
         },
         en: {
           title: '2. Caldelas - Campo do Gerês',
           badge: 'Geira',
-          description: 'A demanding and spectacular stage that climbs the mountain to Campo do Gerês, ending at the Youth Hostel.',
-          narrativeTitle: 'Climbing the granitic slopes to the heart of the National Park',
+          description: 'A demanding and mystical stage ascending into the National Park, merging the legacy of the Roman Vía Nova with the lush nature of the Minho region.',
+          narrativeTitle: 'The gateway to Gerês and the mysticism of the milestones',
           content: [
-            'Leave the tranquility of Caldelas behind and start a vigorous climb up the mountain slopes.',
-            'The effort is amply rewarded by panoramic views of the mountains and reservoirs of the Peneda-Gerês National Park, ending in the village of Campo do Gerês.'
+            'The journey sets off from Caldelas with a challenging climb that conquers about 300 meters of elevation gain up to Santa Cruz. Along the way, passing under the arch of the old royal textile factory acts as a true gateway to the Gerês, marking the transition into a mountain environment.',
+            'From Santa Cruz onwards, the route merges almost entirely with the Geira (the Roman Vía Nova). Walking along this ancient road is a privilege: we are guided by impressive milestones—such as those of miles XIV and XV—imposing granite formations, and intermittent views over the Homem River valley.',
+            'After crossing paths bordered by lush woodlands and the quiet stone village of Covide, the trail culminates in Campo do Gerês. At the entrance of the village, an iconic milestone protected by a small roof welcomes pilgrims seeking rest, many of whom stay at the Youth Hostel.'
           ]
         },
         es: {
           title: '2. Caldelas - Campo do Gerês',
           badge: 'Geira',
-          description: 'Una etapa exigente y espectacular que sube la sierra hasta Campo do Gerês, terminando en el Albergue Juvenil.',
-          narrativeTitle: 'Subiendo las laderas graníticas hacia el corazón del Parque Nacional',
+          description: 'Una etapa exigente y mística que asciende hasta el Parque Nacional, fusionando el legado de la Vía Nova romana con la exuberante naturaleza del Minho.',
+          narrativeTitle: 'El portal del Gerês y la mística de los miliarios',
           content: [
-            'Deje atrás la tranquilidad de Caldelas e inicie una subida vigorosa por las laderas de la sierra.',
-            'El esfuerzo se ve recompensado con creces por las vistas panorámicas de las montañas y embalses del Parque Nacional Peneda-Gerês, terminando en la aldea de Campo do Gerês.'
+            'El viaje parte de Caldelas con una subida exigente que supera unos 300 metros de desnivel hasta Santa Cruz. En el camino, pasar bajo el arco de la antigua fábrica textil real funciona como una auténtica puerta de entrada al Gerês, marcando la transición hacia un entorno de montaña.',
+            'A partir de Santa Cruz, el recorrido se funde casi por completo con la Geira (la Vía Nova romana). Caminar por esta antigua calzada es un privilegio: somos guiados por impresionantes miliarios —como los de las millas XIV y XV—, imponentes formaciones de granito e intermitentes vistas sobre el valle del río Homem.',
+            'Tras cruzar senderos flanqueados por frondosos bosques y la tranquila aldea de piedra de Covide, el camino culmina en Campo do Gerês. A la entrada de la localidad, un emblemático miliario protegido por un tejadillo da la bienvenida a los peregrinos que buscan descanso, muchos de ellos en el Albergue de la Juventud.'
           ]
         }
-      },
-      latlng: [41.6667, -8.3667]
+},
+      latlng: [41.6670833, -8.3776878]
     }
   },
   {
@@ -847,36 +853,39 @@ export const paths: Path[] = [
       elevation: 475,
       minAltitude: 300,
       maxAltitude: 800,
-      difficultyKey: 'common.difficulty.moderate',
+      difficultyKey: 'common.difficulty.easy',
       i18n: {
         pt: {
           title: '3. Campo do Gerês - Lobios',
           badge: 'Geira',
-          description: 'Atravesse a deslumbrante Mata da Albergaria ao longo dos marcos miliários da Via Romana até cruzar a fronteira para Lobios na Galiza.',
-          narrativeTitle: 'Caminhando pela antiga Via Romana sob a sombra da Albergaria',
+          description: 'A etapa rainha que cruza a fronteira a pé, atravessando o coração intocado do Gerês através de bosques milenares até descansar nas águas termais galegas.',
+          narrativeTitle: 'Pela Senda de Albergaria até ao Conforto Termal de Lobios',
           content: [
-            'Esta etapa emblemática segue o traçado da antiga Geira Romana, passando pela mágica Mata da Albergaria e as suas ruínas históricas.',
-            'Após cruzar a fronteira na Portela do Homem, a rota desce até às termas ao ar livre de Lobios, já em território galego.'
+            'A jornada começa cedo, contornando a beleza mística da Albufeira de Vilarinho das Furnas e passando pelo parque de campismo da Cerdeira para entrar na Mata de Albergaria. Caminhar por este bosque centenário, no coração mais puro do Parque Nacional, é uma experiência mágica onde os carvalhos e os marcos miliares nos guiam na Geira.',
+            'A subida culmina na Ponte de São Miguel e alcança a Portela do Homem. Neste antigo posto fronteiriço, despedimo-nos de Portugal para entrar na Galiza, cruzando o Parque Natural Baixa Limia-Serra do Xurés. Segue-se uma descida suave de 9 quilómetros pelo vale do Rio Caldo, rica em vestígios romanos como a antiga mansão termal Aquis Ogeresibus.',
+            'Após passar pela encantadora aldeia de Vilameá e vencer a subida do monte de O Perdigoto — com vistas fantásticas sobre o vale do Rio Limia —, o percurso desce até Lobios. O dia termina da melhor forma na zona de Os Baños, onde o peregrino pode relaxar o corpo nas reconfortantes águas quentes das suas famosas termas ao ar livre.'
           ]
         },
         en: {
           title: '3. Campo do Gerês - Lobios',
           badge: 'Geira',
-          description: 'Cross the stunning Albergaria Forest along the milestones of the Roman Way before crossing the border into Lobios, Galicia.',
-          narrativeTitle: 'Walking the ancient Roman Way under the shade of Albergaria',
+          description: 'The queen stage that crosses the border on foot, traversing the untouched heart of Gerês through ancient woodlands to rest in Galician thermal waters.',
+          narrativeTitle: 'Through the Albergaria Woods to the Thermal Comfort of Lobios',
           content: [
-            'This emblematic stage follows the route of the ancient Roman Geira, passing through the magical Albergaria Forest and its historic ruins.',
-            'After crossing the border at Portela do Homate, the route descends to the open-air thermal baths of Lobios in Galician territory.'
+            'The journey starts early, skirting the mystical beauty of the Vilarinho das Furnas Reservoir and passing the Cerdeira campsite to enter the Mata de Albergaria. Walking through this ancient oak forest, in the purest heart of the National Park, is a magical experience where centuries-old trees and Roman milestones guide our steps.',
+            'The climb culminates at the San Miguel Bridge and reaches Portela do Homem. At this old border post, we say goodbye to Portugal and enter Galicia, crossing into the Baixa Limia-Serra do Xurés Natural Park. A gentle 9-kilometer descent follows through the Río Caldo valley, rich in Roman history and home to the ancient Aquis Ogeresibus thermal mansion ruins.',
+            'After passing through the charming village of Vilameá and conquering the climb up Mount O Perdigoto—offering fantastic views over the Río Limia valley—the trail descends into Lobios. The day ends perfectly in the Os Baños area, where pilgrims can soothe their bodies in the comforting hot waters of its famous open-air thermal springs.'
           ]
         },
         es: {
           title: '3. Campo do Gerês - Lobios',
           badge: 'Geira',
-          description: 'Cruce el impresionante bosque de Albergaria a lo largo de los miliarios de la Vía Romana antes de cruzar la frontera hacia Lobios, Galicia.',
-          narrativeTitle: 'Caminando por la antigua Vía Romana bajo la sombra de Albergaria',
+          description: 'La etapa reina que cruza la frontera a pie, atravesando el corazón intacto del Gerês a través de bosques milenarios hasta descansar en las aguas termales gallegas.',
+          narrativeTitle: 'Por la Senda de Albergaria hasta el Confort Termal de Lobios',
           content: [
-            'Esta etapa emblemática sigue el trazado de la antigua Geira Romana, pasando por el mágico bosque de Albergaria y sus ruinas históricas.',
-            'Tras cruzar la frontera en Portela del Hombre, la ruta desciende hasta las termas al aire libre de Lobios, ya en territorio gallego.'
+            'La jornada comienza temprano, bordeando la mística belleza del Embalse de Vilarinho das Furnas y pasando junto al camping de Cerdeira para adentrarse en la Mata de Albergaria. Caminar por este bosque centenario, en el corazón más puro del Parque Nacional, es una experiencia mágica donde robles y miliarios nos guían por la Geira.',
+            'La subida culmina en el Puente de San Miguel y alcanza la Portela do Homem. En este antiguo puesto fronterizo nos despedimos de Portugal para entrar en Galicia, cruzando al Parque Natural Baixa Limia-Serra do Xurés. Sigue un cómodo descenso de 9 kilómetros por el valle del Río Caldo, rico en restos romanos como la mansión termal Aquis Ogeresibus.',
+            'Tras pasar por la encantadora aldea de Vilameá y superar el ascenso del monte de O Perdigoto —con fantásticas vistas al valle del Río Limia—, el camino desciende hasta Lobios. El día termina de la mejor manera en la zona de Os Baños, donde el peregrino puede relajar el cuerpo en las reconfortantes aguas calientes de sus famosas termas al aire libre.'
           ]
         }
       },
