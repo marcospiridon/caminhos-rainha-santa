@@ -844,7 +844,7 @@ export const paths: Path[] = [
   {
     slug: 'campo-do-geres-lobios',
     type: 'hiking',
-    image: '/caminho-da-geira.jpg',
+    image: '/campo-do-geres-lobios.png',
     parentSlug: 'caminho-da-geira',
     details: {
       duration: 6,
